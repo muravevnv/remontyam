@@ -1,0 +1,22 @@
+.geography {
+  padding: 0 !important;
+
+  @include mq($ms) {
+    display: none;
+  }
+
+  &__wrapper {
+    background-color: cl(gray-200);
+    padding: rem(70) 0;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__title {
+    position: absolute;
+    left: 0;
+    top: rem(32);
+  }
+}

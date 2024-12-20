@@ -1,0 +1,310 @@
+.header {
+  background-color: cl(whte);
+  box-shadow: 0px 0px 11px 0px #0000000D;
+
+  @include mq($mt) {
+    box-shadow: none;
+  }
+}
+
+.header-top {
+  padding: rem(5) 0 rem(6);
+  background-color: cl(gray-100);
+
+  @include mq($mt) {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: rem(57);
+
+    @include mq($lt)  {
+      gap: rem(32);
+    }
+  }
+
+  &__adress {
+    display: inline-flex;
+    align-items: center;
+    gap: rem(12);
+    font-size: rem(14);
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: rem(25);
+    margin-left: auto;
+
+    @include mq($lt) {
+      gap: rem(16);
+    }
+  }
+
+  &__link {
+    padding: rem(10);
+    font-size: rem(14);
+    line-height: 1;
+    font-weight: 600;
+    transition: color 0.25 ease-in;
+
+    @media(any-hover: hover) {
+      &:hover {
+        color: cl(accent);
+      }
+    }
+  }
+
+  &__tel {
+    font-size: rem(18);
+    line-height: 1;
+    font-weight: 700;
+    transition: color 0.25 ease-in;
+
+    @media(any-hover: hover) {
+      &:hover {
+        color: cl(accent);
+      }
+    }
+  }
+}
+
+.header-main {
+  padding: rem(17) 0 rem(10);
+
+  @include mq($mt) {
+    padding: rem(10) 0;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(32);
+
+    @include mq($mt) {
+      flex-wrap: wrap;
+      gap: rem(16);
+    }
+
+    @include mq($m) {
+      gap: rem(10);
+    }
+  }
+
+  &__logo {
+    display: block;
+    min-width: rem(320);
+
+    img, picture {
+      display: block;
+      width: 100%;
+    }
+    
+    @include mq($mt) {
+      min-width: rem(200);
+    }
+    
+    @include mq($m) {
+      min-width: rem(108);
+    }
+  }
+
+  &__search {
+    max-width: rem(603);
+    width: 100%;
+
+    @include mq($mt) {
+      max-width: 100%;
+    }
+  }
+
+  &__catalog-btn {
+    display: flex;
+    align-items: center;
+    gap: rem(14);
+    padding: rem(15) rem(15) rem(15) rem(19);
+    background-color: cl(accent);
+    color: cl(whte);
+    font-size: rem(13);
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: rem(6);
+    cursor: pointer;
+    flex-shrink: 0;
+
+    @include mq($mt) {
+      display: none;
+    }
+  }
+
+  &__toolbars {
+    max-width: rem(310);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: rem(24);
+
+    @include mq($mt) {
+      display: none;
+    }
+  }
+
+  &__toolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: rem(13);
+    line-height: 1;
+    height: rem(47);
+    transition: opacity 0.25 ease-in;
+    cursor: pointer;
+
+    @media(any-hover: hover) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @include mq($mt) {
+      display: block;
+    }
+
+    @include mq($m) {
+      svg {
+        display: block;
+        width: rem(16);
+        height: rem(10);
+      }
+    }
+  }
+
+  &__cabinet {
+    display: none;
+
+    @include mq($mt) {
+      display: block;
+    }
+  }
+}
+
+.header-bottom {
+  padding: rem(10) 0 rem(27);
+
+  @include mq($mt) {
+    display: none;
+  }
+}
+
+.header-cabinet {
+  position: relative;
+
+  &__btn {
+    width: rem(24);
+    height: rem(24);
+
+    @include mq($m) {
+      width: rem(15);
+      height: rem(15);
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.header-menu {
+  
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(16);
+  }
+
+  &__item {
+    font-size: rem(14);
+    line-height: 1;
+    transition: opacity 0.25 ease-in;
+
+    @media(any-hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+  
+}
+
+.searchbar {
+  width: 100%;
+  position: relative;
+
+  &__input {
+    display: inline-block;
+    width: 100%;
+    padding: rem(11) rem(48) rem(11) rem(22);
+    border-radius: rem(6);
+    border: 1px solid cl(border);
+    background-color: cl(whte);
+    font-size: rem(16);
+    line-height: 1;
+
+    @include mq($m) {
+      padding: rem(10) rem(36) rem(11) rem(10);
+      font-size: rem(12);
+      line-height: 1.1;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: rem(48);
+    height: rem(44);
+    background-color: cl(accent);
+    color: cl(whte);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: rem(6);
+    transition: opacity 0.25 ease-in;
+
+    @media(any-hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    svg {
+      display: block;
+    }
+
+    @include mq($m) {
+      width: rem(36);
+      height: rem(36);
+
+      svg {
+        width: rem(12);
+        height: rem(12);
+      }
+    }
+  }
+}

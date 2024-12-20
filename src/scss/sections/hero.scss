@@ -1,0 +1,81 @@
+.hero {
+
+  @include mq($ms) {
+    display: none;
+  }
+
+  &__inner {
+    position: relative;
+    padding: rem(78) rem(46);
+    min-height: rem(438);
+    background: linear-gradient(94.85deg, #F7F8FA 0%, #DCDCDC 100%);
+    border-radius: rem(16);
+
+    @include mq($mt) {
+      padding: rem(64) rem(40);
+    }
+  }
+
+  &__title {
+    font-family: var(--font-title);
+    font-size: rem(70);
+    line-height: 1;
+    font-weight: 700;
+    color: cl(accent);
+    margin-bottom: rem(28);
+    text-transform: uppercase;
+
+    @include mq($mt) {
+      font-size: rem(56);
+    }
+  }
+
+  &__img {
+    display: block;
+    position: absolute;
+    max-width: 65%;
+    width: 100%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img {
+      width: 100%;
+    }
+
+    @include mq($ms) {
+      display: none;
+    }
+  }
+
+  &__benefits {
+    max-width: rem(460);
+
+    &-item {
+      position: relative;
+      padding-left: rem(30);
+      font-size: rem(18);
+      line-height: 1.2;
+      font-weight: 500;
+      color: cl(gray-300);
+
+      @include mq($mt) {
+        font-size: rem(16);
+      }
+
+      &::before {
+        content: '';
+        width: rem(20);
+        height: rem(20);
+        background: url('../img/icons/accepted.svg') center center / contain no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+$colors: (
+  "whte": #fff,
+  "blck": #000000,
+  "text": #262121,
+  "alt": #96979B,
+  "primary": #262121,
+  "accent": #E44900,
+  "accent-100": #F9ECE5,
+  "success": #3E8D50,
+  "gray-50": #F6F6F6,
+  "gray-100": #F4F5F7,
+  "gray-200": #D2D2D2,
+  "gray-300": #4E4E4E,
+  "gray-400": #757575,
+  "border": #DFDFDF,
+  "border-100": #E2E2E2,
+);
+
+
+:root {
+  @if $colors {
+    @each $key, $value in $colors {
+      --color-#{$key}: #{$value};
+      --color-#{$key}--rgb: #{hextorgb($value)};
+    }
+  }
+  --container-width: 1542px;
+  --container-pad: 20px;
+  --font-main: "InterTight", sans-serif;
+  --font-title: "MagistralBlackC", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+  --font-size: 16px;
+  --transition: 0.3s ease-in-out;
+}
+
+$xs: 479.98px;
+$s: 620px;
+$m: 767.98px;
+$ms: 1023.98px;
+$mt: 1279.98px;
+$l: 1365.98px;
+$ls: 1439.98px;
+$lt: 1599.98px;
+$xl: 1919.98px;
+$xls: 2559px;
+$tablet: 991.98px; // Планшеты
+$mobile: 767.98px; // Телефоны L
+$mobileSmall: 479.98px; // Телефоны S

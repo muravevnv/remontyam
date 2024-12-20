@@ -1,0 +1,102 @@
+.consultation-order {
+
+
+  &__inner {
+    padding: rem(64);
+    border-radius: rem(20);
+    background: url('../img/consultation-order/order-banner.jpg') center center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    @include mq($m)  {
+
+      padding: rem(32) rem(24) rem(30);
+      width: calc(100% + 32px);
+      margin: 0 -16px;
+      border-radius: 0;
+    }
+  }
+
+  &__title {
+    color: cl(whte);
+    font-size: rem(46);
+    font-weight: 700;
+    line-height: 1;
+    font-family: var(--font-title);
+    text-align: center;
+    padding: rem(12) rem(15);
+    background-color: cl(accent);
+    margin-bottom: rem(10);
+
+    @include mq($ms) {
+      font-size: rem(32);
+      padding: rem(8) rem(10);
+    }
+
+    @include mq($m)  {
+      font-size: rem(21);
+      padding: rem(4) rem(2) rem(4);
+    }
+  }
+
+  &__subtitle {
+    font-size: rem(29);
+    font-family: var(--font-title);
+    line-height: 1;
+    text-align: center;
+    margin-bottom: rem(35);
+    color: cl(whte);
+
+    @include mq($ms) {
+      font-size: rem(20);
+    }
+
+    @include mq($m)  {
+      font-size: rem(14);
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__form {
+    max-width: rem(830);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.8fr;
+    gap: rem(20);
+
+    @include mq($m) {
+      grid-template-columns: 1fr;
+      gap: rem(12);
+    }
+
+    &-input {
+      display: inline-block;
+      width: 100%;
+      background-color: cl(whte);
+      padding: rem(12) rem(20);
+      border-radius: rem(6);
+      font-size: rem(16);
+      line-height: 1;
+      color: cl(primary);
+      outline: none;
+      border: none;
+
+      @include mq($m) {
+        padding: rem(10) rem(16);
+        border-radius: rem(4);
+        font-size: rem(14);
+        line-height: 1.2;
+      }
+
+      &::placeholder {
+        color: cl(gray-400);
+      }
+    }
+
+    &-submit {
+
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.hero {
+
+  &__inner {
+    position: relative;
+    padding: rem(78) rem(46);
+    min-height: rem(438);
+  }
+
+  &__title {
+    font-family: var(--font-title);
+    font-size: rem(100);
+    font-weight: 700;
+    color: cl(accent);
+  }
+
+  &__img {
+    display: block;
+    position: absolute;
+    max-width: 60%;
+    width: 100%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+header.header 
+  .header-top
+    .container 
+      .header-top__adress 
+        +svg(17, 20, 'adress')
+        span Санкт-Петербург
+      nav.header-top__links 
+        a(href="#").header-top__link О компании
+        a(href="#").header-top__link Открыть бизнес
+        a(href="#").header-top__link Оплата
+        a(href="#").header-top__link Доставка
+        a(href="#").header-top__link Кредит и лизинг
+        a(href="#").header-top__link Статьи
+        a(href="#").header-top__link Контакты
+      a.header-top__tel(href="tel:+78001004196") 8 800 100 41 96
+  .header-main 
+    .container 
+      button(type="button").header-main__burger
+        +svg(24, 20, 'burger')
+      a(href="#").header-main__logo 
+        picture
+          source(srcset="./img/logo-sm.svg" media="(max-width: 1279.98px)")
+          img(src="./img/logo.svg", alt="") 
+      .header-main__cabinet.header-cabinet
+        button(type="button").header-cabinet__btn
+          +svg(24, 24, 'cabinet-user')
+        .header-cabinet__dropdown 
+          .header-cabinet__item 
+            +svg(8, 8, 'reg')
+            span Регистрация
+          .header-cabinet__item 
+            +svg(8, 8, 'user')
+            span Вход
+
+      .header-main__catalog-btn 
+        .header-main__catalog-btn-icon 
+          +svg(13, 8, 'catalog-lines')
+        .header-main__catalog-btn-title Каталог
+        .header-main__catalog-btn-arrow
+          +svg(11, 6, 'catalog-arrow')
+      .header-main__search 
+        .searchbar 
+          input.searchbar__input(type="text" placeholder="Прицеп для спецтехники")
+          button(type="button").searchbar__btn
+            +svg(20, 20, 'search')
+      .header-main__toolbars 
+        .header-main__toolbar   
+          .header-main__toolbar-icon(style="--icon: url('../img/icons/user.svg')") 
+            +svg(21, 21, 'user')
+          .header-main__toolbar-title Войти
+        .header-main__toolbar   
+          .header-main__toolbar-icon(style="--icon: url('../img/icons/favorite.svg')") 
+            +svg(23, 20, 'favorite')
+          .header-main__toolbar-title Избранное
+        .header-main__toolbar   
+          .header-main__toolbar-icon(style="--icon: url('../img/icons/compare.svg')") 
+            +svg(27, 21, 'compare')
+          .header-main__toolbar-title Сравнение
+        .header-main__toolbar   
+          .header-main__toolbar-icon(style="--icon: url('../img/icons/basket.svg')") 
+            +svg(21, 21, 'basket')
+          .header-main__toolbar-title Корзина
+  .header-bottom 
+    .container 
+      nav.header-menu 
+        ul.header-menu__list 
+          li.header-menu__item 
+            a(href="#") Комунальная техника
+          li.header-menu__item 
+            a(href="#") Дорожная техника
+          li.header-menu__item 
+            a(href="#") Грузоподъёмная техника
+          li.header-menu__item 
+            a(href="#") Навесное оборудование
+          li.header-menu__item 
+            a(href="#") Прицепы
+          li.header-menu__item 
+            a(href="#") Самоходные транспортёры
+          li.header-menu__item 
+            a(href="#") Асфальтобетонные заводы
+          li.header-menu__item 
+            a(href="#") Карьерная техника 

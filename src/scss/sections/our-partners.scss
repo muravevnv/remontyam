@@ -1,0 +1,32 @@
+.our-partners {
+
+
+  &__inner {
+    border-radius: rem(20);
+    padding: rem(32) rem(78);
+    box-shadow: 0px 2px 20px 0px #0000000D;
+    background-color: cl(whte);
+    position: relative;
+
+    @include mq($mt) {
+      padding: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+
+  &__slider {
+    overflow: hidden;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(12);
+
+    &-img {
+
+    }
+  }
+}

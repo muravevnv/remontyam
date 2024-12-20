@@ -1,0 +1,68 @@
+.section {
+  padding: rem(70) 0;
+
+  @include mq($ms) {
+    padding: rem(40) 0;
+  }
+
+  + .section {
+    padding-top: 0;
+
+    @include mq($ms) {
+      padding-top: rem(40);
+    }
+  }
+}
+
+.h2 {
+  font-size: rem(25);
+  line-height: 1;
+  font-weight: 700;
+
+  @include mq($ms) {
+    font-size: rem(16);
+  }
+}
+
+.heading-title {
+  position: relative;
+  padding-bottom: rem(13);
+
+  @include mq($ms) {
+    padding-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: rem(102);
+    height: rem(3);
+    background-color: cl(accent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.slider-control {
+  width: rem(55);
+  height: rem(55);
+  border-radius: 50%;
+  background-color: cl(whte);
+  border: 1px solid #CDCDCD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease-in;
+
+  @media(any-hover: hover) {
+
+    &:hover {
+      border-color: cl(accent);
+      background-color: cl(accent-100);
+    }
+  }
+}

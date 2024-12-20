@@ -1,0 +1,47 @@
+@use 'sass:math';
+@use 'sass:meta';
+
+// Add Fonts
+@mixin font-face($name, $file, $weight: 400, $style: normal) {
+  @font-face {
+    font-family: '#{$name}';
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+    src: local('#{$file}'), url('../fonts/#{$file}.ttf') format('truetype');
+  }
+}
+
+// @require $breakpoints
+@mixin mq($canvas, $canvas2: null) {
+  @if $canvas {
+    @media only screen and (max-width: $canvas) {
+      @content;
+    }
+  }
+}
+
+//hextorgb
+@function hextorgb($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+//color fucn
+@function cl($name, $opacity: false) {
+  @if $opacity {
+    @return rgba(var(--color-#{unquote($name)}--rgb), $opacity);
+  } @else {
+    @return var(--color-#{unquote($name)});
+  }
+}
+
+@function rem($px, $current: 16) {
+  $result: math.div($px, $current) + rem;
+  @return $result;
+}
+
+// Em
+@function em($px, $current: 16) {
+  $result: math.div($px, $current) + em;
+  @return $result;
+}

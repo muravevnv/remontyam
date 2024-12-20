@@ -1,0 +1,90 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: auto; 
+  padding: rem(15);
+  border: 1px solid cl(accent);
+  background-color: cl(accent);
+  color: cl(whte);
+  font-size: rem(16);
+  line-height: 1;
+  font-weight: 600;
+  border-radius: rem(10);
+  cursor: pointer;
+  transition: .25s ease-in-out;
+
+  @include mq($m) {
+    font-size: rem(12);
+    padding: rem(8) rem(12);
+    border-radius: rem(4);
+  }
+
+  svg {
+    color: currentColor;
+
+    @include mq($m) {
+      display: block;
+      width: rem(14);
+      height: rem(14);
+    }
+  }
+
+  @media(any-hover: hover) {
+    &:hover {
+      background-color: cl(accent-100);
+      border-color: cl(accent-100);
+      color: cl(accent);
+    }
+  }
+
+  &--wide {
+    width: 100%;
+  }
+
+  &--xl {
+    @include mq($m) {
+      font-size: rem(12);
+      padding: rem(11);
+    }
+  }
+
+  &--outline {
+    background-color: cl(whte);
+    color: cl(accent);
+    border-color: cl(accent);
+
+    @media(any-hover: hover) {
+      &:hover {
+        background-color: cl(accent-100);
+        border-color: cl(accent);
+      }
+    }
+  }
+}
+
+.btn-round {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto; 
+  border: 1px solid cl(accent-100);
+  background-color: cl(accent-100);
+  padding: rem(11) rem(23);
+  color: cl(accent);
+  font-size: rem(14);
+  line-height: 1;
+  font-weight: 600;
+  border-radius: rem(20);
+  cursor: pointer;
+  transition: .25s ease-in-out;
+
+  @media(any-hover: hover) {
+    &:hover {
+      background-color: cl(accent);
+      border-color: cl(accent);
+      color: cl(whte);
+    }
+  }
+}

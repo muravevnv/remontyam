@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  include mixins/_mixins
+  include includes/head
+  +head('Title')
+  body
+    include components/header
+    main
+      .container
+        h3(style="margin-bottom: 24px; font-size: 32px; font-weight: 500") Страницы
+        ul 
+          li 
+            a(href="home.html" style="margin-bottom: 16px;") Главная
+    include components/footer
+    include includes/scripts

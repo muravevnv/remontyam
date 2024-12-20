@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  include mixins/_mixins
+  include includes/head
+  +head('Title')
+  body
+    include components/header
+    main
+      include sections/hero/hero
+      include sections/popular/popular
+      include sections/products-slider/products-slider
+      include sections/products-slider/products-slider
+      include sections/consultation-order/consultation-order
+      include sections/why-us/why-us
+      include sections/our-partners/our-partners
+      include sections/blog/blog
+      include sections/geography/geography
+    include includes/scripts

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Title</title>
+    </head>
+  <body>
+    <header class="header"> 
+      <div class="header-top">
+        <div class="container"> 
+          <div class="header-top__adress"> 
+              <svg width="17" height="20">
+                <use xlink:href="img/icons/icons.svg#adress"></use>
+              </svg><span>Санкт-Петербург</span>
+          </div>
+          <nav class="header-top__links"> <a class="header-top__link" href="#">О компании</a><a class="header-top__link" href="#">Открыть бизнес</a><a class="header-top__link" href="#">Оплата</a><a class="header-top__link" href="#">Доставка</a><a class="header-top__link" href="#">Кредит и лизинг</a><a class="header-top__link" href="#">Статьи</a><a class="header-top__link" href="#">Контакты</a></nav><a class="header-top__tel" href="tel:+78001004196">8 800 100 41 96</a>
+        </div>
+      </div>
+      <div class="header-main"> 
+        <div class="container"> 
+          <button class="header-main__burger" type="button">
+              <svg width="24" height="20">
+                <use xlink:href="img/icons/icons.svg#burger"></use>
+              </svg>
+          </button><a class="header-main__logo" href="#"> 
+            <picture>
+              <source srcset="./img/logo-sm.svg" media="(max-width: 1279.98px)"><img src="./img/logo.svg" alt="">
+            </picture></a>
+          <div class="header-main__cabinet header-cabinet">
+            <button class="header-cabinet__btn" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#cabinet-user"></use>
+                </svg>
+            </button>
+            <div class="header-cabinet__dropdown"> 
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#reg"></use>
+                  </svg><span>Регистрация</span>
+              </div>
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#user"></use>
+                  </svg><span>Вход</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-main__catalog-btn"> 
+            <div class="header-main__catalog-btn-icon"> 
+                <svg width="13" height="8">
+                  <use xlink:href="img/icons/icons.svg#catalog-lines"></use>
+                </svg>
+            </div>
+            <div class="header-main__catalog-btn-title">Каталог</div>
+            <div class="header-main__catalog-btn-arrow">
+                <svg width="11" height="6">
+                  <use xlink:href="img/icons/icons.svg#catalog-arrow"></use>
+                </svg>
+            </div>
+          </div>
+          <div class="header-main__search"> 
+            <div class="searchbar"> 
+              <input class="searchbar__input" type="text" placeholder="Прицеп для спецтехники">
+              <button class="searchbar__btn" type="button">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/icons/icons.svg#search"></use>
+                  </svg>
+              </button>
+            </div>
+          </div>
+          <div class="header-main__toolbars"> 
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/user.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#user"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Войти</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/favorite.svg')"> 
+                  <svg width="23" height="20">
+                    <use xlink:href="img/icons/icons.svg#favorite"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Избранное</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/compare.svg')"> 
+                  <svg width="27" height="21">
+                    <use xlink:href="img/icons/icons.svg#compare"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Сравнение</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/basket.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#basket"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Корзина</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom"> 
+        <div class="container"> 
+          <nav class="header-menu"> 
+            <ul class="header-menu__list"> 
+              <li class="header-menu__item"> <a href="#">Комунальная техника</a></li>
+              <li class="header-menu__item"> <a href="#">Дорожная техника</a></li>
+              <li class="header-menu__item"> <a href="#">Грузоподъёмная техника</a></li>
+              <li class="header-menu__item"> <a href="#">Навесное оборудование</a></li>
+              <li class="header-menu__item"> <a href="#">Прицепы</a></li>
+              <li class="header-menu__item"> <a href="#">Самоходные транспортёры</a></li>
+              <li class="header-menu__item"> <a href="#">Асфальтобетонные заводы</a></li>
+              <li class="header-menu__item"> <a href="#">Карьерная техника </a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero section"> 
+        <div class="container"> 
+          <div class="hero__inner"> 
+            <div class="hero__info"> 
+              <h1 class="hero__title">продажа<br>спецтехники</h1>
+              <div class="hero__benefits"> 
+                <div class="hero__benefits-item">Продаём технику от производителя с доставкой по всей России и стран СНГ</div>
+                <div class="hero__benefits-item">Изготавливаем спецтехнику для ямочного ремонта асфальта</div>
+              </div>
+            </div>
+            <picture class="hero__img"> <picture><source srcset="./img/hero/hero.webp" type="image/webp"><img src="./img/hero/hero.webp" alt=""></picture></picture>
+          </div>
+        </div>
+      </section>
+      <div class="popular section"> 
+        <div class="container"> 
+          <div class="popular__title heading-title h2">Популярные категории</div>
+          <div class="popular__categories"> <a class="popular__category" href="#"> 
+              <picture class="popular__category-img"> 
+                <source srcset="./img/popular/popular-01.webp" type="image/webp"><img src="./img/popular/popular-01.webp" alt="">
+              </picture>
+              <div class="popular__category-title">Комунальная техника</div></a><a class="popular__category" href="#"> 
+              <picture class="popular__category-img"> 
+                <source srcset="./img/popular/popular-02.webp" type="image/webp"><img src="./img/popular/popular-02.webp" alt="">
+              </picture>
+              <div class="popular__category-title">Комунальная техника</div></a><a class="popular__category" href="#"> 
+              <picture class="popular__category-img"> 
+                <source srcset="./img/popular/popular-03.webp" type="image/webp"><img src="./img/popular/popular-03.webp" alt="">
+              </picture>
+              <div class="popular__category-title">Комунальная техника</div></a><a class="popular__category" href="#"> 
+              <picture class="popular__category-img"> 
+                <source srcset="./img/popular/popular-04.webp" type="image/webp"><img src="./img/popular/popular-04.webp" alt="">
+              </picture>
+              <div class="popular__category-title">Комунальная техника</div></a><a class="popular__category" href="#"> 
+              <picture class="popular__category-img"> 
+                <source srcset="./img/popular/popular-05.webp" type="image/webp"><img src="./img/popular/popular-05.webp" alt="">
+              </picture>
+              <div class="popular__category-title">Комунальная техника</div></a><a class="popular__category" href="#"> 
+              <picture class="popular__category-img"> 
+                <source srcset="./img/popular/popular-06.webp" type="image/webp"><img src="./img/popular/popular-06.webp" alt="">
+              </picture>
+              <div class="popular__category-title">Комунальная техника</div></a><a class="popular__category" href="#"> 
+              <picture class="popular__category-img"> 
+                <source srcset="./img/popular/popular-07.webp" type="image/webp"><img src="./img/popular/popular-07.webp" alt="">
+              </picture>
+              <div class="popular__category-title">Комунальная техника</div></a><a class="popular__category" href="#"> 
+              <picture class="popular__category-img"> 
+                <source srcset="./img/popular/popular-01.webp" type="image/webp"><img src="./img/popular/popular-01.webp" alt="">
+              </picture>
+              <div class="popular__category-title">Комунальная техника</div></a><a class="popular__category" href="#"> 
+              <picture class="popular__category-img"> 
+                <source srcset="./img/popular/popular-05.webp" type="image/webp"><img src="./img/popular/popular-05.webp" alt="">
+              </picture>
+              <div class="popular__category-title">Комунальная техника</div></a><a class="popular__category" href="#"> 
+              <picture class="popular__category-img"> 
+                <source srcset="./img/popular/popular-03.webp" type="image/webp"><img src="./img/popular/popular-03.webp" alt="">
+              </picture>
+              <div class="popular__category-title">Комунальная техника</div></a></div>
+        </div>
+      </div>
+      <div class="products-slider section js-products-slider-container">
+        <div class="container"> 
+          <div class="products-slider__head">
+            <div class="products-slider__title h2">Топ продаж</div><a class="products-slider__show-more btn-round" href="#">Смотреть все</a>
+          </div>
+          <div class="products-slider__inner"> 
+            <button class="products-slider__prev slider-control js-products-slider-prev" type="button">
+                <svg width="24" height="12">
+                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+                </svg>
+            </button>
+            <button class="products-slider__next slider-control js-products-slider-next" type="button">
+                <svg width="24" height="12">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+            </button>
+            <div class="products-slider__wrapper js-products-slider">
+              <div class="swiper-wrapper"> 
+                <div class="products-slider__item swiper-slide"> 
+                  <picture class="products-slider__item-img"> 
+                    <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                  </picture>
+                  <div class="products-slider__item-info"> 
+                    <div class="products-slider__item-price">1  500 000 ₽</div>
+                    <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                    <div class="products-slider__item-available">В наличии</div>
+                    <button class="products-slider__item-btn btn btn--wide" type="button">
+                        <svg width="15" height="15">
+                          <use xlink:href="img/icons/icons.svg#basket"></use>
+                        </svg><span>В корзину</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="products-slider__item swiper-slide"> 
+                  <picture class="products-slider__item-img"> 
+                    <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                  </picture>
+                  <div class="products-slider__item-info"> 
+                    <div class="products-slider__item-price">1  500 000 ₽</div>
+                    <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                    <div class="products-slider__item-available">В наличии</div>
+                    <button class="products-slider__item-btn btn btn--wide" type="button">
+                        <svg width="15" height="15">
+                          <use xlink:href="img/icons/icons.svg#basket"></use>
+                        </svg><span>В корзину</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="products-slider__item swiper-slide"> 
+                  <picture class="products-slider__item-img"> 
+                    <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                  </picture>
+                  <div class="products-slider__item-info"> 
+                    <div class="products-slider__item-price">1  500 000 ₽</div>
+                    <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                    <div class="products-slider__item-available">В наличии</div>
+                    <button class="products-slider__item-btn btn btn--wide" type="button">
+                        <svg width="15" height="15">
+                          <use xlink:href="img/icons/icons.svg#basket"></use>
+                        </svg><span>В корзину</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="products-slider__item swiper-slide"> 
+                  <picture class="products-slider__item-img"> 
+                    <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                  </picture>
+                  <div class="products-slider__item-info"> 
+                    <div class="products-slider__item-price">1  500 000 ₽</div>
+                    <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                    <div class="products-slider__item-available">В наличии</div>
+                    <button class="products-slider__item-btn btn btn--wide" type="button">
+                        <svg width="15" height="15">
+                          <use xlink:href="img/icons/icons.svg#basket"></use>
+                        </svg><span>В корзину</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="products-slider__item swiper-slide"> 
+                  <picture class="products-slider__item-img"> 
+                    <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                  </picture>
+                  <div class="products-slider__item-info"> 
+                    <div class="products-slider__item-price">1  500 000 ₽</div>
+                    <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                    <div class="products-slider__item-available">В наличии</div>
+                    <button class="products-slider__item-btn btn btn--wide" type="button">
+                        <svg width="15" height="15">
+                          <use xlink:href="img/icons/icons.svg#basket"></use>
+                        </svg><span>В корзину</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="products-slider__item swiper-slide"> 
+                  <picture class="products-slider__item-img"> 
+                    <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                  </picture>
+                  <div class="products-slider__item-info"> 
+                    <div class="products-slider__item-price">1  500 000 ₽</div>
+                    <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                    <div class="products-slider__item-available">В наличии</div>
+                    <button class="products-slider__item-btn btn btn--wide" type="button">
+                        <svg width="15" height="15">
+                          <use xlink:href="img/icons/icons.svg#basket"></use>
+                        </svg><span>В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products-slider section js-products-slider-container">
+        <div class="container"> 
+          <div class="products-slider__head">
+            <div class="products-slider__title h2">Топ продаж</div><a class="products-slider__show-more btn-round" href="#">Смотреть все</a>
+          </div>
+          <div class="products-slider__inner"> 
+            <button class="products-slider__prev slider-control js-products-slider-prev" type="button">
+                <svg width="24" height="12">
+                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+                </svg>
+            </button>
+            <button class="products-slider__next slider-control js-products-slider-next" type="button">
+                <svg width="24" height="12">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+            </button>
+            <div class="products-slider__wrapper js-products-slider">
+              <div class="swiper-wrapper"> 
+                <div class="products-slider__item swiper-slide"> 
+                  <picture class="products-slider__item-img"> 
+                    <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                  </picture>
+                  <div class="products-slider__item-info"> 
+                    <div class="products-slider__item-price">1  500 000 ₽</div>
+                    <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                    <div class="products-slider__item-available">В наличии</div>
+                    <button class="products-slider__item-btn btn btn--wide" type="button">
+                        <svg width="15" height="15">
+                          <use xlink:href="img/icons/icons.svg#basket"></use>
+                        </svg><span>В корзину</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="products-slider__item swiper-slide"> 
+                  <picture class="products-slider__item-img"> 
+                    <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                  </picture>
+                  <div class="products-slider__item-info"> 
+                    <div class="products-slider__item-price">1  500 000 ₽</div>
+                    <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                    <div class="products-slider__item-available">В наличии</div>
+                    <button class="products-slider__item-btn btn btn--wide" type="button">
+                        <svg width="15" height="15">
+                          <use xlink:href="img/icons/icons.svg#basket"></use>
+                        </svg><span>В корзину</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="products-slider__item swiper-slide"> 
+                  <picture class="products-slider__item-img"> 
+                    <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                  </picture>
+                  <div class="products-slider__item-info"> 
+                    <div class="products-slider__item-price">1  500 000 ₽</div>
+                    <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                    <div class="products-slider__item-available">В наличии</div>
+                    <button class="products-slider__item-btn btn btn--wide" type="button">
+                        <svg width="15" height="15">
+                          <use xlink:href="img/icons/icons.svg#basket"></use>
+                        </svg><span>В корзину</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="products-slider__item swiper-slide"> 
+                  <picture class="products-slider__item-img"> 
+                    <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                  </picture>
+                  <div class="products-slider__item-info"> 
+                    <div class="products-slider__item-price">1  500 000 ₽</div>
+                    <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                    <div class="products-slider__item-available">В наличии</div>
+                    <button class="products-slider__item-btn btn btn--wide" type="button">
+                        <svg width="15" height="15">
+                          <use xlink:href="img/icons/icons.svg#basket"></use>
+                        </svg><span>В корзину</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="products-slider__item swiper-slide"> 
+                  <picture class="products-slider__item-img"> 
+                    <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                  </picture>
+                  <div class="products-slider__item-info"> 
+                    <div class="products-slider__item-price">1  500 000 ₽</div>
+                    <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                    <div class="products-slider__item-available">В наличии</div>
+                    <button class="products-slider__item-btn btn btn--wide" type="button">
+                        <svg width="15" height="15">
+                          <use xlink:href="img/icons/icons.svg#basket"></use>
+                        </svg><span>В корзину</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="products-slider__item swiper-slide"> 
+                  <picture class="products-slider__item-img"> 
+                    <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                  </picture>
+                  <div class="products-slider__item-info"> 
+                    <div class="products-slider__item-price">1  500 000 ₽</div>
+                    <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                    <div class="products-slider__item-available">В наличии</div>
+                    <button class="products-slider__item-btn btn btn--wide" type="button">
+                        <svg width="15" height="15">
+                          <use xlink:href="img/icons/icons.svg#basket"></use>
+                        </svg><span>В корзину</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="consultation-order section"> 
+        <div class="container"> 
+          <div class="consultation-order__inner"> 
+            <div class="consultation-order__title">Оставьте заявку</div>
+            <div class="consultation-order__subtitle">чтобы получить консультацию</div>
+            <form class="consultation-order__form" action="#">
+              <input class="consultation-order__form-input" type="text" placeholder="Имя">
+              <input class="consultation-order__form-input" type="text" placeholder="Телефон">
+              <button class="consultation-order__form-submit btn btn--xl" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="why-us section"> 
+        <div class="why-us__container container"> 
+          <div class="why-us__info"> <a class="why-us__logo" href="#"><img src="./img/logo-wide.svg" alt=""></a>
+            <div class="why-us__desc">  
+              <p>Компания «РЕМОНТЯМ» предлагает купить дорожно-строительную технику и спецоборудование для укладки асфальтобетонного покрытия по выгодным ценам и условиях. Мы реализуем продукцию собственного производства, которая изготавливается с применением инновационных технологий и требования государственных стандартов в области строительства дорог.</p>
+              <p>География поставок включает всю Россию, а доставка осуществляется во все крупные российские города. На нашем официальном сайте вы можете найти основные характеристики техники и выгодные решения для приобретения, включая лизинг.</p>
+            </div>
+            <div class="why-us__action"> <a class="why-us__btn btn btn--wide" href="#">Показать больше</a><a class="why-us__btn btn btn--outline btn--wide" href="#">Подробнее</a></div>
+          </div>
+          <div class="why-us__benefits"> 
+            <div class="why-us__benefits-title heading-title h2">Почему выбирают РЕМОНТЯМ</div>
+            <div class="why-us__benefits-list">
+              <div class="why-us__benefit"> 
+                <div class="why-us__benefit-icon"> 
+                    <svg width="22" height="22">
+                      <use xlink:href="img/icons/icons.svg#star"></use>
+                    </svg>
+                </div>
+                <div class="why-us__benefit-info">
+                  <div class="why-us__benefit-title">Широкий ассортимент</div><a class="why-us__benefit-link" href="#">В каталог</a>
+                </div>
+              </div>
+              <div class="why-us__benefit"> 
+                <div class="why-us__benefit-icon"> 
+                    <svg width="22" height="22">
+                      <use xlink:href="img/icons/icons.svg#star"></use>
+                    </svg>
+                </div>
+                <div class="why-us__benefit-info">
+                  <div class="why-us__benefit-title">Оперативность сделки</div><a class="why-us__benefit-link" href="#">В каталог</a>
+                </div>
+              </div>
+              <div class="why-us__benefit"> 
+                <div class="why-us__benefit-icon"> 
+                    <svg width="22" height="22">
+                      <use xlink:href="img/icons/icons.svg#star"></use>
+                    </svg>
+                </div>
+                <div class="why-us__benefit-info">
+                  <div class="why-us__benefit-title">Более 300 отгрузок в год</div><a class="why-us__benefit-link" href="#">В каталог</a>
+                </div>
+              </div>
+              <div class="why-us__benefit"> 
+                <div class="why-us__benefit-icon"> 
+                    <svg width="22" height="22">
+                      <use xlink:href="img/icons/icons.svg#star"></use>
+                    </svg>
+                </div>
+                <div class="why-us__benefit-info">
+                  <div class="why-us__benefit-title">Обслуживаем РФ И СНГ</div><a class="why-us__benefit-link" href="#">В каталог</a>
+                </div>
+              </div>
+              <div class="why-us__benefit"> 
+                <div class="why-us__benefit-icon"> 
+                    <svg width="22" height="22">
+                      <use xlink:href="img/icons/icons.svg#star"></use>
+                    </svg>
+                </div>
+                <div class="why-us__benefit-info">
+                  <div class="why-us__benefit-title">Отсрочка платежа</div><a class="why-us__benefit-link" href="#">В каталог</a>
+                </div>
+              </div>
+              <div class="why-us__benefit"> 
+                <div class="why-us__benefit-icon"> 
+                    <svg width="22" height="22">
+                      <use xlink:href="img/icons/icons.svg#star"></use>
+                    </svg>
+                </div>
+                <div class="why-us__benefit-info">
+                  <div class="why-us__benefit-title">Сервисная служба</div><a class="why-us__benefit-link" href="#">В каталог</a>
+                </div>
+              </div>
+              <div class="why-us__benefit"> 
+                <div class="why-us__benefit-icon"> 
+                    <svg width="22" height="22">
+                      <use xlink:href="img/icons/icons.svg#star"></use>
+                    </svg>
+                </div>
+                <div class="why-us__benefit-info">
+                  <div class="why-us__benefit-title">Лизинг</div><a class="why-us__benefit-link" href="#">В каталог</a>
+                </div>
+              </div>
+              <div class="why-us__benefit"> 
+                <div class="why-us__benefit-icon"> 
+                    <svg width="22" height="22">
+                      <use xlink:href="img/icons/icons.svg#star"></use>
+                    </svg>
+                </div>
+                <div class="why-us__benefit-info">
+                  <div class="why-us__benefit-title">Доставка</div><a class="why-us__benefit-link" href="#">В каталог</a>
+                </div>
+              </div>
+              <div class="why-us__benefit"> 
+                <div class="why-us__benefit-icon"> 
+                    <svg width="22" height="22">
+                      <use xlink:href="img/icons/icons.svg#star"></use>
+                    </svg>
+                </div>
+                <div class="why-us__benefit-info">
+                  <div class="why-us__benefit-title">Участие в тендерах</div><a class="why-us__benefit-link" href="#">В каталог</a>
+                </div>
+              </div>
+              <div class="why-us__benefit"> 
+                <div class="why-us__benefit-icon"> 
+                    <svg width="22" height="22">
+                      <use xlink:href="img/icons/icons.svg#star"></use>
+                    </svg>
+                </div>
+                <div class="why-us__benefit-info">
+                  <div class="why-us__benefit-title">Работаем по пост оплате</div><a class="why-us__benefit-link" href="#">В каталог</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our-partners section"> 
+        <div class="container"> 
+          <div class="our-partners__inner"> 
+            <div class="our-partners__slider js-partners-slider"> 
+              <div class="swiper-wrapper"> 
+                <div class="our-partners__item swiper-slide"> 
+                  <picture class="our-partners__item-img"> 
+                    <source srcset="./img/our-partners/logo-01.webp" type="image/webp"><img src="./img/our-partners/logo-01.webp" alt="">
+                  </picture>
+                </div>
+                <div class="our-partners__item swiper-slide"> 
+                  <picture class="our-partners__item-img"> 
+                    <source srcset="./img/our-partners/logo-02.webp" type="image/webp"><img src="./img/our-partners/logo-02.webp" alt="">
+                  </picture>
+                </div>
+                <div class="our-partners__item swiper-slide"> 
+                  <picture class="our-partners__item-img"> 
+                    <source srcset="./img/our-partners/logo-03.webp" type="image/webp"><img src="./img/our-partners/logo-03.webp" alt="">
+                  </picture>
+                </div>
+                <div class="our-partners__item swiper-slide"> 
+                  <picture class="our-partners__item-img"> 
+                    <source srcset="./img/our-partners/logo-04.webp" type="image/webp"><img src="./img/our-partners/logo-04.webp" alt="">
+                  </picture>
+                </div>
+                <div class="our-partners__item swiper-slide"> 
+                  <picture class="our-partners__item-img"> 
+                    <source srcset="./img/our-partners/logo-05.webp" type="image/webp"><img src="./img/our-partners/logo-05.webp" alt="">
+                  </picture>
+                </div>
+                <div class="our-partners__item swiper-slide"> 
+                  <picture class="our-partners__item-img"> 
+                    <source srcset="./img/our-partners/logo-06.webp" type="image/webp"><img src="./img/our-partners/logo-06.webp" alt="">
+                  </picture>
+                </div>
+                <div class="our-partners__item swiper-slide"> 
+                  <picture class="our-partners__item-img"> 
+                    <source srcset="./img/our-partners/logo-01.webp" type="image/webp"><img src="./img/our-partners/logo-01.webp" alt="">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog section"> 
+        <div class="container"> 
+          <div class="blog__head"> 
+            <div class="blog__categories"> 
+              <button class="blog__categories-item is-active" type="button">Новости</button>
+              <button class="blog__categories-item" type="button">Статьи</button>
+              <button class="blog__categories-item" type="button">Обзоры</button>
+            </div><a class="blog__show-more btn-round" href="#">К архиву</a>
+          </div>
+          <div class="blog__list"> <a class="blog__item" href="#">
+              <picture class="blog__item-img"> 
+                <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+              </picture>
+              <div class="blog__item-date">04.11.2024</div>
+              <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+              <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
+              <picture class="blog__item-img"> 
+                <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+              </picture>
+              <div class="blog__item-date">04.11.2024</div>
+              <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+              <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
+              <picture class="blog__item-img"> 
+                <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+              </picture>
+              <div class="blog__item-date">04.11.2024</div>
+              <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+              <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
+              <picture class="blog__item-img"> 
+                <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+              </picture>
+              <div class="blog__item-date">04.11.2024</div>
+              <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+              <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a></div>
+        </div>
+      </div>
+      <div class="geography section">
+        <div class="geography__wrapper">
+          <div class="container"> 
+            <div class="geography__inner">
+              <div class="geography__title heading-title h2">География поставок</div>
+              <picture class="geography__img"> 
+                <source srcset="./img/geography/geography.webp" type="image/webp"><img src="./img/geography/geography.webp" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
