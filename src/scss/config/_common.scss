@@ -1,32 +1,33 @@
 .section {
-  padding: rem(70) 0;
+  padding: 70px 0;
+  font-size: 16px;
 
   @include mq($ms) {
-    padding: rem(40) 0;
+    padding: 40px 0;
   }
 
   + .section {
     padding-top: 0;
 
     @include mq($ms) {
-      padding-top: rem(40);
+      padding-top: 40px;
     }
   }
 }
 
 .h2 {
-  font-size: rem(25);
+  font-size: 24px;
   line-height: 1;
   font-weight: 700;
 
   @include mq($ms) {
-    font-size: rem(16);
+    font-size: 16px;
   }
 }
 
 .heading-title {
   position: relative;
-  padding-bottom: rem(13);
+  padding-bottom: 13px;
 
   @include mq($ms) {
     padding-bottom: 0;
@@ -38,8 +39,8 @@
 
   &::before {
     content: '';
-    width: rem(102);
-    height: rem(3);
+    width: 102px;
+    height: 3px;
     background-color: cl(accent);
     position: absolute;
     bottom: 0;
@@ -48,8 +49,8 @@
 }
 
 .slider-control {
-  width: rem(55);
-  height: rem(55);
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   background-color: cl(whte);
   border: 1px solid #CDCDCD;

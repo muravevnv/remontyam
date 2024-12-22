@@ -2,8 +2,8 @@
 
 
   &__inner {
-    border-radius: rem(20);
-    padding: rem(32) rem(78);
+    border-radius: 20px;
+    padding: 32px 78px;
     box-shadow: 0px 2px 20px 0px #0000000D;
     background-color: cl(whte);
     position: relative;
@@ -15,6 +15,29 @@
     }
   }
 
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+
+    @include mq($ls) {
+      display: none;
+    }
+  }
+
+  &__prev {
+    left: -90px;
+  }
+
+  &__next {
+
+    right: -90px;
+  }
+
   &__slider {
     overflow: hidden;
   }
@@ -23,7 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: rem(12);
+    padding: 12px;
 
     &-img {
 

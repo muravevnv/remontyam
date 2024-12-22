@@ -1,6 +1,10 @@
 .our-partners.section 
-  .container 
+  .container-wide 
     .our-partners__inner 
+      button(type="button").our-partners__prev.slider-control.js-partners-slider-prev
+        +svg(24, 12, 'arrow-left')
+      button(type="button").our-partners__next.slider-control.js-partners-slider-next
+        +svg(24, 12, 'arrow-right')
       .our-partners__slider.js-partners-slider 
         .swiper-wrapper 
           .our-partners__item.swiper-slide 

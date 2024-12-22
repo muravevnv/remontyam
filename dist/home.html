@@ -11,7 +11,7 @@
   <body>
     <header class="header"> 
       <div class="header-top">
-        <div class="container"> 
+        <div class="container-wide"> 
           <div class="header-top__adress"> 
               <svg width="17" height="20">
                 <use xlink:href="img/icons/icons.svg#adress"></use>
@@ -21,8 +21,8 @@
         </div>
       </div>
       <div class="header-main"> 
-        <div class="container"> 
-          <button class="header-main__burger" type="button">
+        <div class="container-wide"> 
+          <button class="header-main__burger js-header-burger" type="button">
               <svg width="24" height="20">
                 <use xlink:href="img/icons/icons.svg#burger"></use>
               </svg>
@@ -31,20 +31,20 @@
               <source srcset="./img/logo-sm.svg" media="(max-width: 1279.98px)"><img src="./img/logo.svg" alt="">
             </picture></a>
           <div class="header-main__cabinet header-cabinet">
-            <button class="header-cabinet__btn" type="button">
+            <button class="header-cabinet__btn js-header-cabinet-btn" type="button">
                 <svg width="24" height="24">
                   <use xlink:href="img/icons/icons.svg#cabinet-user"></use>
                 </svg>
             </button>
-            <div class="header-cabinet__dropdown"> 
+            <div class="header-cabinet__dropdown js-header-cabinet-dropdown"> 
               <div class="header-cabinet__item"> 
                   <svg width="8" height="8">
-                    <use xlink:href="img/icons/icons.svg#reg"></use>
+                    <use xlink:href="img/icons/icons.svg#reg-plus"></use>
                   </svg><span>Регистрация</span>
               </div>
               <div class="header-cabinet__item"> 
                   <svg width="8" height="8">
-                    <use xlink:href="img/icons/icons.svg#user"></use>
+                    <use xlink:href="img/icons/icons.svg#c-user"></use>
                   </svg><span>Вход</span>
               </div>
             </div>
@@ -104,12 +104,13 @@
                   </svg>
               </div>
               <div class="header-main__toolbar-title">Корзина</div>
+              <div class="header-main__toolbar-counter">5</div>
             </div>
           </div>
         </div>
       </div>
       <div class="header-bottom"> 
-        <div class="container"> 
+        <div class="container-wide"> 
           <nav class="header-menu"> 
             <ul class="header-menu__list"> 
               <li class="header-menu__item"> <a href="#">Комунальная техника</a></li>
@@ -124,10 +125,36 @@
           </nav>
         </div>
       </div>
+      <div class="header-menu js-header-menu">
+        <div class="header-menu__overlay js-header-menu-close"></div>
+        <div class="header-menu__inner"> 
+          <button class="header-menu__close js-header-menu-close" type="button">
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#close"></use>
+              </svg>
+          </button>
+          <div class="header-menu__list"> 
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">О компании</a></li>
+            <li class="header-menu__item"><a href="#">Открыть бизнес</a></li>
+            <li class="header-menu__item"><a href="#">Оплата</a></li>
+            <li class="header-menu__item"><a href="#">Доставка</a></li>
+            <li class="header-menu__item"><a href="#">Кредит и лизинг</a></li>
+            <li class="header-menu__item"><a href="#"> Статьи</a></li>
+            <li class="header-menu__item"><a href="#">Контакты</a></li>
+          </div>
+          <div class="header-menu__tel"> 
+              <svg width="8" height="8">
+                <use xlink:href="img/icons/icons.svg#tel"></use>
+              </svg><span>8 800 100 41 96</span>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <section class="hero section"> 
-        <div class="container"> 
+        <div class="container-wide"> 
           <div class="hero__inner"> 
             <div class="hero__info"> 
               <h1 class="hero__title">продажа<br>спецтехники</h1>
@@ -141,7 +168,7 @@
         </div>
       </section>
       <div class="popular section"> 
-        <div class="container"> 
+        <div class="container-wide">
           <div class="popular__title heading-title h2">Популярные категории</div>
           <div class="popular__categories"> <a class="popular__category" href="#"> 
               <picture class="popular__category-img"> 
@@ -187,7 +214,7 @@
         </div>
       </div>
       <div class="products-slider section js-products-slider-container">
-        <div class="container"> 
+        <div class="container-wide"> 
           <div class="products-slider__head">
             <div class="products-slider__title h2">Топ продаж</div><a class="products-slider__show-more btn-round" href="#">Смотреть все</a>
           </div>
@@ -300,7 +327,7 @@
         </div>
       </div>
       <div class="products-slider section js-products-slider-container">
-        <div class="container"> 
+        <div class="container-wide"> 
           <div class="products-slider__head">
             <div class="products-slider__title h2">Топ продаж</div><a class="products-slider__show-more btn-round" href="#">Смотреть все</a>
           </div>
@@ -413,7 +440,7 @@
         </div>
       </div>
       <div class="consultation-order section"> 
-        <div class="container"> 
+        <div class="container-wide"> 
           <div class="consultation-order__inner"> 
             <div class="consultation-order__title">Оставьте заявку</div>
             <div class="consultation-order__subtitle">чтобы получить консультацию</div>
@@ -426,7 +453,7 @@
         </div>
       </div>
       <div class="why-us section"> 
-        <div class="why-us__container container"> 
+        <div class="why-us__container container-wide"> 
           <div class="why-us__info"> <a class="why-us__logo" href="#"><img src="./img/logo-wide.svg" alt=""></a>
             <div class="why-us__desc">  
               <p>Компания «РЕМОНТЯМ» предлагает купить дорожно-строительную технику и спецоборудование для укладки асфальтобетонного покрытия по выгодным ценам и условиях. Мы реализуем продукцию собственного производства, которая изготавливается с применением инновационных технологий и требования государственных стандартов в области строительства дорог.</p>
@@ -542,8 +569,18 @@
         </div>
       </div>
       <div class="our-partners section"> 
-        <div class="container"> 
+        <div class="container-wide"> 
           <div class="our-partners__inner"> 
+            <button class="our-partners__prev slider-control js-partners-slider-prev" type="button">
+                <svg width="24" height="12">
+                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+                </svg>
+            </button>
+            <button class="our-partners__next slider-control js-partners-slider-next" type="button">
+                <svg width="24" height="12">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+            </button>
             <div class="our-partners__slider js-partners-slider"> 
               <div class="swiper-wrapper"> 
                 <div class="our-partners__item swiper-slide"> 
@@ -586,45 +623,97 @@
           </div>
         </div>
       </div>
-      <div class="blog section"> 
-        <div class="container"> 
+      <div class="blog section js-tabs"> 
+        <div class="container-wide"> 
           <div class="blog__head"> 
-            <div class="blog__categories"> 
-              <button class="blog__categories-item is-active" type="button">Новости</button>
-              <button class="blog__categories-item" type="button">Статьи</button>
-              <button class="blog__categories-item" type="button">Обзоры</button>
+            <div class="blog__categories js-tabs-controls"> 
+              <button class="blog__categories-item is-active" type="button" data-control="blog-1">Новости</button>
+              <button class="blog__categories-item" type="button" data-control="blog-2">Статьи</button>
+              <button class="blog__categories-item" type="button" data-control="blog-3">Обзоры</button>
             </div><a class="blog__show-more btn-round" href="#">К архиву</a>
           </div>
-          <div class="blog__list"> <a class="blog__item" href="#">
-              <picture class="blog__item-img"> 
-                <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
-              </picture>
-              <div class="blog__item-date">04.11.2024</div>
-              <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
-              <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
-              <picture class="blog__item-img"> 
-                <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
-              </picture>
-              <div class="blog__item-date">04.11.2024</div>
-              <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
-              <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
-              <picture class="blog__item-img"> 
-                <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
-              </picture>
-              <div class="blog__item-date">04.11.2024</div>
-              <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
-              <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
-              <picture class="blog__item-img"> 
-                <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
-              </picture>
-              <div class="blog__item-date">04.11.2024</div>
-              <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
-              <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a></div>
+          <div class="blog__content js-tabs-panel"> 
+            <div class="blog__list is-open" data-content="blog-1"> <a class="blog__item" href="#">
+                <picture class="blog__item-img"> 
+                  <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                </picture>
+                <div class="blog__item-date">04.11.2024</div>
+                <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
+                <picture class="blog__item-img"> 
+                  <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                </picture>
+                <div class="blog__item-date">04.11.2024</div>
+                <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
+                <picture class="blog__item-img"> 
+                  <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                </picture>
+                <div class="blog__item-date">04.11.2024</div>
+                <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
+                <picture class="blog__item-img"> 
+                  <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                </picture>
+                <div class="blog__item-date">04.11.2024</div>
+                <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a></div>
+            <div class="blog__list" data-content="blog-2"> <a class="blog__item" href="#">
+                <picture class="blog__item-img"> 
+                  <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                </picture>
+                <div class="blog__item-date">04.11.2024</div>
+                <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
+                <picture class="blog__item-img"> 
+                  <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                </picture>
+                <div class="blog__item-date">04.11.2024</div>
+                <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
+                <picture class="blog__item-img"> 
+                  <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                </picture>
+                <div class="blog__item-date">04.11.2024</div>
+                <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
+                <picture class="blog__item-img"> 
+                  <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                </picture>
+                <div class="blog__item-date">04.11.2024</div>
+                <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a></div>
+            <div class="blog__list" data-content="blog-3"> <a class="blog__item" href="#">
+                <picture class="blog__item-img"> 
+                  <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                </picture>
+                <div class="blog__item-date">04.11.2024</div>
+                <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
+                <picture class="blog__item-img"> 
+                  <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                </picture>
+                <div class="blog__item-date">04.11.2024</div>
+                <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
+                <picture class="blog__item-img"> 
+                  <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                </picture>
+                <div class="blog__item-date">04.11.2024</div>
+                <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog__item" href="#">
+                <picture class="blog__item-img"> 
+                  <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                </picture>
+                <div class="blog__item-date">04.11.2024</div>
+                <div class="blog__item-title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                <div class="blog__item-desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a></div>
+          </div>
         </div>
       </div>
       <div class="geography section">
         <div class="geography__wrapper">
-          <div class="container"> 
+          <div class="container-wide"> 
             <div class="geography__inner">
               <div class="geography__title heading-title h2">География поставок</div>
               <picture class="geography__img"> 
@@ -634,7 +723,111 @@
           </div>
         </div>
       </div>
-    </main>
+    </main><div class="footer-wrapper">
+<div class="footer-top-wrapper">
+<div class="container-wide">
+<div class="footer-top-inner relative">
+<div class="row">
+<div class="col-sm-12 col-lg-3">
+<div class="footer-top-first">
+<picture><source srcset="./img/logo-white.webp" type="image/webp"><img src="./img/logo-white.png" alt="РЕМОНТЯМ" data-retinasrc="./img/logo-white.png"></picture>
+<div class="footer-text">ООО «РЕМОНТЯМ». ИНН: 7807252270, ОГРН: 1217800168233</div>
+<div class="copyr">© 2014 - 2024. Все права защищены. РЕМОНТЯМ.</div>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Дорожно-строительная техника<!--/noindex--></div>
+<ul class="footer_l">
+<li class="first">
+<a href="catalog/litoy">Кохеры для литого асфальта</a>
+</li>
+<li>
+<a href="catalog/hotbox">Термос бункеры</a>
+</li>
+<li>
+<a href="catalog/gudron">Гудронаторы</a>
+</li>
+<li>
+<a href="catalog/pricepremont-pnevmonabryzgom">Пневмонабрызг</a>
+</li>
+<li>
+<a href="catalog/kotelbitum">Заливщик швов</a>
+</li>
+<li>
+<a href="catalog/recicler">Рециклеры асфальта</a>
+</li>
+<li>
+<a href="catalog/pricepremont">Машины ямочного ремонта асфальта</a>
+</li>
+<li>
+<a href="catalog/ifrakrasnye">Инфракрасные нагреватели асфальта</a>
+</li>
+<li>
+<a href="catalog/peredvizhnyie-laboratorii">Передвижные лаборатории</a>
+</li>
+<li>
+<a href="catalog/ustanovki">Битумно-эмульсионные установки</a>
+</li>
+<li>
+<a href="catalog/ustanovki-pbv">Установка ПБВ</a>
+</li>
+<li class="last">
+<a href="catalog/plavbitum">Установки плавления битума</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Коммунальная техника<!--/noindex--></div>
+<ul class="footer_l"><li class="first"><a href="catalog/navesnoe-oborudovanie-dlya-kdm">Навесное оборудование для КДМ</a></li><li><a href="catalog/polivomoechnoe-oborudovanie">Поливомоечное оборудование</a></li><li><a href="catalog/vakuumnyie-podmetalno-uborochnyie-mashinyi">Вакуумные подметально-уборочные машины</a></li><li><a href="catalog/navesnoe-oborudovanie-traktor-mtz">Навесное оборудование на трактор МТЗ</a></li><li><a href="catalog/peskorazbrasyivateli-priczepnyie">Пескоразбрасыватели прицепные</a></li><li><a href="catalog/vakuumnyie-mashinyi">Вакуумные машины</a></li><li><a href="catalog/benzovozyi-toplivozapravshhiki">Бензовозы - топливозаправщики</a></li><li><a href="catalog/ilososnyie-mashinyi">Илососные машины</a></li><li><a href="catalog/ifrakrasnye-krovly">Инфракрасные нагреватели кровли</a></li><li><a href="catalog/avtonomny">Шнекороторные снегоочистители</a></li><li><a href="catalog/sol-rastvor">Установки приготовления солевого раствора</a></li><li><a href="catalog/kosilki">Косилки на трактор МТЗ</a></li><li><a href="catalog/kombinirovannyie-dorozhnyie-mashinyi">Комбинированные дорожные машины</a></li><li class="last"><a href="catalog/peskorazbrasyivatel">Пескоразбрасывающее оборудование</a></li></ul>
+</div>
+</div>          
+<div class="col-sm-4 col-lg-3">
+<div class="footer-contacts">
+<div class="title">Контакты</div>
+<div itemscope="" itemtype="http://schema.org/Organization">
+<meta itemprop="url" content="https://ремонтям.рф/">
+<meta itemprop="name" content="РЕМОНТЯМ">
+<div itemscope="" itemprop="address" itemtype="http://schema.org/PostalAddress">
+<meta itemprop="postalCode" content="198332">
+<meta itemprop="addressLocality" content="Санкт-Петербург">
+<meta itemprop="streetAddress" content="проспект Кузнецова дом 11 кор.2">
+</div>
+<meta itemprop="telephone" content="8 800 100 41 69">
+</div>
+<div class="tel dflex jcsb aic">
+<span>Санкт-Петербург: </span>
+<span class="stel"><a href="tel:+78126484190">+7 (812) 648-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Москва:</span>
+<span class="stel"><a href="tel:+74951884190">+7 (495) 188-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Отдел продаж:</span>
+<span class="stel"><a href="tel:+79112052741">+7 (911) 205-27-41</a></span>
+</div>
+<div class=" social-links ">
+<a href="https://www.youtube.com/@user-rr6su3fk9g " rel="nofollow noopener" target="blank" class="yutb_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+<a href="https://vk.com/" rel="nofollow noopener" class="vk_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+<a href="https://t.me/+79112052741" rel="nofollow noopener" class="tg_link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+</div>
+<style>
+    <div class="social-links">a{ color:#fff;border-color:#fff;}</div></style>
+<p>&nbsp;</p>
+<p>E-mail: <a href="mailto:info@remontiam.ru">info@remontiam.ru</a></p>
+<p>Офис: г. Санкт-Петербург, проспект Кузнецова дом 11 кор.2</p>
+<p>Завод: г. Санкт-Петербург, Гатчина, ул.Жемчужина 2</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>

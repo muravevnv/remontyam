@@ -8,64 +8,64 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: rem(40);
+    gap: 40px;
   }
 
   &__info {
-    max-width: rem(564);
+    max-width: 564px;
     width: 100%;
   }
 
   &__logo {
-    margin-bottom: rem(40);
+    margin-bottom: 40px;
   }
 
   &__desc {
 
     p+p {
-      margin-top: rem(24);
+      margin-top: 24px;
     }
   }
 
   &__action {
     display: flex;
     align-items: center;
-    gap: rem(10);
-    max-width: rem(470);
+    gap: 10px;
+    max-width: 470px;
     width: 100%;
-    margin-top: rem(64);
+    margin-top: 64px;
   }
 
   &__benefits {
-    max-width: rem(890);
+    max-width: 890px;
     width: 100%;
-    padding: rem(64) rem(50) rem(40);
+    padding: 64px 50px 40px;
     background-color: cl(gray-100);
-    border-radius: rem(2);
+    border-radius: 2px;
 
     &-title {
-      margin-bottom: rem(40);
+      margin-bottom: 40px;
     }
 
     &-list {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: rem(12);
+      gap: 12px;
     }
   }
 
   &__benefit {
-    padding: rem(26) rem(24);
+    padding: 26px 24px;
     background-color: cl(accent);
     color: cl(whte);
-    border-radius: rem(10);
+    border-radius: 10px;
     display: flex;
     align-items: center;
-    gap: rem(26);
+    gap: 26px;
 
     &-icon {
-      width: rem(48);
-      height: rem(48);
+      width: 48px;
+      height: 48px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -75,28 +75,28 @@
     }
 
     &-title {
-      font-size: rem(16);
+      font-size: 16px;
       line-height: 1;
       font-weight: 600;
       text-transform: uppercase;
-      margin-bottom: rem(10);
+      margin-bottom: 10px;
     }
 
     &-link {
-      font-size: rem(14);
+      font-size: 14px;
       line-height: 1;
       font-weight: 600;
       text-transform: uppercase;
       display: inline-flex;
       align-items: center;
-      gap: rem(4);
+      gap: 4px;
       opacity: 0.8;
 
       &::after {
         content: '';
         display: block;
-        width: rem(12);
-        height: rem(12);
+        width: 12px;
+        height: 12px;
         background: url('../img/icons/arrow-link.svg') center center / contain no-repeat;
       }
     }

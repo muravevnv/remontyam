@@ -43,11 +43,12 @@ if(document.querySelector('.js-products-slider')) {
 if(document.querySelector('.js-partners-slider')) {
 
   const productsSlider = new Swiper('.js-partners-slider', {
+    modules: [Navigation],
     slidesPerView: 2,
     spaceBetween: 10,
     navigation: {
-      nextEl: '.js-partners-slider-prev',
-      prevEl: '.js-partners-slider-next',
+      prevEl: '.js-partners-slider-prev',
+      nextEl: '.js-partners-slider-next',
     },
     breakpoints: {
       768: {
@@ -65,3 +66,38 @@ if(document.querySelector('.js-partners-slider')) {
     },
   });
 }
+
+$('.js-tabs').each(function () {
+  const tabsControls = $('.js-tabs-controls > *');
+  const tabsPanel = $('.js-tabs-panel > *');
+  console.log(tabsControls)
+
+  tabsControls.on('click', function () {
+    
+    const tabsId = $(this).data('control');
+    tabsControls.removeClass('is-active');
+    tabsPanel.removeClass('is-open');
+
+    $(this).addClass('is-active');
+    $(`.js-tabs-panel [data-content="${tabsId}"]`).addClass('is-open');
+  })
+})
+
+
+$('.js-header-burger').on('click', () => {
+  $('.js-header-menu').addClass('is-open')
+})
+
+$('.js-header-menu-close').on('click', () => {
+  $('.js-header-menu').removeClass('is-open')
+})
+
+$('.js-header-cabinet-btn').on('click', () => {
+  $('.js-header-cabinet-dropdown').toggleClass('is-open')
+})
+
+$(document).on('click', (e) => {
+  if(!$(e.target).closest('.js-header-cabinet-btn').length) {
+    $('.js-header-cabinet-dropdown').removeClass('is-open')
+  }
+})

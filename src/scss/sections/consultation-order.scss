@@ -2,8 +2,8 @@
 
 
   &__inner {
-    padding: rem(64);
-    border-radius: rem(20);
+    padding: 64px;
+    border-radius: 20px;
     background: url('../img/consultation-order/order-banner.jpg') center center / cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
 
     @include mq($m)  {
 
-      padding: rem(32) rem(24) rem(30);
+      padding: 32px 24px 30px;
       width: calc(100% + 32px);
       margin: 0 -16px;
       border-radius: 0;
@@ -21,82 +21,78 @@
 
   &__title {
     color: cl(whte);
-    font-size: rem(46);
+    font-size: 46px;
     font-weight: 700;
     line-height: 1;
     font-family: var(--font-title);
     text-align: center;
-    padding: rem(12) rem(15);
+    padding: 12px 15px;
     background-color: cl(accent);
-    margin-bottom: rem(10);
+    margin-bottom: 10px;
 
     @include mq($ms) {
-      font-size: rem(32);
-      padding: rem(8) rem(10);
+      font-size: 32px;
+      padding: 8px 10px;
     }
 
     @include mq($m)  {
-      font-size: rem(21);
-      padding: rem(4) rem(2) rem(4);
+      font-size: 21px;
+      padding: 4px 2px 4px;
     }
   }
 
   &__subtitle {
-    font-size: rem(29);
+    font-size: 28px;
     font-family: var(--font-title);
     line-height: 1;
     text-align: center;
-    margin-bottom: rem(35);
+    margin-bottom: 35px;
     color: cl(whte);
 
     @include mq($ms) {
-      font-size: rem(20);
+      font-size: 20px;
     }
 
     @include mq($m)  {
-      font-size: rem(14);
-      margin-bottom: rem(20);
+      font-size: 14px;
+      margin-bottom: 20px;
     }
   }
 
   &__form {
-    max-width: rem(830);
+    max-width: 830px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 0.8fr;
-    gap: rem(20);
+    gap: 20px;
 
     @include mq($m) {
       grid-template-columns: 1fr;
-      gap: rem(12);
+      gap: 12px;
     }
 
     &-input {
       display: inline-block;
       width: 100%;
       background-color: cl(whte);
-      padding: rem(12) rem(20);
-      border-radius: rem(6);
-      font-size: rem(16);
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
       line-height: 1;
       color: cl(primary);
       outline: none;
       border: none;
 
       @include mq($m) {
-        padding: rem(10) rem(16);
-        border-radius: rem(4);
-        font-size: rem(14);
+        padding: 10px 16px;
+        border-radius: 4px;
+        font-size: 14px;
         line-height: 1.2;
       }
 
       &::placeholder {
         color: cl(gray-400);
       }
-    }
-
-    &-submit {
-
     }
   }
 }

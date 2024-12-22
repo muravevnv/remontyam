@@ -6,27 +6,27 @@
 
   &__inner {
     position: relative;
-    padding: rem(78) rem(46);
-    min-height: rem(438);
+    padding: 78px 46px;
+    min-height: 438px;
     background: linear-gradient(94.85deg, #F7F8FA 0%, #DCDCDC 100%);
-    border-radius: rem(16);
+    border-radius: 16px;
 
     @include mq($mt) {
-      padding: rem(64) rem(40);
+      padding: 64px 40px;
     }
   }
 
   &__title {
     font-family: var(--font-title);
-    font-size: rem(70);
+    font-size: 70px;
     line-height: 1;
     font-weight: 700;
     color: cl(accent);
-    margin-bottom: rem(28);
+    margin-bottom: 28px;
     text-transform: uppercase;
 
     @include mq($mt) {
-      font-size: rem(56);
+      font-size: 56px;
     }
   }
 
@@ -49,24 +49,24 @@
   }
 
   &__benefits {
-    max-width: rem(460);
+    max-width: 460px;
 
     &-item {
       position: relative;
-      padding-left: rem(30);
-      font-size: rem(18);
+      padding-left: 30px;
+      font-size: 18px;
       line-height: 1.2;
       font-weight: 500;
       color: cl(gray-300);
 
       @include mq($mt) {
-        font-size: rem(16);
+        font-size: 16px;
       }
 
       &::before {
         content: '';
-        width: rem(20);
-        height: rem(20);
+        width: 20px;
+        height: 20px;
         background: url('../img/icons/accepted.svg') center center / contain no-repeat;
         position: absolute;
         left: 0;
@@ -74,7 +74,7 @@
       }
 
       &:not(:last-of-type) {
-        margin-bottom: rem(20);
+        margin-bottom: 20px;
       }
     }
   }

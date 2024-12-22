@@ -8,44 +8,44 @@
 }
 
 .header-top {
-  padding: rem(5) 0 rem(6);
+  padding: 5px 0 6px;
   background-color: cl(gray-100);
 
   @include mq($mt) {
     display: none;
   }
 
-  .container {
+  .container-wide {
     display: flex;
     align-items: center;
-    gap: rem(57);
+    gap: 57px;
 
     @include mq($lt)  {
-      gap: rem(32);
+      gap: 32px;
     }
   }
 
   &__adress {
     display: inline-flex;
     align-items: center;
-    gap: rem(12);
-    font-size: rem(14);
+    gap: 12px;
+    font-size: 14px;
   }
 
   &__links {
     display: flex;
     align-items: center;
-    gap: rem(25);
+    gap: 25px;
     margin-left: auto;
 
     @include mq($lt) {
-      gap: rem(16);
+      gap: 16px;
     }
   }
 
   &__link {
-    padding: rem(10);
-    font-size: rem(14);
+    padding: 10px;
+    font-size: 14px;
     line-height: 1;
     font-weight: 600;
     transition: color 0.25 ease-in;
@@ -58,7 +58,7 @@
   }
 
   &__tel {
-    font-size: rem(18);
+    font-size: 18px;
     line-height: 1;
     font-weight: 700;
     transition: color 0.25 ease-in;
@@ -72,31 +72,31 @@
 }
 
 .header-main {
-  padding: rem(17) 0 rem(10);
+  padding: 17px 0 10px;
 
   @include mq($mt) {
-    padding: rem(10) 0;
+    padding: 10px 0;
   }
 
-  .container {
+  .container-wide {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: rem(32);
+    gap: 32px;
 
     @include mq($mt) {
       flex-wrap: wrap;
-      gap: rem(16);
+      gap: 16px;
     }
 
     @include mq($m) {
-      gap: rem(10);
+      gap: 10px;
     }
   }
 
   &__logo {
     display: block;
-    min-width: rem(320);
+    min-width: 320px;
 
     img, picture {
       display: block;
@@ -104,16 +104,16 @@
     }
     
     @include mq($mt) {
-      min-width: rem(200);
+      min-width: 200px;
     }
     
     @include mq($m) {
-      min-width: rem(108);
+      min-width: 108px;
     }
   }
 
   &__search {
-    max-width: rem(603);
+    max-width: 603px;
     width: 100%;
 
     @include mq($mt) {
@@ -124,15 +124,15 @@
   &__catalog-btn {
     display: flex;
     align-items: center;
-    gap: rem(14);
-    padding: rem(15) rem(15) rem(15) rem(19);
+    gap: 14px;
+    padding: 15px 15px  15px 19px;
     background-color: cl(accent);
     color: cl(whte);
-    font-size: rem(13);
+    font-size: 13px;
     line-height: 1;
     font-weight: 600;
     text-transform: uppercase;
-    border-radius: rem(6);
+    border-radius: 6px;
     cursor: pointer;
     flex-shrink: 0;
 
@@ -142,12 +142,12 @@
   }
 
   &__toolbars {
-    max-width: rem(310);
+    max-width: 310px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: rem(24);
+    gap: 24px;
 
     @include mq($mt) {
       display: none;
@@ -155,14 +155,15 @@
   }
 
   &__toolbar {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    font-size: rem(13);
+    font-size: 13px;
     line-height: 1;
-    height: rem(47);
+    height: 47px;
     transition: opacity 0.25 ease-in;
     cursor: pointer;
 
@@ -170,6 +171,24 @@
       &:hover {
         opacity: 0.7;
       }
+    }
+
+    &-counter {
+      position: absolute;
+      top: 10px;
+      right: 0px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: cl(accent);
+      color: cl(whte);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 10px;
+      line-height: 1;
+      font-weight: 500;
     }
   }
 
@@ -183,8 +202,8 @@
     @include mq($m) {
       svg {
         display: block;
-        width: rem(16);
-        height: rem(10);
+        width: 16px;
+        height: 10px;
       }
     }
   }
@@ -199,7 +218,7 @@
 }
 
 .header-bottom {
-  padding: rem(10) 0 rem(27);
+  padding: 10px 0 27px;
 
   @include mq($mt) {
     display: none;
@@ -210,12 +229,12 @@
   position: relative;
 
   &__btn {
-    width: rem(24);
-    height: rem(24);
+    width: 24px;
+    height: 24px;
 
     @include mq($m) {
-      width: rem(15);
-      height: rem(15);
+      width: 15px;
+      height: 15px;
     }
   }
 
@@ -226,6 +245,35 @@
     z-index: 2;
     opacity: 0;
     visibility: hidden;
+    background-color: cl(whte);
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 2px 5px 0px #0000001A;
+    padding: 8px;
+    min-width: 90px;
+    
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 8px;
+    line-height: 1;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #F0F0F0;
+    }
+
+    svg {
+      flex-shrink: 0;
+    }
   }
 }
 
@@ -235,11 +283,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: rem(16);
+    gap: 16px;
   }
 
   &__item {
-    font-size: rem(14);
+    font-size: 14px;
     line-height: 1;
     transition: opacity 0.25 ease-in;
 
@@ -259,16 +307,16 @@
   &__input {
     display: inline-block;
     width: 100%;
-    padding: rem(11) rem(48) rem(11) rem(22);
+    padding: 11px 48px 11px 22px;
     border-radius: rem(6);
     border: 1px solid cl(border);
     background-color: cl(whte);
-    font-size: rem(16);
+    font-size: 16px;
     line-height: 1;
 
     @include mq($m) {
-      padding: rem(10) rem(36) rem(11) rem(10);
-      font-size: rem(12);
+      padding: 10px 36px 11px 10px;
+      font-size: 12px;
       line-height: 1.1;
     }
   }
@@ -277,14 +325,14 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: rem(48);
-    height: rem(44);
+    width: 48px;
+    height: 44px;
     background-color: cl(accent);
     color: cl(whte);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: rem(6);
+    border-radius: 6px;
     transition: opacity 0.25 ease-in;
 
     @media(any-hover: hover) {
@@ -298,13 +346,84 @@
     }
 
     @include mq($m) {
-      width: rem(36);
-      height: rem(36);
+      width: 36px;
+      height: 36px;
 
       svg {
-        width: rem(12);
-        height: rem(12);
+        width: 12px;
+        height: 12px;
       }
     }
+  }
+}
+
+.header-menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+
+  @include mq($mt) {
+    display: block;
+    transform: translateX(-100%);
+    transition: 0.4s ease-in-out;
+
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+  }
+
+  &__close {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+  }
+
+  &__inner {
+    max-width: 158px;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 0px 2px 4px 0px #00000026;
+    background-color: cl(whte);
+    padding: 58px 10px 30px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  &__item {
+
+    a {
+      font-size: 12px;
+    }
+  }
+
+  &__tel {
+    padding-top: 10px;
+    margin-top: 20px;
+    border-top: 1px solid cl(border);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 600;
   }
 }
