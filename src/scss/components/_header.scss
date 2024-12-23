@@ -8,7 +8,7 @@
 }
 
 .header-top {
-  padding: 5px 0 6px;
+  padding: 2px 0 2px;
   background-color: cl(gray-100);
 
   @include mq($mt) {
@@ -47,7 +47,7 @@
     padding: 10px;
     font-size: 14px;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 400;
     transition: color 0.25 ease-in;
 
     @media(any-hover: hover) {
@@ -131,7 +131,6 @@
     font-size: 13px;
     line-height: 1;
     font-weight: 600;
-    text-transform: uppercase;
     border-radius: 6px;
     cursor: pointer;
     flex-shrink: 0;
@@ -189,6 +188,10 @@
       font-size: 10px;
       line-height: 1;
       font-weight: 500;
+    }
+
+    &-title {
+      letter-spacing: 0.5px;
     }
   }
 
@@ -277,7 +280,7 @@
   }
 }
 
-.header-menu {
+.header-nav {
   
   &__list {
     display: flex;

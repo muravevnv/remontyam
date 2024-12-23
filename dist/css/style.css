@@ -5127,7 +5127,7 @@ p {
 }
 
 .header-top {
-  padding: 5px 0 6px;
+  padding: 2px 0 2px;
   background-color: var(--color-gray-100);
 }
 
@@ -5155,7 +5155,7 @@ p {
   padding: 10px;
   font-size: 14px;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 400;
   transition: color 0.25 ease-in;
 }
 
@@ -5203,7 +5203,6 @@ p {
   font-size: 13px;
   line-height: 1;
   font-weight: 600;
-  text-transform: uppercase;
   border-radius: 6px;
   cursor: pointer;
   flex-shrink: 0;
@@ -5248,6 +5247,10 @@ p {
   font-size: 10px;
   line-height: 1;
   font-weight: 500;
+}
+
+.header-main__toolbar-title {
+  letter-spacing: 0.5px;
 }
 
 .header-main__burger {
@@ -5308,14 +5311,14 @@ p {
   flex-shrink: 0;
 }
 
-.header-menu__list {
+.header-nav__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
 }
 
-.header-menu__item {
+.header-nav__item {
   font-size: 14px;
   line-height: 1;
   transition: opacity 0.25 ease-in;
@@ -5504,6 +5507,10 @@ p {
   flex-direction: column;
   gap: 24px;
   width: 100%;
+}
+
+.hero.section {
+  padding-bottom: 70px;
 }
 
 .hero__inner {
@@ -7066,7 +7073,7 @@ p {
     opacity: 0.7;
   }
 
-  .header-menu__item:hover {
+  .header-nav__item:hover {
     opacity: 0.6;
   }
 
