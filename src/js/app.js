@@ -101,3 +101,11 @@ $(document).on('click', (e) => {
     $('.js-header-cabinet-dropdown').removeClass('is-open')
   }
 })
+
+// Код для скрытия показа текста
+
+$('.js-why-us-desc p:gt(1)').hide();
+
+$('.js-why-us-toggle').on('click', function() {
+    $('.js-why-us-desc p:gt(1)').slideToggle('slow');
+});
