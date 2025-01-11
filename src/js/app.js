@@ -104,8 +104,6 @@ $(document).on('click', (e) => {
 
 // Код для скрытия показа текста
 
-$('.js-why-us-desc p:gt(1)').hide();
-
 $('.js-why-us-toggle').on('click', function() {
-    $('.js-why-us-desc p:gt(1)').slideToggle('slow');
+    $('.js-why-us-desc').toggleClass('_is-show');
 });

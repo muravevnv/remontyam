@@ -5899,6 +5899,19 @@ p {
   margin-top: 24px;
 }
 
+.why-us__desc > * {
+  display: none;
+}
+
+.why-us__desc > *:nth-child(1),
+.why-us__desc > *:nth-child(2) {
+  display: block;
+}
+
+.why-us__desc._is-show > * {
+  display: block;
+}
+
 .why-us__action {
   display: flex;
   align-items: center;

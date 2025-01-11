@@ -22,8 +22,24 @@
 
   &__desc {
 
-    p+p {
+    p + p {
       margin-top: 24px;
+    }
+
+    > * {
+      display: none;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        display: block;
+      }
+    }
+
+    &._is-show {
+
+      > * {
+        display: block;
+      }
     }
   }
 
