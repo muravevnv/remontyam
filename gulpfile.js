@@ -31,7 +31,7 @@ function watcher() {
   gulp.watch(path.watch.images, images);
 }
 
-export { sprite };
+export { sprite, js };
 
 
 const fonts = gulp.series(otfToTtf, ttfToWoff);
@@ -43,7 +43,9 @@ const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 
 const build = gulp.series(reset, mainTasks);
 
-export { dev, build };
+const script = gulp.series(js);
+
+export { dev, build, script };
 
 //Выполнение сценариев по умолчанию
 gulp.task("default", dev);

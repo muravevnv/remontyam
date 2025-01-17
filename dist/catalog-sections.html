@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Title</title>
+    </head>
+  <body>
+    <header class="header"> 
+      <div class="header-top">
+        <div class="container-wide"> 
+          <div class="header-top__adress"> 
+              <svg width="17" height="20">
+                <use xlink:href="img/icons/icons.svg#adress"></use>
+              </svg><span>Санкт-Петербург</span>
+          </div>
+          <nav class="header-top__links"> <a class="header-top__link" href="#">О компании</a><a class="header-top__link" href="#">Открыть бизнес</a><a class="header-top__link" href="#">Оплата</a><a class="header-top__link" href="#">Доставка</a><a class="header-top__link" href="#">Кредит и лизинг</a><a class="header-top__link" href="#">Статьи</a><a class="header-top__link" href="#">Контакты</a></nav><a class="header-top__tel" href="tel:+78001004196">8 800 100 41 96</a>
+        </div>
+      </div>
+      <div class="header-main"> 
+        <div class="container-wide"> 
+          <button class="header-main__burger js-header-burger" type="button">
+              <svg width="24" height="20">
+                <use xlink:href="img/icons/icons.svg#burger"></use>
+              </svg>
+          </button><a class="header-main__logo" href="#"> 
+            <picture>
+              <source srcset="./img/logo-sm.svg" media="(max-width: 1279.98px)"><img src="./img/logo.svg" alt="">
+            </picture></a>
+          <div class="header-main__cabinet header-cabinet">
+            <button class="header-cabinet__btn js-header-cabinet-btn" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#cabinet-user"></use>
+                </svg>
+            </button>
+            <div class="header-cabinet__dropdown js-header-cabinet-dropdown"> 
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#reg-plus"></use>
+                  </svg><span>Регистрация</span>
+              </div>
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#c-user"></use>
+                  </svg><span>Вход</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-main__catalog-btn"> 
+            <div class="header-main__catalog-btn-icon"> 
+                <svg width="13" height="8">
+                  <use xlink:href="img/icons/icons.svg#catalog-lines"></use>
+                </svg>
+            </div>
+            <div class="header-main__catalog-btn-title">Каталог</div>
+            <div class="header-main__catalog-btn-arrow">
+                <svg width="11" height="6">
+                  <use xlink:href="img/icons/icons.svg#catalog-arrow"></use>
+                </svg>
+            </div>
+          </div>
+          <div class="header-main__search"> 
+            <div class="searchbar"> 
+              <input class="searchbar__input" type="text" placeholder="Прицеп для спецтехники">
+              <button class="searchbar__btn" type="button">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/icons/icons.svg#search"></use>
+                  </svg>
+              </button>
+            </div>
+          </div>
+          <div class="header-main__toolbars"> 
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/user.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#user"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Войти</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/favorite.svg')"> 
+                  <svg width="23" height="20">
+                    <use xlink:href="img/icons/icons.svg#favorite"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Избранное</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/compare.svg')"> 
+                  <svg width="27" height="21">
+                    <use xlink:href="img/icons/icons.svg#compare"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Сравнение</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/basket.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#basket"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Корзина</div>
+              <div class="header-main__toolbar-counter">5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom"> 
+        <div class="container-wide"> 
+          <nav class="header-nav"> 
+            <ul class="header-nav__list"> 
+              <li class="header-nav__item"> <a href="#">Дорожная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Коммунальная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Грузоподъёмная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Навесное оборудование</a></li>
+              <li class="header-nav__item"> <a href="#">Асфальтобетонные заводы</a></li>
+              <li class="header-nav__item"> <a href="#">Самоходные транспортеры</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-menu js-header-menu">
+        <div class="header-menu__overlay js-header-menu-close"></div>
+        <div class="header-menu__inner"> 
+          <button class="header-menu__close js-header-menu-close" type="button">
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#close"></use>
+              </svg>
+          </button>
+          <div class="header-menu__list"> 
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">О компании</a></li>
+            <li class="header-menu__item"><a href="#">Открыть бизнес</a></li>
+            <li class="header-menu__item"><a href="#">Оплата</a></li>
+            <li class="header-menu__item"><a href="#">Доставка</a></li>
+            <li class="header-menu__item"><a href="#">Кредит и лизинг</a></li>
+            <li class="header-menu__item"><a href="#"> Статьи</a></li>
+            <li class="header-menu__item"><a href="#">Контакты</a></li>
+          </div>
+          <div class="header-menu__tel"> 
+              <svg width="8" height="8">
+                <use xlink:href="img/icons/icons.svg#tel"></use>
+              </svg><span>8 800 100 41 96</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page-inner">
+        <sections class="catalog"> 
+          <div class="container-wide">
+            <div class="catalog__title">Каталог товаров</div>
+            <div class="catalog__inner"> 
+              <div class="catalog__sidebar">
+                <div class="catalog-nav"> 
+                  <div class="catalog-nav__inner">
+                    <div class="catalog-nav__item">
+                      <div class="catalog-nav__item-main accordion-item">
+                        <div class="catalog-nav__item-main-title">Коммунальная техника</div>
+                        <div class="catalog-nav__item-main-toggle"></div>
+                      </div>
+                      <div class="catalog-nav__item-list accordion-content">
+                        <div class="catalog-nav__item-list-inner"><a class="catalog-nav__item-link" href="#">Коммунальная техника 1</a><a class="catalog-nav__item-link" href="#">Коммунальная техника 2</a></div>
+                      </div>
+                    </div>
+                    <div class="catalog-nav__item">
+                      <div class="catalog-nav__item-main"> 
+                        <div class="catalog-nav__item-main-title">Дорожная техника</div>
+                        <div class="catalog-nav__item-main-toggle"></div>
+                      </div>
+                    </div>
+                    <div class="catalog-nav__item">
+                      <div class="catalog-nav__item-main"> 
+                        <div class="catalog-nav__item-main-title">Грузоподъемная техника</div>
+                        <div class="catalog-nav__item-main-toggle"></div>
+                      </div>
+                    </div>
+                    <div class="catalog-nav__item">
+                      <div class="catalog-nav__item-main"> 
+                        <div class="catalog-nav__item-main-title">Навесное оборудование</div>
+                        <div class="catalog-nav__item-main-toggle"></div>
+                      </div>
+                    </div>
+                    <div class="catalog-nav__item">
+                      <div class="catalog-nav__item-main"> 
+                        <div class="catalog-nav__item-main-title">Коммунальная техника</div>
+                        <div class="catalog-nav__item-main-toggle"></div>
+                      </div>
+                    </div>
+                    <div class="catalog-nav__item">
+                      <div class="catalog-nav__item-main"> 
+                        <div class="catalog-nav__item-main-title">Прицепы</div>
+                        <div class="catalog-nav__item-main-toggle"></div>
+                      </div>
+                    </div>
+                    <div class="catalog-nav__item">
+                      <div class="catalog-nav__item-main"> 
+                        <div class="catalog-nav__item-main-title">Самоходные транспортеры</div>
+                        <div class="catalog-nav__item-main-toggle"></div>
+                      </div>
+                    </div>
+                    <div class="catalog-nav__item">
+                      <div class="catalog-nav__item-main"> 
+                        <div class="catalog-nav__item-main-title">Техника для демонтажа зданий</div>
+                        <div class="catalog-nav__item-main-toggle"></div>
+                      </div>
+                    </div>
+                    <div class="catalog-nav__item">
+                      <div class="catalog-nav__item-main"> 
+                        <div class="catalog-nav__item-main-title">Асфальтные заводы</div>
+                        <div class="catalog-nav__item-main-toggle"></div>
+                      </div>
+                    </div>
+                    <div class="catalog-nav__item">
+                      <div class="catalog-nav__item-main"> 
+                        <div class="catalog-nav__item-main-title">Карьерная техника</div>
+                        <div class="catalog-nav__item-main-toggle"></div>
+                      </div>
+                    </div>
+                    <div class="catalog-nav__item">
+                      <div class="catalog-nav__item-main"> 
+                        <div class="catalog-nav__item-main-title">Материалы</div>
+                        <div class="catalog-nav__item-main-toggle"></div>
+                      </div>
+                    </div>
+                    <div class="catalog-nav__item">
+                      <div class="catalog-nav__item-main"> 
+                        <div class="catalog-nav__item-main-title">Крановое электрооборудование</div>
+                        <div class="catalog-nav__item-main-toggle"></div>
+                      </div>
+                    </div>
+                    <div class="catalog-nav__link"> 
+                      <div class="catalog-nav__link-badge" style="--color-badge: #4CBC66">Stock</div>
+                      <div class="catalog-nav__link-title">В наличии</div>
+                    </div>
+                    <div class="catalog-nav__link"> 
+                      <div class="catalog-nav__link-badge" style="--color-badge: #248EF1">Hit</div>
+                      <div class="catalog-nav__link-title">Хиты продаж</div>
+                    </div>
+                    <div class="catalog-nav__link"> 
+                      <div class="catalog-nav__link-badge" style="--color-badge: #E44900">SALE</div>
+                      <div class="catalog-nav__link-title">Со скидкой</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__content">
+                <div class="catalog__sections">
+                  <div class="catalog-section"> 
+                    <div class="catalog-section__head"> <a class="catalog-section__title" href="#">Коммунальная техника</a></div>
+                    <div class="catalog-section__list"> <a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-01.webp" type="image/webp"><img src="./img/catalog/cat-section-01.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Комбинированные дорожные машины</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-02.webp" type="image/webp"><img src="./img/catalog/cat-section-02.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Пескоразбрасывающее оборудование</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-03.webp" type="image/webp"><img src="./img/catalog/cat-section-03.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Поливомоечное оборудование</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-04.webp" type="image/webp"><img src="./img/catalog/cat-section-04.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Установки приготовления солевого раствора</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-05.webp" type="image/webp"><img src="./img/catalog/cat-section-05.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Вакуумные подметально-уборочные машины</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-06.webp" type="image/webp"><img src="./img/catalog/cat-section-06.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Вакуумные машины</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-07.webp" type="image/webp"><img src="./img/catalog/cat-section-07.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Бензовозы-топлизаправщики</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-08.webp" type="image/webp"><img src="./img/catalog/cat-section-08.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Илососные машины</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-09.webp" type="image/webp"><img src="./img/catalog/cat-section-09.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Инфракрасные нагреватели кровли</div></a></div>
+                  </div>
+                  <div class="catalog-section"> 
+                    <div class="catalog-section__head"> <a class="catalog-section__title" href="#">Дорожная техника</a></div>
+                    <div class="catalog-section__list"> <a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-01.webp" type="image/webp"><img src="./img/catalog/cat-section-01.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Асфальтоукладчики</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-02.webp" type="image/webp"><img src="./img/catalog/cat-section-02.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Отсыпщики обочин</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-03.webp" type="image/webp"><img src="./img/catalog/cat-section-03.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Термос бункеры</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-04.webp" type="image/webp"><img src="./img/catalog/cat-section-04.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Рециклеры асфальта</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-05.webp" type="image/webp"><img src="./img/catalog/cat-section-05.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Пневмонабрызг</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-06.webp" type="image/webp"><img src="./img/catalog/cat-section-06.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Машины ямочного ремонта асфальта</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-07.webp" type="image/webp"><img src="./img/catalog/cat-section-07.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Кохеры асфальта</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-08.webp" type="image/webp"><img src="./img/catalog/cat-section-08.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Нагреватели асфальта</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-09.webp" type="image/webp"><img src="./img/catalog/cat-section-09.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Заливщик швов</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-09.webp" type="image/webp"><img src="./img/catalog/cat-section-09.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Гудронаторы</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-09.webp" type="image/webp"><img src="./img/catalog/cat-section-09.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Битумоварки</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-09.webp" type="image/webp"><img src="./img/catalog/cat-section-09.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Щебнераспределители</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-09.webp" type="image/webp"><img src="./img/catalog/cat-section-09.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Разметочные машины</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-09.webp" type="image/webp"><img src="./img/catalog/cat-section-09.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Экскаватор-погрузчик</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-09.webp" type="image/webp"><img src="./img/catalog/cat-section-09.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Тепловые копья</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-09.webp" type="image/webp"><img src="./img/catalog/cat-section-09.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Цементораспределители</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-09.webp" type="image/webp"><img src="./img/catalog/cat-section-09.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Установки распределения вяжущих</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-09.webp" type="image/webp"><img src="./img/catalog/cat-section-09.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Передвижные лаборатории</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-09.webp" type="image/webp"><img src="./img/catalog/cat-section-09.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Укладчики литого асфальта</div></a></div>
+                  </div>
+                  <div class="catalog-section"> 
+                    <div class="catalog-section__head"> <a class="catalog-section__title" href="#">Грузоподъёмная техника</a></div>
+                    <div class="catalog-section__list"> <a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-01.webp" type="image/webp"><img src="./img/catalog/cat-section-01.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Короткобазные краны</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-02.webp" type="image/webp"><img src="./img/catalog/cat-section-02.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Гусеничные краны</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-03.webp" type="image/webp"><img src="./img/catalog/cat-section-03.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Автокраны</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-04.webp" type="image/webp"><img src="./img/catalog/cat-section-04.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Модульные транспортёры</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-05.webp" type="image/webp"><img src="./img/catalog/cat-section-05.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Самоходные транспортеры</div></a></div>
+                  </div>
+                  <div class="catalog-section"> 
+                    <div class="catalog-section__head"> <a class="catalog-section__title" href="#">Навесное оборудование</a></div>
+                    <div class="catalog-section__list"> <a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-01.webp" type="image/webp"><img src="./img/catalog/cat-section-01.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Навесные асфальтоукладчики</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-02.webp" type="image/webp"><img src="./img/catalog/cat-section-02.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Косилки на трактор МТЗ</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-03.webp" type="image/webp"><img src="./img/catalog/cat-section-03.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Навесное оборудование для КДМ</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-03.webp" type="image/webp"><img src="./img/catalog/cat-section-03.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Навесное оборудование трактор МТЗ</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-05.webp" type="image/webp"><img src="./img/catalog/cat-section-05.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Дорожная навесная фреза</div></a><a class="catalog-section-card" href="#">
+                        <div class="catalog-section-card__img"> <picture><source srcset="./img/catalog/cat-section-05.webp" type="image/webp"><img src="./img/catalog/cat-section-05.png" alt=""></picture></div>
+                        <div class="catalog-section-card__title">Шнекороторные снегоочистители</div></a></div>
+                  </div>
+                </div>
+                <div class="consultation-order">
+                  <div class="consultation-order__inner"> 
+                    <div class="consultation-order__title">Оставьте заявку</div>
+                    <div class="consultation-order__subtitle">чтобы получить консультацию</div>
+                    <form class="consultation-order__form" action="#">
+                      <input class="consultation-order__form-input" type="text" placeholder="Имя">
+                      <input class="consultation-order__form-input" type="text" placeholder="Телефон">
+                      <button class="consultation-order__form-submit btn btn--xl" type="submit">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="catalog-desc"> 
+                  <p>Компания «РЕМОНТЯМ» предлагает купить дорожно-строительную технику и спецоборудование для укладки асфальтобетонного покрытия по выгодным ценам и условиях. Мы реализуем продукцию собственного производства, которая изготавливается с применением инновационных технологий и требования государственных стандартов в области строительства дорог.</p>
+                  <h3>Назначение коммунальной техники</h3>
+                  <p>Вот основные задачи, которые решает уборочная техника в Спб:</p>
+                  <ul> 
+                    <li>Уборка улиц, тротуаров, площадей и прочих общественных мест – устранение мусора, листьев, песка, снега и прочих отходов.</li>
+                    <li>Ремонт и содержание дорог – заделка ям, укладка асфальта, ремонт тротуаров, а также нанесение дорожной разметки.</li>
+                    <li>Благоустройство газонов и посадок – полив и косьба травы с помощью специализированной спецтехники.</li>
+                  </ul>
+                  <h3>Преимущества покупки уборочной техники в компании "РемонтЯм"</h3>
+                  <p>В нашем ассортименте вы найдете широкий выбор дорожно-коммунальной техники, идеально подходящей для нужд коммунального хозяйства. Мы предоставляем уникальную возможность выгодно купить новую коммунальную технику в кредит или лизинг, предлагая выгодные цены и выгодные условия, что особенно актуально для бюджетов, занимающихся уборкой улиц и поддержанием порядка в осенне-зимний период.</p>
+                  <p>В нашем каталоге представлены не только базовые модели, но и специализированное оборудование, такое как инфракрасные нагреватели кровли, шнекороторные снегоочистители, необходимые для эффективной борьбы со снежными заносами, установки для приготовления солевого раствора, а также косилки на тракторах МТЗ и многое другое, все это для того, чтобы техника для уборки улиц работала на максимальную эффективность.</p>
+                  <p>Несмотря на то, что наш основной офис расположен в Санкт-Петербурге, мы охватываем все регионы, предлагая быструю и бесплатную доставку по России коммунальной техники до вашего адреса, делая процесс приобретения максимально удобным и доступным. Не упустите свой шанс купить коммунальную технику или на выгодных условиях приобрести необходимую технику для уборки улиц и поддержания чистоты в ваших населенных пунктах. Звоните нам прямо сейчас или оставьте заявку на нашем сайте – мы всегда готовы помочь!</p>
+                </div>
+                <div class="catalog-faq">
+                  <div class="catalog-faq__title">Ответы на популярные вопросы </div>
+                  <div class="catalog-faq__list faq-list">
+                    <div class="faq-item"> 
+                      <div class="faq-item__head accordion-item"> 
+                        <div class="faq-item__title">Какие виды спецтехники используются в дорожном строительстве?</div>
+                        <div class="faq-item__icon"> </div>
+                      </div>
+                      <div class="faq-item__body accordion-content"> 
+                        <p>
+                          Несмотря на то, что наш основной офис расположен в Санкт-Петербурге, мы охватываем все регионы, предлагая быструю и бесплатную доставку 
+                          по России коммунальной техники до вашего адреса, делая 
+                          процесс приобретения максимально удобным и доступным. Не упустите свой шанс 
+                          купить коммунальную технику или на выгодных условиях 
+                          приобрести необходимую технику для уборки улиц и поддержания чистоты в ваших 
+                          населённых пунктах. Звоните нам прямо сейчас или оставьте заявку на нашем сайте — мы всегда 
+                          готовы помочь!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="faq-item"> 
+                      <div class="faq-item__head accordion-item">
+                        <div class="faq-item__title">Где можно недорого приобрести надежную дорожно-строительную технику?</div>
+                        <div class="faq-item__icon"> </div>
+                      </div>
+                      <div class="faq-item__body accordion-content">
+                        <p>
+                          Несмотря на то, что наш основной офис расположен в Санкт-Петербурге, мы охватываем все регионы, предлагая быструю и бесплатную доставку 
+                          по России коммунальной техники до вашего адреса, делая 
+                          процесс приобретения максимально удобным и доступным. Не упустите свой шанс 
+                          купить коммунальную технику или на выгодных условиях 
+                          приобрести необходимую технику для уборки улиц и поддержания чистоты в ваших 
+                          населённых пунктах. Звоните нам прямо сейчас или оставьте заявку на нашем сайте — мы всегда 
+                          готовы помочь!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="faq-item"> 
+                      <div class="faq-item__head accordion-item"> 
+                        <div class="faq-item__title">Какое назначение имеет специальная дорожно-строительная техника?</div>
+                        <div class="faq-item__icon"> </div>
+                      </div>
+                      <div class="faq-item__body accordion-content"> 
+                        <p>
+                          Несмотря на то, что наш основной офис расположен в Санкт-Петербурге, мы охватываем все регионы, предлагая быструю и бесплатную доставку 
+                          по России коммунальной техники до вашего адреса, делая 
+                          процесс приобретения максимально удобным и доступным. Не упустите свой шанс 
+                          купить коммунальную технику или на выгодных условиях 
+                          приобрести необходимую технику для уборки улиц и поддержания чистоты в ваших 
+                          населённых пунктах. Звоните нам прямо сейчас или оставьте заявку на нашем сайте — мы всегда 
+                          готовы помочь!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="faq-item"> 
+                      <div class="faq-item__head accordion-item"> 
+                        <div class="faq-item__title">Почему важно выбирать технику ведущих производителей?</div>
+                        <div class="faq-item__icon"> </div>
+                      </div>
+                      <div class="faq-item__body accordion-content"> 
+                        <p>
+                          Несмотря на то, что наш основной офис расположен в Санкт-Петербурге, мы охватываем все регионы, предлагая быструю и бесплатную доставку 
+                          по России коммунальной техники до вашего адреса, делая 
+                          процесс приобретения максимально удобным и доступным. Не упустите свой шанс 
+                          купить коммунальную технику или на выгодных условиях 
+                          приобрести необходимую технику для уборки улиц и поддержания чистоты в ваших 
+                          населённых пунктах. Звоните нам прямо сейчас или оставьте заявку на нашем сайте — мы всегда 
+                          готовы помочь!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="faq-item"> 
+                      <div class="faq-item__head accordion-item"> 
+                        <div class="faq-item__title">Как выбрать подходящую технику для строительства дорог в городе?</div>
+                        <div class="faq-item__icon"> </div>
+                      </div>
+                      <div class="faq-item__body accordion-content"> 
+                        <p>
+                          Несмотря на то, что наш основной офис расположен в Санкт-Петербурге, мы охватываем все регионы, предлагая быструю и бесплатную доставку 
+                          по России коммунальной техники до вашего адреса, делая 
+                          процесс приобретения максимально удобным и доступным. Не упустите свой шанс 
+                          купить коммунальную технику или на выгодных условиях 
+                          приобрести необходимую технику для уборки улиц и поддержания чистоты в ваших 
+                          населённых пунктах. Звоните нам прямо сейчас или оставьте заявку на нашем сайте — мы всегда 
+                          готовы помочь!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="faq-item"> 
+                      <div class="faq-item__head accordion-item"> 
+                        <div class="faq-item__title">Где можно купить дорожно-строительную технику любого вида?</div>
+                        <div class="faq-item__icon"> </div>
+                      </div>
+                      <div class="faq-item__body accordion-content"> 
+                        <p>
+                          Несмотря на то, что наш основной офис расположен в Санкт-Петербурге, мы охватываем все регионы, предлагая быструю и бесплатную доставку 
+                          по России коммунальной техники до вашего адреса, делая 
+                          процесс приобретения максимально удобным и доступным. Не упустите свой шанс 
+                          купить коммунальную технику или на выгодных условиях 
+                          приобрести необходимую технику для уборки улиц и поддержания чистоты в ваших 
+                          населённых пунктах. Звоните нам прямо сейчас или оставьте заявку на нашем сайте — мы всегда 
+                          готовы помочь!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="faq-item"> 
+                      <div class="faq-item__head accordion-item"> 
+                        <div class="faq-item__title">В каких случаях требуется покупка спецтехники?</div>
+                        <div class="faq-item__icon"> </div>
+                      </div>
+                      <div class="faq-item__body accordion-content"> 
+                        <p>
+                          Несмотря на то, что наш основной офис расположен в Санкт-Петербурге, мы охватываем все регионы, предлагая быструю и бесплатную доставку 
+                          по России коммунальной техники до вашего адреса, делая 
+                          процесс приобретения максимально удобным и доступным. Не упустите свой шанс 
+                          купить коммунальную технику или на выгодных условиях 
+                          приобрести необходимую технику для уборки улиц и поддержания чистоты в ваших 
+                          населённых пунктах. Звоните нам прямо сейчас или оставьте заявку на нашем сайте — мы всегда 
+                          готовы помочь!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="faq-item"> 
+                      <div class="faq-item__head accordion-item"> 
+                        <div class="faq-item__title">Как быстро можно получить спецтехнику после заказа?</div>
+                        <div class="faq-item__icon"> </div>
+                      </div>
+                      <div class="faq-item__body accordion-content"> 
+                        <p>
+                          Несмотря на то, что наш основной офис расположен в Санкт-Петербурге, мы охватываем все регионы, предлагая быструю и бесплатную доставку 
+                          по России коммунальной техники до вашего адреса, делая 
+                          процесс приобретения максимально удобным и доступным. Не упустите свой шанс 
+                          купить коммунальную технику или на выгодных условиях 
+                          приобрести необходимую технику для уборки улиц и поддержания чистоты в ваших 
+                          населённых пунктах. Звоните нам прямо сейчас или оставьте заявку на нашем сайте — мы всегда 
+                          готовы помочь!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sections>
+      </div>
+    </main><div class="footer-wrapper">
+<div class="footer-top-wrapper">
+<div class="container-wide">
+<div class="footer-top-inner relative">
+<div class="row">
+<div class="col-sm-12 col-lg-3">
+<div class="footer-top-first">
+<picture><source srcset="./img/logo-white.webp" type="image/webp"><img src="./img/logo-white.png" alt="РЕМОНТЯМ" data-retinasrc="./img/logo-white.png"></picture>
+<div class="footer-text">ООО «РЕМОНТЯМ». ИНН: 7807252270, ОГРН: 1217800168233</div>
+<div class="copyr">© 2014 - 2024. Все права защищены. РЕМОНТЯМ.</div>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Дорожно-строительная техника<!--/noindex--></div>
+<ul class="footer_l">
+<li class="first">
+<a href="catalog/litoy">Кохеры для литого асфальта</a>
+</li>
+<li>
+<a href="catalog/hotbox">Термос бункеры</a>
+</li>
+<li>
+<a href="catalog/gudron">Гудронаторы</a>
+</li>
+<li>
+<a href="catalog/pricepremont-pnevmonabryzgom">Пневмонабрызг</a>
+</li>
+<li>
+<a href="catalog/kotelbitum">Заливщик швов</a>
+</li>
+<li>
+<a href="catalog/recicler">Рециклеры асфальта</a>
+</li>
+<li>
+<a href="catalog/pricepremont">Машины ямочного ремонта асфальта</a>
+</li>
+<li>
+<a href="catalog/ifrakrasnye">Инфракрасные нагреватели асфальта</a>
+</li>
+<li>
+<a href="catalog/peredvizhnyie-laboratorii">Передвижные лаборатории</a>
+</li>
+<li>
+<a href="catalog/ustanovki">Битумно-эмульсионные установки</a>
+</li>
+<li>
+<a href="catalog/ustanovki-pbv">Установка ПБВ</a>
+</li>
+<li class="last">
+<a href="catalog/plavbitum">Установки плавления битума</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Коммунальная техника<!--/noindex--></div>
+<ul class="footer_l"><li class="first"><a href="catalog/navesnoe-oborudovanie-dlya-kdm">Навесное оборудование для КДМ</a></li><li><a href="catalog/polivomoechnoe-oborudovanie">Поливомоечное оборудование</a></li><li><a href="catalog/vakuumnyie-podmetalno-uborochnyie-mashinyi">Вакуумные подметально-уборочные машины</a></li><li><a href="catalog/navesnoe-oborudovanie-traktor-mtz">Навесное оборудование на трактор МТЗ</a></li><li><a href="catalog/peskorazbrasyivateli-priczepnyie">Пескоразбрасыватели прицепные</a></li><li><a href="catalog/vakuumnyie-mashinyi">Вакуумные машины</a></li><li><a href="catalog/benzovozyi-toplivozapravshhiki">Бензовозы - топливозаправщики</a></li><li><a href="catalog/ilososnyie-mashinyi">Илососные машины</a></li><li><a href="catalog/ifrakrasnye-krovly">Инфракрасные нагреватели кровли</a></li><li><a href="catalog/avtonomny">Шнекороторные снегоочистители</a></li><li><a href="catalog/sol-rastvor">Установки приготовления солевого раствора</a></li><li><a href="catalog/kosilki">Косилки на трактор МТЗ</a></li><li><a href="catalog/kombinirovannyie-dorozhnyie-mashinyi">Комбинированные дорожные машины</a></li><li class="last"><a href="catalog/peskorazbrasyivatel">Пескоразбрасывающее оборудование</a></li></ul>
+</div>
+</div>          
+<div class="col-sm-4 col-lg-3">
+<div class="footer-contacts">
+<div class="title">Контакты</div>
+<div itemscope="" itemtype="http://schema.org/Organization">
+<meta itemprop="url" content="https://ремонтям.рф/">
+<meta itemprop="name" content="РЕМОНТЯМ">
+<div itemscope="" itemprop="address" itemtype="http://schema.org/PostalAddress">
+<meta itemprop="postalCode" content="198332">
+<meta itemprop="addressLocality" content="Санкт-Петербург">
+<meta itemprop="streetAddress" content="проспект Кузнецова дом 11 кор.2">
+</div>
+<meta itemprop="telephone" content="8 800 100 41 69">
+</div>
+<div class="tel dflex jcsb aic">
+<span>Санкт-Петербург: </span>
+<span class="stel"><a href="tel:+78126484190">+7 (812) 648-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Москва:</span>
+<span class="stel"><a href="tel:+74951884190">+7 (495) 188-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Отдел продаж:</span>
+<span class="stel"><a href="tel:+79112052741">+7 (911) 205-27-41</a></span>
+</div>
+<div class=" social-links ">
+<a href="https://www.youtube.com/@user-rr6su3fk9g " rel="nofollow noopener" target="blank" class="yutb_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+<a href="https://vk.com/" rel="nofollow noopener" class="vk_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+<a href="https://t.me/+79112052741" rel="nofollow noopener" class="tg_link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+</div>
+<style>
+    <div class="social-links">a{ color:#fff;border-color:#fff;}</div></style>
+<p>&nbsp;</p>
+<p>E-mail: <a href="mailto:info@remontiam.ru">info@remontiam.ru</a></p>
+<p>Офис: г. Санкт-Петербург, проспект Кузнецова дом 11 кор.2</p>
+<p>Завод: г. Санкт-Петербург, Гатчина, ул.Жемчужина 2</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

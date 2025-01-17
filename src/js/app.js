@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import { Navigation} from "swiper/modules";
+import { Navigation, Pagination} from "swiper/modules";
 
 const productsSliderContainers = document.querySelectorAll('.js-products-slider-container');
 
@@ -107,3 +107,40 @@ $(document).on('click', (e) => {
 $('.js-why-us-toggle').on('click', function() {
     $('.js-why-us-desc').toggleClass('_is-show');
 });
+
+$('.accordion-item').on('click', function() {
+  $(this).parent().toggleClass('_is-open');
+  $(this).next('.accordion-content').slideToggle();
+});
+
+// Смена вида списка товаров
+
+$('.js-catalog-views-btn').on('click', function() {
+
+  if($(this).data('views') === 'grid') {
+    $('.catalog-list').removeClass('_is-list');
+  } else {
+    $('.catalog-list').addClass('_is-list');
+  }
+  $('.js-catalog-views-btn').removeClass('_is-active');
+  $(this).addClass('_is-active');
+});
+
+//Слайдер для карточки товара в каталоге
+const catalogCardGallerySliders = document.querySelectorAll('.js-catalog-card-gallery');
+
+if(catalogCardGallerySliders.length > 0) {
+
+  catalogCardGallerySliders.forEach((slider) => {
+    const catalogCardGallerySlider = new Swiper(slider, {
+      modules: [Pagination],
+      slidesPerView: 1,
+      spaceBetween: 6,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    })
+  })
+
+}

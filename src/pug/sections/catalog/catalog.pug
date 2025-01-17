@@ -1,0 +1,468 @@
+section.catalog 
+  .container-wide
+    .catalog__title Каталог товаров
+    .catalog__inner 
+      .catalog__sidebar
+        include ../../components/catalog-nav/catalog-nav
+      .catalog__content
+        .catalog__sections
+          .catalog-section 
+            .catalog-section__head 
+              a(href="#").catalog-section__title Коммунальная техника
+            .catalog-section__list 
+              a(href="#").catalog-section-card
+                .catalog-section-card__img 
+                  img(src="./img/catalog/cat-section-01.png", alt="")
+                .catalog-section-card__title Комбинированные дорожные машины
+              a(href="#").catalog-section-card
+                .catalog-section-card__img 
+                  img(src="./img/catalog/cat-section-02.png", alt="")
+                .catalog-section-card__title Пескоразбрасывающее оборудование
+              a(href="#").catalog-section-card
+                .catalog-section-card__img 
+                  img(src="./img/catalog/cat-section-03.png", alt="")
+                .catalog-section-card__title Поливомоечное оборудование
+              a(href="#").catalog-section-card
+                .catalog-section-card__img 
+                  img(src="./img/catalog/cat-section-04.png", alt="")
+                .catalog-section-card__title Установки приготовления солевого раствора
+              a(href="#").catalog-section-card
+                .catalog-section-card__img 
+                  img(src="./img/catalog/cat-section-05.png", alt="")
+                .catalog-section-card__title Вакуумные подметально-уборочные машины
+              a(href="#").catalog-section-card
+                .catalog-section-card__img 
+                  img(src="./img/catalog/cat-section-06.png", alt="")
+                .catalog-section-card__title Вакуумные машины
+              a(href="#").catalog-section-card
+                .catalog-section-card__img 
+                  img(src="./img/catalog/cat-section-07.png", alt="")
+                .catalog-section-card__title Бензовозы-топлизаправщики
+              a(href="#").catalog-section-card
+                .catalog-section-card__img 
+                  img(src="./img/catalog/cat-section-08.png", alt="")
+                .catalog-section-card__title Илососные машины
+              a(href="#").catalog-section-card
+                .catalog-section-card__img 
+                  img(src="./img/catalog/cat-section-09.png", alt="")
+                .catalog-section-card__title Инфракрасные нагреватели кровли
+        .catalog-main
+          .catalog-panel
+            .catalog-panel__left 
+              .catalog-panel__top
+                .catalog-panel__goods-count Товаров: 9
+                .catalog-panel__sorting 
+                  .catalog-panel__sorting-title Сортировать по:
+                  .catalog-panel__sorting-list
+                    .catalog-sort-item._is-selected Умолчанию
+                    .catalog-sort-item Цене
+                    .catalog-sort-item Рейтингу
+              .catalog-panel__bottom
+                .catalog-panel__filters 
+                  .catalog-filter-item 
+                    input(type="radio", name="cat_filter" id="cat_filter_01")
+                    label(for="cat_filter_01") Фильтр 1
+                  .catalog-filter-item 
+                    input(type="radio", name="cat_filter" id="cat_filter_02")
+                    label(for="cat_filter_02") Фильтр 2
+                  .catalog-filter-item 
+                    input(type="radio", name="cat_filter" id="cat_filter_03" checked)
+                    label(for="cat_filter_03") Фильтр 3
+                  .catalog-filter-item 
+                    input(type="radio", name="cat_filter" id="cat_filter_04")
+                    label(for="cat_filter_04") Фильтр 4
+                  .catalog-filter-item 
+                    input(type="radio", name="cat_filter" id="cat_filter_05")
+                    label(for="cat_filter_05") Фильтр 5
+                  .catalog-filter-item 
+                    input(type="radio", name="cat_filter" id="cat_filter_06")
+                    label(for="cat_filter_06") Фильтр 6
+                  .catalog-filter-item 
+                    input(type="radio", name="cat_filter" id="cat_filter_07")
+                    label(for="cat_filter_07") Фильтр 7
+            .catalog-panel__right 
+              .catalog-panel__views 
+                button(type="button" style="--icon: url('../img/icons/grid.svg')" data-views="grid").catalog-panel__views-btn.js-catalog-views-btn._is-active
+                button(type="button" style="--icon: url('../img/icons/lines.svg')" data-views="list").catalog-panel__views-btn.js-catalog-views-btn
+          .catalog-list
+            .catalog-card
+              .catalog-card__inner 
+                .catalog-card__top 
+                  .catalog-card__articul Артикул: 34498
+                  .catalog-card__toolbar 
+                    button(type="button" style="--icon: url('../img/icons/compare.svg)").catalog-card__btn-compare 
+                    button(type="button" style="--icon: url('../img/icons/fav.svg)").catalog-card__btn-to-fav 
+                .catalog-card__main
+                  .catalog-card__gallery.js-catalog-card-gallery 
+                    .swiper-wrapper 
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                    .swiper-pagination
+                  .catalog-card__info 
+                    .catalog-card__desc
+                      .catalog-card__title Задний отвал НО-76 на трактор МТЗ
+                      .catalog-card__rating 
+                        .catalog-card__rating-stars 
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                        .catalog-card__rating-value 3
+                      .catalog-card__details 
+                        .catalog-card__detail 
+                          span Отвал, тип: 
+                          | Навесной
+                        .catalog-card__detail 
+                          span Шасси/тип: 
+                          | КАМАЗ-43253
+                        .catalog-card__detail 
+                          span Угол поворота отвала: 
+                          | ±40° °
+                    .catalog-card__bottom 
+                      .catalog-card__price Цена по запросу
+                      .catalog-card__available В наличии
+                      .catalog-card__controls 
+                        a(href="#").catalog-card__btn.btn Запросить цену
+                        a(href="#").catalog-card__more.btn.btn--outline Подробнее
+                      a(href="#").catalog-card__leasing-calc Расчитать лизинг/кредит от 10 000 ₽
+            .catalog-card
+              .catalog-card__inner 
+                .catalog-card__top 
+                  .catalog-card__articul Артикул: 34498
+                  .catalog-card__toolbar 
+                    button(type="button" style="--icon: url('../img/icons/compare.svg)").catalog-card__btn-compare 
+                    button(type="button" style="--icon: url('../img/icons/fav.svg)").catalog-card__btn-to-fav 
+                .catalog-card__main
+                  .catalog-card__gallery.js-catalog-card-gallery 
+                    .swiper-wrapper 
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                    .swiper-pagination
+                  .catalog-card__info 
+                    .catalog-card__desc
+                      .catalog-card__title Задний отвал НО-76 на трактор МТЗ
+                      .catalog-card__rating 
+                        .catalog-card__rating-stars 
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                        .catalog-card__rating-value 3
+                      .catalog-card__details 
+                        .catalog-card__detail 
+                          span Отвал, тип: 
+                          | Навесной
+                        .catalog-card__detail 
+                          span Шасси/тип: 
+                          | КАМАЗ-43253
+                        .catalog-card__detail 
+                          span Угол поворота отвала: 
+                          | ±40° °
+                    .catalog-card__bottom 
+                      .catalog-card__price 1  500 000 ₽
+                      .catalog-card__available В наличии
+                      .catalog-card__controls 
+                        a(href="#").catalog-card__btn.catalog-card__btn--cart.btn В корзину
+                        a(href="#").catalog-card__more.btn.btn--outline Подробнее
+                      a(href="#").catalog-card__leasing-calc Расчитать лизинг/кредит от 10 000 ₽
+            .catalog-card
+              .catalog-card__inner 
+                .catalog-card__top 
+                  .catalog-card__articul Артикул: 34498
+                  .catalog-card__toolbar 
+                    button(type="button" style="--icon: url('../img/icons/compare.svg)").catalog-card__btn-compare 
+                    button(type="button" style="--icon: url('../img/icons/fav.svg)").catalog-card__btn-to-fav 
+                .catalog-card__main
+                  .catalog-card__gallery.js-catalog-card-gallery 
+                    .swiper-wrapper 
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                    .swiper-pagination
+                  .catalog-card__info 
+                    .catalog-card__desc
+                      .catalog-card__title Задний отвал НО-76 на трактор МТЗ
+                      .catalog-card__rating 
+                        .catalog-card__rating-stars 
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                        .catalog-card__rating-value 3
+                      .catalog-card__details 
+                        .catalog-card__detail 
+                          span Отвал, тип: 
+                          | Навесной
+                        .catalog-card__detail 
+                          span Шасси/тип: 
+                          | КАМАЗ-43253
+                        .catalog-card__detail 
+                          span Угол поворота отвала: 
+                          | ±40° °
+                    .catalog-card__bottom 
+                      .catalog-card__price 1  500 000 ₽
+                      .catalog-card__available В наличии
+                      .catalog-card__controls 
+                        a(href="#").catalog-card__btn.catalog-card__btn--cart.btn В корзину
+                        a(href="#").catalog-card__more.btn.btn--outline Подробнее
+                      a(href="#").catalog-card__leasing-calc Расчитать лизинг/кредит от 10 000 ₽
+            .catalog-card
+              .catalog-card__inner 
+                .catalog-card__top 
+                  .catalog-card__articul Артикул: 34498
+                  .catalog-card__toolbar 
+                    button(type="button" style="--icon: url('../img/icons/compare.svg)").catalog-card__btn-compare 
+                    button(type="button" style="--icon: url('../img/icons/fav.svg)").catalog-card__btn-to-fav 
+                .catalog-card__main
+                  .catalog-card__gallery.js-catalog-card-gallery 
+                    .swiper-wrapper 
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                    .swiper-pagination
+                  .catalog-card__info 
+                    .catalog-card__desc
+                      .catalog-card__title Задний отвал НО-76 на трактор МТЗ
+                      .catalog-card__rating 
+                        .catalog-card__rating-stars 
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                        .catalog-card__rating-value 3
+                      .catalog-card__details 
+                        .catalog-card__detail 
+                          span Отвал, тип: 
+                          | Навесной
+                        .catalog-card__detail 
+                          span Шасси/тип: 
+                          | КАМАЗ-43253
+                        .catalog-card__detail 
+                          span Угол поворота отвала: 
+                          | ±40° °
+                    .catalog-card__bottom 
+                      .catalog-card__price 1  500 000 ₽
+                      .catalog-card__available В наличии
+                      .catalog-card__controls 
+                        a(href="#").catalog-card__btn.catalog-card__btn--cart.btn В корзину
+                        a(href="#").catalog-card__more.btn.btn--outline Подробнее
+                      a(href="#").catalog-card__leasing-calc Расчитать лизинг/кредит от 10 000 ₽
+            .catalog-banner 
+              picture.catalog-banner__bg 
+                img(src="./img/catalog/catalog-banner.webp", alt="")
+              .catalog-banner__inner
+                .catalog-banner__title Текст спецпредложения
+                .catalog-banner__subtitle Подзаголовок какой-нибудь
+            .catalog-card
+              .catalog-card__inner 
+                .catalog-card__top 
+                  .catalog-card__articul Артикул: 34498
+                  .catalog-card__toolbar 
+                    button(type="button" style="--icon: url('../img/icons/compare.svg)").catalog-card__btn-compare 
+                    button(type="button" style="--icon: url('../img/icons/fav.svg)").catalog-card__btn-to-fav 
+                .catalog-card__main
+                  .catalog-card__gallery.js-catalog-card-gallery 
+                    .swiper-wrapper 
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                    .swiper-pagination
+                  .catalog-card__info 
+                    .catalog-card__desc
+                      .catalog-card__title Задний отвал НО-76 на трактор МТЗ
+                      .catalog-card__rating 
+                        .catalog-card__rating-stars 
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                        .catalog-card__rating-value 3
+                      .catalog-card__details 
+                        .catalog-card__detail 
+                          span Отвал, тип: 
+                          | Навесной
+                        .catalog-card__detail 
+                          span Шасси/тип: 
+                          | КАМАЗ-43253
+                        .catalog-card__detail 
+                          span Угол поворота отвала: 
+                          | ±40° °
+                    .catalog-card__bottom 
+                      .catalog-card__price 1  500 000 ₽
+                      .catalog-card__available В наличии
+                      .catalog-card__controls 
+                        a(href="#").catalog-card__btn.catalog-card__btn--cart.btn В корзину
+                        a(href="#").catalog-card__more.btn.btn--outline Подробнее
+                      a(href="#").catalog-card__leasing-calc Расчитать лизинг/кредит от 10 000 ₽
+            .catalog-card
+              .catalog-card__inner 
+                .catalog-card__top 
+                  .catalog-card__articul Артикул: 34498
+                  .catalog-card__toolbar 
+                    button(type="button" style="--icon: url('../img/icons/compare.svg)").catalog-card__btn-compare 
+                    button(type="button" style="--icon: url('../img/icons/fav.svg)").catalog-card__btn-to-fav 
+                .catalog-card__main
+                  .catalog-card__gallery.js-catalog-card-gallery 
+                    .swiper-wrapper 
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                    .swiper-pagination
+                  .catalog-card__info 
+                    .catalog-card__desc
+                      .catalog-card__title Задний отвал НО-76 на трактор МТЗ
+                      .catalog-card__rating 
+                        .catalog-card__rating-stars 
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                        .catalog-card__rating-value 3
+                      .catalog-card__details 
+                        .catalog-card__detail 
+                          span Отвал, тип: 
+                          | Навесной
+                        .catalog-card__detail 
+                          span Шасси/тип: 
+                          | КАМАЗ-43253
+                        .catalog-card__detail 
+                          span Угол поворота отвала: 
+                          | ±40° °
+                    .catalog-card__bottom 
+                      .catalog-card__price 1  500 000 ₽
+                      .catalog-card__available В наличии
+                      .catalog-card__controls 
+                        a(href="#").catalog-card__btn.catalog-card__btn--cart.btn В корзину
+                        a(href="#").catalog-card__more.btn.btn--outline Подробнее
+                      a(href="#").catalog-card__leasing-calc Расчитать лизинг/кредит от 10 000 ₽
+            .catalog-card
+              .catalog-card__inner 
+                .catalog-card__top 
+                  .catalog-card__articul Артикул: 34498
+                  .catalog-card__toolbar 
+                    button(type="button" style="--icon: url('../img/icons/compare.svg)").catalog-card__btn-compare 
+                    button(type="button" style="--icon: url('../img/icons/fav.svg)").catalog-card__btn-to-fav 
+                .catalog-card__main
+                  .catalog-card__gallery.js-catalog-card-gallery 
+                    .swiper-wrapper 
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                    .swiper-pagination
+                  .catalog-card__info 
+                    .catalog-card__desc
+                      .catalog-card__title Задний отвал НО-76 на трактор МТЗ
+                      .catalog-card__rating 
+                        .catalog-card__rating-stars 
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                        .catalog-card__rating-value 3
+                      .catalog-card__details 
+                        .catalog-card__detail 
+                          span Отвал, тип: 
+                          | Навесной
+                        .catalog-card__detail 
+                          span Шасси/тип: 
+                          | КАМАЗ-43253
+                        .catalog-card__detail 
+                          span Угол поворота отвала: 
+                          | ±40° °
+                    .catalog-card__bottom 
+                      .catalog-card__price 1  500 000 ₽
+                      .catalog-card__available В наличии
+                      .catalog-card__controls 
+                        a(href="#").catalog-card__btn.catalog-card__btn--cart.btn В корзину
+                        a(href="#").catalog-card__more.btn.btn--outline Подробнее
+                      a(href="#").catalog-card__leasing-calc Расчитать лизинг/кредит от 10 000 ₽
+            .catalog-card
+              .catalog-card__inner 
+                .catalog-card__top 
+                  .catalog-card__articul Артикул: 34498
+                  .catalog-card__toolbar 
+                    button(type="button" style="--icon: url('../img/icons/compare.svg)").catalog-card__btn-compare 
+                    button(type="button" style="--icon: url('../img/icons/fav.svg)").catalog-card__btn-to-fav 
+                .catalog-card__main
+                  .catalog-card__gallery.js-catalog-card-gallery 
+                    .swiper-wrapper 
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-02.webp", alt="")
+                      picture.catalog-card__img.swiper-slide 
+                        img(src="./img/catalog/product-card-01.webp", alt="")
+                    .swiper-pagination
+                  .catalog-card__info 
+                    .catalog-card__desc
+                      .catalog-card__title Задний отвал НО-76 на трактор МТЗ
+                      .catalog-card__rating 
+                        .catalog-card__rating-stars 
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                          .catalog-card__rating-star
+                        .catalog-card__rating-value 3
+                      .catalog-card__details 
+                        .catalog-card__detail 
+                          span Отвал, тип: 
+                          | Навесной
+                        .catalog-card__detail 
+                          span Шасси/тип: 
+                          | КАМАЗ-43253
+                        .catalog-card__detail 
+                          span Угол поворота отвала: 
+                          | ±40° °
+                    .catalog-card__bottom 
+                      .catalog-card__price 1  500 000 ₽
+                      .catalog-card__available В наличии
+                      .catalog-card__controls 
+                        a(href="#").catalog-card__btn.catalog-card__btn--cart.btn В корзину
+                        a(href="#").catalog-card__more.btn.btn--outline Подробнее
+                      a(href="#").catalog-card__leasing-calc Расчитать лизинг/кредит от 10 000 ₽
+        include ../../components/catalog-order/catalog-order
+        include ../../components/catalog-desc/catalog-desc
+        include ../../components/catalog-faq/catalog-faq
