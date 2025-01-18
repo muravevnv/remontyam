@@ -140,6 +140,19 @@ if(catalogCardGallerySliders.length > 0) {
         el: '.swiper-pagination',
         clickable: true,
       },
+      on: {
+        init: function () {
+          let sliderBullets = slider.querySelectorAll(
+            '.swiper-pagination-bullet'
+          );
+
+          sliderBullets.forEach(function (k) {
+            k.addEventListener('mouseover', function () {
+              k.click();
+            });
+          });
+        },
+      },
     })
   })
 
