@@ -6106,6 +6106,7 @@ p {
 }
 
 .catalog-nav__item {
+  position: relative;
   width: 100%;
   padding: 12px 11px;
   border: 1px solid var(--color-border-100);
@@ -6115,6 +6116,9 @@ p {
 
 .catalog-nav__item._is-open {
   border-color: var(--color-accent);
+}
+
+.catalog-nav__item._is-open .catalog-nav__item-main {
   color: var(--color-accent);
 }
 
@@ -6143,12 +6147,12 @@ p {
   transform: rotate(0deg);
 }
 
-.catalog-nav__item-list {
+.catalog-nav__item-dropdown {
   display: none;
   padding-top: 18px;
 }
 
-.catalog-nav__item-list-inner {
+.catalog-nav__item-dropdown-inner {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -6163,6 +6167,38 @@ p {
   line-height: 1;
   color: var(--color-primary);
   transition: color 0.25s ease-in-out;
+}
+
+.catalog-nav__item-list {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-left: 8px;
+  min-width: 961px;
+  background-color: var(--color-whte);
+  padding: 14px;
+  border-radius: 6px;
+  border: 1px solid var(--color-accent);
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.25s ease-in-out;
+}
+
+.catalog-nav__item-list::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  left: -12px;
+  height: 100%;
+  top: 0;
+}
+
+.catalog-nav__item-list-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
 }
 
 .catalog-nav__link {
@@ -7625,6 +7661,14 @@ p {
     box-shadow: none;
   }
 
+  .catalog-nav__item-list {
+    min-width: 600px;
+  }
+
+  .catalog-nav__item-list-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .catalog-section__list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -7715,6 +7759,10 @@ p {
 
   .catalog__content {
     width: 100%;
+  }
+
+  .catalog-nav__item-list {
+    display: none !important;
   }
 
   .catalog-banner {
@@ -7964,7 +8012,20 @@ p {
 
   .catalog-nav__item:hover {
     border-color: var(--color-accent);
+  }
+
+  .catalog-nav__item:hover .catalog-nav__item-main {
     color: var(--color-accent);
+  }
+
+  .catalog-nav__item:hover .catalog-nav__item-main::after {
+    background-color: currentColor;
+  }
+
+  .catalog-nav__item:hover .catalog-nav__item-list {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
   }
 
   .catalog-nav__item-link:hover {

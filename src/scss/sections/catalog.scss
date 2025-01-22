@@ -52,6 +52,7 @@
   }
 
   &__item {
+    position: relative;
     width: 100%;
     padding: 12px 11px;
     border: 1px solid cl(border-100);
@@ -60,9 +61,11 @@
 
     &._is-open {
       border-color: cl(accent);
-      color: cl(accent);
+      
 
       .catalog-nav__item-main {
+        color: cl(accent);
+
         &::after {
           background-color: currentColor;
           transform: rotate(90deg);
@@ -73,7 +76,20 @@
     @media(any-hover: hover) {
       &:hover {
         border-color: cl(accent);
-        color: cl(accent);
+        
+        .catalog-nav__item-main {
+          color: cl(accent);
+
+          &::after {
+            background-color: currentColor;
+          }
+        }
+
+        .catalog-nav__item-list {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: all;
+        }
       }
     }
 
@@ -97,7 +113,7 @@
       }
     }
 
-    &-list {
+    &-dropdown {
       display: none;
       padding-top: 18px;
 
@@ -117,13 +133,58 @@
       line-height: 1;
       color: cl(primary);
       transition: color 0.25s ease-in-out;
-
+      
       @media(any-hover: hover) {
         &:hover {
           color: cl(accent);
         }
       }
     }
+
+    &-list {
+      position: absolute;
+      left: 100%;
+      top: 0;
+      margin-left: 8px;
+      min-width: 961px;
+      background-color: cl(whte);
+      padding: 14px;
+      border-radius: 6px;
+      border: 1px solid cl(accent);
+      box-shadow: 0px 2px 15px 0px #00000026;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: 0.25s ease-in-out;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 12px;
+        left: -12px;
+        height: 100%;
+        top: 0;
+      }
+
+      @include mq($mt) {
+        min-width: 600px;
+      }
+
+      @include mq($ms) {
+        display: none !important;
+      }
+
+      &-inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+
+        @include mq($mt)  {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  
   }
 
   &__link {
