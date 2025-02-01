@@ -1,0 +1,652 @@
+section.product 
+  .container-wide 
+    .product__content
+      .product__title Вакуумная машина МВ-8 КАМАЗ-43253
+      .product__panel 
+        .product__articul Артикул: 
+          span МВ-8
+        .product__rating 
+          .product__rating-num 4,9
+          .product__rating-reviews 3 отзыва
+        button(type="button" style="--icon: url('../img/icons/favorite.svg')").product__control-btn.product__to-favorite В избранное
+        button(type="button" style="--icon: url('../img/icons/compare.svg')").product__control-btn.product__to-compare Сравнить
+      .product__top
+        .product__main
+          .product-gallery 
+            .product-gallery__slider.js-product-slider
+              .swiper-wrapper 
+                picture.product-gallery__slider-item.swiper-slide 
+                  img(src="./img/product/product-01.webp", alt="")
+                picture.product-gallery__slider-item.swiper-slide 
+                  img(src="./img/product/product-01.webp", alt="")
+                picture.product-gallery__slider-item.swiper-slide 
+                  img(src="./img/product/product-01.webp", alt="")
+                picture.product-gallery__slider-item.swiper-slide 
+                  img(src="./img/product/product-01.webp", alt="")
+                picture.product-gallery__slider-item.swiper-slide 
+                  img(src="./img/product/product-01.webp", alt="")
+                picture.product-gallery__slider-item.swiper-slide 
+                  img(src="./img/product/product-01.webp", alt="")
+            .product-gallery__thumbs.js-product-thumbs-slider 
+              .swiper-wrapper 
+                picture.product-gallery__thumbs-item.swiper-slide 
+                  source(srcset="./img/product/product-thumb-01.webp", type="image/webp")
+                  img(src="./img/product/product-thumb-01.webp", alt="")
+                picture.product-gallery__thumbs-item.swiper-slide 
+                  source(srcset="./img/product/product-thumb-02.webp", type="image/webp")
+                  img(src="./img/product/product-thumb-02.webp", alt="")
+                picture.product-gallery__thumbs-item.swiper-slide 
+                  source(srcset="./img/product/product-thumb-03.webp", type="image/webp")
+                  img(src="./img/product/product-thumb-03.webp", alt="")
+                picture.product-gallery__thumbs-item.swiper-slide 
+                  source(srcset="./img/product/product-thumb-04.webp", type="image/webp")
+                  img(src="./img/product/product-thumb-04.webp", alt="")
+                picture.product-gallery__thumbs-item.swiper-slide 
+                  source(srcset="./img/product/product-thumb-05.webp", type="image/webp")
+                  img(src="./img/product/product-thumb-05.webp", alt="")
+                picture.product-gallery__thumbs-item.swiper-slide 
+                  source(srcset="./img/product/product-thumb-01.webp", type="image/webp")
+                  img(src="./img/product/product-thumb-01.webp", alt="")
+          .product-details
+            .product-details__badge Хит продаж
+            .product-details__chars 
+              .product-details__chars-list
+                .product-details__chars-item 
+                  span Тип двигателя:
+                  | дизельный, четырёхтактный,
+                  | одноцилиндровый, с понижающим
+                  | редуктором
+                .product-details__chars-item
+                  span Тип горючего:
+                  | бензин АИ-92
+                .product-details__chars-item 
+                  span Расход топлива:
+                  | 313 г/Вт
+                .product-details__chars-item
+                  span Вместимость цистерны:
+                  | 2 м3
+                .product-details__chars-item
+                  span Горелка:
+                  | 1 штука
+              a(href="#").product-details__chars-all Все характеристики
+            .product-details__guarancy Гарантия от производителя: 1 год
+        .product__asside
+          .product-order 
+            .product-order__section
+              .product-order__available В наличии
+            .product-order__section   
+              .product-order__price 
+                .product-order__price-old 5 604 984 ₽
+                .product-order__price-current 5 604 984 ₽
+                .product-order__price-nds Цена с НДС 20%
+              .product-order__btns
+                a(href="#").product-order__btn.btn В корзину
+                a(href="#").product-order__btn.btn.btn--outline Быстрый заказ
+                a(href="#").product-order__btn.btn.btn--border В лизинг
+                a(href="#").product-order__btn.btn.btn--border Получить КП
+            .product-order__section 
+              .product-order__contacts 
+                .product-order__contacts-row 
+                  a(href="#").product-order__contacts-tel 8 800 100 41 96
+                  a(href="#").product-order__contacts-email info@remontiam.ru
+                .product-order__contacts-row 
+                  a(href="#").product-order__contacts-btn.btn.btn--outline Заказать звонок
+                  .product-order__contacts-socials
+                    .product-order__contacts-socials-title Напишите нам в:
+                    .product-order__contacts-socials-links 
+                      a(href="#").product-order__contacts-socials-link 
+                        img(src="./img/icons/whatsapp.svg", alt="")
+                      a(href="#").product-order__contacts-socials-link 
+                        img(src="./img/icons/tg.svg", alt="")
+            .product-order__section 
+              .product-order__bottom 
+                | Нашли дешевле? 
+                br
+                | Сообщите – сделаем скидку <span>3%</span> от цены конкурента
+      .product__info
+        .product__info-nav 
+          button(type="button" data-control="1").js-tab-control.product__info-nav-item._is-active Характеристики и описание
+          button(type="button" data-control="2").js-tab-control.product__info-nav-item Обзор
+          button(type="button" data-control="3").js-tab-control.product__info-nav-item комплектация
+          button(type="button" data-control="4").js-tab-control.product__info-nav-item Вопросы
+          button(type="button" data-control="5").js-tab-control.product__info-nav-item Отзывы
+          button(type="button" data-control="6").js-tab-control.product__info-nav-item доставка
+          button(type="button" data-control="7").js-tab-control.product__info-nav-item кредит/лизинг
+        .product__info-content._is-active.js-tab-section(data-tab="1")
+          .product-chars
+            .product-chars__banner 
+              .product-chars__banner-inner 
+                .product-chars__banner-info
+                  .product-chars__banner-title Полный привод для превосходной проходимости
+                  .product-chars__banner-desc Каждое из колес имеет гидравлический привод, что позволяет машине во время уборки без проблем передвигаться по глубокому снегу. Каждое из колес имеет гидравлический привод, что позволяет машине во время уборки без проблем передвигаться по глубокому снегу. 
+                  button(type="button" style="--icon: url('../img/icons/arrow-down.svg')").product-chars__banner-btn-more.btn.btn--border Показать ещё
+                picture.product-chars__banner-img 
+                  source(srcset="./img/product/product-banner.webp", type="image/webp")
+                  img(src="./img/product/product-banner.webp", alt="")
+            .product-chars__main 
+              .product-chars__details 
+                .product-chars__details-title Характеристики
+                .product-chars__details-list 
+                  .product-chars__detail 
+                    span Страна производства
+                    | Россия
+                  .product-chars__detail 
+                    span Габариты, ДхШхВ:
+                    | 4320х1400х2070 мм
+                  .product-chars__detail 
+                    span Колесная формула:
+                    | 4x4
+                  .product-chars__detail 
+                    span Масса:
+                    | 300 л
+                  .product-chars__detail 
+                    span Водяной бак:
+                    | Россия
+                  .product-chars__detail 
+                    span Шасси:
+                    | специальное самоходное шасси
+                  .product-chars__detail 
+                    span Высота выгрузки:
+                    | 1 500 мм
+                  .product-chars__detail 
+                    span Диаметр щетки:
+                    | 850 мм
+                  .product-chars__detail 
+                    span Скорость вращения щетки:
+                    | 0–120 об/мин
+                button(type="button" style="--icon: url('../img/icons/arrow-down.svg')").product-chars__details-btn-more.btn.btn--border Все характеристики
+              .product-chars__info 
+                .product-chars__info-title Описание 
+                .product-chars__info-desc
+                  p Машину можно использовать круглогодично, благодаря универсальному 
+                    | набору навесного оборудования из 6 типов, а также системе 
+                    | быстрого монтажа/демонтажа. Летом подметать с функцией увлажнения поверхности 
+                    | и транспортировкой мусора в места хранения/утилизации, а зимой распределять 
+                    | противогололедный реагент и производить расчистку от снега. 
+                  p Одна машина Меркатор ВКМ 1500 заменяет сразу несколько видов техники: 
+                    | трактор с щёточным оборудованием, поливомоечную машину, распределитель 
+                    | противогололедных материалов и снегоуборщик. 
+                  p Компактные размеры, наличие полного 
+                    | привода и широкий функционал позволяют использовать машину в труднодоступных местах: 
+                    | на узких улочках или на площадках производственных предприятий. Шарнирно-сочленённая 
+                    | рама обеспечивает движение колея-в-колею, что минимизирует риск аварийных ситуаций 
+                    | и наделяет машину непревзойдённой манёвренностью.
+        .product__info-content.js-tab-section(data-tab="2")
+          .product-desc 
+            h3 Обзор на вакуумную машину МВ-8 КАМАЗ-43253
+            p Вакуумная машина МВ-8, построенная на шасси КАМАЗ-43253, 
+              | представляет собой универсальное решение 
+              | для выполнения коммунальных 
+              | и промышленных задач, связанных с очисткой и транспортировкой жидких 
+              | и вязких отходов. Рассмотрим ключевые характеристики 
+              | и преимущества данной модели.
+            h3 Основные технические характеристики:
+            ul 
+              li Объем цистерны: 8 м³ — оптимальный объем для работы в условиях средней и высокой загруженности.
+              li Базовое шасси: КАМАЗ-43253 — компактное и маневренное, что особенно важно для работы в городских условиях.
+              li Мощность двигателя: 240 л.с., экологический стандарт Евро-5, обеспечивающий экономичное потребление топлива и минимальный уровень выбросов.
+              li Привод вакуумного насоса: Отбор мощности от двигателя — надежная и простая в эксплуатации система.
+              li Производительность насоса: До 360 м³/ч, что позволяет быстро справляться с задачами по откачке жидкостей.
+            h3 Конструктивные особенности:
+            ul 
+              li Цистерна: Стальная конструкция с антикоррозийным покрытием, что увеличивает срок службы даже при работе с агрессивными средами.
+              li Система наполнения и опорожнения: Вакуумный насос и гидравлический механизм опрокидывания цистерны обеспечивают легкость в эксплуатации.
+              li Шасси: КАМАЗ-43253 отличается высокой проходимостью и надежностью, а также доступностью запчастей, что упрощает обслуживание.
+              li Габариты: Компактные размеры позволяют работать в условиях ограниченного пространства, таких как дворы и узкие улицы.
+            h3 Преимущества модели:
+            ol
+              li Универсальность применения: Откачка септиков, очистка колодцев, уборка сточных вод и жидких отходов.
+              li Высокая маневренность: Шасси идеально подходит для работы в городской среде, на строительных площадках и в промышленной зоне.
+              li Надежность: КАМАЗ известен своей долговечностью и неприхотливостью, что делает его идеальным выбором для суровых условий эксплуатации.
+              li Экономичность: Низкий расход топлива и минимальные эксплуатационные расходы.
+              li Простота управления: Интуитивно понятная панель управления, что снижает требования к обучению операторов.
+            h3 Возможные недостатки:
+            ol 
+              li Вес: Полностью загруженная машина может испытывать ограничения на дорогах с низкой грузоподъемностью.
+              li Шумность: Вакуумный насос и двигатель создают достаточно высокий уровень шума.
+              li Ограничения в условиях бездорожья: Несмотря на хорошую проходимость, машина не предназначена для работы в экстремальных внедорожных условиях.
+            h3 Вывод:
+            p МВ-8 КАМАЗ-43253 — это надёжная, эффективная и экономичная вакуумная 
+              | машина, подходящая для коммунальных служб, 
+              | строительных организаций и промышленных предприятий. Она сочетает 
+              | в себе передовые инженерные решения и классическую надёжность 
+              | шасси КАМАЗ. Благодаря манёвренности, долговечности 
+              | и производительности, модель оправдывает 
+              | ожидания даже самых требовательных пользователей.
+            h3 Видео-обзор:
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-Rp-LeLv2Jg" title="Подробный обзор самого востребованного в данный момент КамАЗа 6520!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        .product__info-content.js-tab-section(data-tab="3")
+          .product-complectation 
+            h3 Комплектация:
+            ul
+              li Цистерна на опоре;
+              li Насосный узел;
+              li Коробка отбора мощности для привода насоса;
+              li Трубопроводов, сливного устройства, обвязки и дополнительного оборудования.
+        .product__info-content.js-tab-section(data-tab="4")
+          .product-faq 
+            .product-faq__title Вопросы и ответы о вакуумной машине МВ-8 КАМАЗ-43253 
+            .product-faq__inner 
+              .product-faq__main
+                .product-faq__list 
+                  .product-faq__item 
+                    .product-faq__item-author Роман
+                    .product-faq__item-question Какие задачи может выполнять вакуумная машина МВ-8 на базе КАМАЗ-43253?
+                    .product-faq__item-answer 
+                      .product-faq__item-answer-author РемонтЯМ
+                      .product-faq__item-answer-text Вакуумная машина МВ-8 предназначена для откачивания 
+                        | жидких бытовых и промышленных отходов, 
+                        | очистки канализационных колодцев, резервуаров, выгребных ям и септиков. 
+                        | Она также может использоваться для транспортировки 
+                        | жидкостей и проведения аварийных работ на объектах ЖКХ.
+                  .product-faq__item 
+                    .product-faq__item-author Антон
+                    .product-faq__item-question Какая вместимость цистерны у вакуумной машины МВ-8?
+                    .product-faq__item-answer 
+                      .product-faq__item-answer-author РемонтЯМ
+                      .product-faq__item-answer-text Вакуумная машина МВ-8 предназначена для откачивания 
+                        | жидких бытовых и промышленных отходов, 
+                        | очистки канализационных колодцев, резервуаров, выгребных ям и септиков. 
+                        | Она также может использоваться для транспортировки 
+                        | жидкостей и проведения аварийных работ на объектах ЖКХ.
+                  .product-faq__item 
+                    .product-faq__item-author Кирилл
+                    .product-faq__item-question Какие задачи может выполнять вакуумная машина МВ-8 на базе КАМАЗ-43253?
+                    .product-faq__item-answer 
+                      .product-faq__item-answer-author РемонтЯМ
+                      .product-faq__item-answer-text Вакуумная машина МВ-8 предназначена для откачивания 
+                        | жидких бытовых и промышленных отходов, 
+                        | очистки канализационных колодцев, резервуаров, выгребных ям и септиков. 
+                        | Она также может использоваться для транспортировки 
+                        | жидкостей и проведения аварийных работ на объектах ЖКХ.
+                  .product-faq__item 
+                    .product-faq__item-author Виктор
+                    .product-faq__item-question Есть ли дополнительные опции для вакуумной машины МВ-8?
+                    .product-faq__item-answer 
+                      .product-faq__item-answer-author РемонтЯМ
+                      .product-faq__item-answer-text Вакуумная машина МВ-8 предназначена для откачивания 
+                        | жидких бытовых и промышленных отходов, 
+                        | очистки канализационных колодцев, резервуаров, выгребных ям и септиков. 
+                        | Она также может использоваться для транспортировки 
+                        | жидкостей и проведения аварийных работ на объектах ЖКХ.
+                button(type="button").product-faq__btn-more.btn.btn--border Показать ещё вопросы и ответы
+              .product-faq__asside 
+                .product-faq__asside-title Нужна помощь? 
+                .product-faq__asside-desc Задайте свой вопрос — вам ответит наш эксперт или представитель бренда
+                form.product-faq__asside-form(action="#")
+                  .product-faq__asside-group 
+                    input.product-faq__asside-input(type="text" placeholder="Имя")
+                  .product-faq__asside-group 
+                    input.product-faq__asside-input(type="text" placeholder="Email")
+                  .product-faq__asside-group 
+                    textarea(name="" cols="30" rows="10").product-faq__asside-input(type="text" placeholder="Вопрос")
+                  button(type="submit").product-faq__asside-submit.btn.btn--wide Задать вопрос
+        .product__info-content.js-tab-section(data-tab="6")
+          .product-delivery 
+              .product-delivery__subtitle Доставка
+              .product-delivery__desc 
+                p РЕМОНТЯМ предоставляет услуги по перевозке и перегону реализуемой спецтехники по всей территории России и СНГ.
+                p РЕМОНТЯМ сотрудничает только с проверенными транспортными компаниями, прошедшими проверку на благонадежность и обладающими многолетним опытом по перевозке стандартных и негабаритных грузов любыми видами транспорта.
+                p Сотрудники отдела логистики РЕМОНТЯМ - профессионалы в решении сложных транспортных задач, имеют профильное логистическое образование и практические знания по доставке грузов разными видами транспорта по всей стране.
+              .product-delivery__subtitle Доставка любыми видами транспорта
+              .product-delivery__types 
+                a(href="#").product-delivery__type
+                  picture.product-delivery__type-img
+                    source(scrset="./img/product/delivery-type-01.webp")
+                    img(src="./img/product/delivery-type-01.webp", alt="") 
+                  .product-delivery__type-title Перегон
+                a(href="#").product-delivery__type
+                  picture.product-delivery__type-img
+                    source(scrset="./img/product/delivery-type-02.webp")
+                    img(src="./img/product/delivery-type-02.webp", alt="") 
+                  .product-delivery__type-title Автомобильная перевозка
+                a(href="#").product-delivery__type
+                  picture.product-delivery__type-img
+                    source(scrset="./img/product/delivery-type-03.webp")
+                    img(src="./img/product/delivery-type-03.webp", alt="") 
+                  .product-delivery__type-title Перевозка негабаритной техники
+                a(href="#").product-delivery__type
+                  picture.product-delivery__type-img
+                    source(scrset="./img/product/delivery-type-04.webp")
+                    img(src="./img/product/delivery-type-04.webp", alt="") 
+                  .product-delivery__type-title Железнодорожные перевозки
+        .product__info-content.js-tab-section(data-tab="5")
+          .product-reviews 
+            .product-reviews__title 
+            .product-reviews__inner 
+              .product-reviews__rating 
+                .product-reviews__rating-total 
+                  .product-reviews__rating-total-stars
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                  .product-reviews__rating-total-value 4,9/5
+                bitton(type="button").product-reviews__rating-btn.btn.btn--wide Написать отзыв
+                .product-reviews__rating-item
+                  .product-reviews__rating-item-stars 
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                  .product-reviews__rating-item-amount 5 отзывов
+                .product-reviews__rating-item
+                  .product-reviews__rating-item-stars 
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star-stroke.svg", alt="")
+                  .product-reviews__rating-item-amount 2 отзыва
+                .product-reviews__rating-item
+                  .product-reviews__rating-item-stars 
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star-stroke.svg", alt="")
+                    img(src="./img/icons/rating-star-stroke.svg", alt="")
+                  .product-reviews__rating-item-amount 1 отзыв
+                .product-reviews__rating-item
+                  .product-reviews__rating-item-stars 
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star-stroke.svg", alt="")
+                    img(src="./img/icons/rating-star-stroke.svg", alt="")
+                    img(src="./img/icons/rating-star-stroke.svg", alt="")
+                  .product-reviews__rating-item-amount нет
+                .product-reviews__rating-item
+                  .product-reviews__rating-item-stars 
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star-stroke.svg", alt="")
+                    img(src="./img/icons/rating-star-stroke.svg", alt="")
+                    img(src="./img/icons/rating-star-stroke.svg", alt="")
+                    img(src="./img/icons/rating-star-stroke.svg", alt="")
+                  .product-reviews__rating-item-amount нет
+              .product-reviews__main 
+                .product-reviews__panel 
+                  .product-reviews__sort 
+                    .product-reviews__sort-title Сортировать: 
+                    .product-reviews__sort-select 
+                      select.js-select(name="") 
+                        option(value="1") По дате 
+                        option(value="1") По рейтингу 
+                .product-reviews__list 
+                  .product-reviews__item  
+                    .product-reviews__item-rating 
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                    .product-reviews__item-top 
+                      .product-reviews__item-author Вадим
+                      .product-reviews__item-date 19.12.2024
+                    .product-reviews__item-section 
+                      .product-reviews__item-section-title Достоинства: 
+                      .product-reviews__item-section-desc Надёжность, вместительная цистерна, удобное управление, качественная сборка
+                    .product-reviews__item-section 
+                      .product-reviews__item-section-title Недостатки:
+                      .product-reviews__item-section-desc Надёжность, вместительная цистерна, удобное управление, качественная сборка
+                    .product-reviews__item-section 
+                      .product-reviews__item-section-title Комментарий:
+                      .product-reviews__item-section-desc 
+                        | Приобрели вакуумную машину МВ-8 на базе КАМАЗ-43253 для работы 
+                        | в коммунальном хозяйстве, и она полностью 
+                        | оправдала ожидания. Машина надёжная, отлично справляется с откачкой 
+                        | жидких отходов, а вместимость цистерны 
+                        | позволяет сократить количество рейсов. Управление удобное, манёвренность 
+                        | на хорошем уровне даже в условиях плотной 
+                        | застройки. Отдельно хочу отметить качество сборки — всё сделано добротно, без нареканий. 
+                        | Определённо рекомендую для тех, кто ищет 
+                        | функциональное и долговечное решение.
+                  .product-reviews__item  
+                    .product-reviews__item-rating 
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                    .product-reviews__item-top 
+                      .product-reviews__item-author Вадим
+                      .product-reviews__item-date 19.12.2024
+                    .product-reviews__item-section 
+                      .product-reviews__item-section-title Достоинства: 
+                      .product-reviews__item-section-desc Надёжность, вместительная цистерна, удобное управление, качественная сборка
+                    .product-reviews__item-section 
+                      .product-reviews__item-section-title Недостатки:
+                      .product-reviews__item-section-desc Надёжность, вместительная цистерна, удобное управление, качественная сборка
+                    .product-reviews__item-section 
+                      .product-reviews__item-section-title Комментарий:
+                      .product-reviews__item-section-desc 
+                        | Приобрели вакуумную машину МВ-8 на базе КАМАЗ-43253 для работы 
+                        | в коммунальном хозяйстве, и она полностью 
+                        | оправдала ожидания. Машина надёжная, отлично справляется с откачкой 
+                        | жидких отходов, а вместимость цистерны 
+                        | позволяет сократить количество рейсов. Управление удобное, манёвренность 
+                        | на хорошем уровне даже в условиях плотной 
+                        | застройки. Отдельно хочу отметить качество сборки — всё сделано добротно, без нареканий. 
+                        | Определённо рекомендую для тех, кто ищет 
+                        | функциональное и долговечное решение.
+                  .product-reviews__item  
+                    .product-reviews__item-rating 
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                    .product-reviews__item-top 
+                      .product-reviews__item-author Вадим
+                      .product-reviews__item-date 19.12.2024
+                    .product-reviews__item-section 
+                      .product-reviews__item-section-title Достоинства: 
+                      .product-reviews__item-section-desc Надёжность, вместительная цистерна, удобное управление, качественная сборка
+                    .product-reviews__item-section 
+                      .product-reviews__item-section-title Недостатки:
+                      .product-reviews__item-section-desc Надёжность, вместительная цистерна, удобное управление, качественная сборка
+                    .product-reviews__item-section 
+                      .product-reviews__item-section-title Комментарий:
+                      .product-reviews__item-section-desc 
+                        | Приобрели вакуумную машину МВ-8 на базе КАМАЗ-43253 для работы 
+                        | в коммунальном хозяйстве, и она полностью 
+                        | оправдала ожидания. Машина надёжная, отлично справляется с откачкой 
+                        | жидких отходов, а вместимость цистерны 
+                        | позволяет сократить количество рейсов. Управление удобное, манёвренность 
+                        | на хорошем уровне даже в условиях плотной 
+                        | застройки. Отдельно хочу отметить качество сборки — всё сделано добротно, без нареканий. 
+                        | Определённо рекомендую для тех, кто ищет 
+                        | функциональное и долговечное решение.
+                  .product-reviews__item  
+                    .product-reviews__item-rating 
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                      img(src="./img/icons/rating-star.svg", alt="")
+                    .product-reviews__item-top 
+                      .product-reviews__item-author Вадим
+                      .product-reviews__item-date 19.12.2024
+                    .product-reviews__item-section 
+                      .product-reviews__item-section-title Достоинства: 
+                      .product-reviews__item-section-desc Надёжность, вместительная цистерна, удобное управление, качественная сборка
+                    .product-reviews__item-section 
+                      .product-reviews__item-section-title Недостатки:
+                      .product-reviews__item-section-desc Надёжность, вместительная цистерна, удобное управление, качественная сборка
+                    .product-reviews__item-section 
+                      .product-reviews__item-section-title Комментарий:
+                      .product-reviews__item-section-desc 
+                        | Приобрели вакуумную машину МВ-8 на базе КАМАЗ-43253 для работы 
+                        | в коммунальном хозяйстве, и она полностью 
+                        | оправдала ожидания. Машина надёжная, отлично справляется с откачкой 
+                        | жидких отходов, а вместимость цистерны 
+                        | позволяет сократить количество рейсов. Управление удобное, манёвренность 
+                        | на хорошем уровне даже в условиях плотной 
+                        | застройки. Отдельно хочу отметить качество сборки — всё сделано добротно, без нареканий. 
+                        | Определённо рекомендую для тех, кто ищет 
+                        | функциональное и долговечное решение.
+        .product__info-content.js-tab-section(data-tab="7")
+          .product-credit
+            .product-credit__main 
+              .product-credit__head 
+                .product-credit__title Предложения от лизинговых компаний
+                .product-credit__details 
+                  .product-credit__details-item Цена: 
+                    span 5 604 984 ₽
+                  .product-credit__details-item Год выпуска: 
+                    span 2024
+              .product-credit__table 
+                .credit-table
+                  table 
+                    thead
+                      tr  
+                        th.credit-table__head-cell
+                          .credit-table__partner
+                            .credit-table__partner-checkbox 
+                              input(type="checkbox", name="" id="credits_partner_all")
+                              label(for="credit_partner_all") 
+                            .credit-table__partner-name Партнёр
+                        th.credit-table__head-cell 
+                          .credit-table__head-name 
+                            .credit-table__head-name-title Платёж
+                            .credit-table__head-name-sorting
+                              button(type="button").credit-table__head-name-sorting-btn
+                                img(src="./img/icons/arrow-up.svg", alt="")
+                              button(type="button").credit-table__head-name-sorting-btn
+                                img(src="./img/icons/arrow-down.svg", alt="")
+                        th.credit-table__head-cell 
+                          .credit-table__head-name
+                            .credit-table__head-name-title Удорожание
+                            .credit-table__head-name-sorting
+                              button(type="button").credit-table__head-name-sorting-btn
+                                img(src="./img/icons/arrow-up.svg", alt="")
+                              button(type="button").credit-table__head-name-sorting-btn
+                                img(src="./img/icons/arrow-down.svg", alt="")
+                        th.credit-table__head-cell.credit-table__head-cell--green 
+                          .credit-table__head-name
+                            .credit-table__head-name-title Экономия
+                            .credit-table__head-name-sorting
+                              button(type="button").credit-table__head-name-sorting-btn
+                                img(src="./img/icons/arrow-up.svg", alt="")
+                              button(type="button").credit-table__head-name-sorting-btn
+                                img(src="./img/icons/arrow-down.svg", alt="")
+                        th.credit-table__head-cell
+                          .credit-table__head-btn.btn.btn--wide Единая заявка
+                    tbody
+                      tr 
+                        td.credit-table__cell
+                          .credit-table__partner
+                            .credit-table__partner-checkbox 
+                              input(type="checkbox", name="" id="credits_partner_1")
+                              label(for="credit_partner_1") 
+                            picture.credit-table__partner-logo 
+                              img(src="./img/product/credit-partner.webp", alt="")
+                            .credit-table__partner-name Каркаде
+                        td.credit-table__cell
+                          .credit-table__value 
+                            | 110 770 ₽
+                            span в мес.
+                        td.credit-table__cell
+                          .credit-table__value 
+                            | 11,10 %
+                            span годовых
+                        td.credit-table__cell.credit-table__cell--green
+                          .credit-table__value 2 904 907 ₽ 
+                        td.credit-table__cell
+                          button.credit-table__btn.btn.btn--border.btn--wide Подать заявку
+                      tr 
+                        td.credit-table__cell
+                          .credit-table__partner
+                            .credit-table__partner-checkbox 
+                              input(type="checkbox", name="" id="credits_partner_2")
+                              label(for="credit_partner_2") 
+                            picture.credit-table__partner-logo 
+                              img(src="./img/product/credit-partner.webp", alt="")
+                            .credit-table__partner-name Каркаде
+                        td.credit-table__cell
+                          .credit-table__value 
+                            | 110 770 ₽
+                            span в мес.
+                        td.credit-table__cell
+                          .credit-table__value 
+                            | 11,10 %
+                            span годовых
+                        td.credit-table__cell.credit-table__cell--green
+                          .credit-table__value 2 904 907 ₽ 
+                        td.credit-table__cell
+                          button.credit-table__btn.btn.btn--border.btn--wide Подать заявку
+                      tr 
+                        td.credit-table__cell
+                          .credit-table__partner
+                            .credit-table__partner-checkbox 
+                              input(type="checkbox", name="" id="credits_partner_3")
+                              label(for="credit_partner_3") 
+                            picture.credit-table__partner-logo 
+                              img(src="./img/product/credit-partner.webp", alt="")
+                            .credit-table__partner-name Каркаде
+                        td.credit-table__cell
+                          .credit-table__value 
+                            | 110 770 ₽
+                            span в мес.
+                        td.credit-table__cell
+                          .credit-table__value 
+                            | 11,10 %
+                            span годовых
+                        td.credit-table__cell.credit-table__cell--green
+                          .credit-table__value 2 904 907 ₽ 
+                        td.credit-table__cell
+                          button.credit-table__btn.btn.btn--border.btn--wide Подать заявку
+                      tr 
+                        td.credit-table__cell
+                          .credit-table__partner
+                            .credit-table__partner-checkbox 
+                              input(type="checkbox", name="" id="credits_partner_4")
+                              label(for="credit_partner_4") 
+                            picture.credit-table__partner-logo 
+                              img(src="./img/product/credit-partner.webp", alt="")
+                            .credit-table__partner-name Каркаде
+                        td.credit-table__cell
+                          .credit-table__value 
+                            | 110 770 ₽
+                            span в мес.
+                        td.credit-table__cell
+                          .credit-table__value 
+                            | 11,10 %
+                            span годовых
+                        td.credit-table__cell.credit-table__cell--green
+                          .credit-table__value 2 904 907 ₽ 
+                        td.credit-table__cell
+                          button.credit-table__btn.btn.btn--border.btn--wide Подать заявку
+              button(type="button").product-credit__show-more.btn.btn--outline Показать ещё 2 компании
+            .product-credit__calculator 
+              .credit-calculator 
+                .credit-calculator__inner 
+                  .credit-calculator__title Расчёт условий лизинга
+                  .credit-calculator__price
+                    input(type="text" value="5 604 984 ₽").credit-calculator__price-input
+                  .credit-calculator__item 
+                    .credit-calculator__item-top 
+                      .credit-calculator__item-title Аванс: 
+                        span 37%
+                      input(type="text" value="2 073 984 ₽").credit-calculator__item-input.credit-calculator__item-input--price
+                    .credit-calculator__item-range 
+                      input(type="range" value="40" min="0" max="100" step="1")
+                  .credit-calculator__item 
+                    .credit-calculator__item-top 
+                      .credit-calculator__item-title Срок договора: 
+                        span 60 мес.
+                      input(type="text" value="60").credit-calculator__item-input.credit-calculator__item-input--month
+                    .credit-calculator__item-range 
+                      input(type="range" value="40" min="0" max="100" step="1")
+                  .credit-calculator__total 
+                    .credit-calculator__total-row   
+                        .credit-calculator__total-row-title Платёж, с НДС:
+                        .credit-calculator__total-row-value 110 770 ₽
+                    .credit-calculator__total-row   
+                        .credit-calculator__total-row-title Удорожание:
+                        .credit-calculator__total-row-value 11,10 %
+                    .credit-calculator__total-row   
+                        .credit-calculator__total-row-title Сумма по договору:
+                        .credit-calculator__total-row-value 8 714  908 ₽
+                  button.credit-calculator__btn.btn.btn--wide Расчёт от 6 лизинговых компаний
+

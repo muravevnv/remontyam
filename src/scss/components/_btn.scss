@@ -62,6 +62,19 @@
       }
     }
   }
+
+  &--border {
+    background-color: cl(whte);
+    color: cl(primary);
+    border-color: cl(border-100);
+
+    @media(any-hover: hover) {
+      &:hover {
+        background-color: cl(accent-100);
+        border-color: cl(accent);
+      }
+    }
+  }
 }
 
 .btn-round {

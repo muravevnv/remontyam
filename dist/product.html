@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Title</title>
+    </head>
+  <body>
+    <header class="header"> 
+      <div class="header-top">
+        <div class="container-wide"> 
+          <div class="header-top__adress"> 
+              <svg width="17" height="20">
+                <use xlink:href="img/icons/icons.svg#adress"></use>
+              </svg><span>Санкт-Петербург</span>
+          </div>
+          <nav class="header-top__links"> <a class="header-top__link" href="#">О компании</a><a class="header-top__link" href="#">Открыть бизнес</a><a class="header-top__link" href="#">Оплата</a><a class="header-top__link" href="#">Доставка</a><a class="header-top__link" href="#">Кредит и лизинг</a><a class="header-top__link" href="#">Статьи</a><a class="header-top__link" href="#">Контакты</a></nav><a class="header-top__tel" href="tel:+78001004196">8 800 100 41 96</a>
+        </div>
+      </div>
+      <div class="header-main"> 
+        <div class="container-wide"> 
+          <button class="header-main__burger js-header-burger" type="button">
+              <svg width="24" height="20">
+                <use xlink:href="img/icons/icons.svg#burger"></use>
+              </svg>
+          </button><a class="header-main__logo" href="#"> 
+            <picture>
+              <source srcset="./img/logo-sm.svg" media="(max-width: 1279.98px)"><img src="./img/logo.svg" alt="">
+            </picture></a>
+          <div class="header-main__cabinet header-cabinet">
+            <button class="header-cabinet__btn js-header-cabinet-btn" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#cabinet-user"></use>
+                </svg>
+            </button>
+            <div class="header-cabinet__dropdown js-header-cabinet-dropdown"> 
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#reg-plus"></use>
+                  </svg><span>Регистрация</span>
+              </div>
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#c-user"></use>
+                  </svg><span>Вход</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-main__catalog-btn"> 
+            <div class="header-main__catalog-btn-icon"> 
+                <svg width="13" height="8">
+                  <use xlink:href="img/icons/icons.svg#catalog-lines"></use>
+                </svg>
+            </div>
+            <div class="header-main__catalog-btn-title">Каталог</div>
+            <div class="header-main__catalog-btn-arrow">
+                <svg width="11" height="6">
+                  <use xlink:href="img/icons/icons.svg#catalog-arrow"></use>
+                </svg>
+            </div>
+          </div>
+          <div class="header-main__search"> 
+            <div class="searchbar"> 
+              <input class="searchbar__input" type="text" placeholder="Прицеп для спецтехники">
+              <button class="searchbar__btn" type="button">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/icons/icons.svg#search"></use>
+                  </svg>
+              </button>
+            </div>
+          </div>
+          <div class="header-main__toolbars"> 
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/user.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#user"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Войти</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/favorite.svg')"> 
+                  <svg width="23" height="20">
+                    <use xlink:href="img/icons/icons.svg#favorite"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Избранное</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/compare.svg')"> 
+                  <svg width="27" height="21">
+                    <use xlink:href="img/icons/icons.svg#compare"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Сравнение</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/basket.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#basket"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Корзина</div>
+              <div class="header-main__toolbar-counter">5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom"> 
+        <div class="container-wide"> 
+          <nav class="header-nav"> 
+            <ul class="header-nav__list"> 
+              <li class="header-nav__item"> <a href="#">Дорожная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Коммунальная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Грузоподъёмная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Навесное оборудование</a></li>
+              <li class="header-nav__item"> <a href="#">Асфальтобетонные заводы</a></li>
+              <li class="header-nav__item"> <a href="#">Самоходные транспортеры</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-menu js-header-menu">
+        <div class="header-menu__overlay js-header-menu-close"></div>
+        <div class="header-menu__inner"> 
+          <button class="header-menu__close js-header-menu-close" type="button">
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#close"></use>
+              </svg>
+          </button>
+          <div class="header-menu__list"> 
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">О компании</a></li>
+            <li class="header-menu__item"><a href="#">Открыть бизнес</a></li>
+            <li class="header-menu__item"><a href="#">Оплата</a></li>
+            <li class="header-menu__item"><a href="#">Доставка</a></li>
+            <li class="header-menu__item"><a href="#">Кредит и лизинг</a></li>
+            <li class="header-menu__item"><a href="#"> Статьи</a></li>
+            <li class="header-menu__item"><a href="#">Контакты</a></li>
+          </div>
+          <div class="header-menu__tel"> 
+              <svg width="8" height="8">
+                <use xlink:href="img/icons/icons.svg#tel"></use>
+              </svg><span>8 800 100 41 96</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page-inner">
+        <section class="product"> 
+          <div class="container-wide"> 
+            <div class="product__content">
+              <div class="product__title">Вакуумная машина МВ-8 КАМАЗ-43253</div>
+              <div class="product__panel"> 
+                <div class="product__articul">Артикул: <span>МВ-8</span></div>
+                <div class="product__rating"> 
+                  <div class="product__rating-num">4,9</div>
+                  <div class="product__rating-reviews">3 отзыва</div>
+                </div>
+                <button class="product__control-btn product__to-favorite" type="button" style="--icon: url('../img/icons/favorite.svg')">В избранное</button>
+                <button class="product__control-btn product__to-compare" type="button" style="--icon: url('../img/icons/compare.svg')">Сравнить</button>
+              </div>
+              <div class="product__top">
+                <div class="product__main">
+                  <div class="product-gallery"> 
+                    <div class="product-gallery__slider js-product-slider">
+                      <div class="swiper-wrapper"> 
+                        <picture class="product-gallery__slider-item swiper-slide"> <picture><source srcset="./img/product/product-01.webp" type="image/webp"><img src="./img/product/product-01.webp" alt=""></picture></picture>
+                        <picture class="product-gallery__slider-item swiper-slide"> <picture><source srcset="./img/product/product-01.webp" type="image/webp"><img src="./img/product/product-01.webp" alt=""></picture></picture>
+                        <picture class="product-gallery__slider-item swiper-slide"> <picture><source srcset="./img/product/product-01.webp" type="image/webp"><img src="./img/product/product-01.webp" alt=""></picture></picture>
+                        <picture class="product-gallery__slider-item swiper-slide"> <picture><source srcset="./img/product/product-01.webp" type="image/webp"><img src="./img/product/product-01.webp" alt=""></picture></picture>
+                        <picture class="product-gallery__slider-item swiper-slide"> <picture><source srcset="./img/product/product-01.webp" type="image/webp"><img src="./img/product/product-01.webp" alt=""></picture></picture>
+                        <picture class="product-gallery__slider-item swiper-slide"> <picture><source srcset="./img/product/product-01.webp" type="image/webp"><img src="./img/product/product-01.webp" alt=""></picture></picture>
+                      </div>
+                    </div>
+                    <div class="product-gallery__thumbs js-product-thumbs-slider"> 
+                      <div class="swiper-wrapper"> 
+                        <picture class="product-gallery__thumbs-item swiper-slide"> 
+                          <source srcset="./img/product/product-thumb-01.webp" type="image/webp"><img src="./img/product/product-thumb-01.webp" alt="">
+                        </picture>
+                        <picture class="product-gallery__thumbs-item swiper-slide"> 
+                          <source srcset="./img/product/product-thumb-02.webp" type="image/webp"><img src="./img/product/product-thumb-02.webp" alt="">
+                        </picture>
+                        <picture class="product-gallery__thumbs-item swiper-slide"> 
+                          <source srcset="./img/product/product-thumb-03.webp" type="image/webp"><img src="./img/product/product-thumb-03.webp" alt="">
+                        </picture>
+                        <picture class="product-gallery__thumbs-item swiper-slide"> 
+                          <source srcset="./img/product/product-thumb-04.webp" type="image/webp"><img src="./img/product/product-thumb-04.webp" alt="">
+                        </picture>
+                        <picture class="product-gallery__thumbs-item swiper-slide"> 
+                          <source srcset="./img/product/product-thumb-05.webp" type="image/webp"><img src="./img/product/product-thumb-05.webp" alt="">
+                        </picture>
+                        <picture class="product-gallery__thumbs-item swiper-slide"> 
+                          <source srcset="./img/product/product-thumb-01.webp" type="image/webp"><img src="./img/product/product-thumb-01.webp" alt="">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <div class="product-details__badge">Хит продаж</div>
+                    <div class="product-details__chars"> 
+                      <div class="product-details__chars-list">
+                        <div class="product-details__chars-item"> <span>Тип двигателя:</span>дизельный, четырёхтактный,
+                          одноцилиндровый, с понижающим
+                          редуктором
+                        </div>
+                        <div class="product-details__chars-item"><span>Тип горючего:</span>бензин АИ-92</div>
+                        <div class="product-details__chars-item"> <span>Расход топлива:</span>313 г/Вт</div>
+                        <div class="product-details__chars-item"><span>Вместимость цистерны:</span>2 м3</div>
+                        <div class="product-details__chars-item"><span>Горелка:</span>1 штука</div>
+                      </div><a class="product-details__chars-all" href="#">Все характеристики</a>
+                    </div>
+                    <div class="product-details__guarancy">Гарантия от производителя: 1 год</div>
+                  </div>
+                </div>
+                <div class="product__asside">
+                  <div class="product-order"> 
+                    <div class="product-order__section">
+                      <div class="product-order__available">В наличии</div>
+                    </div>
+                    <div class="product-order__section">  
+                      <div class="product-order__price"> 
+                        <div class="product-order__price-old">5 604 984 ₽</div>
+                        <div class="product-order__price-current">5 604 984 ₽</div>
+                        <div class="product-order__price-nds">Цена с НДС 20%</div>
+                      </div>
+                      <div class="product-order__btns"><a class="product-order__btn btn" href="#">В корзину</a><a class="product-order__btn btn btn--outline" href="#">Быстрый заказ</a><a class="product-order__btn btn btn--border" href="#">В лизинг</a><a class="product-order__btn btn btn--border" href="#">Получить КП</a></div>
+                    </div>
+                    <div class="product-order__section"> 
+                      <div class="product-order__contacts"> 
+                        <div class="product-order__contacts-row"> <a class="product-order__contacts-tel" href="#">8 800 100 41 96</a><a class="product-order__contacts-email" href="#">info@remontiam.ru</a></div>
+                        <div class="product-order__contacts-row"> <a class="product-order__contacts-btn btn btn--outline" href="#">Заказать звонок</a>
+                          <div class="product-order__contacts-socials">
+                            <div class="product-order__contacts-socials-title">Напишите нам в:</div>
+                            <div class="product-order__contacts-socials-links"> <a class="product-order__contacts-socials-link" href="#"> <img src="./img/icons/whatsapp.svg" alt=""></a><a class="product-order__contacts-socials-link" href="#"> <img src="./img/icons/tg.svg" alt=""></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-order__section"> 
+                      <div class="product-order__bottom">
+                         Нашли дешевле? <br>Сообщите – сделаем скидку <span>3%</span> от цены конкурента</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__info">
+                <div class="product__info-nav"> 
+                  <button class="js-tab-control product__info-nav-item _is-active" type="button" data-control="1">Характеристики и описание</button>
+                  <button class="js-tab-control product__info-nav-item" type="button" data-control="2">Обзор</button>
+                  <button class="js-tab-control product__info-nav-item" type="button" data-control="3">комплектация</button>
+                  <button class="js-tab-control product__info-nav-item" type="button" data-control="4">Вопросы</button>
+                  <button class="js-tab-control product__info-nav-item" type="button" data-control="5">Отзывы</button>
+                  <button class="js-tab-control product__info-nav-item" type="button" data-control="6">доставка</button>
+                  <button class="js-tab-control product__info-nav-item" type="button" data-control="7">кредит/лизинг</button>
+                </div>
+                <div class="product__info-content _is-active js-tab-section" data-tab="1">
+                  <div class="product-chars">
+                    <div class="product-chars__banner"> 
+                      <div class="product-chars__banner-inner"> 
+                        <div class="product-chars__banner-info">
+                          <div class="product-chars__banner-title">Полный привод для превосходной проходимости</div>
+                          <div class="product-chars__banner-desc">Каждое из колес имеет гидравлический привод, что позволяет машине во время уборки без проблем передвигаться по глубокому снегу. Каждое из колес имеет гидравлический привод, что позволяет машине во время уборки без проблем передвигаться по глубокому снегу. </div>
+                          <button class="product-chars__banner-btn-more btn btn--border" type="button" style="--icon: url('../img/icons/arrow-down.svg')">Показать ещё</button>
+                        </div>
+                        <picture class="product-chars__banner-img"> 
+                          <source srcset="./img/product/product-banner.webp" type="image/webp"><img src="./img/product/product-banner.webp" alt="">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="product-chars__main"> 
+                      <div class="product-chars__details"> 
+                        <div class="product-chars__details-title">Характеристики</div>
+                        <div class="product-chars__details-list"> 
+                          <div class="product-chars__detail"> <span>Страна производства</span>Россия</div>
+                          <div class="product-chars__detail"> <span>Габариты, ДхШхВ:</span>4320х1400х2070 мм</div>
+                          <div class="product-chars__detail"> <span>Колесная формула:</span>4x4</div>
+                          <div class="product-chars__detail"> <span>Масса:</span>300 л</div>
+                          <div class="product-chars__detail"> <span>Водяной бак:</span>Россия</div>
+                          <div class="product-chars__detail"> <span>Шасси:</span>специальное самоходное шасси</div>
+                          <div class="product-chars__detail"> <span>Высота выгрузки:</span>1 500 мм</div>
+                          <div class="product-chars__detail"> <span>Диаметр щетки:</span>850 мм</div>
+                          <div class="product-chars__detail"> <span>Скорость вращения щетки:</span>0–120 об/мин</div>
+                        </div>
+                        <button class="product-chars__details-btn-more btn btn--border" type="button" style="--icon: url('../img/icons/arrow-down.svg')">Все характеристики</button>
+                      </div>
+                      <div class="product-chars__info"> 
+                        <div class="product-chars__info-title">Описание </div>
+                        <div class="product-chars__info-desc">
+                          <p>
+                            Машину можно использовать круглогодично, благодаря универсальному набору навесного оборудования из 6 типов, а также системе 
+                            быстрого монтажа/демонтажа. Летом подметать с функцией увлажнения поверхности 
+                            и транспортировкой мусора в места хранения/утилизации, а зимой распределять 
+                            противогололедный реагент и производить расчистку от снега. 
+                          </p>
+                          <p>
+                            Одна машина Меркатор ВКМ 1500 заменяет сразу несколько видов техники: трактор с щёточным оборудованием, поливомоечную машину, распределитель 
+                            противогололедных материалов и снегоуборщик. 
+                          </p>
+                          <p>
+                            Компактные размеры, наличие полного привода и широкий функционал позволяют использовать машину в труднодоступных местах: 
+                            на узких улочках или на площадках производственных предприятий. Шарнирно-сочленённая 
+                            рама обеспечивает движение колея-в-колею, что минимизирует риск аварийных ситуаций 
+                            и наделяет машину непревзойдённой манёвренностью.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__info-content js-tab-section" data-tab="2">
+                  <div class="product-desc"> 
+                    <h3>Обзор на вакуумную машину МВ-8 КАМАЗ-43253</h3>
+                    <p>
+                      Вакуумная машина МВ-8, построенная на шасси КАМАЗ-43253, представляет собой универсальное решение 
+                      для выполнения коммунальных 
+                      и промышленных задач, связанных с очисткой и транспортировкой жидких 
+                      и вязких отходов. Рассмотрим ключевые характеристики 
+                      и преимущества данной модели.
+                    </p>
+                    <h3>Основные технические характеристики:</h3>
+                    <ul> 
+                      <li>Объем цистерны: 8 м³ — оптимальный объем для работы в условиях средней и высокой загруженности.</li>
+                      <li>Базовое шасси: КАМАЗ-43253 — компактное и маневренное, что особенно важно для работы в городских условиях.</li>
+                      <li>Мощность двигателя: 240 л.с., экологический стандарт Евро-5, обеспечивающий экономичное потребление топлива и минимальный уровень выбросов.</li>
+                      <li>Привод вакуумного насоса: Отбор мощности от двигателя — надежная и простая в эксплуатации система.</li>
+                      <li>Производительность насоса: До 360 м³/ч, что позволяет быстро справляться с задачами по откачке жидкостей.</li>
+                    </ul>
+                    <h3>Конструктивные особенности:</h3>
+                    <ul> 
+                      <li>Цистерна: Стальная конструкция с антикоррозийным покрытием, что увеличивает срок службы даже при работе с агрессивными средами.</li>
+                      <li>Система наполнения и опорожнения: Вакуумный насос и гидравлический механизм опрокидывания цистерны обеспечивают легкость в эксплуатации.</li>
+                      <li>Шасси: КАМАЗ-43253 отличается высокой проходимостью и надежностью, а также доступностью запчастей, что упрощает обслуживание.</li>
+                      <li>Габариты: Компактные размеры позволяют работать в условиях ограниченного пространства, таких как дворы и узкие улицы.</li>
+                    </ul>
+                    <h3>Преимущества модели:</h3>
+                    <ol>
+                      <li>Универсальность применения: Откачка септиков, очистка колодцев, уборка сточных вод и жидких отходов.</li>
+                      <li>Высокая маневренность: Шасси идеально подходит для работы в городской среде, на строительных площадках и в промышленной зоне.</li>
+                      <li>Надежность: КАМАЗ известен своей долговечностью и неприхотливостью, что делает его идеальным выбором для суровых условий эксплуатации.</li>
+                      <li>Экономичность: Низкий расход топлива и минимальные эксплуатационные расходы.</li>
+                      <li>Простота управления: Интуитивно понятная панель управления, что снижает требования к обучению операторов.</li>
+                    </ol>
+                    <h3>Возможные недостатки:</h3>
+                    <ol> 
+                      <li>Вес: Полностью загруженная машина может испытывать ограничения на дорогах с низкой грузоподъемностью.</li>
+                      <li>Шумность: Вакуумный насос и двигатель создают достаточно высокий уровень шума.</li>
+                      <li>Ограничения в условиях бездорожья: Несмотря на хорошую проходимость, машина не предназначена для работы в экстремальных внедорожных условиях.</li>
+                    </ol>
+                    <h3>Вывод:</h3>
+                    <p>
+                      МВ-8 КАМАЗ-43253 — это надёжная, эффективная и экономичная вакуумная машина, подходящая для коммунальных служб, 
+                      строительных организаций и промышленных предприятий. Она сочетает 
+                      в себе передовые инженерные решения и классическую надёжность 
+                      шасси КАМАЗ. Благодаря манёвренности, долговечности 
+                      и производительности, модель оправдывает 
+                      ожидания даже самых требовательных пользователей.
+                    </p>
+                    <h3>Видео-обзор:</h3><iframe width="100%" height="100%" src="https://www.youtube.com/embed/-Rp-LeLv2Jg" title="Подробный обзор самого востребованного в данный момент КамАЗа 6520!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="product__info-content js-tab-section" data-tab="3">
+                  <div class="product-complectation"> 
+                    <h3>Комплектация:</h3>
+                    <ul>
+                      <li>Цистерна на опоре;</li>
+                      <li>Насосный узел;</li>
+                      <li>Коробка отбора мощности для привода насоса;</li>
+                      <li>Трубопроводов, сливного устройства, обвязки и дополнительного оборудования.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__info-content js-tab-section" data-tab="4">
+                  <div class="product-faq"> 
+                    <div class="product-faq__title">Вопросы и ответы о вакуумной машине МВ-8 КАМАЗ-43253 </div>
+                    <div class="product-faq__inner"> 
+                      <div class="product-faq__main">
+                        <div class="product-faq__list"> 
+                          <div class="product-faq__item"> 
+                            <div class="product-faq__item-author">Роман</div>
+                            <div class="product-faq__item-question">Какие задачи может выполнять вакуумная машина МВ-8 на базе КАМАЗ-43253?</div>
+                            <div class="product-faq__item-answer"> 
+                              <div class="product-faq__item-answer-author">РемонтЯМ</div>
+                              <div class="product-faq__item-answer-text">
+                                Вакуумная машина МВ-8 предназначена для откачивания жидких бытовых и промышленных отходов, 
+                                очистки канализационных колодцев, резервуаров, выгребных ям и септиков. 
+                                Она также может использоваться для транспортировки 
+                                жидкостей и проведения аварийных работ на объектах ЖКХ.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-faq__item"> 
+                            <div class="product-faq__item-author">Антон</div>
+                            <div class="product-faq__item-question">Какая вместимость цистерны у вакуумной машины МВ-8?</div>
+                            <div class="product-faq__item-answer"> 
+                              <div class="product-faq__item-answer-author">РемонтЯМ</div>
+                              <div class="product-faq__item-answer-text">
+                                Вакуумная машина МВ-8 предназначена для откачивания жидких бытовых и промышленных отходов, 
+                                очистки канализационных колодцев, резервуаров, выгребных ям и септиков. 
+                                Она также может использоваться для транспортировки 
+                                жидкостей и проведения аварийных работ на объектах ЖКХ.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-faq__item"> 
+                            <div class="product-faq__item-author">Кирилл</div>
+                            <div class="product-faq__item-question">Какие задачи может выполнять вакуумная машина МВ-8 на базе КАМАЗ-43253?</div>
+                            <div class="product-faq__item-answer"> 
+                              <div class="product-faq__item-answer-author">РемонтЯМ</div>
+                              <div class="product-faq__item-answer-text">
+                                Вакуумная машина МВ-8 предназначена для откачивания жидких бытовых и промышленных отходов, 
+                                очистки канализационных колодцев, резервуаров, выгребных ям и септиков. 
+                                Она также может использоваться для транспортировки 
+                                жидкостей и проведения аварийных работ на объектах ЖКХ.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-faq__item"> 
+                            <div class="product-faq__item-author">Виктор</div>
+                            <div class="product-faq__item-question">Есть ли дополнительные опции для вакуумной машины МВ-8?</div>
+                            <div class="product-faq__item-answer"> 
+                              <div class="product-faq__item-answer-author">РемонтЯМ</div>
+                              <div class="product-faq__item-answer-text">
+                                Вакуумная машина МВ-8 предназначена для откачивания жидких бытовых и промышленных отходов, 
+                                очистки канализационных колодцев, резервуаров, выгребных ям и септиков. 
+                                Она также может использоваться для транспортировки 
+                                жидкостей и проведения аварийных работ на объектах ЖКХ.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="product-faq__btn-more btn btn--border" type="button">Показать ещё вопросы и ответы</button>
+                      </div>
+                      <div class="product-faq__asside"> 
+                        <div class="product-faq__asside-title">Нужна помощь? </div>
+                        <div class="product-faq__asside-desc">Задайте свой вопрос — вам ответит наш эксперт или представитель бренда</div>
+                        <form class="product-faq__asside-form" action="#">
+                          <div class="product-faq__asside-group"> 
+                            <input class="product-faq__asside-input" type="text" placeholder="Имя">
+                          </div>
+                          <div class="product-faq__asside-group"> 
+                            <input class="product-faq__asside-input" type="text" placeholder="Email">
+                          </div>
+                          <div class="product-faq__asside-group"> 
+                            <textarea class="product-faq__asside-input" name="" cols="30" rows="10" type="text" placeholder="Вопрос"></textarea>
+                          </div>
+                          <button class="product-faq__asside-submit btn btn--wide" type="submit">Задать вопрос</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__info-content js-tab-section" data-tab="6">
+                  <div class="product-delivery"> 
+                    <div class="product-delivery__subtitle">Доставка</div>
+                    <div class="product-delivery__desc"> 
+                      <p>РЕМОНТЯМ предоставляет услуги по перевозке и перегону реализуемой спецтехники по всей территории России и СНГ.</p>
+                      <p>РЕМОНТЯМ сотрудничает только с проверенными транспортными компаниями, прошедшими проверку на благонадежность и обладающими многолетним опытом по перевозке стандартных и негабаритных грузов любыми видами транспорта.</p>
+                      <p>Сотрудники отдела логистики РЕМОНТЯМ - профессионалы в решении сложных транспортных задач, имеют профильное логистическое образование и практические знания по доставке грузов разными видами транспорта по всей стране.</p>
+                    </div>
+                    <div class="product-delivery__subtitle">Доставка любыми видами транспорта</div>
+                    <div class="product-delivery__types"> <a class="product-delivery__type" href="#">
+                        <picture class="product-delivery__type-img">
+                          <source scrset="./img/product/delivery-type-01.webp"><img src="./img/product/delivery-type-01.webp" alt="">
+                        </picture>
+                        <div class="product-delivery__type-title">Перегон</div></a><a class="product-delivery__type" href="#">
+                        <picture class="product-delivery__type-img">
+                          <source scrset="./img/product/delivery-type-02.webp"><img src="./img/product/delivery-type-02.webp" alt="">
+                        </picture>
+                        <div class="product-delivery__type-title">Автомобильная перевозка</div></a><a class="product-delivery__type" href="#">
+                        <picture class="product-delivery__type-img">
+                          <source scrset="./img/product/delivery-type-03.webp"><img src="./img/product/delivery-type-03.webp" alt="">
+                        </picture>
+                        <div class="product-delivery__type-title">Перевозка негабаритной техники</div></a><a class="product-delivery__type" href="#">
+                        <picture class="product-delivery__type-img">
+                          <source scrset="./img/product/delivery-type-04.webp"><img src="./img/product/delivery-type-04.webp" alt="">
+                        </picture>
+                        <div class="product-delivery__type-title">Железнодорожные перевозки</div></a></div>
+                  </div>
+                </div>
+                <div class="product__info-content js-tab-section" data-tab="5">
+                  <div class="product-reviews"> 
+                    <div class="product-reviews__title"> </div>
+                    <div class="product-reviews__inner"> 
+                      <div class="product-reviews__rating"> 
+                        <div class="product-reviews__rating-total"> 
+                          <div class="product-reviews__rating-total-stars"><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""></div>
+                          <div class="product-reviews__rating-total-value">4,9/5</div>
+                        </div>
+                        <bitton class="product-reviews__rating-btn btn btn--wide" type="button">Написать отзыв</bitton>
+                        <div class="product-reviews__rating-item">
+                          <div class="product-reviews__rating-item-stars"> <img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""></div>
+                          <div class="product-reviews__rating-item-amount">5 отзывов</div>
+                        </div>
+                        <div class="product-reviews__rating-item">
+                          <div class="product-reviews__rating-item-stars"> <img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star-stroke.svg" alt=""></div>
+                          <div class="product-reviews__rating-item-amount">2 отзыва</div>
+                        </div>
+                        <div class="product-reviews__rating-item">
+                          <div class="product-reviews__rating-item-stars"> <img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star-stroke.svg" alt=""><img src="./img/icons/rating-star-stroke.svg" alt=""></div>
+                          <div class="product-reviews__rating-item-amount">1 отзыв</div>
+                        </div>
+                        <div class="product-reviews__rating-item">
+                          <div class="product-reviews__rating-item-stars"> <img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star-stroke.svg" alt=""><img src="./img/icons/rating-star-stroke.svg" alt=""><img src="./img/icons/rating-star-stroke.svg" alt=""></div>
+                          <div class="product-reviews__rating-item-amount">нет</div>
+                        </div>
+                        <div class="product-reviews__rating-item">
+                          <div class="product-reviews__rating-item-stars"> <img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star-stroke.svg" alt=""><img src="./img/icons/rating-star-stroke.svg" alt=""><img src="./img/icons/rating-star-stroke.svg" alt=""><img src="./img/icons/rating-star-stroke.svg" alt=""></div>
+                          <div class="product-reviews__rating-item-amount">нет</div>
+                        </div>
+                      </div>
+                      <div class="product-reviews__main"> 
+                        <div class="product-reviews__panel"> 
+                          <div class="product-reviews__sort"> 
+                            <div class="product-reviews__sort-title">Сортировать: </div>
+                            <div class="product-reviews__sort-select"> 
+                              <select class="js-select" name=""> 
+                                <option value="1">По дате </option>
+                                <option value="1">По рейтингу </option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-reviews__list"> 
+                          <div class="product-reviews__item"> 
+                            <div class="product-reviews__item-rating"> <img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""></div>
+                            <div class="product-reviews__item-top"> 
+                              <div class="product-reviews__item-author">Вадим</div>
+                              <div class="product-reviews__item-date">19.12.2024</div>
+                            </div>
+                            <div class="product-reviews__item-section"> 
+                              <div class="product-reviews__item-section-title">Достоинства: </div>
+                              <div class="product-reviews__item-section-desc">Надёжность, вместительная цистерна, удобное управление, качественная сборка</div>
+                            </div>
+                            <div class="product-reviews__item-section"> 
+                              <div class="product-reviews__item-section-title">Недостатки:</div>
+                              <div class="product-reviews__item-section-desc">Надёжность, вместительная цистерна, удобное управление, качественная сборка</div>
+                            </div>
+                            <div class="product-reviews__item-section"> 
+                              <div class="product-reviews__item-section-title">Комментарий:</div>
+                              <div class="product-reviews__item-section-desc">
+                                 Приобрели вакуумную машину МВ-8 на базе КАМАЗ-43253 для работы 
+                                в коммунальном хозяйстве, и она полностью 
+                                оправдала ожидания. Машина надёжная, отлично справляется с откачкой 
+                                жидких отходов, а вместимость цистерны 
+                                позволяет сократить количество рейсов. Управление удобное, манёвренность 
+                                на хорошем уровне даже в условиях плотной 
+                                застройки. Отдельно хочу отметить качество сборки — всё сделано добротно, без нареканий. 
+                                Определённо рекомендую для тех, кто ищет 
+                                функциональное и долговечное решение.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-reviews__item"> 
+                            <div class="product-reviews__item-rating"> <img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""></div>
+                            <div class="product-reviews__item-top"> 
+                              <div class="product-reviews__item-author">Вадим</div>
+                              <div class="product-reviews__item-date">19.12.2024</div>
+                            </div>
+                            <div class="product-reviews__item-section"> 
+                              <div class="product-reviews__item-section-title">Достоинства: </div>
+                              <div class="product-reviews__item-section-desc">Надёжность, вместительная цистерна, удобное управление, качественная сборка</div>
+                            </div>
+                            <div class="product-reviews__item-section"> 
+                              <div class="product-reviews__item-section-title">Недостатки:</div>
+                              <div class="product-reviews__item-section-desc">Надёжность, вместительная цистерна, удобное управление, качественная сборка</div>
+                            </div>
+                            <div class="product-reviews__item-section"> 
+                              <div class="product-reviews__item-section-title">Комментарий:</div>
+                              <div class="product-reviews__item-section-desc">
+                                 Приобрели вакуумную машину МВ-8 на базе КАМАЗ-43253 для работы 
+                                в коммунальном хозяйстве, и она полностью 
+                                оправдала ожидания. Машина надёжная, отлично справляется с откачкой 
+                                жидких отходов, а вместимость цистерны 
+                                позволяет сократить количество рейсов. Управление удобное, манёвренность 
+                                на хорошем уровне даже в условиях плотной 
+                                застройки. Отдельно хочу отметить качество сборки — всё сделано добротно, без нареканий. 
+                                Определённо рекомендую для тех, кто ищет 
+                                функциональное и долговечное решение.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-reviews__item"> 
+                            <div class="product-reviews__item-rating"> <img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""></div>
+                            <div class="product-reviews__item-top"> 
+                              <div class="product-reviews__item-author">Вадим</div>
+                              <div class="product-reviews__item-date">19.12.2024</div>
+                            </div>
+                            <div class="product-reviews__item-section"> 
+                              <div class="product-reviews__item-section-title">Достоинства: </div>
+                              <div class="product-reviews__item-section-desc">Надёжность, вместительная цистерна, удобное управление, качественная сборка</div>
+                            </div>
+                            <div class="product-reviews__item-section"> 
+                              <div class="product-reviews__item-section-title">Недостатки:</div>
+                              <div class="product-reviews__item-section-desc">Надёжность, вместительная цистерна, удобное управление, качественная сборка</div>
+                            </div>
+                            <div class="product-reviews__item-section"> 
+                              <div class="product-reviews__item-section-title">Комментарий:</div>
+                              <div class="product-reviews__item-section-desc">
+                                 Приобрели вакуумную машину МВ-8 на базе КАМАЗ-43253 для работы 
+                                в коммунальном хозяйстве, и она полностью 
+                                оправдала ожидания. Машина надёжная, отлично справляется с откачкой 
+                                жидких отходов, а вместимость цистерны 
+                                позволяет сократить количество рейсов. Управление удобное, манёвренность 
+                                на хорошем уровне даже в условиях плотной 
+                                застройки. Отдельно хочу отметить качество сборки — всё сделано добротно, без нареканий. 
+                                Определённо рекомендую для тех, кто ищет 
+                                функциональное и долговечное решение.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-reviews__item"> 
+                            <div class="product-reviews__item-rating"> <img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""><img src="./img/icons/rating-star.svg" alt=""></div>
+                            <div class="product-reviews__item-top"> 
+                              <div class="product-reviews__item-author">Вадим</div>
+                              <div class="product-reviews__item-date">19.12.2024</div>
+                            </div>
+                            <div class="product-reviews__item-section"> 
+                              <div class="product-reviews__item-section-title">Достоинства: </div>
+                              <div class="product-reviews__item-section-desc">Надёжность, вместительная цистерна, удобное управление, качественная сборка</div>
+                            </div>
+                            <div class="product-reviews__item-section"> 
+                              <div class="product-reviews__item-section-title">Недостатки:</div>
+                              <div class="product-reviews__item-section-desc">Надёжность, вместительная цистерна, удобное управление, качественная сборка</div>
+                            </div>
+                            <div class="product-reviews__item-section"> 
+                              <div class="product-reviews__item-section-title">Комментарий:</div>
+                              <div class="product-reviews__item-section-desc">
+                                 Приобрели вакуумную машину МВ-8 на базе КАМАЗ-43253 для работы 
+                                в коммунальном хозяйстве, и она полностью 
+                                оправдала ожидания. Машина надёжная, отлично справляется с откачкой 
+                                жидких отходов, а вместимость цистерны 
+                                позволяет сократить количество рейсов. Управление удобное, манёвренность 
+                                на хорошем уровне даже в условиях плотной 
+                                застройки. Отдельно хочу отметить качество сборки — всё сделано добротно, без нареканий. 
+                                Определённо рекомендую для тех, кто ищет 
+                                функциональное и долговечное решение.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__info-content js-tab-section" data-tab="7">
+                  <div class="product-credit">
+                    <div class="product-credit__main"> 
+                      <div class="product-credit__head"> 
+                        <div class="product-credit__title">Предложения от лизинговых компаний</div>
+                        <div class="product-credit__details"> 
+                          <div class="product-credit__details-item">Цена: <span>5 604 984 ₽</span></div>
+                          <div class="product-credit__details-item">Год выпуска: <span>2024</span></div>
+                        </div>
+                      </div>
+                      <div class="product-credit__table"> 
+                        <div class="credit-table">
+                          <table> 
+                            <thead>
+                              <tr> 
+                                <th class="credit-table__head-cell">
+                                  <div class="credit-table__partner">
+                                    <div class="credit-table__partner-checkbox"> 
+                                      <input type="checkbox" name="" id="credits_partner_all">
+                                      <label for="credit_partner_all"> </label>
+                                    </div>
+                                    <div class="credit-table__partner-name">Партнёр</div>
+                                  </div>
+                                </th>
+                                <th class="credit-table__head-cell"> 
+                                  <div class="credit-table__head-name"> 
+                                    <div class="credit-table__head-name-title">Платёж</div>
+                                    <div class="credit-table__head-name-sorting">
+                                      <button class="credit-table__head-name-sorting-btn" type="button"><img src="./img/icons/arrow-up.svg" alt=""></button>
+                                      <button class="credit-table__head-name-sorting-btn" type="button"><img src="./img/icons/arrow-down.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                                </th>
+                                <th class="credit-table__head-cell"> 
+                                  <div class="credit-table__head-name">
+                                    <div class="credit-table__head-name-title">Удорожание</div>
+                                    <div class="credit-table__head-name-sorting">
+                                      <button class="credit-table__head-name-sorting-btn" type="button"><img src="./img/icons/arrow-up.svg" alt=""></button>
+                                      <button class="credit-table__head-name-sorting-btn" type="button"><img src="./img/icons/arrow-down.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                                </th>
+                                <th class="credit-table__head-cell credit-table__head-cell--green"> 
+                                  <div class="credit-table__head-name">
+                                    <div class="credit-table__head-name-title">Экономия</div>
+                                    <div class="credit-table__head-name-sorting">
+                                      <button class="credit-table__head-name-sorting-btn" type="button"><img src="./img/icons/arrow-up.svg" alt=""></button>
+                                      <button class="credit-table__head-name-sorting-btn" type="button"><img src="./img/icons/arrow-down.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                                </th>
+                                <th class="credit-table__head-cell">
+                                  <div class="credit-table__head-btn btn btn--wide">Единая заявка</div>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr> 
+                                <td class="credit-table__cell">
+                                  <div class="credit-table__partner">
+                                    <div class="credit-table__partner-checkbox"> 
+                                      <input type="checkbox" name="" id="credits_partner_1">
+                                      <label for="credit_partner_1"> </label>
+                                    </div>
+                                    <picture class="credit-table__partner-logo"> <picture><source srcset="./img/product/credit-partner.webp" type="image/webp"><img src="./img/product/credit-partner.webp" alt=""></picture></picture>
+                                    <div class="credit-table__partner-name">Каркаде</div>
+                                  </div>
+                                </td>
+                                <td class="credit-table__cell">
+                                  <div class="credit-table__value">
+                                     110 770 ₽<span>в мес.</span></div>
+                                </td>
+                                <td class="credit-table__cell">
+                                  <div class="credit-table__value">
+                                     11,10 %<span>годовых</span></div>
+                                </td>
+                                <td class="credit-table__cell credit-table__cell--green">
+                                  <div class="credit-table__value">2 904 907 ₽ </div>
+                                </td>
+                                <td class="credit-table__cell">
+                                  <button class="credit-table__btn btn btn--border btn--wide">Подать заявку</button>
+                                </td>
+                              </tr>
+                              <tr> 
+                                <td class="credit-table__cell">
+                                  <div class="credit-table__partner">
+                                    <div class="credit-table__partner-checkbox"> 
+                                      <input type="checkbox" name="" id="credits_partner_2">
+                                      <label for="credit_partner_2"> </label>
+                                    </div>
+                                    <picture class="credit-table__partner-logo"> <picture><source srcset="./img/product/credit-partner.webp" type="image/webp"><img src="./img/product/credit-partner.webp" alt=""></picture></picture>
+                                    <div class="credit-table__partner-name">Каркаде</div>
+                                  </div>
+                                </td>
+                                <td class="credit-table__cell">
+                                  <div class="credit-table__value">
+                                     110 770 ₽<span>в мес.</span></div>
+                                </td>
+                                <td class="credit-table__cell">
+                                  <div class="credit-table__value">
+                                     11,10 %<span>годовых</span></div>
+                                </td>
+                                <td class="credit-table__cell credit-table__cell--green">
+                                  <div class="credit-table__value">2 904 907 ₽ </div>
+                                </td>
+                                <td class="credit-table__cell">
+                                  <button class="credit-table__btn btn btn--border btn--wide">Подать заявку</button>
+                                </td>
+                              </tr>
+                              <tr> 
+                                <td class="credit-table__cell">
+                                  <div class="credit-table__partner">
+                                    <div class="credit-table__partner-checkbox"> 
+                                      <input type="checkbox" name="" id="credits_partner_3">
+                                      <label for="credit_partner_3"> </label>
+                                    </div>
+                                    <picture class="credit-table__partner-logo"> <picture><source srcset="./img/product/credit-partner.webp" type="image/webp"><img src="./img/product/credit-partner.webp" alt=""></picture></picture>
+                                    <div class="credit-table__partner-name">Каркаде</div>
+                                  </div>
+                                </td>
+                                <td class="credit-table__cell">
+                                  <div class="credit-table__value">
+                                     110 770 ₽<span>в мес.</span></div>
+                                </td>
+                                <td class="credit-table__cell">
+                                  <div class="credit-table__value">
+                                     11,10 %<span>годовых</span></div>
+                                </td>
+                                <td class="credit-table__cell credit-table__cell--green">
+                                  <div class="credit-table__value">2 904 907 ₽ </div>
+                                </td>
+                                <td class="credit-table__cell">
+                                  <button class="credit-table__btn btn btn--border btn--wide">Подать заявку</button>
+                                </td>
+                              </tr>
+                              <tr> 
+                                <td class="credit-table__cell">
+                                  <div class="credit-table__partner">
+                                    <div class="credit-table__partner-checkbox"> 
+                                      <input type="checkbox" name="" id="credits_partner_4">
+                                      <label for="credit_partner_4"> </label>
+                                    </div>
+                                    <picture class="credit-table__partner-logo"> <picture><source srcset="./img/product/credit-partner.webp" type="image/webp"><img src="./img/product/credit-partner.webp" alt=""></picture></picture>
+                                    <div class="credit-table__partner-name">Каркаде</div>
+                                  </div>
+                                </td>
+                                <td class="credit-table__cell">
+                                  <div class="credit-table__value">
+                                     110 770 ₽<span>в мес.</span></div>
+                                </td>
+                                <td class="credit-table__cell">
+                                  <div class="credit-table__value">
+                                     11,10 %<span>годовых</span></div>
+                                </td>
+                                <td class="credit-table__cell credit-table__cell--green">
+                                  <div class="credit-table__value">2 904 907 ₽ </div>
+                                </td>
+                                <td class="credit-table__cell">
+                                  <button class="credit-table__btn btn btn--border btn--wide">Подать заявку</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <button class="product-credit__show-more btn btn--outline" type="button">Показать ещё 2 компании</button>
+                    </div>
+                    <div class="product-credit__calculator"> 
+                      <div class="credit-calculator"> 
+                        <div class="credit-calculator__inner"> 
+                          <div class="credit-calculator__title">Расчёт условий лизинга</div>
+                          <div class="credit-calculator__price">
+                            <input class="credit-calculator__price-input" type="text" value="5 604 984 ₽">
+                          </div>
+                          <div class="credit-calculator__item"> 
+                            <div class="credit-calculator__item-top"> 
+                              <div class="credit-calculator__item-title">Аванс: <span>37%</span></div>
+                              <input class="credit-calculator__item-input credit-calculator__item-input--price" type="text" value="2 073 984 ₽">
+                            </div>
+                            <div class="credit-calculator__item-range"> 
+                              <input type="range" value="40" min="0" max="100" step="1">
+                            </div>
+                          </div>
+                          <div class="credit-calculator__item"> 
+                            <div class="credit-calculator__item-top"> 
+                              <div class="credit-calculator__item-title">Срок договора: <span>60 мес.</span></div>
+                              <input class="credit-calculator__item-input credit-calculator__item-input--month" type="text" value="60">
+                            </div>
+                            <div class="credit-calculator__item-range"> 
+                              <input type="range" value="40" min="0" max="100" step="1">
+                            </div>
+                          </div>
+                          <div class="credit-calculator__total"> 
+                            <div class="credit-calculator__total-row">  
+                              <div class="credit-calculator__total-row-title">Платёж, с НДС:</div>
+                              <div class="credit-calculator__total-row-value">110 770 ₽</div>
+                            </div>
+                            <div class="credit-calculator__total-row">  
+                              <div class="credit-calculator__total-row-title">Удорожание:</div>
+                              <div class="credit-calculator__total-row-value">11,10 %</div>
+                            </div>
+                            <div class="credit-calculator__total-row">  
+                              <div class="credit-calculator__total-row-title">Сумма по договору:</div>
+                              <div class="credit-calculator__total-row-value">8 714  908 ₽</div>
+                            </div>
+                          </div>
+                          <button class="credit-calculator__btn btn btn--wide">Расчёт от 6 лизинговых компаний</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main><div class="footer-wrapper">
+<div class="footer-top-wrapper">
+<div class="container-wide">
+<div class="footer-top-inner relative">
+<div class="row">
+<div class="col-sm-12 col-lg-3">
+<div class="footer-top-first">
+<picture><source srcset="./img/logo-white.webp" type="image/webp"><img src="./img/logo-white.png" alt="РЕМОНТЯМ" data-retinasrc="./img/logo-white.png"></picture>
+<div class="footer-text">ООО «РЕМОНТЯМ». ИНН: 7807252270, ОГРН: 1217800168233</div>
+<div class="copyr">© 2014 - 2024. Все права защищены. РЕМОНТЯМ.</div>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Дорожно-строительная техника<!--/noindex--></div>
+<ul class="footer_l">
+<li class="first">
+<a href="catalog/litoy">Кохеры для литого асфальта</a>
+</li>
+<li>
+<a href="catalog/hotbox">Термос бункеры</a>
+</li>
+<li>
+<a href="catalog/gudron">Гудронаторы</a>
+</li>
+<li>
+<a href="catalog/pricepremont-pnevmonabryzgom">Пневмонабрызг</a>
+</li>
+<li>
+<a href="catalog/kotelbitum">Заливщик швов</a>
+</li>
+<li>
+<a href="catalog/recicler">Рециклеры асфальта</a>
+</li>
+<li>
+<a href="catalog/pricepremont">Машины ямочного ремонта асфальта</a>
+</li>
+<li>
+<a href="catalog/ifrakrasnye">Инфракрасные нагреватели асфальта</a>
+</li>
+<li>
+<a href="catalog/peredvizhnyie-laboratorii">Передвижные лаборатории</a>
+</li>
+<li>
+<a href="catalog/ustanovki">Битумно-эмульсионные установки</a>
+</li>
+<li>
+<a href="catalog/ustanovki-pbv">Установка ПБВ</a>
+</li>
+<li class="last">
+<a href="catalog/plavbitum">Установки плавления битума</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Коммунальная техника<!--/noindex--></div>
+<ul class="footer_l"><li class="first"><a href="catalog/navesnoe-oborudovanie-dlya-kdm">Навесное оборудование для КДМ</a></li><li><a href="catalog/polivomoechnoe-oborudovanie">Поливомоечное оборудование</a></li><li><a href="catalog/vakuumnyie-podmetalno-uborochnyie-mashinyi">Вакуумные подметально-уборочные машины</a></li><li><a href="catalog/navesnoe-oborudovanie-traktor-mtz">Навесное оборудование на трактор МТЗ</a></li><li><a href="catalog/peskorazbrasyivateli-priczepnyie">Пескоразбрасыватели прицепные</a></li><li><a href="catalog/vakuumnyie-mashinyi">Вакуумные машины</a></li><li><a href="catalog/benzovozyi-toplivozapravshhiki">Бензовозы - топливозаправщики</a></li><li><a href="catalog/ilososnyie-mashinyi">Илососные машины</a></li><li><a href="catalog/ifrakrasnye-krovly">Инфракрасные нагреватели кровли</a></li><li><a href="catalog/avtonomny">Шнекороторные снегоочистители</a></li><li><a href="catalog/sol-rastvor">Установки приготовления солевого раствора</a></li><li><a href="catalog/kosilki">Косилки на трактор МТЗ</a></li><li><a href="catalog/kombinirovannyie-dorozhnyie-mashinyi">Комбинированные дорожные машины</a></li><li class="last"><a href="catalog/peskorazbrasyivatel">Пескоразбрасывающее оборудование</a></li></ul>
+</div>
+</div>          
+<div class="col-sm-4 col-lg-3">
+<div class="footer-contacts">
+<div class="title">Контакты</div>
+<div itemscope="" itemtype="http://schema.org/Organization">
+<meta itemprop="url" content="https://ремонтям.рф/">
+<meta itemprop="name" content="РЕМОНТЯМ">
+<div itemscope="" itemprop="address" itemtype="http://schema.org/PostalAddress">
+<meta itemprop="postalCode" content="198332">
+<meta itemprop="addressLocality" content="Санкт-Петербург">
+<meta itemprop="streetAddress" content="проспект Кузнецова дом 11 кор.2">
+</div>
+<meta itemprop="telephone" content="8 800 100 41 69">
+</div>
+<div class="tel dflex jcsb aic">
+<span>Санкт-Петербург: </span>
+<span class="stel"><a href="tel:+78126484190">+7 (812) 648-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Москва:</span>
+<span class="stel"><a href="tel:+74951884190">+7 (495) 188-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Отдел продаж:</span>
+<span class="stel"><a href="tel:+79112052741">+7 (911) 205-27-41</a></span>
+</div>
+<div class=" social-links ">
+<a href="https://www.youtube.com/@user-rr6su3fk9g " rel="nofollow noopener" target="blank" class="yutb_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+<a href="https://vk.com/" rel="nofollow noopener" class="vk_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+<a href="https://t.me/+79112052741" rel="nofollow noopener" class="tg_link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+</div>
+<style>
+    <div class="social-links">a{ color:#fff;border-color:#fff;}</div></style>
+<p>&nbsp;</p>
+<p>E-mail: <a href="mailto:info@remontiam.ru">info@remontiam.ru</a></p>
+<p>Офис: г. Санкт-Петербург, проспект Кузнецова дом 11 кор.2</p>
+<p>Завод: г. Санкт-Петербург, Гатчина, ул.Жемчужина 2</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

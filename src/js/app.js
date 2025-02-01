@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import { Navigation, Pagination} from "swiper/modules";
+import { Navigation, Pagination, Thumbs} from "swiper/modules";
 
 const productsSliderContainers = document.querySelectorAll('.js-products-slider-container');
 
@@ -155,5 +155,46 @@ if(catalogCardGallerySliders.length > 0) {
       },
     })
   })
-
 }
+
+const productSliderBlock = document.querySelector('.js-product-slider');
+const productThumbsBlock = document.querySelector('.js-product-thumbs-slider');
+
+if(productSliderBlock && productThumbsBlock) {
+
+  const productSliderThumbs = new Swiper(productThumbsBlock, {
+    slidesPerView: 4,
+    spaceBetween: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 5,
+        spaceBetween: 8,
+      }
+    },
+  });
+
+  const productSlider = new Swiper(productSliderBlock, {
+    modules: [Thumbs],
+    slidesPerView: 1,
+    spaceBetween: 16,
+    thumbs: {
+      swiper: productSliderThumbs
+    }
+  });
+}
+
+
+$('.js-tab-control').on('click', function() {
+  const tabControl = $(this).data('control');
+  $('.js-tab-control').removeClass('_is-active');
+  $(this).addClass('_is-active');
+  $('.js-tab-section').removeClass('_is-active');
+  $(`.js-tab-section[data-tab="${tabControl}"]`).addClass('_is-active');
+})
+
+$('input[type="range"]').on("input", function() {
+  const gradientValue = `linear-gradient(to right, #E44900 0%, #E44900  ${$(this).val()}%, #E2E2E2  ${$(this).val()}%, #E2E2E2 100%)`;
+  $(this).css('background', gradientValue);
+});
