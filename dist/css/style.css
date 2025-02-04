@@ -7837,6 +7837,9 @@ p {
   background-color: var(--color-gray-100);
   border-bottom: 1px solid var(--color-border-100);
   color: var(--color-gray-500);
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .credit-table__head-cell--green {
@@ -7863,6 +7866,7 @@ p {
   padding: 24px 16px;
   border-bottom: 1px solid var(--color-border-100);
   vertical-align: middle;
+  font-size: 14px;
 }
 
 .credit-table__cell--green {
@@ -9270,6 +9274,10 @@ input[type=range]::-webkit-slider-thumb {
 
   .catalog-section__list {
     grid-template-columns: 1fr;
+  }
+
+  .product__control-btn {
+    display: none;
   }
 
   .product-gallery {
