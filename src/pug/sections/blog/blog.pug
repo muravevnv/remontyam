@@ -1,96 +1,208 @@
-.blog.section.js-tabs 
+section.blog 
   .container-wide 
-    .blog__head 
-      .blog__categories.js-tabs-controls 
-        button(type="button" data-control="blog-1").blog__categories-item.is-active Новости
-        button(type="button" data-control="blog-2").blog__categories-item Статьи
-        button(type="button" data-control="blog-3").blog__categories-item Обзоры
-      a.blog__show-more.btn-round(href="#") К архиву
-    .blog__content.js-tabs-panel 
-      .blog__list.is-open(data-content="blog-1") 
-        a.blog__item(href="#")
-          picture.blog__item-img 
+    .blog__nav 
+      button(type="button" data-control="blog-1").blog-categories-item.is-active Новости
+      button(type="button" data-control="blog-2").blog-categories-item Статьи
+      button(type="button" data-control="blog-3").blog-categories-item Обзоры
+    .blog__section 
+      .blog__section-head   
+        .blog__section-title Новости
+        a(href="#").blog__section-btn.btn-round Смотреть все
+      .blog__section-main
+        .blog__section-main-left
+          a(href="#").blog-main-item
+            picture.blog-main-item__img 
+              source(srcset="./img/blog/blog-main-01.webp", type="image/webp")
+              img(src="./img/blog/blog-main-01.webp", alt="")
+            .blog-main-item__head 
+              .blog-main-item__date 04.11.2024
+              .blog-main-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+        .blog__section-main-right
+          .blog-aside-items 
+            a(href="#").blog-aside-item
+              picture.blog-aside-item__img
+                source(srcset="./img/blog/blog-aside-01.webp" type="image/webp")
+                img(src="./img/blog/blog-aside-01.webp", alt="")
+              .blog-aside-item__info 
+                .blog-aside-item__date 04.11.2024
+                .blog-aside-item__title Международная выставка «Kaztraffic-2022»
+                .blog-aside-item__text 
+                  | Выставка была организована на площадке XVIII Международной выставки 
+                  | «Kaztraffic-2022», которая проходила с 24 по 25 ноября 2022 г.
+            a(href="#").blog-aside-item
+              picture.blog-aside-item__img
+                source(srcset="./img/blog/blog-aside-02.webp" type="image/webp")
+                img(src="./img/blog/blog-aside-02.webp", alt="")
+              .blog-aside-item__info 
+                .blog-aside-item__date 04.11.2024
+                .blog-aside-item__title Международная выставка «Kaztraffic-2022»
+                .blog-aside-item__text 
+                  | Выставка была организована на площадке XVIII Международной выставки 
+                  | «Kaztraffic-2022», которая проходила с 24 по 25 ноября 2022 г.
+            a(href="#").blog-aside-item
+              picture.blog-aside-item__img
+                source(srcset="./img/blog/blog-aside-03.webp" type="image/webp")
+                img(src="./img/blog/blog-aside-03.webp", alt="")
+              .blog-aside-item__info 
+                .blog-aside-item__date 04.11.2024
+                .blog-aside-item__title Международная выставка «Kaztraffic-2022»
+                .blog-aside-item__text 
+                  | Выставка была организована на площадке XVIII Международной выставки 
+                  | «Kaztraffic-2022», которая проходила с 24 по 25 ноября 2022 г.
+      .blog__section-list
+        a.blog-item(href="#")
+          picture.blog-item__img 
             source(srcset="./img/blog/blog-card.webp" type="image/webp")
             img(src="./img/blog/blog-card.webp", alt="")  
-          .blog__item-date 04.11.2024
-          .blog__item-title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
-          .blog__item-desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
-        a.blog__item(href="#")
-          picture.blog__item-img 
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
             source(srcset="./img/blog/blog-card.webp" type="image/webp")
             img(src="./img/blog/blog-card.webp", alt="")  
-          .blog__item-date 04.11.2024
-          .blog__item-title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
-          .blog__item-desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
-        a.blog__item(href="#")
-          picture.blog__item-img 
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
             source(srcset="./img/blog/blog-card.webp" type="image/webp")
             img(src="./img/blog/blog-card.webp", alt="")  
-          .blog__item-date 04.11.2024
-          .blog__item-title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
-          .blog__item-desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
-        a.blog__item(href="#")
-          picture.blog__item-img 
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
             source(srcset="./img/blog/blog-card.webp" type="image/webp")
             img(src="./img/blog/blog-card.webp", alt="")  
-          .blog__item-date 04.11.2024
-          .blog__item-title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
-          .blog__item-desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
-      .blog__list(data-content="blog-2")  
-        a.blog__item(href="#")
-          picture.blog__item-img 
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
             source(srcset="./img/blog/blog-card.webp" type="image/webp")
             img(src="./img/blog/blog-card.webp", alt="")  
-          .blog__item-date 04.11.2024
-          .blog__item-title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
-          .blog__item-desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
-        a.blog__item(href="#")
-          picture.blog__item-img 
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
             source(srcset="./img/blog/blog-card.webp" type="image/webp")
             img(src="./img/blog/blog-card.webp", alt="")  
-          .blog__item-date 04.11.2024
-          .blog__item-title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
-          .blog__item-desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
-        a.blog__item(href="#")
-          picture.blog__item-img 
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
             source(srcset="./img/blog/blog-card.webp" type="image/webp")
             img(src="./img/blog/blog-card.webp", alt="")  
-          .blog__item-date 04.11.2024
-          .blog__item-title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
-          .blog__item-desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
-        a.blog__item(href="#")
-          picture.blog__item-img 
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
             source(srcset="./img/blog/blog-card.webp" type="image/webp")
             img(src="./img/blog/blog-card.webp", alt="")  
-          .blog__item-date 04.11.2024
-          .blog__item-title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
-          .blog__item-desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
-      .blog__list(data-content="blog-3")  
-        a.blog__item(href="#")
-          picture.blog__item-img 
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+      a(href="#").blog__section-more.btn Ещё новости
+    .blog__section 
+      .blog__section-head   
+        .blog__section-title Обзоры
+        a(href="#").blog__section-btn.btn-round Смотреть все
+      .blog__section-main
+        .blog__section-main-left
+          a(href="#").blog-main-item
+            .blog-main-item__iframe 
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-Rp-LeLv2Jg" title="Подробный обзор самого востребованного в данный момент КамАЗа 6520!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        .blog__section-main-right
+          .blog-aside-items 
+            a(href="#").blog-aside-item
+              picture.blog-aside-item__img
+                source(srcset="./img/blog/blog-aside-01.webp" type="image/webp")
+                img(src="./img/blog/blog-aside-01.webp", alt="")
+              .blog-aside-item__info 
+                .blog-aside-item__date 04.11.2024
+                .blog-aside-item__title Международная выставка «Kaztraffic-2022»
+                .blog-aside-item__text 
+                  | Выставка была организована на площадке XVIII Международной выставки 
+                  | «Kaztraffic-2022», которая проходила с 24 по 25 ноября 2022 г.
+            a(href="#").blog-aside-item
+              picture.blog-aside-item__img
+                source(srcset="./img/blog/blog-aside-02.webp" type="image/webp")
+                img(src="./img/blog/blog-aside-02.webp", alt="")
+              .blog-aside-item__info 
+                .blog-aside-item__date 04.11.2024
+                .blog-aside-item__title Международная выставка «Kaztraffic-2022»
+                .blog-aside-item__text 
+                  | Выставка была организована на площадке XVIII Международной выставки 
+                  | «Kaztraffic-2022», которая проходила с 24 по 25 ноября 2022 г.
+            a(href="#").blog-aside-item
+              picture.blog-aside-item__img
+                source(srcset="./img/blog/blog-aside-03.webp" type="image/webp")
+                img(src="./img/blog/blog-aside-03.webp", alt="")
+              .blog-aside-item__info 
+                .blog-aside-item__date 04.11.2024
+                .blog-aside-item__title Международная выставка «Kaztraffic-2022»
+                .blog-aside-item__text 
+                  | Выставка была организована на площадке XVIII Международной выставки 
+                  | «Kaztraffic-2022», которая проходила с 24 по 25 ноября 2022 г.
+      .blog__section-list
+        a.blog-item(href="#")
+          picture.blog-item__img 
             source(srcset="./img/blog/blog-card.webp" type="image/webp")
             img(src="./img/blog/blog-card.webp", alt="")  
-          .blog__item-date 04.11.2024
-          .blog__item-title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
-          .blog__item-desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
-        a.blog__item(href="#")
-          picture.blog__item-img 
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
             source(srcset="./img/blog/blog-card.webp" type="image/webp")
             img(src="./img/blog/blog-card.webp", alt="")  
-          .blog__item-date 04.11.2024
-          .blog__item-title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
-          .blog__item-desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
-        a.blog__item(href="#")
-          picture.blog__item-img 
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
             source(srcset="./img/blog/blog-card.webp" type="image/webp")
             img(src="./img/blog/blog-card.webp", alt="")  
-          .blog__item-date 04.11.2024
-          .blog__item-title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
-          .blog__item-desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
-        a.blog__item(href="#")
-          picture.blog__item-img 
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
             source(srcset="./img/blog/blog-card.webp" type="image/webp")
             img(src="./img/blog/blog-card.webp", alt="")  
-          .blog__item-date 04.11.2024
-          .blog__item-title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
-          .blog__item-desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
+            source(srcset="./img/blog/blog-card.webp" type="image/webp")
+            img(src="./img/blog/blog-card.webp", alt="")  
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
+            source(srcset="./img/blog/blog-card.webp" type="image/webp")
+            img(src="./img/blog/blog-card.webp", alt="")  
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
+            source(srcset="./img/blog/blog-card.webp" type="image/webp")
+            img(src="./img/blog/blog-card.webp", alt="")  
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+        a.blog-item(href="#")
+          picture.blog-item__img 
+            source(srcset="./img/blog/blog-card.webp" type="image/webp")
+            img(src="./img/blog/blog-card.webp", alt="")  
+          .blog-item__date 04.11.2024
+          .blog-item__title "РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000
+          .blog-item__desc В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область
+      a(href="#").blog__section-more.btn Ещё новости

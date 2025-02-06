@@ -71,3 +71,65 @@
 .page-inner {
   padding: 40px 0 120px;
 }
+
+.page-with-nav {
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+    @include mq($ms) {
+      flex-direction: column;
+    }
+  }
+
+  &__aside {
+    width: 220px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    @include mq($ms) {
+      width: 100%;
+      flex-direction: row;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+
+.page-nav-link {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  border: 1px dashed cl(gray-200);
+  color: #686868;
+
+  @include mq($ms) {
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  &._is-active {
+    border-color: cl(accent);
+    color: cl(accent);
+  }
+}

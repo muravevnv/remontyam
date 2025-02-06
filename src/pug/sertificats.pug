@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  include mixins/_mixins
+  include includes/head
+  +head('Сертификаты')
+  body
+    include components/header
+    main
+      .page-inner.page-with-nav 
+        .container-wide
+          .page-with-nav__title Сертификаты
+          .page-with-nav__inner 
+            .page-with-nav__aside 
+              a(href="#").page-nav-link О компании
+              a(href="#").page-nav-link._is-active Сертификаты
+              a(href="#").page-nav-link Отзывы
+            .page-with-nav__content 
+              include sections/sertificats/sertificats
+    include components/footer
+    include includes/scripts

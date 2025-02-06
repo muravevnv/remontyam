@@ -1,0 +1,16 @@
+.sertificats {
+
+  &__desc {
+    margin-bottom: 56px;
+
+    p + p {
+      margin-top: 16px;
+    }
+  }
+
+  &__faq {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

@@ -86,4 +86,20 @@
       font-size: 14px;
     }
   }
+
+  &__gallery {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    &-img {
+      display: block;
+      width: 100%;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
 }
