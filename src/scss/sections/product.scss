@@ -12,6 +12,10 @@
     flex-wrap: wrap;
     gap: 24px;
     margin-bottom: 24px;
+
+    @include mq($m) {
+      gap: 16px;
+    }
   }
 
   &__articul {
@@ -64,7 +68,10 @@
     transition: color 0.25s ease-in-out;
 
     @include mq($m) {
-      display: none;
+      
+      span {
+        display: none;
+      }
     }
 
     &::before {
