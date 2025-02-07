@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  include mixins/_mixins
+  include includes/head
+  +head('О компании')
+  body
+    include components/header
+    main
+      .page-inner
+        include sections/about/about-banner
+        include sections/products-slider/products-slider
+        include sections/about/about-info
+        include sections/about/about-gallery
+        include sections/about/about-team
+        include sections/about/about-connection
+        include sections/about/about-advantages
+
+    include components/footer
+    include includes/scripts

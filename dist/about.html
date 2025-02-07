@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+      <link href="css/style.css" rel="stylesheet">
+      <title>О компании</title>
+    </head>
+  <body>
+    <header class="header"> 
+      <div class="header-top">
+        <div class="container-wide"> 
+          <div class="header-top__adress"> 
+              <svg width="17" height="20">
+                <use xlink:href="img/icons/icons.svg#adress"></use>
+              </svg><span>Санкт-Петербург</span>
+          </div>
+          <nav class="header-top__links"> <a class="header-top__link" href="#">О компании</a><a class="header-top__link" href="#">Открыть бизнес</a><a class="header-top__link" href="#">Оплата</a><a class="header-top__link" href="#">Доставка</a><a class="header-top__link" href="#">Кредит и лизинг</a><a class="header-top__link" href="#">Статьи</a><a class="header-top__link" href="#">Контакты</a></nav><a class="header-top__tel" href="tel:+78001004196">8 800 100 41 96</a>
+        </div>
+      </div>
+      <div class="header-main"> 
+        <div class="container-wide"> 
+          <button class="header-main__burger js-header-burger" type="button">
+              <svg width="24" height="20">
+                <use xlink:href="img/icons/icons.svg#burger"></use>
+              </svg>
+          </button><a class="header-main__logo" href="#"> 
+            <picture>
+              <source srcset="./img/logo-sm.svg" media="(max-width: 1279.98px)"><img src="./img/logo.svg" alt="">
+            </picture></a>
+          <div class="header-main__cabinet header-cabinet">
+            <button class="header-cabinet__btn js-header-cabinet-btn" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#cabinet-user"></use>
+                </svg>
+            </button>
+            <div class="header-cabinet__dropdown js-header-cabinet-dropdown"> 
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#reg-plus"></use>
+                  </svg><span>Регистрация</span>
+              </div>
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#c-user"></use>
+                  </svg><span>Вход</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-main__catalog-btn"> 
+            <div class="header-main__catalog-btn-icon"> 
+                <svg width="13" height="8">
+                  <use xlink:href="img/icons/icons.svg#catalog-lines"></use>
+                </svg>
+            </div>
+            <div class="header-main__catalog-btn-title">Каталог</div>
+            <div class="header-main__catalog-btn-arrow">
+                <svg width="11" height="6">
+                  <use xlink:href="img/icons/icons.svg#catalog-arrow"></use>
+                </svg>
+            </div>
+          </div>
+          <div class="header-main__search"> 
+            <div class="searchbar"> 
+              <input class="searchbar__input" type="text" placeholder="Прицеп для спецтехники">
+              <button class="searchbar__btn" type="button">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/icons/icons.svg#search"></use>
+                  </svg>
+              </button>
+            </div>
+          </div>
+          <div class="header-main__toolbars"> 
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/user.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#user"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Войти</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/favorite.svg')"> 
+                  <svg width="23" height="20">
+                    <use xlink:href="img/icons/icons.svg#favorite"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Избранное</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/compare.svg')"> 
+                  <svg width="27" height="21">
+                    <use xlink:href="img/icons/icons.svg#compare"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Сравнение</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/basket.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#basket"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Корзина</div>
+              <div class="header-main__toolbar-counter">5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom"> 
+        <div class="container-wide"> 
+          <nav class="header-nav"> 
+            <ul class="header-nav__list"> 
+              <li class="header-nav__item"> <a href="#">Дорожная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Коммунальная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Грузоподъёмная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Навесное оборудование</a></li>
+              <li class="header-nav__item"> <a href="#">Асфальтобетонные заводы</a></li>
+              <li class="header-nav__item"> <a href="#">Самоходные транспортеры</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-menu js-header-menu">
+        <div class="header-menu__overlay js-header-menu-close"></div>
+        <div class="header-menu__inner"> 
+          <button class="header-menu__close js-header-menu-close" type="button">
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#close"></use>
+              </svg>
+          </button>
+          <div class="header-menu__list"> 
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">О компании</a></li>
+            <li class="header-menu__item"><a href="#">Открыть бизнес</a></li>
+            <li class="header-menu__item"><a href="#">Оплата</a></li>
+            <li class="header-menu__item"><a href="#">Доставка</a></li>
+            <li class="header-menu__item"><a href="#">Кредит и лизинг</a></li>
+            <li class="header-menu__item"><a href="#"> Статьи</a></li>
+            <li class="header-menu__item"><a href="#">Контакты</a></li>
+          </div>
+          <div class="header-menu__tel"> 
+              <svg width="8" height="8">
+                <use xlink:href="img/icons/icons.svg#tel"></use>
+              </svg><span>8 800 100 41 96</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page-inner">
+        <section class="about-banner"> 
+          <div class="container-wide"> 
+            <div class="about-banner__inner">
+              <div class="about-banner__info"> 
+                <div class="about-banner__title"> <span>ООО "Ремонт Ям"</span>Завод-производитель дорожной техники</div>
+                <div class="about-banner__desc"> 
+                  <p>ООО «Ремонт Ям» - завод - изготовитель дорожной техники для выполнения работ по текущему ремонту и содержанию автомобильных дорог.</p>
+                  <p>ООО «РемонтЯм» производит и выпускает на Российский рынок следующую дорожную технику:</p>
+                  <ul> 
+                    <li>инфракрасные нагреватели асфальта размерами от 0.6 до 2.4 м2</li>
+                    <li>термос-бункеры вместительностью от 2 до 10 тонн асфальтобетона</li>
+                    <li>машины для ямочного ремонта в кузов самосвала и на прицепе</li>
+                    <li>рециклеры асфальтовой крошки объемом от 0.6 до 2 м3</li>
+                    <li>котлы заливщики (ручные, прицепные, самоходные)</li>
+                    <li>кохеры для горячего асфальта на 1 и 4 метра кубических</li>
+                  </ul>
+                </div>
+              </div>
+              <picture class="about-banner__img"> 
+                <source srcset="./img/about/about-banner.webp" type="image/webp"><img src="./img/about/about-banner.webp" alt="">
+              </picture>
+            </div>
+          </div>
+        </section>
+        <div class="products-slider section js-products-slider-container">
+          <div class="container-wide"> 
+            <div class="products-slider__head">
+              <div class="products-slider__title h2">Топ продаж</div><a class="products-slider__show-more btn-round" href="#">Смотреть все</a>
+            </div>
+            <div class="products-slider__inner"> 
+              <button class="products-slider__prev slider-control js-products-slider-prev" type="button">
+                  <svg width="24" height="12">
+                    <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+                  </svg>
+              </button>
+              <button class="products-slider__next slider-control js-products-slider-next" type="button">
+                  <svg width="24" height="12">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+              </button>
+              <div class="products-slider__wrapper js-products-slider">
+                <div class="swiper-wrapper"> 
+                  <div class="products-slider__item swiper-slide"> 
+                    <picture class="products-slider__item-img"> 
+                      <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                    </picture>
+                    <div class="products-slider__item-info"> 
+                      <div class="products-slider__item-price">1  500 000 ₽</div>
+                      <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                      <div class="products-slider__item-available">В наличии</div>
+                      <button class="products-slider__item-btn btn btn--wide" type="button">
+                          <svg width="15" height="15">
+                            <use xlink:href="img/icons/icons.svg#basket"></use>
+                          </svg><span>В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="products-slider__item swiper-slide"> 
+                    <picture class="products-slider__item-img"> 
+                      <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                    </picture>
+                    <div class="products-slider__item-info"> 
+                      <div class="products-slider__item-price">1  500 000 ₽</div>
+                      <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                      <div class="products-slider__item-available">В наличии</div>
+                      <button class="products-slider__item-btn btn btn--wide" type="button">
+                          <svg width="15" height="15">
+                            <use xlink:href="img/icons/icons.svg#basket"></use>
+                          </svg><span>В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="products-slider__item swiper-slide"> 
+                    <picture class="products-slider__item-img"> 
+                      <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                    </picture>
+                    <div class="products-slider__item-info"> 
+                      <div class="products-slider__item-price">1  500 000 ₽</div>
+                      <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                      <div class="products-slider__item-available">В наличии</div>
+                      <button class="products-slider__item-btn btn btn--wide" type="button">
+                          <svg width="15" height="15">
+                            <use xlink:href="img/icons/icons.svg#basket"></use>
+                          </svg><span>В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="products-slider__item swiper-slide"> 
+                    <picture class="products-slider__item-img"> 
+                      <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                    </picture>
+                    <div class="products-slider__item-info"> 
+                      <div class="products-slider__item-price">1  500 000 ₽</div>
+                      <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                      <div class="products-slider__item-available">В наличии</div>
+                      <button class="products-slider__item-btn btn btn--wide" type="button">
+                          <svg width="15" height="15">
+                            <use xlink:href="img/icons/icons.svg#basket"></use>
+                          </svg><span>В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="products-slider__item swiper-slide"> 
+                    <picture class="products-slider__item-img"> 
+                      <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                    </picture>
+                    <div class="products-slider__item-info"> 
+                      <div class="products-slider__item-price">1  500 000 ₽</div>
+                      <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                      <div class="products-slider__item-available">В наличии</div>
+                      <button class="products-slider__item-btn btn btn--wide" type="button">
+                          <svg width="15" height="15">
+                            <use xlink:href="img/icons/icons.svg#basket"></use>
+                          </svg><span>В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="products-slider__item swiper-slide"> 
+                    <picture class="products-slider__item-img"> 
+                      <source srcset="./img/products-slider/products-card-01.webp" type="image/webp"><img src="./img/products-slider/product-card-01.webp" alt="">
+                    </picture>
+                    <div class="products-slider__item-info"> 
+                      <div class="products-slider__item-price">1  500 000 ₽</div>
+                      <div class="products-slider__item-name">Термос-бункер для асфальта Яр-4М</div>
+                      <div class="products-slider__item-available">В наличии</div>
+                      <button class="products-slider__item-btn btn btn--wide" type="button">
+                          <svg width="15" height="15">
+                            <use xlink:href="img/icons/icons.svg#basket"></use>
+                          </svg><span>В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="about-info section"> 
+          <div class="container-wide about-info__container"> 
+            <div class="about-info__left"> 
+              <div class="about-info__title">КОМПАНИЯ «Ремонт Ям»— СЕГОДНЯ</div>
+              <div class="about-info__desc"> 
+                <p>
+                  «РемонтЯм» изготавливает оборудование на производственных площадях 2000 м². В собственности компании сертифицированные 
+                  станки плазменной резки, гибочные, токарно-фрезерные, сверлильные 
+                  станки, полуавтоматическое сварочное оборудование, атестованное НАКС.
+                </p>
+                <p>
+                  Собственное конструкторское подразделение компании следит за качеством выполнения текущих заказов и усовершенствует 
+                  новые технические решения.
+                </p>
+                <p>
+                  Наличие сервисной поддержки 24/7 обеспечивает высокий показатель надёжности и бесперебойной работы оборудования 
+                  находящегося в эксплуатации.
+                </p>
+              </div>
+              <div class="about-info__faq">
+                <div class="faq-item"> 
+                  <div class="faq-item__head accordion-item"> 
+                    <div class="faq-item__title">2024 г.</div>
+                    <div class="faq-item__icon"> </div>
+                  </div>
+                  <div class="faq-item__body accordion-content"> 
+                    <p>2024 г.</p>
+                  </div>
+                </div>
+                <div class="faq-item"> 
+                  <div class="faq-item__head accordion-item"> 
+                    <div class="faq-item__title">2021 г.</div>
+                    <div class="faq-item__icon"> </div>
+                  </div>
+                  <div class="faq-item__body accordion-content"> 
+                    <p>2021 г.</p>
+                  </div>
+                </div>
+                <div class="faq-item"> 
+                  <div class="faq-item__head accordion-item"> 
+                    <div class="faq-item__title">2020 г.</div>
+                    <div class="faq-item__icon"> </div>
+                  </div>
+                  <div class="faq-item__body accordion-content"> 
+                    <p>2020 г.</p>
+                  </div>
+                </div>
+                <div class="faq-item"> 
+                  <div class="faq-item__head accordion-item"> 
+                    <div class="faq-item__title">2014 г.</div>
+                    <div class="faq-item__icon"> </div>
+                  </div>
+                  <div class="faq-item__body accordion-content"> 
+                    <p>2014 г.</p>
+                  </div>
+                </div>
+                <div class="faq-item"> 
+                  <div class="faq-item__head accordion-item"> 
+                    <div class="faq-item__title">2012 г.</div>
+                    <div class="faq-item__icon"> </div>
+                  </div>
+                  <div class="faq-item__body accordion-content"> 
+                    <p>2012 г.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-info__right">
+              <div class="about-info__stats"> 
+                <div class="about-info__stats-title">О НАС В ЦИФРАХ</div>
+                <div class="about-info__stats-list"> 
+                  <div class="about-info__stats-item"> 
+                    <div class="about-info__stats-item-title">2000 м²</div>
+                    <div class="about-info__stats-item-desc">производственных площадей</div>
+                  </div>
+                  <div class="about-info__stats-item"> 
+                    <div class="about-info__stats-item-title">130+ моделей</div>
+                    <div class="about-info__stats-item-desc">сертифицированного оборудования</div>
+                  </div>
+                  <div class="about-info__stats-item"> 
+                    <div class="about-info__stats-item-title">10+</div>
+                    <div class="about-info__stats-item-desc">профессионалов в штате</div>
+                  </div>
+                  <div class="about-info__stats-item"> 
+                    <div class="about-info__stats-item-title">10 лет</div>
+                    <div class="about-info__stats-item-desc">средний профессиональный стаж инженера- разработчика</div>
+                  </div>
+                  <div class="about-info__stats-item"> 
+                    <div class="about-info__stats-item-title">10 лет</div>
+                    <div class="about-info__stats-item-desc">на рынке</div>
+                  </div>
+                  <div class="about-info__stats-item"> 
+                    <div class="about-info__stats-item-title">14 рабочих дней</div>
+                    <div class="about-info__stats-item-desc">максимальный срок исполнения заказа</div>
+                  </div>
+                </div>
+                <div class="about-info__stats-gallery"> 
+                  <picture class="about-info__stats-img"> 
+                    <source srcset="./img/about/about-info-01.webp" type="image/webp"><img src="./img/about/about-info-01.webp" alt="">
+                  </picture>
+                  <picture class="about-info__stats-img"> 
+                    <source srcset="./img/about/about-info-02.webp" type="image/webp"><img src="./img/about/about-info-02.webp" alt="">
+                  </picture>
+                  <picture class="about-info__stats-img"> 
+                    <source srcset="./img/about/about-info-03.webp" type="image/webp"><img src="./img/about/about-info-03.webp" alt="">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-gallery section"> 
+          <div class="container-wide">
+            <div class="about-gallery__slider js-about-gallery-slider"> 
+              <div class="swiper-wrapper"> 
+                <div class="about-gallery__item swiper-slide"> 
+                  <picture class="about-gallery__item-img"> 
+                    <source srcset="./img/about/gallery-01.webp" type="image/webp"><img src="./img/about/gallery-01.webp" alt="">
+                  </picture>
+                  <picture class="about-gallery__item-img"> 
+                    <source srcset="./img/about/gallery-02.webp" type="image/webp"><img src="./img/about/gallery-02.webp" alt="">
+                  </picture>
+                </div>
+                <div class="about-gallery__item swiper-slide"> 
+                  <picture class="about-gallery__item-img"> 
+                    <source srcset="./img/about/gallery-03.webp" type="image/webp"><img src="./img/about/gallery-03.webp" alt="">
+                  </picture>
+                  <picture class="about-gallery__item-img"> 
+                    <source srcset="./img/about/gallery-04.webp" type="image/webp"><img src="./img/about/gallery-04.webp" alt="">
+                  </picture>
+                </div>
+                <div class="about-gallery__item swiper-slide"> 
+                  <picture class="about-gallery__item-img"> 
+                    <source srcset="./img/about/gallery-05.webp" type="image/webp"><img src="./img/about/gallery-05.webp" alt="">
+                  </picture>
+                  <picture class="about-gallery__item-img"> 
+                    <source srcset="./img/about/gallery-06.webp" type="image/webp"><img src="./img/about/gallery-06.webp" alt="">
+                  </picture>
+                </div>
+                <div class="about-gallery__item swiper-slide"> 
+                  <picture class="about-gallery__item-img"> 
+                    <source srcset="./img/about/gallery-07.webp" type="image/webp"><img src="./img/about/gallery-07.webp" alt="">
+                  </picture>
+                  <picture class="about-gallery__item-img"> 
+                    <source srcset="./img/about/gallery-08.webp" type="image/webp"><img src="./img/about/gallery-08.webp" alt="">
+                  </picture>
+                </div>
+                <div class="about-gallery__item swiper-slide"> 
+                  <picture class="about-gallery__item-img"> 
+                    <source srcset="./img/about/gallery-01.webp" type="image/webp"><img src="./img/about/gallery-01.webp" alt="">
+                  </picture>
+                  <picture class="about-gallery__item-img"> 
+                    <source srcset="./img/about/gallery-04.webp" type="image/webp"><img src="./img/about/gallery-04.webp" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="about-team section"> 
+          <div class="container-wide">
+            <div class="about-team__inner"> 
+              <picture class="about-team__img"> 
+                <source srcset="./img/about/team.webp" type="image/webp"><img src="./img/about/team.webp" alt="">
+              </picture>
+              <div class="about-team__info"> 
+                <div class="about-team__title">КОМАНДА, НА КОТОРУЮ ЛЕГКО ПОЛОЖИТЬСЯ</div>
+                <div class="about-team__desc"> 
+                  <p>В штате «РемонтЯм» работают профессиональные конструкторы. Они любят трудности, а ради клиентов находят эффективные решения самых нестандартных задач, например, проектируют нетиповые мобильные комплексы ямочного ремонта. Отдел главного инженера также занимается обслуживанием проданного оборудования: меняет запчасти, автоматизирует, совершенствует.</p>
+                  <p>Сотрудники на производстве работают с дорожной техникой не менее 5 лет, требования ГОСТа знают наизусть и соблюдают неукоснительно. Каждый прошёл аттестацию и неоднократно повышал квалификацию.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-connection section">
+          <div class="container-wide about-connection__container"> 
+            <div class="about-connection__map"> 
+              <div class="about-connection__map-title">География поставок</div>
+              <picture class="about-connection__map-img"> 
+                <source srcset="./img/about/map.webp" type="image/webp"><img src="./img/about/map.webp" alt="">
+              </picture>
+            </div>
+            <div class="about-connection__partners"> 
+              <div class="about-connection__partners-title">Клиенты и партнёры</div>
+              <div class="about-connection__partners-list"> <a class="about-connection__partners-item" href="#">
+                  <picture class="about-connection__partners-item-img"> 
+                    <source srcset="./img/about/partner-01.webp" type="image/webp"><img src="./img/about/partner-01.webp" alt="">
+                  </picture></a><a class="about-connection__partners-item" href="#">
+                  <picture class="about-connection__partners-item-img"> 
+                    <source srcset="./img/about/partner-02.webp" type="image/webp"><img src="./img/about/partner-02.webp" alt="">
+                  </picture></a><a class="about-connection__partners-item" href="#">
+                  <picture class="about-connection__partners-item-img"> 
+                    <source srcset="./img/about/partner-03.webp" type="image/webp"><img src="./img/about/partner-03.webp" alt="">
+                  </picture></a><a class="about-connection__partners-item" href="#">
+                  <picture class="about-connection__partners-item-img"> 
+                    <source srcset="./img/about/partner-04.webp" type="image/webp"><img src="./img/about/partner-04.webp" alt="">
+                  </picture></a><a class="about-connection__partners-item" href="#">
+                  <picture class="about-connection__partners-item-img"> 
+                    <source srcset="./img/about/partner-05.webp" type="image/webp"><img src="./img/about/partner-05.webp" alt="">
+                  </picture></a><a class="about-connection__partners-item" href="#">
+                  <picture class="about-connection__partners-item-img"> 
+                    <source srcset="./img/about/partner-06.webp" type="image/webp"><img src="./img/about/partner-06.webp" alt="">
+                  </picture></a><a class="about-connection__partners-item" href="#">
+                  <picture class="about-connection__partners-item-img"> 
+                    <source srcset="./img/about/partner-02.webp" type="image/webp"><img src="./img/about/partner-02.webp" alt="">
+                  </picture></a><a class="about-connection__partners-item" href="#">
+                  <picture class="about-connection__partners-item-img"> 
+                    <source srcset="./img/about/partner-03.webp" type="image/webp"><img src="./img/about/partner-03.webp" alt="">
+                  </picture></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="about-advantages section"> 
+          <div class="container-wide">
+            <div class="about-advantages__title">Больше, чем поставщик оборудования</div>
+            <div class="about-advantages__slider js-about-advantages-slider">
+              <div class="swiper-wrapper"> 
+                <div class="about-advantages__item swiper-slide"> 
+                  <div class="about-advantages__item-icon"> <img src="./img/about/advantage-01.svg" alt=""></div>
+                  <div class="about-advantages__item-info"> 
+                    <div class="about-advantages__item-title">Большинство моделей в наличии</div>
+                    <div class="about-advantages__item-desc">90% техники всегда на складе — доставим за 1 рабочий день.</div>
+                  </div>
+                </div>
+                <div class="about-advantages__item swiper-slide"> 
+                  <div class="about-advantages__item-icon"> <img src="./img/about/advantage-02.svg" alt=""></div>
+                  <div class="about-advantages__item-info"> 
+                    <div class="about-advantages__item-title">Простая схема сотрудничества</div>
+                    <div class="about-advantages__item-desc">Выбирайте через сайт, консультируйтесь по телефону, заказывайте, получайте, оплачивайте, используйте.</div>
+                  </div>
+                </div>
+                <div class="about-advantages__item swiper-slide"> 
+                  <div class="about-advantages__item-icon"><img src="./img/about/advantage-03.svg" alt=""></div>
+                  <div class="about-advantages__item-info"> 
+                    <div class="about-advantages__item-title">Налаженные технологические процессы</div>
+                    <div class="about-advantages__item-desc">Оперативно проектируем и выпускаем оборудование даже нестандартных размеров.</div>
+                  </div>
+                </div>
+                <div class="about-advantages__item swiper-slide"> 
+                  <div class="about-advantages__item-icon"> <img src="./img/about/advantage-01.svg" alt=""></div>
+                  <div class="about-advantages__item-info"> 
+                    <div class="about-advantages__item-title">Большинство моделей в наличии</div>
+                    <div class="about-advantages__item-desc">90% техники всегда на складе — доставим за 1 рабочий день.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main><div class="footer-wrapper">
+<div class="footer-top-wrapper">
+<div class="container-wide">
+<div class="footer-top-inner relative">
+<div class="row">
+<div class="col-sm-12 col-lg-3">
+<div class="footer-top-first">
+<picture><source srcset="./img/logo-white.webp" type="image/webp"><img src="./img/logo-white.png" alt="РЕМОНТЯМ" data-retinasrc="./img/logo-white.png"></picture>
+<div class="footer-text">ООО «РЕМОНТЯМ». ИНН: 7807252270, ОГРН: 1217800168233</div>
+<div class="copyr">© 2014 - 2024. Все права защищены. РЕМОНТЯМ.</div>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Дорожно-строительная техника<!--/noindex--></div>
+<ul class="footer_l">
+<li class="first">
+<a href="catalog/litoy">Кохеры для литого асфальта</a>
+</li>
+<li>
+<a href="catalog/hotbox">Термос бункеры</a>
+</li>
+<li>
+<a href="catalog/gudron">Гудронаторы</a>
+</li>
+<li>
+<a href="catalog/pricepremont-pnevmonabryzgom">Пневмонабрызг</a>
+</li>
+<li>
+<a href="catalog/kotelbitum">Заливщик швов</a>
+</li>
+<li>
+<a href="catalog/recicler">Рециклеры асфальта</a>
+</li>
+<li>
+<a href="catalog/pricepremont">Машины ямочного ремонта асфальта</a>
+</li>
+<li>
+<a href="catalog/ifrakrasnye">Инфракрасные нагреватели асфальта</a>
+</li>
+<li>
+<a href="catalog/peredvizhnyie-laboratorii">Передвижные лаборатории</a>
+</li>
+<li>
+<a href="catalog/ustanovki">Битумно-эмульсионные установки</a>
+</li>
+<li>
+<a href="catalog/ustanovki-pbv">Установка ПБВ</a>
+</li>
+<li class="last">
+<a href="catalog/plavbitum">Установки плавления битума</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Коммунальная техника<!--/noindex--></div>
+<ul class="footer_l"><li class="first"><a href="catalog/navesnoe-oborudovanie-dlya-kdm">Навесное оборудование для КДМ</a></li><li><a href="catalog/polivomoechnoe-oborudovanie">Поливомоечное оборудование</a></li><li><a href="catalog/vakuumnyie-podmetalno-uborochnyie-mashinyi">Вакуумные подметально-уборочные машины</a></li><li><a href="catalog/navesnoe-oborudovanie-traktor-mtz">Навесное оборудование на трактор МТЗ</a></li><li><a href="catalog/peskorazbrasyivateli-priczepnyie">Пескоразбрасыватели прицепные</a></li><li><a href="catalog/vakuumnyie-mashinyi">Вакуумные машины</a></li><li><a href="catalog/benzovozyi-toplivozapravshhiki">Бензовозы - топливозаправщики</a></li><li><a href="catalog/ilososnyie-mashinyi">Илососные машины</a></li><li><a href="catalog/ifrakrasnye-krovly">Инфракрасные нагреватели кровли</a></li><li><a href="catalog/avtonomny">Шнекороторные снегоочистители</a></li><li><a href="catalog/sol-rastvor">Установки приготовления солевого раствора</a></li><li><a href="catalog/kosilki">Косилки на трактор МТЗ</a></li><li><a href="catalog/kombinirovannyie-dorozhnyie-mashinyi">Комбинированные дорожные машины</a></li><li class="last"><a href="catalog/peskorazbrasyivatel">Пескоразбрасывающее оборудование</a></li></ul>
+</div>
+</div>          
+<div class="col-sm-4 col-lg-3">
+<div class="footer-contacts">
+<div class="title">Контакты</div>
+<div itemscope="" itemtype="http://schema.org/Organization">
+<meta itemprop="url" content="https://ремонтям.рф/">
+<meta itemprop="name" content="РЕМОНТЯМ">
+<div itemscope="" itemprop="address" itemtype="http://schema.org/PostalAddress">
+<meta itemprop="postalCode" content="198332">
+<meta itemprop="addressLocality" content="Санкт-Петербург">
+<meta itemprop="streetAddress" content="проспект Кузнецова дом 11 кор.2">
+</div>
+<meta itemprop="telephone" content="8 800 100 41 69">
+</div>
+<div class="tel dflex jcsb aic">
+<span>Санкт-Петербург: </span>
+<span class="stel"><a href="tel:+78126484190">+7 (812) 648-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Москва:</span>
+<span class="stel"><a href="tel:+74951884190">+7 (495) 188-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Отдел продаж:</span>
+<span class="stel"><a href="tel:+79112052741">+7 (911) 205-27-41</a></span>
+</div>
+<div class=" social-links ">
+<a href="https://www.youtube.com/@user-rr6su3fk9g " rel="nofollow noopener" target="blank" class="yutb_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+<a href="https://vk.com/" rel="nofollow noopener" class="vk_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+<a href="https://t.me/+79112052741" rel="nofollow noopener" class="tg_link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+</div>
+<style>
+    <div class="social-links">a{ color:#fff;border-color:#fff;}</div></style>
+<p>&nbsp;</p>
+<p>E-mail: <a href="mailto:info@remontiam.ru">info@remontiam.ru</a></p>
+<p>Офис: г. Санкт-Петербург, проспект Кузнецова дом 11 кор.2</p>
+<p>Завод: г. Санкт-Петербург, Гатчина, ул.Жемчужина 2</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

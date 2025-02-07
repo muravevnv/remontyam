@@ -1,0 +1,504 @@
+.about-banner {
+
+  &__inner {
+    display: flex;
+    align-items: stretch;
+    background-color: cl(gray-100);
+    border-radius: 20px;
+    overflow: hidden;
+
+    @include mq($ms) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px;
+      gap: 40px;
+    }
+
+    @include mq($m) {
+      padding: 24px 16px 16px;
+      border-radius: 16px;
+    }
+  } 
+
+  &__info {
+    width: 100%;
+    padding: 40px;
+
+    @include mq($ms) {
+      padding: 0;
+    }
+  }
+
+  &__img {
+    display: flex;
+    flex-direction: column;
+    max-width: 785px;
+    width: 100%;
+    height: auto;
+
+    @include mq($ms) {
+      max-width: 100%;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+
+      @include mq($m)  {
+        border-radius: 16px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-weight: 700;
+
+    span {
+      font-size: 32px;
+      display: block;
+      color: cl(accent);
+    }
+
+    @include mq($m)  {
+      font-size: 20px;
+
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    ul li {
+      list-style: none;
+      padding-left: 32px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0px;
+        left: 0px;
+        background: url('../img/icons/check-list.svg') center center / contain no-repeat;
+      }
+
+      + li {
+        margin-top: 12px;
+      }
+    }
+  }
+}
+
+.about-info {
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+    @include mq($ms) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  &__desc {
+    margin-bottom: 32px;
+
+    p + p {
+      margin-top: 12px;
+    }
+  }
+
+  &__faq {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  &__right {
+    width: 100%;
+    padding: 40px;
+    background-color: cl(gray-100);
+    border-radius: 20px;
+
+    @include mq($ms) {
+      padding: 24px;
+      border-radius: 16px;
+    }
+
+    @include mq($m)  {
+      padding: 20px 16px 16px;
+    }
+  }
+
+  &__stats {
+
+    &-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px 40px;
+      margin-bottom: 60px;
+      
+      @include mq($ms) {
+        margin-bottom: 40px;
+      }
+
+      @include mq($m) {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+
+    &-item {
+
+      &-title {
+        font-size: 22px;
+        font-weight: 700;
+        padding-bottom: 6px;
+        margin-bottom: 12px;
+        border-bottom: 2px solid cl(accent);
+
+        @include mq($m) {
+          font-size: 18px;
+        }
+      }
+
+      &-desc {
+        @include mq($m) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-gallery {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+
+      @include mq($m)  {
+        gap: 8px;
+      }
+    }
+
+    &-img {
+      display: block;
+      width: 100%;
+
+      img {
+        display: block;
+        width: 100%;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+.about-gallery {
+
+  &__slider {
+    overflow: hidden;
+
+    .swiper-pagination {
+      position: static;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 32px;
+      gap: 10px;
+
+      @include mq($m) {
+        margin-top: 24px;
+      }
+
+      &-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: cl(gray-200);
+        opacity: 1;
+        margin: 0 !important;
+      }
+
+      &-bullet-active {
+        background-color: cl(primary);
+      }
+    }
+  }
+
+  &__item {
+    width: 100%;
+
+    &-img {
+      display: block;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+
+      @include mq($ms) {
+        gap: 16px;
+      }
+
+      @include mq(560px) {
+        gap: 10px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+.about-team {
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: cl(gray-100);
+
+    @include mq($ms) {
+      flex-direction: column;
+      padding: 16px;
+      border-radius: 16px;
+      gap: 32px;
+    }
+  }
+
+  &__img {
+    max-width: 640px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+    @include mq($ms)  {
+      border-radius: 16px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    padding: 40px;
+
+    @include mq($ms)  {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @include mq($ms)  {
+      font-size: 20px;
+    }
+  }
+
+  &__desc {
+
+    p + p {
+      margin-top: 16px;
+    }
+  }
+}
+
+.about-connection {
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+    @include mq($ms) {
+      flex-direction: column;
+    }
+  }
+
+  &__map {
+    width: 70%;
+
+    @include mq($mt) {
+      width: 60%;
+    }
+
+    @include mq($ms) {
+      width: 100%;
+    }
+
+    &-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__partners {
+    width: 30%;
+    padding: 24px;
+    background-color: cl(gray-100);
+    border-radius: 20px;
+    
+    @include mq($mt) {
+      width: 40%;
+    }
+
+    @include mq($ms) {
+      width: 100%;
+      padding: 24px 16px 16px;
+      border-radius: 16px;
+    }
+
+    &-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+
+      @include mq($ms) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      @include mq(560px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: cl(whte);
+      border-radius: 6px;
+      box-shadow: 0px 2px 15px 0px #0000001A;
+      height: 110px;
+
+      img {
+        display: block;
+        max-width: 100%;
+        object-fit: contain;
+      }
+
+      @include mq($ms) {
+        height: 90px;
+      }
+    }
+  }
+}
+
+.about-advantages {
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 64px;
+
+    @include mq($ms) {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__slider {
+    overflow: hidden;
+
+    .swiper-pagination {
+      position: static;
+      margin-top: 40px;
+    }
+
+    .swiper-pagination-progressbar-fill {
+      background-color: cl(accent);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    &-icon {
+      width: 78px;
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+
+      @include mq($m) {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    &-desc {
+      @include mq($m) {
+        font-size: 14px;
+      }
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+
+      @include mq($ms) {
+        font-size: 16px;
+      }
+    }
+  }
+}

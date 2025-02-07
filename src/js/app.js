@@ -185,6 +185,55 @@ if(productSliderBlock && productThumbsBlock) {
   });
 }
 
+if(document.querySelector('.js-about-gallery-slider')) {
+  const aboutGallerySlider = new Swiper('.js-about-gallery-slider', {
+    modules: [Pagination],
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination :{
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      560: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 16
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
+    }
+  });
+}
+
+if(document.querySelector('.js-about-advantages-slider')) {
+  const aboutGallerySlider = new Swiper('.js-about-advantages-slider', {
+    modules: [Pagination],
+    slidesPerView: 1,
+    spaceBetween: 16,
+    pagination :{
+      el: '.swiper-pagination',
+      type: 'progressbar',
+    },
+    breakpoints: {
+      560: {
+        slidesPerView: 2,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 16
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    }
+  });
+}
 
 $('.js-tab-control').on('click', function() {
   const tabControl = $(this).data('control');
