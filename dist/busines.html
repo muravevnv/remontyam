@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Бизнес</title>
+    </head>
+  <body>
+    <header class="header"> 
+      <div class="header-top">
+        <div class="container-wide"> 
+          <div class="header-top__adress"> 
+              <svg width="17" height="20">
+                <use xlink:href="img/icons/icons.svg#adress"></use>
+              </svg><span>Санкт-Петербург</span>
+          </div>
+          <nav class="header-top__links"> <a class="header-top__link" href="#">О компании</a><a class="header-top__link" href="#">Открыть бизнес</a><a class="header-top__link" href="#">Оплата</a><a class="header-top__link" href="#">Доставка</a><a class="header-top__link" href="#">Кредит и лизинг</a><a class="header-top__link" href="#">Статьи</a><a class="header-top__link" href="#">Контакты</a></nav><a class="header-top__tel" href="tel:+78001004196">8 800 100 41 96</a>
+        </div>
+      </div>
+      <div class="header-main"> 
+        <div class="container-wide"> 
+          <button class="header-main__burger js-header-burger" type="button">
+              <svg width="24" height="20">
+                <use xlink:href="img/icons/icons.svg#burger"></use>
+              </svg>
+          </button><a class="header-main__logo" href="#"> 
+            <picture>
+              <source srcset="./img/logo-sm.svg" media="(max-width: 1279.98px)"><img src="./img/logo.svg" alt="">
+            </picture></a>
+          <div class="header-main__cabinet header-cabinet">
+            <button class="header-cabinet__btn js-header-cabinet-btn" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#cabinet-user"></use>
+                </svg>
+            </button>
+            <div class="header-cabinet__dropdown js-header-cabinet-dropdown"> 
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#reg-plus"></use>
+                  </svg><span>Регистрация</span>
+              </div>
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#c-user"></use>
+                  </svg><span>Вход</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-main__catalog-btn"> 
+            <div class="header-main__catalog-btn-icon"> 
+                <svg width="13" height="8">
+                  <use xlink:href="img/icons/icons.svg#catalog-lines"></use>
+                </svg>
+            </div>
+            <div class="header-main__catalog-btn-title">Каталог</div>
+            <div class="header-main__catalog-btn-arrow">
+                <svg width="11" height="6">
+                  <use xlink:href="img/icons/icons.svg#catalog-arrow"></use>
+                </svg>
+            </div>
+          </div>
+          <div class="header-main__search"> 
+            <div class="searchbar"> 
+              <input class="searchbar__input" type="text" placeholder="Прицеп для спецтехники">
+              <button class="searchbar__btn" type="button">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/icons/icons.svg#search"></use>
+                  </svg>
+              </button>
+            </div>
+          </div>
+          <div class="header-main__toolbars"> 
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/user.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#user"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Войти</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/favorite.svg')"> 
+                  <svg width="23" height="20">
+                    <use xlink:href="img/icons/icons.svg#favorite"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Избранное</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/compare.svg')"> 
+                  <svg width="27" height="21">
+                    <use xlink:href="img/icons/icons.svg#compare"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Сравнение</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/basket.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#basket"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Корзина</div>
+              <div class="header-main__toolbar-counter">5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom"> 
+        <div class="container-wide"> 
+          <nav class="header-nav"> 
+            <ul class="header-nav__list"> 
+              <li class="header-nav__item"> <a href="#">Дорожная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Коммунальная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Грузоподъёмная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Навесное оборудование</a></li>
+              <li class="header-nav__item"> <a href="#">Асфальтобетонные заводы</a></li>
+              <li class="header-nav__item"> <a href="#">Самоходные транспортеры</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-menu js-header-menu">
+        <div class="header-menu__overlay js-header-menu-close"></div>
+        <div class="header-menu__inner"> 
+          <button class="header-menu__close js-header-menu-close" type="button">
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#close"></use>
+              </svg>
+          </button>
+          <div class="header-menu__list"> 
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">О компании</a></li>
+            <li class="header-menu__item"><a href="#">Открыть бизнес</a></li>
+            <li class="header-menu__item"><a href="#">Оплата</a></li>
+            <li class="header-menu__item"><a href="#">Доставка</a></li>
+            <li class="header-menu__item"><a href="#">Кредит и лизинг</a></li>
+            <li class="header-menu__item"><a href="#"> Статьи</a></li>
+            <li class="header-menu__item"><a href="#">Контакты</a></li>
+          </div>
+          <div class="header-menu__tel"> 
+              <svg width="8" height="8">
+                <use xlink:href="img/icons/icons.svg#tel"></use>
+              </svg><span>8 800 100 41 96</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page-inner">
+        <section class="busines-hero">
+          <div class="container-wide"> 
+            <div class="busines-hero__inner"> 
+              <div class="busines-hero__info"> 
+                <div class="busines-hero__subtitle">Откройте свой бизнес по ремонту дорог за 7 дней с доходностью</div>
+                <div class="busines-hero__title"> <span>от 330 000 ₽ </span>в месяц </div>
+                <div class="busines-hero__benefits"> 
+                  <div class="busines-hero__benefit"> 
+                    <div class="busines-hero__benefit-icon"> <img src="./img/busines/hero-icon-01.svg" alt=""></div>
+                    <div class="busines-hero__benefit-title">Минимальные вложения: <span>299 999 ₽ </span></div>
+                  </div>
+                  <div class="busines-hero__benefit"> 
+                    <div class="busines-hero__benefit-icon"> <img src="./img/busines/hero-icon-02.svg" alt=""></div>
+                    <div class="busines-hero__benefit-title">Минимальный доход: <span>330 000 ₽ </span></div>
+                  </div>
+                  <div class="busines-hero__benefit"> 
+                    <div class="busines-hero__benefit-icon"> <img src="./img/busines/hero-icon-03.svg" alt=""></div>
+                    <div class="busines-hero__benefit-title">Минимальная окупаемость: <span>1 месяц </span></div>
+                  </div>
+                </div><a class="busines-hero__btn btn" href="#">Узнать подробно</a>
+              </div>
+              <picture class="busines-hero__img"> 
+                <source src="./img/busines/hero.webp" type="image/webp"><img src="./img/busines/hero.webp" alt="">
+              </picture>
+            </div>
+          </div>
+        </section>
+        <section class="busines-benefits section">
+          <div class="container-wide"> 
+            <div class="busines-benefits__list"> 
+              <div class="busines-benefits__item"> 
+                <div class="busines-benefits__item-icon"> <img src="./img/busines/benefit-01.svg" alt=""></div>
+                <div class="busines-benefits__item-title"> <span>Отсутствие конкурентов </span><br>в технологии термопрофилирования</div>
+              </div>
+              <div class="busines-benefits__item"> 
+                <div class="busines-benefits__item-icon"> <img src="./img/busines/benefit-02.svg" alt=""></div>
+                <div class="busines-benefits__item-title"> <span>Быстрая окупаемость за 1 </span><br>месяц при минимальных вложениях</div>
+              </div>
+              <div class="busines-benefits__item"> 
+                <div class="busines-benefits__item-icon"> <img src="./img/busines/benefit-03.svg" alt=""></div>
+                <div class="busines-benefits__item-title">Постоянное <br><span>наличие заказов</span></div>
+              </div>
+              <div class="busines-benefits__item"> 
+                <div class="busines-benefits__item-icon"> <img src="./img/busines/benefit-04.svg" alt=""></div>
+                <div class="busines-benefits__item-title">Запуск бизнеса <br><span>«под ключ»</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="busines-sections section">
+          <div class="container-wide"> 
+            <div class="busines-sections__inner">
+              <div class="busines-sections__nav"> <a class="busines-sections__nav-item _is-active" href="#">Суть бизнеса</a><a class="busines-sections__nav-item" href="#">Бизнес-пакеты</a><a class="busines-sections__nav-item" href="#">Фото бизнес-пакетов</a><a class="busines-sections__nav-item" href="#">Услуги и клиенты</a><a class="busines-sections__nav-item" href="#">Кейсы</a><a class="busines-sections__nav-item" href="#">Калькулятор дохода</a><a class="busines-sections__nav-item" href="#">Преимущества</a><a class="busines-sections__nav-item" href="#">О компании</a><a class="busines-sections__nav-item" href="#">Частые вопросы</a></div>
+              <div class="busines-sections__list"> 
+                <div class="busines-section busines-essense">
+                  <div class="busines-essense__inner"> 
+                    <div class="busines-essense__head">
+                      <div class="busines-essense__title">Суть бизнеса</div>
+                      <div class="busines-essense__desc">Вы приобретаете готовый комплекс оборудования и зарабатываете на выполнении услуг по ямочному ремонту дорог</div>
+                    </div>
+                    <div class="busines-essense__advantages"> 
+                      <div class="busines-essense__advantage"> 
+                        <div class="busines-essense__advantage-icon"><img src="./img/busines/essense-icon-01.svg" alt=""></div>
+                        <div class="busines-essense__advantage-title">Покупка "бизнес-пакета"</div>
+                        <div class="busines-essense__advantage-desc">Выбираете комплекс оборудования исходя из Вашего бюджета и объема дорожных работ</div>
+                      </div>
+                      <div class="busines-essense__advantage"> 
+                        <div class="busines-essense__advantage-icon"><img src="./img/busines/essense-icon-02.svg" alt=""></div>
+                        <div class="busines-essense__advantage-title">Выполнение услуг</div>
+                        <div class="busines-essense__advantage-desc">Выполняете ямочные ремонты на территориях: ТСЖ, ЖСК, УК, Дворов, Торговых центров, Городских предприятий и других</div>
+                      </div>
+                      <div class="busines-essense__advantage"> 
+                        <div class="busines-essense__advantage-icon"><img src="./img/busines/essense-icon-03.svg" alt=""></div>
+                        <div class="busines-essense__advantage-title">Получение прибыли</div>
+                        <div class="busines-essense__advantage-desc">Фиксируете прибыль на разнице между себестоимостью ямочного ремонта 400 р/м2 и его рыночной ценой 1500 р/м2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="busines-section busines-tariffs"> 
+                  <div class="busines-tariffs__inner"> 
+                    <div class="busines-tariffs__title"> <span>Бизнес-пакеты </span>от производителя Ремонт Ям</div>
+                    <div class="busines-tariffs__list"> 
+                      <div class="busines-tariffs__item"> 
+                        <picture class="busines-tariffs__item-img"> 
+                          <source srcset="./img/busines/tariffs-01.webp" type="image/webp"><img src="./img/busines/tariffs-01.webp" alt="">
+                        </picture>
+                        <div class="busines-tariffs__item-name">Стартовый</div>
+                        <div class="busines-tariffs__item-desc"> 
+                          <p>Окупаемость: 1 месяц</p>
+                          <p>Прибыль: 330 000 в месяц</p>
+                        </div>
+                        <div class="busines-tariffs__item-price">299 000 ₽ </div>
+                        <div class="busines-tariffs__item-btn btn btn--wide">Подробнее</div>
+                      </div>
+                      <div class="busines-tariffs__item"> 
+                        <picture class="busines-tariffs__item-img"> 
+                          <source srcset="./img/busines/tariffs-01.webp" type="image/webp"><img src="./img/busines/tariffs-01.webp" alt="">
+                        </picture>
+                        <div class="busines-tariffs__item-name">Стартовый</div>
+                        <div class="busines-tariffs__item-desc"> 
+                          <p>Окупаемость: 1 месяц</p>
+                          <p>Прибыль: 330 000 в месяц</p>
+                        </div>
+                        <div class="busines-tariffs__item-price">299 000 ₽ </div>
+                        <div class="busines-tariffs__item-btn btn btn--wide">Подробнее</div>
+                      </div>
+                      <div class="busines-tariffs__item"> 
+                        <picture class="busines-tariffs__item-img"> 
+                          <source srcset="./img/busines/tariffs-01.webp" type="image/webp"><img src="./img/busines/tariffs-01.webp" alt="">
+                        </picture>
+                        <div class="busines-tariffs__item-name">Стартовый</div>
+                        <div class="busines-tariffs__item-desc"> 
+                          <p>Окупаемость: 1 месяц</p>
+                          <p>Прибыль: 330 000 в месяц</p>
+                        </div>
+                        <div class="busines-tariffs__item-price">299 000 ₽ </div>
+                        <div class="busines-tariffs__item-btn btn btn--wide">Подробнее</div>
+                      </div>
+                      <div class="busines-tariffs__item"> 
+                        <picture class="busines-tariffs__item-img"> 
+                          <source srcset="./img/busines/tariffs-01.webp" type="image/webp"><img src="./img/busines/tariffs-01.webp" alt="">
+                        </picture>
+                        <div class="busines-tariffs__item-name">Стартовый</div>
+                        <div class="busines-tariffs__item-desc"> 
+                          <p>Окупаемость: 1 месяц</p>
+                          <p>Прибыль: 330 000 в месяц</p>
+                        </div>
+                        <div class="busines-tariffs__item-price">299 000 ₽ </div>
+                        <div class="busines-tariffs__item-btn btn btn--wide">Подробнее</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="busines-preview busines-section">
+                  <div class="busines-preview__inner"> 
+                    <div class="busines-preview__head"> 
+                      <div class="busines-preview__title">Фото и видео <span>бизнес-пакетов </span>в разной комплектации</div>
+                      <div class="busines-preview__desc">Фотографии и видео бизнес-пакетов и дорожной техники в работе</div>
+                    </div>
+                    <div class="busines-preview__nav"> 
+                      <div class="busines-preview__nav-item"> 
+                        <input type="radio" name="busines_preview" id="busines_preview_01" checked>
+                        <label for="busines_preview_01">Стартовый</label>
+                      </div>
+                      <div class="busines-preview__nav-item"> 
+                        <input type="radio" name="busines_preview" id="busines_preview_02">
+                        <label for="busines_preview_02">Простой</label>
+                      </div>
+                      <div class="busines-preview__nav-item"> 
+                        <input type="radio" name="busines_preview" id="busines_preview_03">
+                        <label for="busines_preview_03">Классический</label>
+                      </div>
+                      <div class="busines-preview__nav-item"> 
+                        <input type="radio" name="busines_preview" id="busines_preview_04">
+                        <label for="busines_preview_04">Профессиональный</label>
+                      </div>
+                    </div>
+                    <div class="busines-preview__main"> 
+                      <div class="busines-preview__video">
+                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-Rp-LeLv2Jg" title="Подробный обзор самого востребованного в данный момент КамАЗа 6520!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                      <div class="busines-preview__gallery"> 
+                        <button class="busines-preview__gallery-prev slider-control slider-control-sm js-busines-preview-slider-prev" type="button">
+                            <svg width="24" height="12">
+                              <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="busines-preview__gallery-next slider-control slider-control-sm js-busines-preview-slider-next" type="button">
+                            <svg width="24" height="12">
+                              <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                        <div class="busines-preview__slider js-busines-preview-slider"> 
+                          <div class="swiper-wrapper"> 
+                            <div class="busines-preview__img swiper-slide"> <picture><source srcset="./img/busines/preview-01.webp" type="image/webp"><img src="./img/busines/preview-01.webp" alt=""></picture></div>
+                            <div class="busines-preview__img swiper-slide"> <picture><source srcset="./img/busines/preview-02.webp" type="image/webp"><img src="./img/busines/preview-02.webp" alt=""></picture></div>
+                            <div class="busines-preview__img swiper-slide"> <picture><source srcset="./img/busines/preview-01.webp" type="image/webp"><img src="./img/busines/preview-01.webp" alt=""></picture></div>
+                            <div class="busines-preview__img swiper-slide"> <picture><source srcset="./img/busines/preview-02.webp" type="image/webp"><img src="./img/busines/preview-02.webp" alt=""></picture></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="consultation-order busines-section"> 
+                  <div class="consultation-order__inner"> 
+                    <div class="consultation-order__title">Оставьте заявку</div>
+                    <div class="consultation-order__subtitle">чтобы получить консультацию</div>
+                    <form class="consultation-order__form" action="#">
+                      <input class="consultation-order__form-input" type="text" placeholder="Имя">
+                      <input class="consultation-order__form-input" type="text" placeholder="Телефон">
+                      <button class="consultation-order__form-submit btn btn--xl" type="submit">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="busines-info busines-section">
+                  <div class="busines-info__inner"> 
+                    <div class="busines-info__services">
+                      <div class="busines-info__services-title"> <span>Более 8+ услуг, </span>которые Вы сможете предлагать клиентам в Дорожной сфере</div>
+                      <div class="busines-info__services-desc">С оборудованием компании «Ремонт Ям» вы легко и качественно сможете оказывать следующие услуги:</div>
+                      <div class="busines-info__services-list"> 
+                        <div class="busines-info__services-item"> 
+                          <div class="busines-info__services-item-icon"> <img src="./img/busines/service-icon-01.svg" alt=""></div>
+                          <div class="busines-info__services-item-title">Ямочный ремонт дорожного полотна</div>
+                        </div>
+                        <div class="busines-info__services-item">
+                          <div class="busines-info__services-item-icon"> <img src="./img/busines/service-icon-02.svg" alt=""></div>
+                          <div class="busines-info__services-item-title">Ремонт асфальта вокруг люков колодцев</div>
+                        </div>
+                        <div class="busines-info__services-item">
+                          <div class="busines-info__services-item-icon"> <img src="./img/busines/service-icon-03.svg" alt=""></div>
+                          <div class="busines-info__services-item-title">Выравнивание вздутостей асфальта</div>
+                        </div>
+                        <div class="busines-info__services-item">
+                          <div class="busines-info__services-item-icon"> <img src="./img/busines/service-icon-04.svg" alt=""></div>
+                          <div class="busines-info__services-item-title">Ремонт и герметизация асфальтовых трещин</div>
+                        </div>
+                        <div class="busines-info__services-item">
+                          <div class="busines-info__services-item-icon"> <img src="./img/busines/service-icon-05.svg" alt=""></div>
+                          <div class="busines-info__services-item-title">Восстановление асфальта после прокладки инженерных коммуникаций</div>
+                        </div>
+                        <div class="busines-info__services-item">
+                          <div class="busines-info__services-item-icon"> <img src="./img/busines/service-icon-06.svg" alt=""></div>
+                          <div class="busines-info__services-item-title">Ремонт покрытия на мостах и пандусах</div>
+                        </div>
+                        <div class="busines-info__services-item">
+                          <div class="busines-info__services-item-icon"> <img src="./img/busines/service-icon-07.svg" alt=""></div>
+                          <div class="busines-info__services-item-title">Расплавление наледи в зимнее время</div>
+                        </div>
+                        <div class="busines-info__services-item">
+                          <div class="busines-info__services-item-icon"> <img src="./img/busines/service-icon-08.svg" alt=""></div>
+                          <div class="busines-info__services-item-title">Расплавление наледи в зимнее время</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="busines-info__clients">
+                      <div class="busines-info__clients-banner"> 
+                        <div class="busines-info__clients-banner-head">Кто ваши</div>
+                        <div class="busines-info__clients-banner-title"> <span>клиенты</span>для выполнения по ремонту дорог</div>
+                        <div class="busines-info__clients-banner-desc">4 основные категории клиентов, которым требуется ямочный ремонт</div>
+                      </div>
+                      <div class="busines-info__clients-desc">
+                        Вашими Заказчиками являются компании и предприятия,имеющие собственные или подконтрольные участки асфальтовых дорог и заинтересованные в создании долговечных покрытий с наименьшими затратами на содержание.</div>
+                      <div class="busines-info__clients-list"> 
+                        <div class="busines-info__clients-item"> 
+                          <div class="busines-info__clients-item-title">ТСЖ, ЖСК, Управляющие компании</div>
+                          <div class="busines-info__clients-item-desc">Имеют подконтрольные участки, требующие постоянного выполнения ямочного ремонта;</div>
+                        </div>
+                        <div class="busines-info__clients-item"> 
+                          <div class="busines-info__clients-item-title">Магазины, Торговые центры, Гипермаркеты</div>
+                          <div class="busines-info__clients-item-desc">Парковочные зоны требующие ежегодного ремонта асфальтового покрытия</div>
+                        </div>
+                        <div class="busines-info__clients-item"> 
+                          <div class="busines-info__clients-item-title">Заводы, предприятия</div>
+                          <div class="busines-info__clients-item-desc">Собственные площади асфальтированных дорог, которые требуют периодического ремонта</div>
+                        </div>
+                        <div class="busines-info__clients-item"> 
+                          <div class="busines-info__clients-item-title">ДРСУ, ДЭП, МБУ, ГУП Водоканал</div>
+                          <div class="busines-info__clients-item-desc">Заключают Договоры с частными компаниями на обслуживание и содержание дорог</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="busines-cases busines-section">
+                  <div class="busines-cases__earnings"> 
+                    <div class="busines-cases__earnings-head">
+                      <div class="busines-cases__earnings-title h2">Рост выручки за год</div>
+                      <div class="busines-cases__earnings-desc">на примере одного из наших офисов</div>
+                    </div>
+                    <div class="busines-cases__earnings-graphic"> <picture><source srcset="./img/busines/case-graphic.webp" type="image/webp"><img src="./img/busines/case-graphic.webp" alt=""></picture></div>
+                  </div>
+                  <div class="busines-cases__orders">
+                    <div class="busines-cases__orders-head">
+                      <div class="busines-cases__orders-title h2">Заявки <span>на выполнение ямочного ремонта за май 2023</span></div>
+                      <div class="busines-cases__orders-desc">Приведены примеры реальных заявок, полученных на почту нашей компании info@remontiam.ru</div>
+                    </div>
+                    <div class="busines-cases__orders-slider js-cases-order-slider">
+                      <div class="swiper-wrapper"> 
+                        <div class="busines-cases__orders-item swiper-slide"> <picture><source srcset="./img/busines/case-order.webp" type="image/webp"><img src="./img/busines/case-order.webp" alt=""></picture></div>
+                        <div class="busines-cases__orders-item swiper-slide"> <picture><source srcset="./img/busines/case-order.webp" type="image/webp"><img src="./img/busines/case-order.webp" alt=""></picture></div>
+                        <div class="busines-cases__orders-item swiper-slide"> <picture><source srcset="./img/busines/case-order.webp" type="image/webp"><img src="./img/busines/case-order.webp" alt=""></picture></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="busines-calculator busines-section"> 
+                  <div class="busines-calculator__title h2">Калькулятор дохода</div>
+                  <div class="busines-calculator__item"> 
+                    <div class="busines-calculator__item-info"> 
+                      <div class="busines-calculator__item-title">01. Ямочный ремонт асфальта</div>
+                      <div class="busines-calculator__item-desc">(Количество отремонтированных квадратных метров за месяц)</div>
+                    </div>
+                    <div class="busines-calculator__item-progress"> 
+                      <div class="busines-calculator__item-progress-line">
+                        <div class="busines-calculator__item-progress-line-fill" style="--width: 50%;"></div>
+                      </div>
+                      <div class="busines-calculator__item-progress-limits"> 
+                        <div class="busines-calculator__item-progress-limit">300</div>
+                        <div class="busines-calculator__item-progress-limit">400</div>
+                        <div class="busines-calculator__item-progress-limit">500</div>
+                        <div class="busines-calculator__item-progress-limit">600</div>
+                        <div class="busines-calculator__item-progress-limit">700</div>
+                        <div class="busines-calculator__item-progress-limit">800</div>
+                        <div class="busines-calculator__item-progress-limit">900</div>
+                        <div class="busines-calculator__item-progress-limit">1000</div>
+                      </div>
+                    </div>
+                    <div class="busines-calculator__item-value">Прибыль: 1 100 000 ₽</div>
+                  </div>
+                  <div class="busines-calculator__item"> 
+                    <div class="busines-calculator__item-info"> 
+                      <div class="busines-calculator__item-title">02. Ремонт асфальтовых трещин</div>
+                      <div class="busines-calculator__item-desc">(Количество отремонтированных трещин в асфальте в погонных метрах)</div>
+                    </div>
+                    <div class="busines-calculator__item-progress"> 
+                      <div class="busines-calculator__item-progress-line"> 
+                        <div class="busines-calculator__item-progress-line-fill" style="--width: 70%;"></div>
+                      </div>
+                      <div class="busines-calculator__item-progress-limits"> 
+                        <div class="busines-calculator__item-progress-limit">300</div>
+                        <div class="busines-calculator__item-progress-limit">400</div>
+                        <div class="busines-calculator__item-progress-limit">500</div>
+                        <div class="busines-calculator__item-progress-limit">600</div>
+                        <div class="busines-calculator__item-progress-limit">700</div>
+                        <div class="busines-calculator__item-progress-limit">800</div>
+                        <div class="busines-calculator__item-progress-limit">900</div>
+                        <div class="busines-calculator__item-progress-limit">1000</div>
+                      </div>
+                    </div>
+                    <div class="busines-calculator__item-value">Прибыль: 167 000 ₽</div>
+                  </div>
+                  <div class="busines-calculator__total">Итого: 1 267 000 ₽</div>
+                </div>
+                <div class="busines-advantages busines-section">
+                  <div class="busines-advantages__inner"> 
+                    <div class="busines-advantages__head"> 
+                      <div class="busines-advantages__title h2">Дорожный Бизнес с «Ремонт Ям» - это надёжно</div>
+                      <div class="busines-advantages__desc">В течение целого года Ремонт Ям осуществляет полное сопровождение на всех этапах развития Вашего бизнеса</div>
+                    </div>
+                    <div class="busines-advantages__list"> 
+                      <div class="busines-advantages__item"> 
+                        <div class="busines-advantages__item-num">1</div>
+                        <div class="busines-advantages__item-info"> 
+                          <div class="busines-advantages__item-title">Быстрая окупаемость</div>
+                          <div class="busines-advantages__item-desc">Высокий доход при минимальных вложениях. Себестоимость 1 м2 ремонта асфальта — 400 рублей, при рыночной стоимости ремонта 1500 рублей за 1 м2.</div>
+                        </div>
+                      </div>
+                      <div class="busines-advantages__item"> 
+                        <div class="busines-advantages__item-num">2</div>
+                        <div class="busines-advantages__item-info"> 
+                          <div class="busines-advantages__item-title">Отсутствие конкурентов</div>
+                          <div class="busines-advantages__item-desc">Технология термопрофилирования — это ниша, которая позволяет ремонтировать небольшие участки асфальта с минимальными затратами и максимальной прибылью.</div>
+                        </div>
+                      </div>
+                      <div class="busines-advantages__item"> 
+                        <div class="busines-advantages__item-num">3</div>
+                        <div class="busines-advantages__item-info"> 
+                          <div class="busines-advantages__item-title">Постоянное наличие клиентов</div>
+                          <div class="busines-advantages__item-desc">Ежегодно требуется отремонтировать более 100 000 кв.м. асфальтовых дорог и дворовых территорий.</div>
+                        </div>
+                      </div>
+                      <div class="busines-advantages__item"> 
+                        <div class="busines-advantages__item-num">4</div>
+                        <div class="busines-advantages__item-info"> 
+                          <div class="busines-advantages__item-title">Легкий выход на рынок по ремонту дорог</div>
+                          <div class="busines-advantages__item-desc">Приобретая любой комплекс оборудования, вы становитесь компанией, оказывающей полный спектр услуг по ремонту дорог</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="busines-about busines-section">
+                  <div class="busines-about__inner"> 
+                    <div class="busines-about__info"> 
+                      <div class="busines-about__title h3">О компании «Ремонт Ям»</div>
+                      <div class="busines-about__desc">Компания «Ремонт Ям» - это завод по производству дорожной техники предназначенной для текущего ремонта и содержания городских дорог, осуществляющая свою деятельность с 2010 года.</div>
+                      <div class="busines-about__subtitle">Основное выпускаемое оборудование:</div>
+                      <div class="busines-about__list"> 
+                        <ul>
+                          <li>инфракрасные нагреватели асфальта</li>
+                          <li>термос-бункеры</li>
+                          <li>машины для ямочного ремонта на прицепе</li>
+                          <li>рециклеры</li>
+                          <li>котлы заливщики</li>
+                          <li>кохеры</li>
+                        </ul>
+                      </div>
+                      <div class="busines-about__text">
+                        В производстве используются сертифицированные станки плазменной резки, гибочные, токарно-фрезерные, сверлильные станки, полуавтоматическое сварочное оборудование. 
+                        Налаженные технологические процессы гарантируют быстрый выпуск безупречно работающей строительной техники.
+                      </div>
+                    </div>
+                    <picture class="busines-about__img"> <picture><source srcset="./img/busines/about.webp" type="image/webp"><img src="./img/busines/about.png" alt=""></picture></picture>
+                  </div>
+                </div>
+                <div class="busines-gallery busines-section">
+                  <div class="busines-gallery__inner"> 
+                    <button class="busines-gallery__prev slider-control slider-control-sm js-busines-gallery-slider-prev" type="button">
+                        <svg width="24" height="12">
+                          <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="busines-gallery__next slider-control slider-control-sm js-busines-gallery-slider-next" type="button">
+                        <svg width="24" height="12">
+                          <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                        </svg>
+                    </button>
+                    <div class="busines-gallery__slider js-busines-gallery-slider">
+                      <div class="swiper-wrapper">
+                        <div class="busines-gallery__item swiper-slide"> <picture><source srcset="./img/busines/gallery-01.webp" type="image/webp"><img src="./img/busines/gallery-01.webp" alt=""></picture></div>
+                        <div class="busines-gallery__item swiper-slide"> <picture><source srcset="./img/busines/gallery-02.webp" type="image/webp"><img src="./img/busines/gallery-02.webp" alt=""></picture></div>
+                        <div class="busines-gallery__item swiper-slide"> <picture><source srcset="./img/busines/gallery-01.webp" type="image/webp"><img src="./img/busines/gallery-01.webp" alt=""></picture></div>
+                        <div class="busines-gallery__item swiper-slide"> <picture><source srcset="./img/busines/gallery-02.webp" type="image/webp"><img src="./img/busines/gallery-02.webp" alt=""></picture></div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="busines-faq busines-section">
+                  <div class="busines-faq__title h3">Частые вопросы и ответы</div>
+                  <div class="busines-faq__list"> 
+                    <div class="faq-item"> 
+                      <div class="faq-item__head accordion-item"> 
+                        <div class="faq-item__title">1. Где взять клиентов?</div>
+                        <div class="faq-item__icon"> </div>
+                      </div>
+                      <div class="faq-item__body accordion-content"> 
+                        <p>
+                          Несмотря на то, что наш основной офис расположен в Санкт-Петербурге, мы охватываем все регионы, предлагая быструю и бесплатную доставку 
+                          по России коммунальной техники до вашего адреса, делая 
+                          процесс приобретения максимально удобным и доступным. Не упустите свой шанс 
+                          купить коммунальную технику или на выгодных условиях 
+                          приобрести необходимую технику для уборки улиц и поддержания чистоты в ваших 
+                          населённых пунктах. Звоните нам прямо сейчас или оставьте заявку на нашем сайте — мы всегда 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="faq-item"> 
+                      <div class="faq-item__head accordion-item"> 
+                        <div class="faq-item__title">2. Какой комплект оборудования лучше выбрать?</div>
+                        <div class="faq-item__icon"> </div>
+                      </div>
+                      <div class="faq-item__body accordion-content"> 
+                        <p>
+                          Несмотря на то, что наш основной офис расположен в Санкт-Петербурге, мы охватываем все регионы, предлагая быструю и бесплатную доставку 
+                          по России коммунальной техники до вашего адреса, делая 
+                          процесс приобретения максимально удобным и доступным. Не упустите свой шанс 
+                          купить коммунальную технику или на выгодных условиях 
+                          приобрести необходимую технику для уборки улиц и поддержания чистоты в ваших 
+                          населённых пунктах. Звоните нам прямо сейчас или оставьте заявку на нашем сайте — мы всегда 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="faq-item"> 
+                      <div class="faq-item__head accordion-item"> 
+                        <div class="faq-item__title">3. Что из себя представляет технология термопрофилирования?</div>
+                        <div class="faq-item__icon"> </div>
+                      </div>
+                      <div class="faq-item__body accordion-content"> 
+                        <p>
+                          Несмотря на то, что наш основной офис расположен в Санкт-Петербурге, мы охватываем все регионы, предлагая быструю и бесплатную доставку 
+                          по России коммунальной техники до вашего адреса, делая 
+                          процесс приобретения максимально удобным и доступным. Не упустите свой шанс 
+                          купить коммунальную технику или на выгодных условиях 
+                          приобрести необходимую технику для уборки улиц и поддержания чистоты в ваших 
+                          населённых пунктах. Звоните нам прямо сейчас или оставьте заявку на нашем сайте — мы всегда 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="consultation-order busines-section"> 
+                  <div class="consultation-order__inner"> 
+                    <div class="consultation-order__title">Оставьте заявку</div>
+                    <div class="consultation-order__subtitle">чтобы получить консультацию</div>
+                    <form class="consultation-order__form" action="#">
+                      <input class="consultation-order__form-input" type="text" placeholder="Имя">
+                      <input class="consultation-order__form-input" type="text" placeholder="Телефон">
+                      <button class="consultation-order__form-submit btn btn--xl" type="submit">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main><div class="footer-wrapper">
+<div class="footer-top-wrapper">
+<div class="container-wide">
+<div class="footer-top-inner relative">
+<div class="row">
+<div class="col-sm-12 col-lg-3">
+<div class="footer-top-first">
+<picture><source srcset="./img/logo-white.webp" type="image/webp"><img src="./img/logo-white.png" alt="РЕМОНТЯМ" data-retinasrc="./img/logo-white.png"></picture>
+<div class="footer-text">ООО «РЕМОНТЯМ». ИНН: 7807252270, ОГРН: 1217800168233</div>
+<div class="copyr">© 2014 - 2024. Все права защищены. РЕМОНТЯМ.</div>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Дорожно-строительная техника<!--/noindex--></div>
+<ul class="footer_l">
+<li class="first">
+<a href="catalog/litoy">Кохеры для литого асфальта</a>
+</li>
+<li>
+<a href="catalog/hotbox">Термос бункеры</a>
+</li>
+<li>
+<a href="catalog/gudron">Гудронаторы</a>
+</li>
+<li>
+<a href="catalog/pricepremont-pnevmonabryzgom">Пневмонабрызг</a>
+</li>
+<li>
+<a href="catalog/kotelbitum">Заливщик швов</a>
+</li>
+<li>
+<a href="catalog/recicler">Рециклеры асфальта</a>
+</li>
+<li>
+<a href="catalog/pricepremont">Машины ямочного ремонта асфальта</a>
+</li>
+<li>
+<a href="catalog/ifrakrasnye">Инфракрасные нагреватели асфальта</a>
+</li>
+<li>
+<a href="catalog/peredvizhnyie-laboratorii">Передвижные лаборатории</a>
+</li>
+<li>
+<a href="catalog/ustanovki">Битумно-эмульсионные установки</a>
+</li>
+<li>
+<a href="catalog/ustanovki-pbv">Установка ПБВ</a>
+</li>
+<li class="last">
+<a href="catalog/plavbitum">Установки плавления битума</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Коммунальная техника<!--/noindex--></div>
+<ul class="footer_l"><li class="first"><a href="catalog/navesnoe-oborudovanie-dlya-kdm">Навесное оборудование для КДМ</a></li><li><a href="catalog/polivomoechnoe-oborudovanie">Поливомоечное оборудование</a></li><li><a href="catalog/vakuumnyie-podmetalno-uborochnyie-mashinyi">Вакуумные подметально-уборочные машины</a></li><li><a href="catalog/navesnoe-oborudovanie-traktor-mtz">Навесное оборудование на трактор МТЗ</a></li><li><a href="catalog/peskorazbrasyivateli-priczepnyie">Пескоразбрасыватели прицепные</a></li><li><a href="catalog/vakuumnyie-mashinyi">Вакуумные машины</a></li><li><a href="catalog/benzovozyi-toplivozapravshhiki">Бензовозы - топливозаправщики</a></li><li><a href="catalog/ilososnyie-mashinyi">Илососные машины</a></li><li><a href="catalog/ifrakrasnye-krovly">Инфракрасные нагреватели кровли</a></li><li><a href="catalog/avtonomny">Шнекороторные снегоочистители</a></li><li><a href="catalog/sol-rastvor">Установки приготовления солевого раствора</a></li><li><a href="catalog/kosilki">Косилки на трактор МТЗ</a></li><li><a href="catalog/kombinirovannyie-dorozhnyie-mashinyi">Комбинированные дорожные машины</a></li><li class="last"><a href="catalog/peskorazbrasyivatel">Пескоразбрасывающее оборудование</a></li></ul>
+</div>
+</div>          
+<div class="col-sm-4 col-lg-3">
+<div class="footer-contacts">
+<div class="title">Контакты</div>
+<div itemscope="" itemtype="http://schema.org/Organization">
+<meta itemprop="url" content="https://ремонтям.рф/">
+<meta itemprop="name" content="РЕМОНТЯМ">
+<div itemscope="" itemprop="address" itemtype="http://schema.org/PostalAddress">
+<meta itemprop="postalCode" content="198332">
+<meta itemprop="addressLocality" content="Санкт-Петербург">
+<meta itemprop="streetAddress" content="проспект Кузнецова дом 11 кор.2">
+</div>
+<meta itemprop="telephone" content="8 800 100 41 69">
+</div>
+<div class="tel dflex jcsb aic">
+<span>Санкт-Петербург: </span>
+<span class="stel"><a href="tel:+78126484190">+7 (812) 648-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Москва:</span>
+<span class="stel"><a href="tel:+74951884190">+7 (495) 188-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Отдел продаж:</span>
+<span class="stel"><a href="tel:+79112052741">+7 (911) 205-27-41</a></span>
+</div>
+<div class=" social-links ">
+<a href="https://www.youtube.com/@user-rr6su3fk9g " rel="nofollow noopener" target="blank" class="yutb_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+<a href="https://vk.com/" rel="nofollow noopener" class="vk_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+<a href="https://t.me/+79112052741" rel="nofollow noopener" class="tg_link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+</div>
+<style>
+    <div class="social-links">a{ color:#fff;border-color:#fff;}</div></style>
+<p>&nbsp;</p>
+<p>E-mail: <a href="mailto:info@remontiam.ru">info@remontiam.ru</a></p>
+<p>Офис: г. Санкт-Петербург, проспект Кузнецова дом 11 кор.2</p>
+<p>Завод: г. Санкт-Петербург, Гатчина, ул.Жемчужина 2</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

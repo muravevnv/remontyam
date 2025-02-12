@@ -235,6 +235,57 @@ if(document.querySelector('.js-about-advantages-slider')) {
   });
 }
 
+if(document.querySelector('.js-busines-preview-slider ')) {
+  const businesPreviewSlider = new Swiper('.js-busines-preview-slider ', {
+    modules: [Navigation],
+    slidesPerView: 'auto',
+    spaceBetween: 8,
+    navigation: {
+      prevEl: '.js-busines-preview-slider-prev',
+      nextEl: '.js-busines-preview-slider-next'
+    },
+    breakpoints: {
+      768: {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+      }
+    }
+  });
+}
+
+if(document.querySelector('.js-cases-order-slider')) {
+  const casesOrderSlider = new Swiper('.js-cases-order-slider', {
+    modules: [Pagination],
+    slidesPerView: 1,
+    spaceBetween: 16,
+    pagination: {
+      el: '.swiper-pagination',
+    }
+  });
+}
+
+if(document.querySelector('.js-busines-gallery-slider')) {
+  const businesGallerySlider = new Swiper('.js-busines-gallery-slider', {
+    modules: [Pagination, Navigation],
+    slidesPerView: 1,
+    spaceBetween: 16,
+    breakpoints: {
+      560: {
+        slidesPerView: 2,
+      }
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      prevEl: '.js-busines-gallery-slider-prev',
+      nextEl: '.js-busines-gallery-slider-next'
+    },
+  });
+}
+
+
 $('.js-tab-control').on('click', function() {
   const tabControl = $(this).data('control');
   $('.js-tab-control').removeClass('_is-active');

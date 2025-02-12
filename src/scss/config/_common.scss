@@ -15,7 +15,7 @@
   }
 }
 
-.h2 {
+.h3 {
   font-size: 24px;
   line-height: 1;
   font-weight: 700;
@@ -66,6 +66,11 @@
       background-color: cl(accent-100);
     }
   }
+}
+
+.slider-control-sm {
+  width: 32px;
+  height: 32px;
 }
 
 .page-inner {
@@ -131,5 +136,51 @@
   &._is-active {
     border-color: cl(accent);
     color: cl(accent);
+  }
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  &-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 !important;
+    background-color: cl(primary);
+
+    @include mq($ms) {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+.select {
+  position: relative;
+  
+  select {
+    background-color: cl(gray-100);
+    border-radius: 6px;
+    min-width: 165px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  &::before {
+    width: 31px;
+    height: 31px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('../img/icons/select-arrow-down.svg') center center / 10px no-repeat,
+      cl(gray-100);
+    border-radius: 6px;
   }
 }

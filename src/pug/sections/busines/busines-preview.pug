@@ -1,0 +1,38 @@
+.busines-preview.busines-section
+  .busines-preview__inner 
+    .busines-preview__head 
+      .busines-preview__title Фото и видео 
+        span бизнес-пакетов 
+        | в разной комплектации
+      .busines-preview__desc Фотографии и видео бизнес-пакетов и дорожной техники в работе
+    .busines-preview__nav 
+      .busines-preview__nav-item 
+        input(type="radio" name="busines_preview" id="busines_preview_01" checked)
+        label(for="busines_preview_01") Стартовый
+      .busines-preview__nav-item 
+        input(type="radio" name="busines_preview" id="busines_preview_02")
+        label(for="busines_preview_02") Простой
+      .busines-preview__nav-item 
+        input(type="radio" name="busines_preview" id="busines_preview_03")
+        label(for="busines_preview_03") Классический
+      .busines-preview__nav-item 
+        input(type="radio" name="busines_preview" id="busines_preview_04")
+        label(for="busines_preview_04") Профессиональный
+    .busines-preview__main 
+      .busines-preview__video 
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-Rp-LeLv2Jg" title="Подробный обзор самого востребованного в данный момент КамАЗа 6520!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      .busines-preview__gallery 
+        button(type="button").busines-preview__gallery-prev.slider-control.slider-control-sm.js-busines-preview-slider-prev
+          +svg(24, 12, 'arrow-left')
+        button(type="button").busines-preview__gallery-next.slider-control.slider-control-sm.js-busines-preview-slider-next
+          +svg(24, 12, 'arrow-right')
+        .busines-preview__slider.js-busines-preview-slider 
+          .swiper-wrapper 
+            .busines-preview__img.swiper-slide 
+              img(src="./img/busines/preview-01.webp", alt="")
+            .busines-preview__img.swiper-slide 
+              img(src="./img/busines/preview-02.webp", alt="")
+            .busines-preview__img.swiper-slide 
+              img(src="./img/busines/preview-01.webp", alt="")
+            .busines-preview__img.swiper-slide 
+              img(src="./img/busines/preview-02.webp", alt="")

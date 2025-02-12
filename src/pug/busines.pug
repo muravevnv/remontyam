@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  include mixins/_mixins
+  include includes/head
+  +head('Бизнес')
+  body
+    include components/header
+    main
+      .page-inner
+        include sections/busines/busines-hero
+        include sections/busines/busines-benefits
+        include sections/busines/busines-sections
+
+    include components/footer
+    include includes/scripts

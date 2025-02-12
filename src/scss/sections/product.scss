@@ -1073,31 +1073,6 @@
     align-items: center;
     gap: 16px;
     flex-wrap: wrap;
-
-    &-select {
-      position: relative;
-
-      &::before {
-        width: 31px;
-        height: 31px;
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: url('../img/icons/select-arrow-down.svg') center center / 10px no-repeat,
-          cl(gray-100);
-        border-radius: 6px;
-      }
-    }
-
-    select {
-      background-color: cl(gray-100);
-      border-radius: 6px;
-      min-width: 165px;
-      padding: 6px 12px;
-      font-size: 14px;
-      line-height: 1;
-    }
   }
 
   &__item {

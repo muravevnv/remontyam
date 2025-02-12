@@ -1,0 +1,17 @@
+.busines-gallery.busines-section
+  .busines-gallery__inner 
+    button(type="button").busines-gallery__prev.slider-control.slider-control-sm.js-busines-gallery-slider-prev
+      +svg(24, 12, 'arrow-left')
+    button(type="button").busines-gallery__next.slider-control.slider-control-sm.js-busines-gallery-slider-next
+      +svg(24, 12, 'arrow-right')
+    .busines-gallery__slider.js-busines-gallery-slider
+      .swiper-wrapper
+        .busines-gallery__item.swiper-slide 
+          img(src="./img/busines/gallery-01.webp", alt="")
+        .busines-gallery__item.swiper-slide 
+          img(src="./img/busines/gallery-02.webp", alt="")
+        .busines-gallery__item.swiper-slide 
+          img(src="./img/busines/gallery-01.webp", alt="")
+        .busines-gallery__item.swiper-slide 
+          img(src="./img/busines/gallery-02.webp", alt="")
+      .swiper-pagination
