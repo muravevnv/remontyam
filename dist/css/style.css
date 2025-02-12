@@ -8782,6 +8782,8 @@ input[type=range]::-webkit-slider-thumb {
   align-items: flex-start;
   gap: 10px;
   flex-shrink: 0;
+  position: sticky;
+  top: 20px;
 }
 
 .busines-sections__nav-item {
@@ -8934,6 +8936,14 @@ input[type=range]::-webkit-slider-thumb {
 
 .busines-tariffs__item-desc {
   width: 100%;
+  text-align: center;
+}
+
+.busines-tariffs__item-desc p + p {
+  margin-top: 8px;
+}
+
+.busines-tariffs__item-desc p + p span {
   color: #838383;
 }
 
@@ -9312,7 +9322,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .busines-advantages__inner {
-  padding: 64px 40px 40px;
+  padding: 40px;
   background-color: var(--color-gray-100);
   border-radius: 20px;
 }
@@ -10894,6 +10904,7 @@ input[type=range]::-webkit-slider-thumb {
   }
 
   .busines-sections__nav {
+    position: static;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;

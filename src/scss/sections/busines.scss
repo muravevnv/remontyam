@@ -201,8 +201,11 @@
     align-items: flex-start;
     gap: 10px;
     flex-shrink: 0;
+    position: sticky;
+    top: 20px;
 
     @include mq($ms) {
+      position: static;
       width: 100%;
       flex-direction: row;
       flex-wrap: wrap;
@@ -435,7 +438,16 @@
 
     &-desc {
       width: 100%;
-      color: #838383;
+      
+      text-align: center;
+
+      p + p {
+        margin-top: 8px;
+
+        span {
+          color: #838383;
+        }
+      }
 
       span {
         color: cl(primary);
@@ -975,7 +987,7 @@
 .busines-advantages {
 
   &__inner {
-    padding: 64px 40px 40px;
+    padding: 40px;
     background-color: cl(gray-100);
     border-radius: 20px;
 
