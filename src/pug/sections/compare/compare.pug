@@ -1,0 +1,151 @@
+section.compare 
+  .container-wide   
+    .compare__head 
+      .compare__title Сравнение товаров
+      button(type="button").compare__remove-btn.remove-btn Очистить сравнение
+    .compare__main 
+      .compare__main-controls 
+        .form-radio 
+          input(type="radio", name="compare" id="compare_01" checked)
+          label(for="compare_01") Все харатеристики
+        .form-radio 
+          input(type="radio", name="compare" id="compare_02")
+          label(for="compare_02") Только различия
+      .compare__main-content 
+        button(type="button").compare__main-prev.slider-control.slider-control-sm.js-compare-slider-prev
+          +svg(24, 12, 'arrow-left')
+        button(type="button").compare__main-next.slider-control.slider-control-sm.js-compare-slider-next
+          +svg(24, 12, 'arrow-right')
+        .compaer__main-slider 
+          .compare-slider.js-compare-slider 
+            .swiper-wrapper 
+              .swiper-slide 
+                picture.compare-img 
+                  img(src="./img/compare/compare-01.webp", alt="")
+              .swiper-slide 
+                picture.compare-img 
+                  img(src="./img/compare/compare-02.webp", alt="")
+              .swiper-slide 
+                picture.compare-img 
+                  img(src="./img/compare/compare-01.webp", alt="")
+              .swiper-slide 
+                picture.compare-img 
+                  img(src="./img/compare/compare-02.webp", alt="")
+              .swiper-slide 
+                picture.compare-img 
+                  img(src="./img/compare/compare-02.webp", alt="")
+    .compare__info 
+      .compare__info-title Выбранные характеристики
+      .compare__info-text Выберите наиболее важные для себя характеристики из списка ниже 
+    .compare__section 
+      .compare__section-head Рейтинг
+      .compare__section-body
+        .compare__section-controls 
+          .form-checkbox 
+            input(type="checkbox", name="" id="compare_rating")
+            label(for="compare_rating") Рейтинг товара
+        .compare__section-slider
+          .compare-slider.js-compare-slider 
+            .swiper-wrapper 
+              .swiper-slide 
+                .compare-reviews 
+                  .compare-reviews__rating 
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star-stroke.svg", alt="")
+                  .compare-reviews__count 3 отзыва
+              .swiper-slide 
+                .compare-reviews 
+                  .compare-reviews__rating 
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                  .compare-reviews__count нет отзывов
+              .swiper-slide 
+                .compare-reviews 
+                  .compare-reviews__rating 
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                  .compare-reviews__count 2 отзыва
+              .swiper-slide 
+                .compare-reviews 
+                  .compare-reviews__rating 
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                  .compare-reviews__count 2 отзыва
+              .swiper-slide 
+                .compare-reviews 
+                  .compare-reviews__rating 
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                    img(src="./img/icons/rating-star.svg", alt="")
+                  .compare-reviews__count 2 отзыва
+    .compare__section 
+      .compare__section-head Характеристики
+      .compare__section-body
+        .compare__section-controls 
+          .form-checkbox 
+            input(type="checkbox", name="" id="compare_char_01")
+            label(for="compare_char_01") Характеристика 1
+        .compare__section-slider
+          .compare-slider.js-compare-slider 
+            .swiper-wrapper 
+              .swiper-slide 
+                .compare-desc Значение характеристики
+              .swiper-slide 
+                .compare-desc Значение характеристики
+              .swiper-slide 
+                .compare-desc Значение характеристики
+              .swiper-slide 
+                .compare-desc Значение характеристики
+              .swiper-slide 
+                .compare-desc Значение характеристики
+      .compare__section-body
+        .compare__section-controls 
+          .form-checkbox 
+            input(type="checkbox", name="" id="compare_char_02")
+            label(for="compare_char_02") Характеристика 2
+        .compare__section-slider
+        .compare__section-slider
+          .compare-slider.js-compare-slider 
+            .swiper-wrapper 
+              .swiper-slide 
+                .compare-desc Значение характеристики
+              .swiper-slide 
+                .compare-desc - 
+              .swiper-slide 
+                .compare-desc - 
+              .swiper-slide 
+                .compare-desc - 
+              .swiper-slide 
+                .compare-desc Значение характеристики
+      .compare__section-body
+        .compare__section-controls 
+          .form-checkbox 
+            input(type="checkbox", name="" id="compare_char_03")
+            label(for="compare_char_03") Характеристика 3
+        .compare__section-slider
+          .compare-slider.js-compare-slider 
+            .swiper-wrapper 
+              .swiper-slide 
+                .compare-desc Значение характеристики
+              .swiper-slide 
+                .compare-desc Значение характеристики
+              .swiper-slide 
+                .compare-desc Значение характеристики
+              .swiper-slide 
+                .compare-desc Значение характеристики
+              .swiper-slide 
+                .compare-desc Значение характеристики

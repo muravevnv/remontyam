@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Избранное</title>
+    </head>
+  <body>
+    <header class="header"> 
+      <div class="header-top">
+        <div class="container-wide"> 
+          <div class="header-top__adress"> 
+              <svg width="17" height="20">
+                <use xlink:href="img/icons/icons.svg#adress"></use>
+              </svg><span>Санкт-Петербург</span>
+          </div>
+          <nav class="header-top__links"> <a class="header-top__link" href="#">О компании</a><a class="header-top__link" href="#">Открыть бизнес</a><a class="header-top__link" href="#">Оплата</a><a class="header-top__link" href="#">Доставка</a><a class="header-top__link" href="#">Кредит и лизинг</a><a class="header-top__link" href="#">Статьи</a><a class="header-top__link" href="#">Контакты</a></nav><a class="header-top__tel" href="tel:+78001004196">8 800 100 41 96</a>
+        </div>
+      </div>
+      <div class="header-main"> 
+        <div class="container-wide"> 
+          <button class="header-main__burger js-header-burger" type="button">
+              <svg width="24" height="20">
+                <use xlink:href="img/icons/icons.svg#burger"></use>
+              </svg>
+          </button><a class="header-main__logo" href="#"> 
+            <picture>
+              <source srcset="./img/logo-sm.svg" media="(max-width: 1279.98px)"><img src="./img/logo.svg" alt="">
+            </picture></a>
+          <div class="header-main__cabinet header-cabinet">
+            <button class="header-cabinet__btn js-header-cabinet-btn" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#cabinet-user"></use>
+                </svg>
+            </button>
+            <div class="header-cabinet__dropdown js-header-cabinet-dropdown"> 
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#reg-plus"></use>
+                  </svg><span>Регистрация</span>
+              </div>
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#c-user"></use>
+                  </svg><span>Вход</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-main__catalog-btn"> 
+            <div class="header-main__catalog-btn-icon"> 
+                <svg width="13" height="8">
+                  <use xlink:href="img/icons/icons.svg#catalog-lines"></use>
+                </svg>
+            </div>
+            <div class="header-main__catalog-btn-title">Каталог</div>
+            <div class="header-main__catalog-btn-arrow">
+                <svg width="11" height="6">
+                  <use xlink:href="img/icons/icons.svg#catalog-arrow"></use>
+                </svg>
+            </div>
+          </div>
+          <div class="header-main__search"> 
+            <div class="searchbar"> 
+              <input class="searchbar__input" type="text" placeholder="Прицеп для спецтехники">
+              <button class="searchbar__btn" type="button">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/icons/icons.svg#search"></use>
+                  </svg>
+              </button>
+            </div>
+          </div>
+          <div class="header-main__toolbars"> 
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/user.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#user"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Войти</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/favorite.svg')"> 
+                  <svg width="23" height="20">
+                    <use xlink:href="img/icons/icons.svg#favorite"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Избранное</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/compare.svg')"> 
+                  <svg width="27" height="21">
+                    <use xlink:href="img/icons/icons.svg#compare"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Сравнение</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/basket.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#basket"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Корзина</div>
+              <div class="header-main__toolbar-counter">5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom"> 
+        <div class="container-wide"> 
+          <nav class="header-nav"> 
+            <ul class="header-nav__list"> 
+              <li class="header-nav__item"> <a href="#">Дорожная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Коммунальная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Грузоподъёмная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Навесное оборудование</a></li>
+              <li class="header-nav__item"> <a href="#">Асфальтобетонные заводы</a></li>
+              <li class="header-nav__item"> <a href="#">Самоходные транспортеры</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-menu js-header-menu">
+        <div class="header-menu__overlay js-header-menu-close"></div>
+        <div class="header-menu__inner"> 
+          <button class="header-menu__close js-header-menu-close" type="button">
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#close"></use>
+              </svg>
+          </button>
+          <div class="header-menu__list"> 
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">О компании</a></li>
+            <li class="header-menu__item"><a href="#">Открыть бизнес</a></li>
+            <li class="header-menu__item"><a href="#">Оплата</a></li>
+            <li class="header-menu__item"><a href="#">Доставка</a></li>
+            <li class="header-menu__item"><a href="#">Кредит и лизинг</a></li>
+            <li class="header-menu__item"><a href="#"> Статьи</a></li>
+            <li class="header-menu__item"><a href="#">Контакты</a></li>
+          </div>
+          <div class="header-menu__tel"> 
+              <svg width="8" height="8">
+                <use xlink:href="img/icons/icons.svg#tel"></use>
+              </svg><span>8 800 100 41 96</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page-inner">
+        <div class="favorites"> 
+          <div class="container-wide"> 
+            <div class="favorites__inner"> 
+              <div class="favorites__asside"> 
+                <div class="favorites__title">Избранное</div>
+                <nav class="favorites__nav"> <a class="favorites__nav-item _is-active" href="#">Все категории <span>8</span></a><a class="favorites__nav-item" href="#">Все категории<span>3</span></a><a class="favorites__nav-item" href="#">Прицепы<span>5</span></a></nav>
+              </div>
+              <div class="favorites__main"> 
+                <div class="favorites-panel"> 
+                  <button class="favorites-panel__clear remove-btn" type="button">Очистить избранное</button>
+                  <div class="favorites-panel__controls">
+                    <div class="catalog-panel">
+                      <div class="catalog-panel__left"> 
+                        <div class="catalog-panel__top">
+                          <div class="catalog-panel__goods-count">Товаров: 9</div>
+                          <div class="catalog-panel__sorting"> 
+                            <div class="catalog-panel__sorting-title">Сортировать по:</div>
+                            <div class="catalog-panel__sorting-list">
+                              <div class="catalog-sort-item _is-selected">Умолчанию</div>
+                              <div class="catalog-sort-item catalog-sort-item--arrow">Цене</div>
+                              <div class="catalog-sort-item catalog-sort-item--arrow">Рейтингу</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="catalog-panel__right"> 
+                        <div class="catalog-panel__views"> 
+                          <button class="catalog-panel__views-btn js-catalog-views-btn _is-active" type="button" style="--icon: url('../img/icons/grid.svg')" data-views="grid"></button>
+                          <button class="catalog-panel__views-btn js-catalog-views-btn" type="button" style="--icon: url('../img/icons/lines.svg')" data-views="list"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-list">
+                  <div class="catalog-card">
+                    <div class="catalog-card__inner"> 
+                      <div class="catalog-card__top"> 
+                        <div class="catalog-card__articul">Артикул: 34498</div>
+                        <div class="catalog-card__toolbar"> 
+                          <button class="catalog-card__btn-compare" type="button" style="--icon: url('../img/icons/compare.svg)"> </button>
+                          <button class="catalog-card__btn-to-fav" type="button" style="--icon: url('../img/icons/fav.svg)"> </button>
+                        </div>
+                      </div>
+                      <div class="catalog-card__main">
+                        <div class="catalog-card__gallery js-catalog-card-gallery"> 
+                          <div class="swiper-wrapper"> 
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="catalog-card__info"> 
+                          <div class="catalog-card__desc">
+                            <div class="catalog-card__title">Задний отвал НО-76 на трактор МТЗ</div>
+                            <div class="catalog-card__rating"> 
+                              <div class="catalog-card__rating-stars"> 
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                              </div>
+                              <div class="catalog-card__rating-value">3</div>
+                            </div>
+                            <div class="catalog-card__details"> 
+                              <div class="catalog-card__detail"> <span>Отвал, тип: </span>Навесной</div>
+                              <div class="catalog-card__detail"> <span>Шасси/тип: </span>КАМАЗ-43253</div>
+                              <div class="catalog-card__detail"> <span>Угол поворота отвала: </span>±40° °</div>
+                            </div>
+                          </div>
+                          <div class="catalog-card__bottom"> 
+                            <div class="catalog-card__price">Цена по запросу</div>
+                            <div class="catalog-card__available">В наличии</div>
+                            <div class="catalog-card__controls"> <a class="catalog-card__btn btn" href="#">Запросить цену</a><a class="catalog-card__more btn btn--outline" href="#">Подробнее</a></div><a class="catalog-card__leasing-calc" href="#">Расчитать лизинг/кредит от 10 000 ₽</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-card">
+                    <div class="catalog-card__inner"> 
+                      <div class="catalog-card__top"> 
+                        <div class="catalog-card__articul">Артикул: 34498</div>
+                        <div class="catalog-card__toolbar"> 
+                          <button class="catalog-card__btn-compare" type="button" style="--icon: url('../img/icons/compare.svg)"> </button>
+                          <button class="catalog-card__btn-to-fav" type="button" style="--icon: url('../img/icons/fav.svg)"> </button>
+                        </div>
+                      </div>
+                      <div class="catalog-card__main">
+                        <div class="catalog-card__gallery js-catalog-card-gallery"> 
+                          <div class="swiper-wrapper"> 
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="catalog-card__info"> 
+                          <div class="catalog-card__desc">
+                            <div class="catalog-card__title">Задний отвал НО-76 на трактор МТЗ</div>
+                            <div class="catalog-card__rating"> 
+                              <div class="catalog-card__rating-stars"> 
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                              </div>
+                              <div class="catalog-card__rating-value">3</div>
+                            </div>
+                            <div class="catalog-card__details"> 
+                              <div class="catalog-card__detail"> <span>Отвал, тип: </span>Навесной</div>
+                              <div class="catalog-card__detail"> <span>Шасси/тип: </span>КАМАЗ-43253</div>
+                              <div class="catalog-card__detail"> <span>Угол поворота отвала: </span>±40° °</div>
+                            </div>
+                          </div>
+                          <div class="catalog-card__bottom"> 
+                            <div class="catalog-card__price">1  500 000 ₽</div>
+                            <div class="catalog-card__available">В наличии</div>
+                            <div class="catalog-card__controls"> <a class="catalog-card__btn catalog-card__btn--cart btn" href="#">В корзину</a><a class="catalog-card__more btn btn--outline" href="#">Подробнее</a></div><a class="catalog-card__leasing-calc" href="#">Расчитать лизинг/кредит от 10 000 ₽</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-card">
+                    <div class="catalog-card__inner"> 
+                      <div class="catalog-card__top"> 
+                        <div class="catalog-card__articul">Артикул: 34498</div>
+                        <div class="catalog-card__toolbar"> 
+                          <button class="catalog-card__btn-compare" type="button" style="--icon: url('../img/icons/compare.svg)"> </button>
+                          <button class="catalog-card__btn-to-fav" type="button" style="--icon: url('../img/icons/fav.svg)"> </button>
+                        </div>
+                      </div>
+                      <div class="catalog-card__main">
+                        <div class="catalog-card__gallery js-catalog-card-gallery"> 
+                          <div class="swiper-wrapper"> 
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="catalog-card__info"> 
+                          <div class="catalog-card__desc">
+                            <div class="catalog-card__title">Задний отвал НО-76 на трактор МТЗ</div>
+                            <div class="catalog-card__rating"> 
+                              <div class="catalog-card__rating-stars"> 
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                              </div>
+                              <div class="catalog-card__rating-value">3</div>
+                            </div>
+                            <div class="catalog-card__details"> 
+                              <div class="catalog-card__detail"> <span>Отвал, тип: </span>Навесной</div>
+                              <div class="catalog-card__detail"> <span>Шасси/тип: </span>КАМАЗ-43253</div>
+                              <div class="catalog-card__detail"> <span>Угол поворота отвала: </span>±40° °</div>
+                            </div>
+                          </div>
+                          <div class="catalog-card__bottom"> 
+                            <div class="catalog-card__price">1  500 000 ₽</div>
+                            <div class="catalog-card__available">В наличии</div>
+                            <div class="catalog-card__controls"> <a class="catalog-card__btn catalog-card__btn--cart btn" href="#">В корзину</a><a class="catalog-card__more btn btn--outline" href="#">Подробнее</a></div><a class="catalog-card__leasing-calc" href="#">Расчитать лизинг/кредит от 10 000 ₽</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-card">
+                    <div class="catalog-card__inner"> 
+                      <div class="catalog-card__top"> 
+                        <div class="catalog-card__articul">Артикул: 34498</div>
+                        <div class="catalog-card__toolbar"> 
+                          <button class="catalog-card__btn-compare" type="button" style="--icon: url('../img/icons/compare.svg)"> </button>
+                          <button class="catalog-card__btn-to-fav" type="button" style="--icon: url('../img/icons/fav.svg)"> </button>
+                        </div>
+                      </div>
+                      <div class="catalog-card__main">
+                        <div class="catalog-card__gallery js-catalog-card-gallery"> 
+                          <div class="swiper-wrapper"> 
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="catalog-card__info"> 
+                          <div class="catalog-card__desc">
+                            <div class="catalog-card__title">Задний отвал НО-76 на трактор МТЗ</div>
+                            <div class="catalog-card__rating"> 
+                              <div class="catalog-card__rating-stars"> 
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                              </div>
+                              <div class="catalog-card__rating-value">3</div>
+                            </div>
+                            <div class="catalog-card__details"> 
+                              <div class="catalog-card__detail"> <span>Отвал, тип: </span>Навесной</div>
+                              <div class="catalog-card__detail"> <span>Шасси/тип: </span>КАМАЗ-43253</div>
+                              <div class="catalog-card__detail"> <span>Угол поворота отвала: </span>±40° °</div>
+                            </div>
+                          </div>
+                          <div class="catalog-card__bottom"> 
+                            <div class="catalog-card__price">1  500 000 ₽</div>
+                            <div class="catalog-card__available">В наличии</div>
+                            <div class="catalog-card__controls"> <a class="catalog-card__btn catalog-card__btn--cart btn" href="#">В корзину</a><a class="catalog-card__more btn btn--outline" href="#">Подробнее</a></div><a class="catalog-card__leasing-calc" href="#">Расчитать лизинг/кредит от 10 000 ₽</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-card">
+                    <div class="catalog-card__inner"> 
+                      <div class="catalog-card__top"> 
+                        <div class="catalog-card__articul">Артикул: 34498</div>
+                        <div class="catalog-card__toolbar"> 
+                          <button class="catalog-card__btn-compare" type="button" style="--icon: url('../img/icons/compare.svg)"> </button>
+                          <button class="catalog-card__btn-to-fav" type="button" style="--icon: url('../img/icons/fav.svg)"> </button>
+                        </div>
+                      </div>
+                      <div class="catalog-card__main">
+                        <div class="catalog-card__gallery js-catalog-card-gallery"> 
+                          <div class="swiper-wrapper"> 
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="catalog-card__info"> 
+                          <div class="catalog-card__desc">
+                            <div class="catalog-card__title">Задний отвал НО-76 на трактор МТЗ</div>
+                            <div class="catalog-card__rating"> 
+                              <div class="catalog-card__rating-stars"> 
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                              </div>
+                              <div class="catalog-card__rating-value">3</div>
+                            </div>
+                            <div class="catalog-card__details"> 
+                              <div class="catalog-card__detail"> <span>Отвал, тип: </span>Навесной</div>
+                              <div class="catalog-card__detail"> <span>Шасси/тип: </span>КАМАЗ-43253</div>
+                              <div class="catalog-card__detail"> <span>Угол поворота отвала: </span>±40° °</div>
+                            </div>
+                          </div>
+                          <div class="catalog-card__bottom"> 
+                            <div class="catalog-card__price">1  500 000 ₽</div>
+                            <div class="catalog-card__available">В наличии</div>
+                            <div class="catalog-card__controls"> <a class="catalog-card__btn catalog-card__btn--cart btn" href="#">В корзину</a><a class="catalog-card__more btn btn--outline" href="#">Подробнее</a></div><a class="catalog-card__leasing-calc" href="#">Расчитать лизинг/кредит от 10 000 ₽</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-card">
+                    <div class="catalog-card__inner"> 
+                      <div class="catalog-card__top"> 
+                        <div class="catalog-card__articul">Артикул: 34498</div>
+                        <div class="catalog-card__toolbar"> 
+                          <button class="catalog-card__btn-compare" type="button" style="--icon: url('../img/icons/compare.svg)"> </button>
+                          <button class="catalog-card__btn-to-fav" type="button" style="--icon: url('../img/icons/fav.svg)"> </button>
+                        </div>
+                      </div>
+                      <div class="catalog-card__main">
+                        <div class="catalog-card__gallery js-catalog-card-gallery"> 
+                          <div class="swiper-wrapper"> 
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="catalog-card__info"> 
+                          <div class="catalog-card__desc">
+                            <div class="catalog-card__title">Задний отвал НО-76 на трактор МТЗ</div>
+                            <div class="catalog-card__rating"> 
+                              <div class="catalog-card__rating-stars"> 
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                              </div>
+                              <div class="catalog-card__rating-value">3</div>
+                            </div>
+                            <div class="catalog-card__details"> 
+                              <div class="catalog-card__detail"> <span>Отвал, тип: </span>Навесной</div>
+                              <div class="catalog-card__detail"> <span>Шасси/тип: </span>КАМАЗ-43253</div>
+                              <div class="catalog-card__detail"> <span>Угол поворота отвала: </span>±40° °</div>
+                            </div>
+                          </div>
+                          <div class="catalog-card__bottom"> 
+                            <div class="catalog-card__price">1  500 000 ₽</div>
+                            <div class="catalog-card__available">В наличии</div>
+                            <div class="catalog-card__controls"> <a class="catalog-card__btn catalog-card__btn--cart btn" href="#">В корзину</a><a class="catalog-card__more btn btn--outline" href="#">Подробнее</a></div><a class="catalog-card__leasing-calc" href="#">Расчитать лизинг/кредит от 10 000 ₽</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-card">
+                    <div class="catalog-card__inner"> 
+                      <div class="catalog-card__top"> 
+                        <div class="catalog-card__articul">Артикул: 34498</div>
+                        <div class="catalog-card__toolbar"> 
+                          <button class="catalog-card__btn-compare" type="button" style="--icon: url('../img/icons/compare.svg)"> </button>
+                          <button class="catalog-card__btn-to-fav" type="button" style="--icon: url('../img/icons/fav.svg)"> </button>
+                        </div>
+                      </div>
+                      <div class="catalog-card__main">
+                        <div class="catalog-card__gallery js-catalog-card-gallery"> 
+                          <div class="swiper-wrapper"> 
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="catalog-card__info"> 
+                          <div class="catalog-card__desc">
+                            <div class="catalog-card__title">Задний отвал НО-76 на трактор МТЗ</div>
+                            <div class="catalog-card__rating"> 
+                              <div class="catalog-card__rating-stars"> 
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                              </div>
+                              <div class="catalog-card__rating-value">3</div>
+                            </div>
+                            <div class="catalog-card__details"> 
+                              <div class="catalog-card__detail"> <span>Отвал, тип: </span>Навесной</div>
+                              <div class="catalog-card__detail"> <span>Шасси/тип: </span>КАМАЗ-43253</div>
+                              <div class="catalog-card__detail"> <span>Угол поворота отвала: </span>±40° °</div>
+                            </div>
+                          </div>
+                          <div class="catalog-card__bottom"> 
+                            <div class="catalog-card__price">1  500 000 ₽</div>
+                            <div class="catalog-card__available">В наличии</div>
+                            <div class="catalog-card__controls"> <a class="catalog-card__btn catalog-card__btn--cart btn" href="#">В корзину</a><a class="catalog-card__more btn btn--outline" href="#">Подробнее</a></div><a class="catalog-card__leasing-calc" href="#">Расчитать лизинг/кредит от 10 000 ₽</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-card">
+                    <div class="catalog-card__inner"> 
+                      <div class="catalog-card__top"> 
+                        <div class="catalog-card__articul">Артикул: 34498</div>
+                        <div class="catalog-card__toolbar"> 
+                          <button class="catalog-card__btn-compare" type="button" style="--icon: url('../img/icons/compare.svg)"> </button>
+                          <button class="catalog-card__btn-to-fav" type="button" style="--icon: url('../img/icons/fav.svg)"> </button>
+                        </div>
+                      </div>
+                      <div class="catalog-card__main">
+                        <div class="catalog-card__gallery js-catalog-card-gallery"> 
+                          <div class="swiper-wrapper"> 
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-02.webp" type="image/webp"><img src="./img/catalog/product-card-02.webp" alt=""></picture></picture>
+                            <picture class="catalog-card__img swiper-slide"> <picture><source srcset="./img/catalog/product-card-01.webp" type="image/webp"><img src="./img/catalog/product-card-01.webp" alt=""></picture></picture>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="catalog-card__info"> 
+                          <div class="catalog-card__desc">
+                            <div class="catalog-card__title">Задний отвал НО-76 на трактор МТЗ</div>
+                            <div class="catalog-card__rating"> 
+                              <div class="catalog-card__rating-stars"> 
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                                <div class="catalog-card__rating-star"></div>
+                              </div>
+                              <div class="catalog-card__rating-value">3</div>
+                            </div>
+                            <div class="catalog-card__details"> 
+                              <div class="catalog-card__detail"> <span>Отвал, тип: </span>Навесной</div>
+                              <div class="catalog-card__detail"> <span>Шасси/тип: </span>КАМАЗ-43253</div>
+                              <div class="catalog-card__detail"> <span>Угол поворота отвала: </span>±40° °</div>
+                            </div>
+                          </div>
+                          <div class="catalog-card__bottom"> 
+                            <div class="catalog-card__price">1  500 000 ₽</div>
+                            <div class="catalog-card__available">В наличии</div>
+                            <div class="catalog-card__controls"> <a class="catalog-card__btn catalog-card__btn--cart btn" href="#">В корзину</a><a class="catalog-card__more btn btn--outline" href="#">Подробнее</a></div><a class="catalog-card__leasing-calc" href="#">Расчитать лизинг/кредит от 10 000 ₽</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main><div class="footer-wrapper">
+<div class="footer-top-wrapper">
+<div class="container-wide">
+<div class="footer-top-inner relative">
+<div class="row">
+<div class="col-sm-12 col-lg-3">
+<div class="footer-top-first">
+<picture><source srcset="./img/logo-white.webp" type="image/webp"><img src="./img/logo-white.png" alt="РЕМОНТЯМ" data-retinasrc="./img/logo-white.png"></picture>
+<div class="footer-text">ООО «РЕМОНТЯМ». ИНН: 7807252270, ОГРН: 1217800168233</div>
+<div class="copyr">© 2014 - 2024. Все права защищены. РЕМОНТЯМ.</div>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Дорожно-строительная техника<!--/noindex--></div>
+<ul class="footer_l">
+<li class="first">
+<a href="catalog/litoy">Кохеры для литого асфальта</a>
+</li>
+<li>
+<a href="catalog/hotbox">Термос бункеры</a>
+</li>
+<li>
+<a href="catalog/gudron">Гудронаторы</a>
+</li>
+<li>
+<a href="catalog/pricepremont-pnevmonabryzgom">Пневмонабрызг</a>
+</li>
+<li>
+<a href="catalog/kotelbitum">Заливщик швов</a>
+</li>
+<li>
+<a href="catalog/recicler">Рециклеры асфальта</a>
+</li>
+<li>
+<a href="catalog/pricepremont">Машины ямочного ремонта асфальта</a>
+</li>
+<li>
+<a href="catalog/ifrakrasnye">Инфракрасные нагреватели асфальта</a>
+</li>
+<li>
+<a href="catalog/peredvizhnyie-laboratorii">Передвижные лаборатории</a>
+</li>
+<li>
+<a href="catalog/ustanovki">Битумно-эмульсионные установки</a>
+</li>
+<li>
+<a href="catalog/ustanovki-pbv">Установка ПБВ</a>
+</li>
+<li class="last">
+<a href="catalog/plavbitum">Установки плавления битума</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Коммунальная техника<!--/noindex--></div>
+<ul class="footer_l"><li class="first"><a href="catalog/navesnoe-oborudovanie-dlya-kdm">Навесное оборудование для КДМ</a></li><li><a href="catalog/polivomoechnoe-oborudovanie">Поливомоечное оборудование</a></li><li><a href="catalog/vakuumnyie-podmetalno-uborochnyie-mashinyi">Вакуумные подметально-уборочные машины</a></li><li><a href="catalog/navesnoe-oborudovanie-traktor-mtz">Навесное оборудование на трактор МТЗ</a></li><li><a href="catalog/peskorazbrasyivateli-priczepnyie">Пескоразбрасыватели прицепные</a></li><li><a href="catalog/vakuumnyie-mashinyi">Вакуумные машины</a></li><li><a href="catalog/benzovozyi-toplivozapravshhiki">Бензовозы - топливозаправщики</a></li><li><a href="catalog/ilososnyie-mashinyi">Илососные машины</a></li><li><a href="catalog/ifrakrasnye-krovly">Инфракрасные нагреватели кровли</a></li><li><a href="catalog/avtonomny">Шнекороторные снегоочистители</a></li><li><a href="catalog/sol-rastvor">Установки приготовления солевого раствора</a></li><li><a href="catalog/kosilki">Косилки на трактор МТЗ</a></li><li><a href="catalog/kombinirovannyie-dorozhnyie-mashinyi">Комбинированные дорожные машины</a></li><li class="last"><a href="catalog/peskorazbrasyivatel">Пескоразбрасывающее оборудование</a></li></ul>
+</div>
+</div>          
+<div class="col-sm-4 col-lg-3">
+<div class="footer-contacts">
+<div class="title">Контакты</div>
+<div itemscope="" itemtype="http://schema.org/Organization">
+<meta itemprop="url" content="https://ремонтям.рф/">
+<meta itemprop="name" content="РЕМОНТЯМ">
+<div itemscope="" itemprop="address" itemtype="http://schema.org/PostalAddress">
+<meta itemprop="postalCode" content="198332">
+<meta itemprop="addressLocality" content="Санкт-Петербург">
+<meta itemprop="streetAddress" content="проспект Кузнецова дом 11 кор.2">
+</div>
+<meta itemprop="telephone" content="8 800 100 41 69">
+</div>
+<div class="tel dflex jcsb aic">
+<span>Санкт-Петербург: </span>
+<span class="stel"><a href="tel:+78126484190">+7 (812) 648-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Москва:</span>
+<span class="stel"><a href="tel:+74951884190">+7 (495) 188-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Отдел продаж:</span>
+<span class="stel"><a href="tel:+79112052741">+7 (911) 205-27-41</a></span>
+</div>
+<div class=" social-links ">
+<a href="https://www.youtube.com/@user-rr6su3fk9g " rel="nofollow noopener" target="blank" class="yutb_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+<a href="https://vk.com/" rel="nofollow noopener" class="vk_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+<a href="https://t.me/+79112052741" rel="nofollow noopener" class="tg_link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+</div>
+<style>
+    <div class="social-links">a{ color:#fff;border-color:#fff;}</div></style>
+<p>&nbsp;</p>
+<p>E-mail: <a href="mailto:info@remontiam.ru">info@remontiam.ru</a></p>
+<p>Офис: г. Санкт-Петербург, проспект Кузнецова дом 11 кор.2</p>
+<p>Завод: г. Санкт-Петербург, Гатчина, ул.Жемчужина 2</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

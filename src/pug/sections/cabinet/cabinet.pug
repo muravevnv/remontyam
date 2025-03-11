@@ -1,0 +1,68 @@
+section.cabinet 
+  .container-wide 
+    .cabinet__inner 
+      .cabinet__aside 
+        nav.cabinet-nav 
+          .cabinet-nav__title Личный кабинет
+          .cabinet-nav__list 
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Покупки
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Мои заказы
+                a(href="#").cabinet-nav__link История заказов
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Профиль
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Мои отзывы и вопросы
+                a(href="#").cabinet-nav__link Личные данные
+                a(href="#").cabinet-nav__link Мои организации
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Товары
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Корзина
+                  span 5
+                a(href="#").cabinet-nav__link Избранное
+                  span 1
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Сервис
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Обмен, возврат и ремонт
+      .cabinet__content 
+        .cabinet-main
+          .cabinet-main__section 
+            .cabinet-section 
+              .cabinet-section__head Личный кабинет
+              .cabinet-section__content
+                .cabinet-main-cards
+                  a(href="#").cabinet-main-card
+                    .cabinet-main-card__title(style="--icon: url('../img/icons/list.svg')") 
+                      span Мои заказы
+                    .cabinet-main-card__count 1 активный
+                  a(href="#").cabinet-main-card
+                    .cabinet-main-card__title(style="--icon: url('../img/icons/list-checked.svg')") 
+                      span Купленное
+                  a(href="#").cabinet-main-card
+                    .cabinet-main-card__title(style="--icon: url('../img/icons/eye.svg')") 
+                      span Просмотренное
+          .cabinet-main__section 
+            .cabinet-main-rows 
+              a(href="#").cabinet-main-row
+                .cabinet-main-row__title(style="--icon: url('../img/icons/favorite.svg')")  
+                  span Избранное
+                .cabinet-main-row__count 1 товар
+              a(href="#").cabinet-main-row
+                .cabinet-main-row__title(style="--icon: url('../img/icons/basket.svg')")  
+                  span Корзина
+                .cabinet-main-row__count 5 товаров
+          .cabinet-main__section 
+            .cabinet-section 
+              .cabinet-section__head Активные заказы
+              .cabinet-section__content
+                .cabinet-active-orders
+                  .cabinet-active-order 
+                    picture.cabinet-active-order__img 
+                      img(src="./img/order/order-01.webp", alt="")
+                    .cabinet-active-order__info 
+                      .cabinet-active-order__num Заказ номер: 328346354
+                      .cabinet-active-order__payment-status Заказ не оплачен
+                      a(href="#").cabinet-active-order__link  Подробнее

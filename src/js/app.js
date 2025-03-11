@@ -285,6 +285,56 @@ if(document.querySelector('.js-busines-gallery-slider')) {
   });
 }
 
+const swiperContainers = document.querySelectorAll('.js-compare-slider');
+
+if(swiperContainers.length > 0) {
+  
+const swipers = [];
+
+swiperContainers.forEach((container, index) => {
+  const swiper = new Swiper(container, {
+    modules: [Navigation],
+    slidesPerView: 1,
+    spaceBetween: 16,
+    breakpoints: {
+      560: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      768: { 
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+      }
+    },
+
+    navigation: {
+      prevEl: '.js-compare-slider-prev',
+      nextEl: '.js-compare-slider-next'
+    },
+
+    on: {
+      slideChange: function () {
+        syncSwipers(this);
+      },
+    },
+  });
+
+  swipers.push(swiper);
+});
+
+
+function syncSwipers(sourceSwiper) {
+  swipers.forEach((swiper) => {
+    if (swiper !== sourceSwiper) {
+      swiper.slideTo(sourceSwiper.activeIndex);
+    }
+  });
+}
+}
 
 $('.js-tab-control').on('click', function() {
   const tabControl = $(this).data('control');

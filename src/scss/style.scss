@@ -1,46 +1,11 @@
-@import 'libs/swiper';
 
 //Config
 @import 'config/old-styles';
 @import 'config/mixins';
 @import 'config/variables';
-@import 'config/reset';
-@import 'config/fonts';
-@import 'config/global';
-@import 'config/typography';
-@import 'config/form';
-@import 'config/common';
-
-
-//Components
-
-@import 'components/btn';
-@import 'components/header';
-@import 'components/footer';
-@import 'components/modal';
-
-
-//Sections
-
-@import 'sections/hero';
-@import 'sections/popular';
-@import 'sections/products-slider';
-@import 'sections/consultation-order';
-@import 'sections/our-partners';
-@import 'sections/geography';
-@import 'sections/why-us';
-
 
 // Новые стили
-@import 'components/faq-item';
-@import 'components/blog-item';
-@import 'components/catalog-card';
-@import 'sections/catalog';
-@import 'sections/product';
-@import 'sections/sertificats';
-@import 'sections/s-blog';
-@import 'sections/blog';
-@import 'sections/about';
-@import 'sections/busines';
-@import 'sections/reviews';
-@import 'sections/article';
+
+@import 'sections/favorites.scss';
+@import 'sections/compare.scss';
+@import 'sections/cabinet.scss';

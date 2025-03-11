@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  include mixins/_mixins
+  include includes/head
+  +head('Избранное')
+  body
+    include components/header
+    main
+      .page-inner
+        include sections/favorites/favorites
+
+    include components/footer
+    include includes/scripts

@@ -1,0 +1,276 @@
+.cabinet {
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    @include mq($ms) {
+      flex-direction: column;
+    }
+  }
+
+  &__aside {
+    width: 334px;
+    flex-shrink: 0;
+
+    @include mq($mt) {
+      width: 280px;
+    }
+
+    @include mq($ms)  {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+}
+
+.cabinet-nav {
+  width: 100%;
+  padding: 24px;
+  border-radius: 12px;
+  background-color: var(--color-gray-100); 
+
+  &__title {
+    font-size: 14px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+    @include mq($ms)  {
+      display: block;
+      column-count: 2;
+    }
+  }
+
+  &__section {
+
+    @include mq($m) {
+      break-inside: avoid;
+
+      + .cabinet-nav__section {
+        margin-top: 24px;
+      }
+    }
+
+    &-title {
+      line-height: 1;
+      color: var(--color-gray-500);
+      margin-bottom: 14px;
+
+      @include mq($m)  {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    @include mq($m)  {
+      font-size: 14px;
+    }
+
+    @media(any-hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    span {
+      width: 18px;
+      height: 18px;
+      font-size: 10px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 50%;
+      background-color: var(--color-accent);
+      color: var(--color-whte);
+    }
+  }
+}
+
+.cabinet-main {
+
+  &__section {
+    width: 100%;
+
+    &:not(:last-of-type) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.cabinet-main-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  @include mq($m) {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+.cabinet-main-card {
+  padding: 16px;
+  border: 1px solid var(--color-border-100);
+  border-radius: 12px;
+  min-height: 150px;
+  background-color: var(--color-whte);
+
+  @include mq($m)  {
+    height: 80px;
+  }
+
+  &__title {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    
+    &::before {
+      content: '';
+      width: 28px;
+      height: 28px;
+      mask: var(--icon) center center/contain no-repeat;
+      -webkit-mask: var(--icon) center center/contain no-repeat;
+      background-color: currentColor;
+    }
+  }
+
+  &__count {
+    color: var(--color-gray-500)
+  }
+}
+
+.cabinet-main-rows {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  @include mq($m)  {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+.cabinet-main-row {
+  padding: 24px;
+  border: 1px solid var(--color-border-100);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 94px;
+
+  @include mq($m)  {
+    border-radius: 10px;
+    padding: 16px;
+    height: 64px;
+  }
+
+  &__title {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      mask: var(--icon) center center/contain no-repeat;
+      -webkit-mask: var(--icon) center center/contain no-repeat;
+      background-color: currentColor;
+    }
+  }
+
+  &__count {
+    font-size: 14px;
+  }
+}
+
+.cabinet-active-order {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+
+  &__img {
+    display: block;
+    width: 112px;
+    height: 84px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--color-border-100);
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  &__num {
+    font-weight: 600;
+  }
+
+  &__link {
+    font-size: 14px;
+    color: var(--color-accent);
+    border-bottom: 1px solid currentColor;
+
+    @media(any-hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+.cabinet-section {
+  padding: 24px;
+  border: 1px solid var(--color-border-100);
+  border-radius: 16px;
+
+  @include mq($m)  {
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  &__head {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+}
