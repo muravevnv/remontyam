@@ -7143,6 +7143,72 @@ input[type=range]::-webkit-slider-thumb {
 
 /*  Second page */
 
+.form-control {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 16px;
+  background-color: var(--color-whte);
+  border: 1px solid var(--color-border-100);
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.form-tip {
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--color-gray-500);
+}
+
+.form-tip a {
+  text-decoration: underline;
+  transition: 0.25s ease-in;
+}
+
+.popup-auth {
+  max-width: 500px;
+  width: 100%;
+  padding: 64px 40px 40px;
+  border-radius: 16px;
+  background-color: var(--color-whte);
+}
+
+.popup-auth__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.popup-auth__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.popup-auth__links {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.popup-auth__link {
+  font-size: 14px;
+  line-height: 1.25;
+  color: var(--color-gray-500);
+  border-bottom: 1px solid currentColor;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.popup-auth__link--accent {
+  color: var(--color-accent);
+}
+
 .favorites__inner {
   display: flex;
   align-items: flex-start;
@@ -7390,11 +7456,19 @@ input[type=range]::-webkit-slider-thumb {
   opacity: 1;
 }
 
+.form-checkbox input:checked + label::before {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
 .form-checkbox label {
   display: inline-flex;
   align-items: center;
   padding-left: 32px;
   position: relative;
+  font-size: 14px;
+  line-height: 1.25;
+  color: var(--color-gray-500);
 }
 
 .form-checkbox label::before {
@@ -7419,8 +7493,8 @@ input[type=range]::-webkit-slider-thumb {
   width: 10px;
   height: 6px;
   transform: rotate(-45deg);
-  border-bottom: 2px solid var(--color-accent);
-  border-left: 2px solid var(--color-accent);
+  border-bottom: 2px solid var(--color-whte);
+  border-left: 2px solid var(--color-whte);
   opacity: 0;
 }
 
@@ -9933,6 +10007,14 @@ input[type=range]::-webkit-slider-thumb {
 
   .modal__close:hover::before {
     background-color: var(--color-blck);
+  }
+
+  .form-tip a:hover {
+    color: var(--color-accent);
+  }
+
+  .popup-auth__link:hover {
+    opacity: 0.6;
   }
 
   .favorites__nav-item:hover {

@@ -1,0 +1,26 @@
+.popup-auth 
+  .popup-auth__inner 
+    .popup-auth__title Регистрация
+    form.popup-auth__form(action="")
+      .form-group 
+        input.form-control(type="text" placeholder="Имя") 
+      .form-group 
+        input.form-control(type="email" placeholder="Email") 
+      .form-group 
+        input.form-control(type="text" placeholder="Пароль") 
+      .form-group 
+        input.form-control(type="text" placeholder="Повторите пароль") 
+      .form-checkbox 
+        input(type="checkbox", name="" id="company")
+        label(for="company") Я представитель юрлица или ИП
+      .form-checkbox 
+        input(type="checkbox", name="" id="subscribe")
+        label(for="subscribe") Я хочу получать информацию о скидках, спецпредложениях и акциях
+      button.btn.btn--primary.btn--wide(type="submit") Зарегистрироваться
+      .form-tip 
+        | При регистрации вы предоставляете 
+        a(href="#") Согласие на обработку персональных  
+        | данных в соответствии с 
+        a(href="#") Политикой в отношении обработки персональных 
+        | данных, а также принимаете условия 
+        a(href="#") Пользовательского соглашения

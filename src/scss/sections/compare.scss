@@ -185,6 +185,11 @@
       &::after {
         opacity: 1;
       }
+
+      &::before {
+        background-color: var(--color-accent);
+        border-color: var(--color-accent);
+      }
     }
   }
 
@@ -193,6 +198,9 @@
     align-items: center;
     padding-left: 32px;
     position: relative;
+    font-size: 14px;
+    line-height: 1.25;
+    color: var(--color-gray-500);
 
     &::before {
       position: absolute;
@@ -216,8 +224,8 @@
       width: 10px;
       height: 6px;
       transform: rotate(-45deg);
-      border-bottom: 2px solid var(--color-accent);
-      border-left: 2px solid var(--color-accent);
+      border-bottom: 2px solid var(--color-whte);
+      border-left: 2px solid var(--color-whte);
       opacity: 0;
     }
   }
