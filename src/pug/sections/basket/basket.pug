@@ -1,0 +1,91 @@
+section.basket 
+  .container-wide 
+    .basket-inner
+      .basket-top
+        .basket-top__info 
+          .basket-top__title Войдите или зарегистрируйтесь
+          .basket-top__desc Вы сможете отслеживать статус заказа и видеть историю заказов
+        button(type="button").basket-top__btn.btn  Вход или регистрация
+      .basket-content 
+        .basket-main
+          .basket-toolbar 
+            .basket-toolbar__check-all 
+              .form-checkbox 
+                input(type="checkbox", name="" id="check_all")
+                label(for="check_all") Выделить всё
+            button(type="button").basket-toolbar__remove Удалить выбранные
+          .basket-list
+            .basket-item
+              .basket-item__checkbox  
+                .form-checkbox 
+                  input(type="checkbox", name="" id="basket_item_01")
+                  label(for="basket_item_01") 
+              picture.basket-item__img 
+                img(src="./img/basket/basket-01.webp", alt="")
+              .basket-item__info 
+                .basket-item__main 
+                  .basket-item__articul Артикул: 65221-26020-53
+                  .basket-item__name КАМАЗ 65221-26020-53
+                .basket-item__price 2 540 000 ₽
+                .basket-item__controls 
+                  .basket-item__tools 
+                    button(type="button" style="--icon: url('../img/icons/favorite.svg')").basket-item__tools-btn
+                    button(type="button" style="--icon: url('../img/icons/close.svg')").basket-item__tools-btn
+                  .basket-item__counter 
+                    .counter
+                      button(type="button" style="--icon: url('../img/icons/minus.svg')").counter-control
+                      input(type="text" value="1").counter-input
+                      button(type="button" style="--icon: url('../img/icons/plus.svg')").counter-control
+            .basket-item
+              .basket-item__checkbox  
+                .form-checkbox 
+                  input(type="checkbox", name="" id="basket_item_02")
+                  label(for="basket_item_02") 
+              picture.basket-item__img 
+                img(src="./img/basket/basket-02.webp", alt="")
+              .basket-item__info 
+                .basket-item__main 
+                  .basket-item__articul Артикул: 65221-26020-53
+                  .basket-item__name КАМАЗ 65221-26020-53
+                .basket-item__price 2 540 000 ₽
+                .basket-item__controls 
+                  .basket-item__tools 
+                    button(type="button" style="--icon: url('../img/icons/favorite.svg')").basket-item__tools-btn
+                    button(type="button" style="--icon: url('../img/icons/close.svg')").basket-item__tools-btn
+                  .basket-item__counter 
+                    .counter
+                      button(type="button" style="--icon: url('../img/icons/minus.svg')").counter-control
+                      input(type="text" value="1").counter-input
+                      button(type="button" style="--icon: url('../img/icons/plus.svg')").counter-control
+            .basket-item
+              .basket-item__checkbox  
+                .form-checkbox 
+                  input(type="checkbox", name="" id="basket_item_03")
+                  label(for="basket_item_03") 
+              picture.basket-item__img 
+                img(src="./img/basket/basket-03.webp", alt="")
+              .basket-item__info 
+                .basket-item__main 
+                  .basket-item__articul Артикул: 65221-26020-53
+                  .basket-item__name КАМАЗ 65221-26020-53
+                .basket-item__price 2 540 000 ₽
+                .basket-item__controls 
+                  .basket-item__tools 
+                    button(type="button" style="--icon: url('../img/icons/favorite.svg')").basket-item__tools-btn
+                    button(type="button" style="--icon: url('../img/icons/close.svg')").basket-item__tools-btn
+                  .basket-item__counter 
+                    .counter
+                      button(type="button" style="--icon: url('../img/icons/minus.svg')").counter-control
+                      input(type="text" value="1").counter-input
+                      button(type="button" style="--icon: url('../img/icons/plus.svg')").counter-control
+        .basket-aside 
+          .basket-aside__inner 
+            .basket-aside__title Ваша корзина:
+            .basket-aside__details 
+              .basket-aside__details-title Товары (2):
+              .basket-aside__details-value 5 080 000 ₽
+            .basket-aside__bottom 
+              .basket-aside__total 
+                .basket-aside__total-title Итого:
+                .basket-aside__total-value 5 080 000 ₽
+              button(type="button").basket-aside__btn.btn.btn--wide Перейти к оформлению
