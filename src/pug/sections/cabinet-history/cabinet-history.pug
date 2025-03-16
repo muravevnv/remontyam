@@ -1,0 +1,60 @@
+section.cabinet 
+  .container-wide 
+    .cabinet__inner 
+      .cabinet__aside 
+        nav.cabinet-nav 
+          .cabinet-nav__title Личный кабинет
+          .cabinet-nav__list 
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Покупки
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Мои заказы
+                a(href="#").cabinet-nav__link История заказов
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Профиль
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Мои отзывы и вопросы
+                a(href="#").cabinet-nav__link Личные данные
+                a(href="#").cabinet-nav__link Мои организации
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Товары
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Корзина
+                  span 5
+                a(href="#").cabinet-nav__link Избранное
+                  span 1
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Сервис
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Обмен, возврат и ремонт
+      .cabinet__content 
+        .cabinet-section 
+          .cabinet-section__head История покупок
+          .cabinet-control-panel
+            .cabinet-search 
+              input.cabinet-search__input.form-control(type="text" placeholder="Поиск по номеру заказа или по названию товара")
+        .cabinet-orders-list 
+          .cabinet-history-item
+            .cabinet-history-item__top 
+              .cabinet-history-item__num Заказ № 5468-8975
+              .cabinet-history-item__price 1  500 000 ₽
+            .cabinet-history-item__bottom
+              .cabinet-history-item__details 
+                .cabinet-history-item__detail Дата заказа: 19.02.2025
+                .cabinet-history-item__detail Дата заказа: 19.02.2025
+              .cabinet-history-item__gallery 
+                picture.cabinet-history-item__img 
+                  img(src="./img/order/order-01.webp", alt="")
+          .cabinet-history-item
+            .cabinet-history-item__top 
+              .cabinet-history-item__num Заказ № 5468-8975
+              .cabinet-history-item__price 1  500 000 ₽
+            .cabinet-history-item__bottom
+              .cabinet-history-item__details 
+                .cabinet-history-item__detail Дата заказа: 19.02.2025
+                .cabinet-history-item__detail Дата заказа: 19.02.2025
+              .cabinet-history-item__gallery 
+                picture.cabinet-history-item__img 
+                  img(src="./img/order/order-01.webp", alt="")
+                picture.cabinet-history-item__img 
+                  img(src="./img/order/order-01.webp", alt="")

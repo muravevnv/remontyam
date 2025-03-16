@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  include mixins/_mixins
+  include includes/head
+  +head('Статьи')
+  body
+    include components/header
+    main
+      .page-inner
+        include sections/article/article
+        include sections/more-articles/more-articles
+
+    include components/footer
+    include includes/scripts

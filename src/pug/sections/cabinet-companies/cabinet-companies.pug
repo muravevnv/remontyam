@@ -1,0 +1,41 @@
+section.cabinet 
+  .container-wide 
+    .cabinet__inner 
+      .cabinet__aside 
+        nav.cabinet-nav 
+          .cabinet-nav__title Личный кабинет
+          .cabinet-nav__list 
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Покупки
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Мои заказы
+                a(href="#").cabinet-nav__link История заказов
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Профиль
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Мои отзывы и вопросы
+                a(href="#").cabinet-nav__link Личные данные
+                a(href="#").cabinet-nav__link Мои организации
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Товары
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Корзина
+                  span 5
+                a(href="#").cabinet-nav__link Избранное
+                  span 1
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Сервис
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Обмен, возврат и ремонт
+      .cabinet__content 
+        .cabinet-section 
+          .cabinet-section__head Мои организации
+          button(type="button").btn Добавить организацию
+        .cabinet-companies-list 
+          .cabinet-companies-item 
+            .cabinet-companies-item__name ООО Название организации
+            .cabinet-companies-item__details 
+              .cabinet-companies-item__detail ИНН: 1234567890
+              .cabinet-companies-item__detail КПП: 1234567890
+              .cabinet-companies-item__detail г. Москва, ул. Восточная, д. 27, кор. 2, офис 4
+            button(type="button").cabinet-companies-item__menu-btn

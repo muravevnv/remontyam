@@ -1,0 +1,73 @@
+section.cabinet 
+  .container-wide 
+    .cabinet__inner 
+      .cabinet__aside 
+        nav.cabinet-nav 
+          .cabinet-nav__title Личный кабинет
+          .cabinet-nav__list 
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Покупки
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Мои заказы
+                a(href="#").cabinet-nav__link История заказов
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Профиль
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Мои отзывы и вопросы
+                a(href="#").cabinet-nav__link Личные данные
+                a(href="#").cabinet-nav__link Мои организации
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Товары
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Корзина
+                  span 5
+                a(href="#").cabinet-nav__link Избранное
+                  span 1
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Сервис
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Обмен, возврат и ремонт
+      .cabinet__content 
+        .cabinet-section 
+          .cabinet-section__head Мои заказы 
+            span 2
+          .cabinet-control-panel
+            .cabinet-search 
+              input.cabinet-search__input.form-control(type="text" placeholder="Поиск по номеру заказа или по названию товара")
+            .cabinet-controls 
+              .cabinet-control-select
+                select(name="") 
+                  option(value="1") Статус оплаты
+                  option(value="1") Статус доставки 
+              button(type="button").cabinet-control-btn Скрыть отменённые
+        .cabinet-orders-list 
+          .cabinet-order-item
+            .cabinet-order-item__top 
+              .cabinet-order-item__info 
+                .cabinet-order-item__num Заказ № 5468-8975
+                .cabinet-order-item__date сегодня
+              .cabinet-order-item__details 
+                .cabinet-order-item__payment-status Не оплачен
+                .cabinet-order-item__price 1  500 000 ₽
+            .cabinet-order-item__bottom
+              .cabinet-order-item__status Комплектуется
+              .cabinet-order-item__gallery 
+                picture.cabinet-order-item__img 
+                  img(src="./img/order/order-01.webp", alt="")
+                picture.cabinet-order-item__img 
+                  img(src="./img/order/order-01.webp", alt="")
+          .cabinet-order-item
+            .cabinet-order-item__top 
+              .cabinet-order-item__info 
+                .cabinet-order-item__num Заказ № 5468-8975
+                .cabinet-order-item__date сегодня
+              .cabinet-order-item__details 
+                .cabinet-order-item__payment-status Не оплачен
+                .cabinet-order-item__price 1  500 000 ₽
+            .cabinet-order-item__bottom
+              .cabinet-order-item__status.cabinet-order-item__status--canceled Отменен
+              .cabinet-order-item__gallery 
+                picture.cabinet-order-item__img 
+                  img(src="./img/order/order-01.webp", alt="")
+                picture.cabinet-order-item__img 
+                  img(src="./img/order/order-01.webp", alt="")

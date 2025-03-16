@@ -1,0 +1,34 @@
+section.cabinet 
+  .container-wide 
+    .cabinet__inner 
+      .cabinet__aside 
+        nav.cabinet-nav 
+          .cabinet-nav__title Личный кабинет
+          .cabinet-nav__list 
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Покупки
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Мои заказы
+                a(href="#").cabinet-nav__link История заказов
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Профиль
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Мои отзывы и вопросы
+                a(href="#").cabinet-nav__link Личные данные
+                a(href="#").cabinet-nav__link Мои организации
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Товары
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Корзина
+                  span 5
+                a(href="#").cabinet-nav__link Избранное
+                  span 1
+            .cabinet-nav__section 
+              .cabinet-nav__section-title Сервис
+              .cabinet-nav__section-list 
+                a(href="#").cabinet-nav__link Обмен, возврат и ремонт
+      .cabinet__content 
+        .cabinet-companies-add.cabinet-section 
+          .cabinet-section__head Укажите ИНН организации или ИП
+          form(action="").cabinet-companies-add__form
+            input(type="text" placeholder="ИНН").cabinet-companies-add__input.form-control 

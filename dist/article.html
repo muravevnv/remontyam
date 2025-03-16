@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Статьи</title>
+    </head>
+  <body>
+    <header class="header"> 
+      <div class="header-top">
+        <div class="container-wide"> 
+          <div class="header-top__adress"> 
+              <svg width="17" height="20">
+                <use xlink:href="img/icons/icons.svg#adress"></use>
+              </svg><span>Санкт-Петербург</span>
+          </div>
+          <nav class="header-top__links"> <a class="header-top__link" href="#">О компании</a><a class="header-top__link" href="#">Открыть бизнес</a><a class="header-top__link" href="#">Оплата</a><a class="header-top__link" href="#">Доставка</a><a class="header-top__link" href="#">Кредит и лизинг</a><a class="header-top__link" href="#">Статьи</a><a class="header-top__link" href="#">Контакты</a></nav><a class="header-top__tel" href="tel:+78001004196">8 800 100 41 96</a>
+        </div>
+      </div>
+      <div class="header-main"> 
+        <div class="container-wide"> 
+          <button class="header-main__burger js-header-burger" type="button">
+              <svg width="24" height="20">
+                <use xlink:href="img/icons/icons.svg#burger"></use>
+              </svg>
+          </button><a class="header-main__logo" href="#"> 
+            <picture>
+              <source srcset="./img/logo-sm.svg" media="(max-width: 1279.98px)"><img src="./img/logo.svg" alt="">
+            </picture></a>
+          <div class="header-main__cabinet header-cabinet">
+            <button class="header-cabinet__btn js-header-cabinet-btn" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#cabinet-user"></use>
+                </svg>
+            </button>
+            <div class="header-cabinet__dropdown js-header-cabinet-dropdown"> 
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#reg-plus"></use>
+                  </svg><span>Регистрация</span>
+              </div>
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#c-user"></use>
+                  </svg><span>Вход</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-main__catalog-btn"> 
+            <div class="header-main__catalog-btn-icon"> 
+                <svg width="13" height="8">
+                  <use xlink:href="img/icons/icons.svg#catalog-lines"></use>
+                </svg>
+            </div>
+            <div class="header-main__catalog-btn-title">Каталог</div>
+            <div class="header-main__catalog-btn-arrow">
+                <svg width="11" height="6">
+                  <use xlink:href="img/icons/icons.svg#catalog-arrow"></use>
+                </svg>
+            </div>
+          </div>
+          <div class="header-main__search"> 
+            <div class="searchbar"> 
+              <input class="searchbar__input" type="text" placeholder="Прицеп для спецтехники">
+              <button class="searchbar__btn" type="button">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/icons/icons.svg#search"></use>
+                  </svg>
+              </button>
+            </div>
+          </div>
+          <div class="header-main__toolbars"> 
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/user.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#user"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Войти</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/favorite.svg')"> 
+                  <svg width="23" height="20">
+                    <use xlink:href="img/icons/icons.svg#favorite"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Избранное</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/compare.svg')"> 
+                  <svg width="27" height="21">
+                    <use xlink:href="img/icons/icons.svg#compare"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Сравнение</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/basket.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#basket"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Корзина</div>
+              <div class="header-main__toolbar-counter">5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom"> 
+        <div class="container-wide"> 
+          <nav class="header-nav"> 
+            <ul class="header-nav__list"> 
+              <li class="header-nav__item"> <a href="#">Дорожная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Коммунальная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Грузоподъёмная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Навесное оборудование</a></li>
+              <li class="header-nav__item"> <a href="#">Асфальтобетонные заводы</a></li>
+              <li class="header-nav__item"> <a href="#">Самоходные транспортеры</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-menu js-header-menu">
+        <div class="header-menu__overlay js-header-menu-close"></div>
+        <div class="header-menu__inner"> 
+          <button class="header-menu__close js-header-menu-close" type="button">
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#close"></use>
+              </svg>
+          </button>
+          <div class="header-menu__list"> 
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">О компании</a></li>
+            <li class="header-menu__item"><a href="#">Открыть бизнес</a></li>
+            <li class="header-menu__item"><a href="#">Оплата</a></li>
+            <li class="header-menu__item"><a href="#">Доставка</a></li>
+            <li class="header-menu__item"><a href="#">Кредит и лизинг</a></li>
+            <li class="header-menu__item"><a href="#"> Статьи</a></li>
+            <li class="header-menu__item"><a href="#">Контакты</a></li>
+          </div>
+          <div class="header-menu__tel"> 
+              <svg width="8" height="8">
+                <use xlink:href="img/icons/icons.svg#tel"></use>
+              </svg><span>8 800 100 41 96</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page-inner">
+        <section class="article">
+          <div class="container-wide">
+            <div class="article__inner">
+              <div class="article__panel"> 
+                <div class="article__panel-item" style="--icon: url('../img/icons/calendar.svg')">
+                  <p>Опубликовано: 09.09.2024</p>
+                </div>
+                <div class="article__panel-item" style="--icon: url('../img/icons/author.svg')">
+                  <p>Автор: <span>Евгений Сажнев</span></p>
+                </div>
+                <div class="article__panel-item" style="--icon: url('../img/icons/clock.svg')">
+                  <p>Время чтения: 11 минут</p>
+                </div>
+                <div class="article__panel-item" style="--icon: url('../img/icons/eye.svg')">
+                  <p>Просмотров: <span>1280</span></p>
+                </div>
+              </div>
+              <h1 class="article__title">Струйно-инъекционный метод: инновационная технология для ремонта дорог</h1>
+              <div class="article__content"> 
+                <div class="article__main"> 
+                  <div class="article__section">
+                    <picture> <picture><source srcset="./img/article/article-01.webp" type="image/webp"><img src="./img/article/article-01.webp" alt=""></picture></picture>
+                  </div>
+                  <div class="article__section">
+                    <nav> 
+                      <h3>Содержание</h3>
+                      <ol> 
+                        <li> <a href="#a-s-1">В каких случаях используется струйно-инъекционный метод</a></li>
+                        <li> <a href="#a-s-2">Основные этапы ремонта дороги в струйно-инъекционной технологии</a></li>
+                        <li> <a href="#a-s-3">Подготовка поверхности (шаг первый)</a></li>
+                        <li> <a href="#a-s-4">Закладка щебня (шаг второй)</a></li>
+                        <li> <a href="#a-s-5">Инъекция эмульсии (шаг третий)</a></li>
+                        <li> <a href="#a-s-6">Какую технику для струйно-инъекционного метода выбрать</a></li>
+                        <li> <a href="#a-s-7">Заключение</a></li>
+                      </ol>
+                    </nav>
+                  </div>
+                  <div class="article__section">
+                    <p>
+                      Струйно-инъекционный метод, также известный как «СИТ» или «СИМ», представляет собой передовую технологию, используемую в дорожном строительстве для эффективного 
+                      ремонта и восстановления асфальтовых и бетонных покрытий. 
+                      Этот метод основан на принципе создания нового поверхностного слоя путём 
+                      инъекции асфальтной эмульсии под давлением в подготовленную дорожную яму или трещину.
+                    </p>
+                    <p>
+                      Струйно-инъекционный метод отличается высокой производительностью и качеством ремонта, что делает его предпочтительным выбором для многих дорожных служб 
+                      истроительных компаний. В этой статье мы рассмотрим подробности 
+                      этой инновационной технологии, включая её основные преимущества, 
+                      этапы выполнения работ и необходимое оборудование.
+                    </p>
+                  </div>
+                  <div class="article__section">
+                    <picture> <picture><source srcset="./img/article/article-02.webp" type="image/webp"><img src="./img/article/article-02.webp" alt=""></picture></picture>
+                  </div>
+                  <div class="article__section" id="a-s-1">
+                    <h2>В каких случаях используется струйно-инъекционный метод?</h2>
+                    <p>
+                      Струйно-инъекционный метод ямочного ремонта дорог является мощным инструментом,который находит широкое применение в различных ситуациях. 
+                      Вот некоторые из наиболеераспространенных случаев, когда используется струйно-инъекционный метод:
+                    </p>
+                    <ul> 
+                      <li>
+                        Ямы и трещины в дорожном покрытии — с помощью этой технологии можно эффективно устранять ямы, выбоины и трещины на дорогах, восстанавливая их целостность и повышая безопасность движения.</li>
+                      <li>
+                        Мелкие и средние повреждения — метод также идеально подходит для ремонта мелких и средних повреждений дорожного покрытия, таких как сколы, выбоины и трещины.</li>
+                      <li>
+                        Повышение прочности и долговечности — этот метод также используется для улучшения прочности и долговечности дорожного покрытия, повышая его устойчивость к нагрузкам и агрессивным воздействиям.</li>
+                      <li>
+                        Подготовка к дорожным работам — струйно-инъекционный метод ремонта может быть использован для подготовки поверхности перед другими видами дорожных работ, такими как асфальтирование или укладка бетона.</li>
+                    </ul>
+                    <p>
+                      Это лишь несколько примеров ситуаций, когда струйно-инъекционный метод становится неотъемлемой частью дорожного строительства и ремонта. Его высокая эффективность, быстрота и качество результата 
+                      делают его востребованным инструментом для обеспечения надёжности и безопасности дорожных покрытий.
+                    </p>
+                  </div>
+                  <div class="article__section" id="a-s-2">
+                    <h2>Основные этапы ремонта дороги в струйно-инъекционной технологии</h2>
+                    <p>Струйно-инъекционный метод, используемый для ремонта дорог и дорожных покрытий, проходит через несколько ключевых этапов, каждый из которых играет важную роль в обеспечении качественного и долговечного результата. Давайте перечислим эти этапы:</p>
+                    <h4>Подготовка поверхности (1 шаг)</h4>
+                    <p>Этап начинается с осмотра и подготовки дорожного покрытия. Ремонтники оценивают состояние дороги, выявляют ямы, выбоины и трещины. Затем поверхность тщательно очищается от мусора, пыли и грязи с использованием специализированной техники, включая механические и водоструйные устройства. В случае необходимости проводится резка и удаление повреждённых участков покрытия, чтобы создать равномерную и гладкую поверхность для ремонта.</p>
+                    <h4>Закладка щебня (2 шаг)</h4>
+                    <p>После очистки и подготовки поверхности следующим этапом является закладка щебня. Фракция щебня выбирается в зависимости от конкретных требований ремонта струйно-инъекционным методом. Этот слой служит для создания дополнительной прочности и уровни поддержки для нового дорожного покрытия.</p>
+                    <h4>Заливка эмульсией (3 шаг)</h4>
+                    <p>После закладкой щебня на поверхность наносится асфальтная эмульсия. Эмульсия — это смесь асфальта и воды с добавлением специальных добавок. Эмульсия инъецируется в щели и ямы под высоким давлением, заполняя все поры и неровности, создавая однородное асфальтовое покрытие.</p>
+                  </div>
+                  <div class="article__section" id="a-s-3">
+                    <h2>Подготовка поверхности (шаг первый)</h2>
+                    <picture> <picture><source srcset="./img/article/article-03.webp" type="image/webp"><img src="./img/article/article-03.webp" alt=""></picture></picture>
+                    <p>Подготовка поверхности является одним из ключевых этапов струйно-инъекционного метода ямочного ремонта. Этот этап призван обеспечить оптимальные условия для эффективного восстановления дорожного покрытия и максимально долговечного результата. Давайте рассмотрим подробнее, как проводится подготовка.</p>
+                    <ol> 
+                      <li>Осмотр и оценка — в начале процесса специалисты осматривают дорожное покрытие, выявляют повреждения, такие как ямы, трещины, выбоины и другие дефекты. Каждый дефект оценивается по своей степени серьёзности, что помогает определить объём работ и необходимость замены повреждённых участков.</li>
+                      <li>Очистка — чтобы обеспечить надёжное сцепление нового дорожного покрытия с поверхностью, необходимо тщательно очистить дорогу от загрязнений и мусора. Это достигается с помощью механических и водоструйных устройств, которые удаляют пыль, грязь, масла и другие примеси.</li>
+                      <li>Ремонт повреждений — поверхность также подвергается ремонту, что включает в себя резку и удаление повреждённых участков дорожного покрытия. Если обнаружены ямы или выбоины, они могут быть подготовлены для последующего заполнения.</li>
+                      <li>Установка барьера — для предотвращения проникновения асфальтной эмульсии в окружающие области, устанавливают барьеры, которые создают границу для инъекции асфальта.</li>
+                    </ol>
+                    <p>После завершения всех вышеперечисленных этапов производится повторный осмотр и проверка готовности поверхности к процессу инъекции асфальта.</p>
+                    <p>Подготовка поверхности играет решающую роль в обеспечении успешности струйно-инъекционного метода дорожного ремонта. Расценка на работы будет также зависить от того, насколько основательно вы проведёте подготовку поверхности.</p>
+                  </div>
+                  <div class="article__section" id="a-s-4"> 
+                    <h2>Закладка щебня (шаг второй)</h2>
+                    <picture> <picture><source srcset="./img/article/article-04.webp" type="image/webp"><img src="./img/article/article-04.webp" alt=""></picture></picture>
+                    <p>
+                      Этап закладки щебня является ключевой частью струйно-инъекционного метода дорожного ремонта и играет важную роль в создании структуры и прочности нового дорожного 
+                      покрытия. Давайте подробнее рассмотрим этот этап.
+                    </p>
+                    <ol> 
+                      <li>Выбор подходящего щебня - для начала специалисты выбирают подходящий тип щебня в зависимости от характеристик ремонтируемой дороги. Щебень может различаться по размеру и составу. Щебень служит основой, которая обеспечивает прочность и устойчивость дорожного покрытия.</li>
+                      <li>Подготовка поверхности для щебня - поверхность, очищенная и подготовленная на предыдущем этапе, готова для приема щебня. В некоторых случаях может потребоваться дополнительная подготовка, такая как выравнивание и уплотнение основания.</li>
+                      <li>Закладка щебня - он равномерно распределяется по поверхности дороги. Для этого часто используют специализированные строительные машины, такие как бульдозеры или ковшовые погрузчики. Количество и толщина слоя щебня определяется проектными требованиями и характеристиками дороги.</li>
+                    </ol>
+                    <p>
+                      Весь процесс закладки щебня тщательно контролируется инженерами и дорожными специалистами. Они следят за соответствием толщины и плотности щебня проектным требованиям.</p>
+                    <p>
+                      Закладка щебня играет важную роль в создании стабильной основы для нового дорожного покрытия. Этот слой щебня обеспечивает равномерную поддержку и устойчивость 
+                      для асфальтной эмульсии, которая будет внедрена на следующем этапе, и в результате 
+                      создает прочное и долговечное дорожное покрытие.
+                    </p>
+                  </div>
+                  <div class="article__section" id="a-s-5">
+                    <h2>Инъекция эмульсии (шаг третий)</h2>
+                    <picture> <picture><source srcset="./img/article/article-05.webp" type="image/webp"><img src="./img/article/article-05.webp" alt=""></picture></picture>
+                    <p>
+                      Весь процесс закладки щебня тщательно контролируется инженерами и дорожными специалистами. Они следят за соответствием толщины и плотности щебня проектным требованиям.</p>
+                    <p>
+                      Закладка щебня играет важную роль в создании стабильной основы для нового дорожного покрытия. Этот слой щебня обеспечивает равномерную поддержку 
+                      и устойчивость для асфальтной эмульсии, которая будет внедрена на следующем 
+                      этапе, и в результате создает прочное и долговечное дорожное покрытие.
+                    </p>
+                    <ol> 
+                      <li>
+                        Подготовка эмульсии - на этом этапе асфальтная эмульсия готовится к инъекции. Эмульсия представляет собой смесь асфальта и воды с добавлением 
+                        специальных добавок, которые обеспечивают стабильность и прочность. 
+                        Важно правильно подготовить эмульсию, чтобы обеспечить равномерное 
+                        распределение и устойчивость асфальтного покрытия.
+                      </li>
+                      <li>
+                        Нанесение эмульсии - эмульсия инъецируется под давлением непосредственно на подготовленную поверхность с щебнем. Специальные инъекционные насосы 
+                        и распылители используются для равномерного распределения эмульсии по всей поверхности.
+                      </li>
+                      <li>
+                        Заполнение щелей и трещин - асфальтная эмульсия заполняет все щели, ямы и трещины в дорожном покрытии. Это важно для создания герметичного 
+                        и однородного покрытия. Заполнение эмульсией позволяет предотвратить 
+                        дальнейшие разрушения и водопроницаемость дорожного покрытия.
+                      </li>
+                    </ol>
+                    <p>Инъекция асфальтной эмульсии в струйно-инъекционном методе дорожного ремонта обеспечивает надежное и герметичное покрытие, которое способно выдерживать нагрузки и эксплуатацию дороги. Этот этап играет важную роль в продлении срока службы дорожного покрытия и обеспечении безопасности движения.</p>
+                  </div>
+                  <div class="article__section" id="a-s-6"> 
+                    <h2>Какую технику для струйно-инъекционного метода выбрать?</h2>
+                    <picture> <picture><source srcset="./img/article/article-06.webp" type="image/webp"><img src="./img/article/article-06.webp" alt=""></picture></picture>
+                    <p>
+                      В настоящий момент можно найти несколько различных вариантов техники, которая может быть использована для осуществления ремонта дороги струйно-инъекционным способом.</p>
+                    <p>
+                      В частности, популярностью пользуются установки пневмонабрызга, которые могут быть произведены на базе прицепа, шасси или в кузове КАМАЗа.</p>
+                    <p>
+                      В зависимости от того, насколько большой объём работы вам предстоит выполнить, мы бы рекомендовали выбирать ту или иную модель. Ключевое отличие 
+                      всех установок — место их размещения (на прицепе или в автомобиле). 
+                      В прицепных установках нет приёмного бункера в отличие от установленных 
+                      на шасси, поэтому они обладают большей мобильностью, но могут быть менее удобными в процессе эксплуатации.
+                    </p>
+                    <p>
+                      Для того чтобы рассчитать площадь, которую вы сможете отремонтировать с помощью струйно-инъекционного метода, необходимо обратить внимание на то, 
+                      какой объём щебня вмещается в кузов вашего самосвала. Как правило, 
+                      его объём равен 10 или 15 кубическим метрам, что позволяет покрыть 
+                      до 200–300 квадрантах метров дорожного полотна за один рабочий выезд.
+                    </p>
+                    <p>
+                      В случае, если установка размещена в кузове автомобиля, объём щебня обычно не превышает 5 кубических метров, в результате чего такая установка становится 
+                      пригодна только для самого локального и точечного ремонта.
+                    </p>
+                    <p>
+                      Не стоит также забывать и про ньюансы, связанные с прицепным пневмонабрызгом — так, в приёмный бункер нужно будет постоянно подавать щебень из самосвала, 
+                      в то время как стационарно размещённая установка в кузове лишена данного недостатка.
+                    </p>
+                  </div>
+                  <div class="article__section" id="a-s-7">
+                    <h2>Заключение</h2>
+                    <p>
+                      Сотрудники нашей компании «РемонтЯм» всегда с радостью дадут вам ответы иподробную консультацию по поводу любых возникающих вопросов. Мы поможемсориентироваться 
+                      в ассортименте техники и подобрать именно ту, которая будет необходима для выполнения 
+                      конкретно вашей задачи. Кроме того, наши специалисты разъяснят вам все тонкости 
+                      и нюансы струйно-инъекционного метода ямочного ремонта асфальтового покрытия дорог.
+                    </p>
+                  </div>
+                </div>
+                <div class="article__aside"> 
+                  <div class="read-also"> 
+                    <div class="read-also__title">Читайте также:</div>
+                    <div class="read-also__list"> <a class="read-also-item" href="#"> 
+                        <div class="read-also-item__date">04.11.2024</div>
+                        <div class="read-also-item__title">"РЕМОНТ ЯМ" отгрузила рециклер  ST 1000</div>
+                        <div class="read-also-item__link">Читать подробнее</div></a><a class="read-also-item" href="#"> 
+                        <div class="read-also-item__date">26.12.2022</div>
+                        <div class="read-also-item__title">ОДМ 218.6.1.006-2021</div>
+                        <div class="read-also-item__link">Читать подробнее</div></a><a class="read-also-item" href="#"> 
+                        <div class="read-also-item__date">28.11.2022</div>
+                        <div class="read-also-item__title">Международная выставка «Kaztraffic-2022»</div>
+                        <div class="read-also-item__link">Читать подробнее</div></a><a class="read-also-item" href="#"> 
+                        <div class="read-also-item__date">12.09.2022</div>
+                        <div class="read-also-item__title">Испытания нагревателя Ря-06</div>
+                        <div class="read-also-item__link">Читать подробнее</div></a><a class="read-also-item" href="#"> 
+                        <div class="read-also-item__date">08.09.2022</div>
+                        <div class="read-also-item__title">Отгрузка термос-бункера ST-3000</div>
+                        <div class="read-also-item__link">Читать подробнее</div></a><a class="read-also-item" href="#"> 
+                        <div class="read-also-item__date">26.08.2022</div>
+                        <div class="read-also-item__title">Изготовлен термос-бункер ST 3000 на прицепе</div>
+                        <div class="read-also-item__link">Читать подробнее</div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="more-articles section"> 
+          <div class="container-wide"> 
+            <div class="more-articles__title">Больше статей</div>
+            <div class="more-articles__slider js-more-articles-slider">
+              <div class="swiper-wrapper"> <a class="blog-item swiper-slide" href="#">
+                  <picture class="blog-item__img"> 
+                    <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                  </picture>
+                  <div class="blog-item__date">04.11.2024</div>
+                  <div class="blog-item__title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                  <div class="blog-item__desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog-item swiper-slide" href="#">
+                  <picture class="blog-item__img"> 
+                    <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                  </picture>
+                  <div class="blog-item__date">04.11.2024</div>
+                  <div class="blog-item__title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                  <div class="blog-item__desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog-item swiper-slide" href="#">
+                  <picture class="blog-item__img"> 
+                    <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                  </picture>
+                  <div class="blog-item__date">04.11.2024</div>
+                  <div class="blog-item__title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                  <div class="blog-item__desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog-item swiper-slide" href="#">
+                  <picture class="blog-item__img"> 
+                    <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                  </picture>
+                  <div class="blog-item__date">04.11.2024</div>
+                  <div class="blog-item__title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                  <div class="blog-item__desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog-item swiper-slide" href="#">
+                  <picture class="blog-item__img"> 
+                    <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                  </picture>
+                  <div class="blog-item__date">04.11.2024</div>
+                  <div class="blog-item__title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                  <div class="blog-item__desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a><a class="blog-item swiper-slide" href="#">
+                  <picture class="blog-item__img"> 
+                    <source srcset="./img/blog/blog-card.webp" type="image/webp"><img src="./img/blog/blog-card.webp" alt="">
+                  </picture>
+                  <div class="blog-item__date">04.11.2024</div>
+                  <div class="blog-item__title">"РЕМОНТ ЯМ" отгрузила рециклер асфальтобетона ST 1000</div>
+                  <div class="blog-item__desc">В конце октября был успешно доставлен рециклер ST 1000 в калининградскую область</div></a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main><div class="footer-wrapper">
+<div class="footer-top-wrapper">
+<div class="container-wide">
+<div class="footer-top-inner relative">
+<div class="row">
+<div class="col-sm-12 col-lg-3">
+<div class="footer-top-first">
+<picture><source srcset="./img/logo-white.webp" type="image/webp"><img src="./img/logo-white.png" alt="РЕМОНТЯМ" data-retinasrc="./img/logo-white.png"></picture>
+<div class="footer-text">ООО «РЕМОНТЯМ». ИНН: 7807252270, ОГРН: 1217800168233</div>
+<div class="copyr">© 2014 - 2024. Все права защищены. РЕМОНТЯМ.</div>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Дорожно-строительная техника<!--/noindex--></div>
+<ul class="footer_l">
+<li class="first">
+<a href="catalog/litoy">Кохеры для литого асфальта</a>
+</li>
+<li>
+<a href="catalog/hotbox">Термос бункеры</a>
+</li>
+<li>
+<a href="catalog/gudron">Гудронаторы</a>
+</li>
+<li>
+<a href="catalog/pricepremont-pnevmonabryzgom">Пневмонабрызг</a>
+</li>
+<li>
+<a href="catalog/kotelbitum">Заливщик швов</a>
+</li>
+<li>
+<a href="catalog/recicler">Рециклеры асфальта</a>
+</li>
+<li>
+<a href="catalog/pricepremont">Машины ямочного ремонта асфальта</a>
+</li>
+<li>
+<a href="catalog/ifrakrasnye">Инфракрасные нагреватели асфальта</a>
+</li>
+<li>
+<a href="catalog/peredvizhnyie-laboratorii">Передвижные лаборатории</a>
+</li>
+<li>
+<a href="catalog/ustanovki">Битумно-эмульсионные установки</a>
+</li>
+<li>
+<a href="catalog/ustanovki-pbv">Установка ПБВ</a>
+</li>
+<li class="last">
+<a href="catalog/plavbitum">Установки плавления битума</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Коммунальная техника<!--/noindex--></div>
+<ul class="footer_l"><li class="first"><a href="catalog/navesnoe-oborudovanie-dlya-kdm">Навесное оборудование для КДМ</a></li><li><a href="catalog/polivomoechnoe-oborudovanie">Поливомоечное оборудование</a></li><li><a href="catalog/vakuumnyie-podmetalno-uborochnyie-mashinyi">Вакуумные подметально-уборочные машины</a></li><li><a href="catalog/navesnoe-oborudovanie-traktor-mtz">Навесное оборудование на трактор МТЗ</a></li><li><a href="catalog/peskorazbrasyivateli-priczepnyie">Пескоразбрасыватели прицепные</a></li><li><a href="catalog/vakuumnyie-mashinyi">Вакуумные машины</a></li><li><a href="catalog/benzovozyi-toplivozapravshhiki">Бензовозы - топливозаправщики</a></li><li><a href="catalog/ilososnyie-mashinyi">Илососные машины</a></li><li><a href="catalog/ifrakrasnye-krovly">Инфракрасные нагреватели кровли</a></li><li><a href="catalog/avtonomny">Шнекороторные снегоочистители</a></li><li><a href="catalog/sol-rastvor">Установки приготовления солевого раствора</a></li><li><a href="catalog/kosilki">Косилки на трактор МТЗ</a></li><li><a href="catalog/kombinirovannyie-dorozhnyie-mashinyi">Комбинированные дорожные машины</a></li><li class="last"><a href="catalog/peskorazbrasyivatel">Пескоразбрасывающее оборудование</a></li></ul>
+</div>
+</div>          
+<div class="col-sm-4 col-lg-3">
+<div class="footer-contacts">
+<div class="title">Контакты</div>
+<div itemscope="" itemtype="http://schema.org/Organization">
+<meta itemprop="url" content="https://ремонтям.рф/">
+<meta itemprop="name" content="РЕМОНТЯМ">
+<div itemscope="" itemprop="address" itemtype="http://schema.org/PostalAddress">
+<meta itemprop="postalCode" content="198332">
+<meta itemprop="addressLocality" content="Санкт-Петербург">
+<meta itemprop="streetAddress" content="проспект Кузнецова дом 11 кор.2">
+</div>
+<meta itemprop="telephone" content="8 800 100 41 69">
+</div>
+<div class="tel dflex jcsb aic">
+<span>Санкт-Петербург: </span>
+<span class="stel"><a href="tel:+78126484190">+7 (812) 648-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Москва:</span>
+<span class="stel"><a href="tel:+74951884190">+7 (495) 188-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Отдел продаж:</span>
+<span class="stel"><a href="tel:+79112052741">+7 (911) 205-27-41</a></span>
+</div>
+<div class=" social-links ">
+<a href="https://www.youtube.com/@user-rr6su3fk9g " rel="nofollow noopener" target="blank" class="yutb_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+<a href="https://vk.com/" rel="nofollow noopener" class="vk_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+<a href="https://t.me/+79112052741" rel="nofollow noopener" class="tg_link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+</div>
+<style>
+    <div class="social-links">a{ color:#fff;border-color:#fff;}</div></style>
+<p>&nbsp;</p>
+<p>E-mail: <a href="mailto:info@remontiam.ru">info@remontiam.ru</a></p>
+<p>Офис: г. Санкт-Петербург, проспект Кузнецова дом 11 кор.2</p>
+<p>Завод: г. Санкт-Петербург, Гатчина, ул.Жемчужина 2</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

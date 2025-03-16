@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
       <link href="css/style.css" rel="stylesheet">
-      <title>Title</title>
+      <title>Сравнение</title>
     </head>
   <body>
     <header class="header"> 
@@ -153,37 +153,95 @@
       </div>
     </header>
     <main>
-      <div class="container-wide">
-        <h3 style="margin-bottom: 24px; font-size: 32px; font-weight: 500">Страницы</h3>
-        <ul> 
-          <li> <a href="home.html" style="margin-bottom: 16px;">Главная</a></li>
-          <li> <a href="catalog-sections.html" style="margin-bottom: 16px;">Каталог разделов</a></li>
-          <li> <a href="catalog.html" style="margin-bottom: 16px;">Каталог товаров</a></li>
-          <li> <a href="product.html" style="margin-bottom: 16px;">Карточка товара</a></li>
-          <li> <a href="busines.html" style="margin-bottom: 16px;">Бизнес</a></li>
-          <li> <a href="about.html" style="margin-bottom: 16px;">О компании</a></li>
-          <li> <a href="blog.html" style="margin-bottom: 16px;">Блог</a></li>
-          <li> <a href="articles.html" style="margin-bottom: 16px;">Статьи</a></li>
-          <li> <a href="article.html" style="margin-bottom: 16px;">Статья</a></li>
-          <li> <a href="sertificats.html" style="margin-bottom: 16px;">Сертификаты</a></li>
-          <li> <a href="reviews.html" style="margin-bottom: 16px;">Отзывы</a></li>
-          <li> <a href="favorites.html" style="margin-bottom: 16px;">Избранное</a></li>
-          <li> <a href="compare.html" style="margin-bottom: 16px;">Сравнение</a></li>
-          <li> <a href="basket.html" style="margin-bottom: 16px;">Корзина</a></li>
-          <li> <a href="cabinet.html" style="margin-bottom: 16px;">ЛК Общая</a></li>
-          <li> <a href="cabinet-orders.html" style="margin-bottom: 16px;">ЛК Список заказов</a></li>
-          <li> <a href="cabinet-history-empty.html" style="margin-bottom: 16px;">ЛК История покупок (пустая)</a></li>
-          <li> <a href="cabinet-history.html" style="margin-bottom: 16px;">ЛК История покупок</a></li>
-          <li> <a href="cabinet-companies-empty.html" style="margin-bottom: 16px;">ЛК Компании (пустая)</a></li>
-          <li> <a href="cabinet-companies-add.html" style="margin-bottom: 16px;">ЛК Компании (добавить)</a></li>
-          <li> <a href="cabinet-companies.html" style="margin-bottom: 16px;">ЛК Компании</a></li>
-        </ul><br><br>
-        <h3 style="margin-bottom: 24px; font-size: 32px; font-weight: 500">Страницы</h3>
-        <ul> 
-          <li> <a data-src="popup-login.html" data-fancybox data-type="ajax" style="margin-bottom: 16px;">Вход</a></li>
-          <li> <a data-src="popup-registration.html" data-fancybox data-type="ajax" style="margin-bottom: 16px;">Регистрация</a></li>
-          <li> <a data-src="popup-password-recovery.html" data-fancybox data-type="ajax" style="margin-bottom: 16px;">Сброс пароля</a></li>
-        </ul>
+      <div class="page-inner">
+        <section class="cabinet"> 
+          <div class="container-wide"> 
+            <div class="cabinet__inner"> 
+              <div class="cabinet__aside"> 
+                <nav class="cabinet-nav"> 
+                  <div class="cabinet-nav__title">Личный кабинет</div>
+                  <div class="cabinet-nav__list"> 
+                    <div class="cabinet-nav__section"> 
+                      <div class="cabinet-nav__section-title">Покупки</div>
+                      <div class="cabinet-nav__section-list"> <a class="cabinet-nav__link" href="#">Мои заказы</a><a class="cabinet-nav__link" href="#">История заказов</a></div>
+                    </div>
+                    <div class="cabinet-nav__section"> 
+                      <div class="cabinet-nav__section-title">Профиль</div>
+                      <div class="cabinet-nav__section-list"> <a class="cabinet-nav__link" href="#">Мои отзывы и вопросы</a><a class="cabinet-nav__link" href="#">Личные данные</a><a class="cabinet-nav__link" href="#">Мои организации</a></div>
+                    </div>
+                    <div class="cabinet-nav__section"> 
+                      <div class="cabinet-nav__section-title">Товары</div>
+                      <div class="cabinet-nav__section-list"> <a class="cabinet-nav__link" href="#">Корзина<span>5</span></a><a class="cabinet-nav__link" href="#">Избранное<span>1</span></a></div>
+                    </div>
+                    <div class="cabinet-nav__section"> 
+                      <div class="cabinet-nav__section-title">Сервис</div>
+                      <div class="cabinet-nav__section-list"> <a class="cabinet-nav__link" href="#">Обмен, возврат и ремонт</a></div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="cabinet__content"> 
+                <div class="cabinet-section"> 
+                  <div class="cabinet-section__head">Мои заказы <span>2</span></div>
+                  <div class="cabinet-control-panel">
+                    <div class="cabinet-search"> 
+                      <input class="cabinet-search__input form-control" type="text" placeholder="Поиск по номеру заказа или по названию товара">
+                    </div>
+                    <div class="cabinet-controls"> 
+                      <div class="cabinet-control-select">
+                        <select name=""> 
+                          <option value="1">Статус оплаты</option>
+                          <option value="1">Статус доставки </option>
+                        </select>
+                      </div>
+                      <button class="cabinet-control-btn" type="button">Скрыть отменённые</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="cabinet-orders-list"> 
+                  <div class="cabinet-order-item">
+                    <div class="cabinet-order-item__top"> 
+                      <div class="cabinet-order-item__info"> 
+                        <div class="cabinet-order-item__num">Заказ № 5468-8975</div>
+                        <div class="cabinet-order-item__date">сегодня</div>
+                      </div>
+                      <div class="cabinet-order-item__details"> 
+                        <div class="cabinet-order-item__payment-status">Не оплачен</div>
+                        <div class="cabinet-order-item__price">1  500 000 ₽</div>
+                      </div>
+                    </div>
+                    <div class="cabinet-order-item__bottom">
+                      <div class="cabinet-order-item__status">Комплектуется</div>
+                      <div class="cabinet-order-item__gallery"> 
+                        <picture class="cabinet-order-item__img"> <picture><source srcset="./img/order/order-01.webp" type="image/webp"><img src="./img/order/order-01.webp" alt=""></picture></picture>
+                        <picture class="cabinet-order-item__img"> <picture><source srcset="./img/order/order-01.webp" type="image/webp"><img src="./img/order/order-01.webp" alt=""></picture></picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cabinet-order-item">
+                    <div class="cabinet-order-item__top"> 
+                      <div class="cabinet-order-item__info"> 
+                        <div class="cabinet-order-item__num">Заказ № 5468-8975</div>
+                        <div class="cabinet-order-item__date">сегодня</div>
+                      </div>
+                      <div class="cabinet-order-item__details"> 
+                        <div class="cabinet-order-item__payment-status">Не оплачен</div>
+                        <div class="cabinet-order-item__price">1  500 000 ₽</div>
+                      </div>
+                    </div>
+                    <div class="cabinet-order-item__bottom">
+                      <div class="cabinet-order-item__status cabinet-order-item__status--canceled">Отменен</div>
+                      <div class="cabinet-order-item__gallery"> 
+                        <picture class="cabinet-order-item__img"> <picture><source srcset="./img/order/order-01.webp" type="image/webp"><img src="./img/order/order-01.webp" alt=""></picture></picture>
+                        <picture class="cabinet-order-item__img"> <picture><source srcset="./img/order/order-01.webp" type="image/webp"><img src="./img/order/order-01.webp" alt=""></picture></picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main><div class="footer-wrapper">
 <div class="footer-top-wrapper">

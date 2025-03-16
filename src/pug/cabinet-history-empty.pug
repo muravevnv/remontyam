@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  include mixins/_mixins
+  include includes/head
+  +head('Сравнение')
+  body
+    include components/header
+    main
+      .page-inner
+        include sections/cabinet-history-empty/cabinet-history-empty
+
+    include components/footer
+    include includes/scripts

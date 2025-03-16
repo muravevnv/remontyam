@@ -348,3 +348,22 @@ $('input[type="range"]').on("input", function() {
   const gradientValue = `linear-gradient(to right, #E44900 0%, #E44900  ${$(this).val()}%, #E2E2E2  ${$(this).val()}%, #E2E2E2 100%)`;
   $(this).css('background', gradientValue);
 });
+
+if(document.querySelector('.js-more-articles-slider')) {
+  const moreArticlesSlider = new Swiper('.js-more-articles-slider', {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    breakpoints: {
+      560: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      }
+    }
+  });
+}
