@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  include mixins/_mixins
+  include includes/head
+  +head('Кредит и лизинг')
+  body
+    include components/header
+    main
+      .page-inner
+        include sections/leasing/leasing
+
+    include components/footer
+    include includes/scripts

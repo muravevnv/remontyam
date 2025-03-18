@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+      <link href="css/style.css" rel="stylesheet">
+      <title>Кредит и лизинг</title>
+    </head>
+  <body>
+    <header class="header"> 
+      <div class="header-top">
+        <div class="container-wide"> 
+          <div class="header-top__adress"> 
+              <svg width="17" height="20">
+                <use xlink:href="img/icons/icons.svg#adress"></use>
+              </svg><span>Санкт-Петербург</span>
+          </div>
+          <nav class="header-top__links"> <a class="header-top__link" href="#">О компании</a><a class="header-top__link" href="#">Открыть бизнес</a><a class="header-top__link" href="#">Оплата</a><a class="header-top__link" href="#">Доставка</a><a class="header-top__link" href="#">Кредит и лизинг</a><a class="header-top__link" href="#">Статьи</a><a class="header-top__link" href="#">Контакты</a></nav><a class="header-top__tel" href="tel:+78001004196">8 800 100 41 96</a>
+        </div>
+      </div>
+      <div class="header-main"> 
+        <div class="container-wide"> 
+          <button class="header-main__burger js-header-burger" type="button">
+              <svg width="24" height="20">
+                <use xlink:href="img/icons/icons.svg#burger"></use>
+              </svg>
+          </button><a class="header-main__logo" href="#"> 
+            <picture>
+              <source srcset="./img/logo-sm.svg" media="(max-width: 1279.98px)"><img src="./img/logo.svg" alt="">
+            </picture></a>
+          <div class="header-main__cabinet header-cabinet">
+            <button class="header-cabinet__btn js-header-cabinet-btn" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#cabinet-user"></use>
+                </svg>
+            </button>
+            <div class="header-cabinet__dropdown js-header-cabinet-dropdown"> 
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#reg-plus"></use>
+                  </svg><span>Регистрация</span>
+              </div>
+              <div class="header-cabinet__item"> 
+                  <svg width="8" height="8">
+                    <use xlink:href="img/icons/icons.svg#c-user"></use>
+                  </svg><span>Вход</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-main__catalog-btn"> 
+            <div class="header-main__catalog-btn-icon"> 
+                <svg width="13" height="8">
+                  <use xlink:href="img/icons/icons.svg#catalog-lines"></use>
+                </svg>
+            </div>
+            <div class="header-main__catalog-btn-title">Каталог</div>
+            <div class="header-main__catalog-btn-arrow">
+                <svg width="11" height="6">
+                  <use xlink:href="img/icons/icons.svg#catalog-arrow"></use>
+                </svg>
+            </div>
+          </div>
+          <div class="header-main__search"> 
+            <div class="searchbar"> 
+              <input class="searchbar__input" type="text" placeholder="Прицеп для спецтехники">
+              <button class="searchbar__btn" type="button">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/icons/icons.svg#search"></use>
+                  </svg>
+              </button>
+            </div>
+          </div>
+          <div class="header-main__toolbars"> 
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/user.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#user"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Войти</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/favorite.svg')"> 
+                  <svg width="23" height="20">
+                    <use xlink:href="img/icons/icons.svg#favorite"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Избранное</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/compare.svg')"> 
+                  <svg width="27" height="21">
+                    <use xlink:href="img/icons/icons.svg#compare"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Сравнение</div>
+            </div>
+            <div class="header-main__toolbar">  
+              <div class="header-main__toolbar-icon" style="--icon: url('../img/icons/basket.svg')"> 
+                  <svg width="21" height="21">
+                    <use xlink:href="img/icons/icons.svg#basket"></use>
+                  </svg>
+              </div>
+              <div class="header-main__toolbar-title">Корзина</div>
+              <div class="header-main__toolbar-counter">5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom"> 
+        <div class="container-wide"> 
+          <nav class="header-nav"> 
+            <ul class="header-nav__list"> 
+              <li class="header-nav__item"> <a href="#">Дорожная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Коммунальная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Грузоподъёмная техника</a></li>
+              <li class="header-nav__item"> <a href="#">Прицепы</a></li>
+              <li class="header-nav__item"> <a href="#">Навесное оборудование</a></li>
+              <li class="header-nav__item"> <a href="#">Асфальтобетонные заводы</a></li>
+              <li class="header-nav__item"> <a href="#">Самоходные транспортеры</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-menu js-header-menu">
+        <div class="header-menu__overlay js-header-menu-close"></div>
+        <div class="header-menu__inner"> 
+          <button class="header-menu__close js-header-menu-close" type="button">
+              <svg width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#close"></use>
+              </svg>
+          </button>
+          <div class="header-menu__list"> 
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">Каталог</a></li>
+            <li class="header-menu__item"><a href="#">О компании</a></li>
+            <li class="header-menu__item"><a href="#">Открыть бизнес</a></li>
+            <li class="header-menu__item"><a href="#">Оплата</a></li>
+            <li class="header-menu__item"><a href="#">Доставка</a></li>
+            <li class="header-menu__item"><a href="#">Кредит и лизинг</a></li>
+            <li class="header-menu__item"><a href="#"> Статьи</a></li>
+            <li class="header-menu__item"><a href="#">Контакты</a></li>
+          </div>
+          <div class="header-menu__tel"> 
+              <svg width="8" height="8">
+                <use xlink:href="img/icons/icons.svg#tel"></use>
+              </svg><span>8 800 100 41 96</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page-inner">
+        <div class="leasing">
+          <div class="container-wide"> 
+            <div class="leasing-hero"> 
+              <div class="leasing-hero__inner"> 
+                <div class="leasing-hero__info"> 
+                  <h1 class="leasing-hero__title">Покупка спецтехники в кредит и лизинг</h1>
+                  <div class="leasing-hero__desc"> 
+                    <p>
+                      Дорожная спецтехника является сложным и дорогостоящим оборудованием, и зачастую многие владельцы бизнесов не хотят приобретать её за однократный платёж 
+                      по тем или иным причинам. Как правило, более удобным, безопасным и рациональным 
+                      решением является <span>покупка спецтехники в лизинг или кредит.</span>
+                    </p>
+                    <p>
+                      Наша компания «РемонтЯм» является ведущим заводом-изготовителем дорожной техники, продукция которой пользуется высочайшей популярностью по всей России и в странах 
+                      ближнего зарубежья. Мы предлагаем нашим клиентам самые разные способы оплаты, 
+                      в том числе готовы предоставлять услуги лизинговой компании или оформить спецтехнику в кредит.
+                    </p>
+                  </div>
+                </div>
+                <picture class="leasing-hero__img"> 
+                  <source srcset="./img/leasing/hero.webp" type="image/webp"><img src="./img/leasing/hero.webp" alt="">
+                </picture>
+              </div>
+            </div>
+            <div class="leasing-content">
+              <nav class="leasing-nav"> <a class="leasing-nav__link _is-active" href="#">Спецтехника в лизинг</a><a class="leasing-nav__link" href="#">Спецтехника в кредит</a></nav>
+              <div class="leasing-main"> 
+                <div class="leasing-info"> 
+                  <h2 class="leasing-info__title">Спецтехника в лизинг</h2>
+                  <div class="leasing-info__desc"> 
+                    <p>
+                      Лизинг — это форма финансовых отношений, в рамках которых лизингодатель обычно приобретает какую‑либо технику за свой счёт и сдаёт её в аренду 
+                      лизингополучателю, который чаще всего может выкупить её по окончании 
+                      срока аренды (за вычетом уже внесённой суммы).
+                    </p>
+                    <p>
+                      Наша компания также даёт вам возможность купить технику в лизинг, однако мы не сотрудничаем ни с какими сторонними поставщиками, а производим 
+                      всё самостоятельно. В связи с этим цепочка торговых связей сокращается, 
+                      а вы значительно экономите свои деньги при покупке как техники в лизинг для юридических лиц, так и при покупке техники в лизинг для ИП.
+                    </p>
+                  </div>
+                </div>
+                <div class="leasing-gallery js-leasing-gallery-slider">
+                  <div class="swiper-wrapper"> 
+                    <div class="swiper-slide"> 
+                      <picture class="leasing-gallery__img"> <picture><source srcset="./img/leasing/gallery-01.webp" type="image/webp"><img src="./img/leasing/gallery-01.webp" alt=""></picture></picture>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <picture class="leasing-gallery__img"> <picture><source srcset="./img/leasing/gallery-02.webp" type="image/webp"><img src="./img/leasing/gallery-02.webp" alt=""></picture></picture>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <picture class="leasing-gallery__img"> <picture><source srcset="./img/leasing/gallery-01.webp" type="image/webp"><img src="./img/leasing/gallery-01.webp" alt=""></picture></picture>
+                    </div>
+                    <div class="swiper-slide"> 
+                      <picture class="leasing-gallery__img"> <picture><source srcset="./img/leasing/gallery-02.webp" type="image/webp"><img src="./img/leasing/gallery-02.webp" alt=""></picture></picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="leasing-advantages"> 
+                  <div class="leasing-advantages__inner"> 
+                    <div class="leasing-advantages__head">
+                      <div class="leasing-advantages__title">Преимущества приобретения техники в лизинг</div>
+                      <div class="leasing-advantages__subtitle">Рассмотрим основные преимущества, покупки техники в лизинг</div>
+                    </div>
+                    <div class="leasing-advantages__list"> 
+                      <div class="leasing-advantages__item"> 
+                        <div class="leasing-advantages__item-num">1</div>
+                        <div class="leasing-advantages__item-info"> 
+                          <div class="leasing-advantages__item-title">Минимальный первоначальный взнос</div>
+                          <div class="leasing-advantages__item-desc">
+                             В отличие от кредита, техника лизинг для юридических компаний 
+                            и ИП зачастую требует меньшего первоначального взноса, что снижает финансовую нагрузку на старте.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="leasing-advantages__item"> 
+                        <div class="leasing-advantages__item-num">2</div>
+                        <div class="leasing-advantages__item-info"> 
+                          <div class="leasing-advantages__item-title">Удобный график платежей</div>
+                          <div class="leasing-advantages__item-desc">
+                             Условия покупки техники в лизинг могут быть прописаны практически 
+                            как угодно, что позволяет согласовать график выплат в максимально комфортном для вас варианте.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="leasing-advantages__item"> 
+                        <div class="leasing-advantages__item-num">3</div>
+                        <div class="leasing-advantages__item-info"> 
+                          <div class="leasing-advantages__item-title">Простота оформления</div>
+                          <div class="leasing-advantages__item-desc">
+                            Процесс получения техники в лизинг зачастую быстрее и проще, чем оформление кредита 
+                            в банке, что позволяет оперативно получить необходимое оборудование для работы. 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="leasing-advantages__item"> 
+                        <div class="leasing-advantages__item-num">4</div>
+                        <div class="leasing-advantages__item-info"> 
+                          <div class="leasing-advantages__item-title">Обновление техники</div>
+                          <div class="leasing-advantages__item-desc">
+                             Техника в лизинг для физических лиц намного более выгодна с точки зрения обслуживания 
+                            и обновления, чем кредит. В рамках кредита субъект, его взявший, сам несёт ответственность 
+                            за ремонт и модернизацию техники. При лизинге же можно составить договор таким образом, 
+                            чтобы мы сами проводили всё необходимое обслуживание.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="leasing-advantages__item"> 
+                        <div class="leasing-advantages__item-num">5</div>
+                        <div class="leasing-advantages__item-info"> 
+                          <div class="leasing-advantages__item-title">Экономия средств на процентных ставках</div>
+                          <div class="leasing-advantages__item-desc">
+                             Лизинг, особенно при прямой работе с производителем, как в нашем случае, обычно 
+                            реализуется по более выгодным процентным ставкам по сравнению с кредитам, что особенно 
+                            важно, если вы решили приобрести технику в лизинг на длительный срок.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="leasing-advantages__item"> 
+                        <div class="leasing-advantages__item-num">6</div>
+                        <div class="leasing-advantages__item-info"> 
+                          <div class="leasing-advantages__item-title">Налоговые преимущества</div>
+                          <div class="leasing-advantages__item-desc">
+                             Лизинговые платежи могут быть более выгодными с точки зрения налоговой оптимизации.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="leasing-advantages__desc">
+                       Таким образом, решение о том, чтобы купить технику в лизинг для юридических лиц 
+                      (и для физических тоже), является отличным и рациональным решением в основном 
+                      для тех компаний, которые не хотят самостоятельно обслуживать и распоряжаться 
+                      используемой техникой, и готовы переложить эту работу на завод-изготовитель 
+                      в обмен на некоторые ограничения правами собственности.
+                    </div>
+                  </div>
+                </div>
+                <div class="leasing-info"> 
+                  <div class="leasing-info__title">Условия лизинга спецтехники</div>
+                  <div class="leasing-info__desc">
+                     Мы работаем индивидуально с каждым клиентом, поэтому в зависимости от ваших запроса 
+                    и ситуации, мы совместно определим сроки лизинга, размер первоначального взноса, 
+                    частоту и размер регулярных платежей, возможность выкупа по окончании срока аренды, 
+                    а также особенности обслуживания и ремонта.
+                  </div>
+                </div>
+                <div class="consultation-order">
+                  <div class="consultation-order__inner"> 
+                    <div class="consultation-order__title">Оставьте заявку</div>
+                    <div class="consultation-order__subtitle">чтобы получить консультацию</div>
+                    <form class="consultation-order__form" action="#">
+                      <input class="consultation-order__form-input" type="text" placeholder="Имя">
+                      <input class="consultation-order__form-input" type="text" placeholder="Телефон">
+                      <button class="consultation-order__form-submit btn btn--xl" type="submit">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="leasing-info"> 
+                  <div class="leasing-info__title">Спецтехника в кредит</div>
+                  <div class="leasing-info__desc"> 
+                    <p>
+                      Кредит — это классическая форма финансирования, при которой покупатель берет заемные средства у банка или другой финансовой организации для покупки спецтехники. 
+                      В отличие от лизинга, при кредите клиент сразу становится владельцем техники, 
+                      оплачивая ее стоимость по частям с процентами.
+                    </p>
+                    <p>
+                      Этот вариант удобен для тех, кто предпочитает сразу иметь полный контроль над имуществом. Наша компания «РемонтЯм» сотрудничает с различными банками и предлагает 
+                      своим клиентам возможность покупки спецтехники в кредит на выгодных условиях, 
+                      с минимальными процентными ставками и гибкими сроками погашения.
+                    </p>
+                  </div>
+                </div>
+                <div class="credit-advantages"> 
+                  <div class="credit-advantages__inner"> 
+                    <div class="credit-advantages__info"> 
+                      <div class="credit-advantages__title">Преимущества покупки спецтехники в кредит</div>
+                      <div class="credit-advantages__desc">Рассмотрим основные особенности покупки спецтехники в кредит физическим лицам и юридическим лицам:</div>
+                      <ul class="custom-list credit-advantages__list"> 
+                        <li>
+                          Полное право собственности с момента покупки — сразу после оформления кредита техника становится вашей собственностью, и вы можете свободно распоряжаться ею.</li>
+                        <li>
+                          Гибкость в использовании — нет ограничений в эксплуатации техники, так как вы являетесь ее владельцем и можете модернизировать, продавать или сдавать в аренду или даже лизинг.</li>
+                        <li>
+                          Налоговые особенности – в ряде случае кредит может быть предпочтительнее с точки зрения налогового обременения, чем лизинг.</li>
+                      </ul>
+                      <div class="credit-advantages__text">
+                        Кредит является отличной альтернативой лизингу для тех компаний и физических лиц, которые 
+                        не хотят сковывать себя сложными обязательствами и договорами, готовы нести тяжбы обслуживания 
+                        самостоятельно, а единственную ответственность перед кредитодателем хотят перевести в область денежных выплат.
+                      </div>
+                    </div>
+                    <picture class="credit-advantages__img"> 
+                      <source srcset="./img/leasing/credit.webp" type="image/webp"><img src="./img/leasing/credit.webp" alt="">
+                    </picture>
+                  </div>
+                </div>
+                <div class="leasing-info"> 
+                  <div class="leasing-info__title">Условия спецтехники в кредит</div>
+                  <div class="leasing-info__desc">
+                     Чтобы узнать все детали того, как купить спецтехнику в кредит физическому или юридическому 
+                    лицу, рекомендуем обратиться к нам напрямую по телефону, который вы найдёте на сайте. 
+                    В процессе короткого разговора, мы расскажем вам ориентировочные сроки погашения, размер 
+                    первоначального взноса, особенности досрочных выплат и все прочие детали сделки.
+                  </div>
+                </div>
+                <div class="credit-steps"> 
+                  <div class="credit-steps__inner">
+                    <div class="credit-steps__title">Как взять спецтехнику в лизинг или кредит?</div>
+                    <div class="credit-steps__subtitle">Тезисно подведём итог, и скажем, как брать технику в лизинг или кредит:</div>
+                    <ul class="custom-list credit-steps__list"> 
+                      <li> <span>Выберите технику</span> — определитесь с моделью и характеристиками нужной спецтехники из нашего каталога.</li>
+                      <li> <span>Рассчитайте условия</span>— решите, какой вариант финансирования вам подходит: лизинг или кредит, и обсудите условия (срок, график платежей, первоначальный взнос) с нашими менеджерами.</li>
+                      <li> <span>Подготовьте документы</span> — предоставьте необходимые документы для оформления сделки (сведения о компании для юридических лиц или паспорт, ИНН для физических лиц и так далее).</li>
+                      <li> <span>Оформите договор</span>— после согласования всех условий и проверки документов подписывается договор на кредит или лизинг.</li>
+                      <li> <span>Получите технику</span>— после оформления всех формальностей техника будет передана вам для использования на согласованных условиях.</li>
+                    </ul>
+                    <div class="credit-steps__desc">
+                      Если у вас остались какие-то вопросы по поводу того, как оформлять технику в лизинг и кредит, 
+                      или вам нужно просто уточнить любые моменты и детали, оставляйте заявку на сайте, и мы перезвоним вам в кратчайшие сроки.
+                    </div>
+                  </div>
+                </div>
+                <div class="consultation-order">
+                  <div class="consultation-order__inner"> 
+                    <div class="consultation-order__title">Оставьте заявку</div>
+                    <div class="consultation-order__subtitle">чтобы получить консультацию</div>
+                    <form class="consultation-order__form" action="#">
+                      <input class="consultation-order__form-input" type="text" placeholder="Имя">
+                      <input class="consultation-order__form-input" type="text" placeholder="Телефон">
+                      <button class="consultation-order__form-submit btn btn--xl" type="submit">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main><div class="footer-wrapper">
+<div class="footer-top-wrapper">
+<div class="container-wide">
+<div class="footer-top-inner relative">
+<div class="row">
+<div class="col-sm-12 col-lg-3">
+<div class="footer-top-first">
+<picture><source srcset="./img/logo-white.webp" type="image/webp"><img src="./img/logo-white.png" alt="РЕМОНТЯМ" data-retinasrc="./img/logo-white.png"></picture>
+<div class="footer-text">ООО «РЕМОНТЯМ». ИНН: 7807252270, ОГРН: 1217800168233</div>
+<div class="copyr">© 2014 - 2024. Все права защищены. РЕМОНТЯМ.</div>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Дорожно-строительная техника<!--/noindex--></div>
+<ul class="footer_l">
+<li class="first">
+<a href="catalog/litoy">Кохеры для литого асфальта</a>
+</li>
+<li>
+<a href="catalog/hotbox">Термос бункеры</a>
+</li>
+<li>
+<a href="catalog/gudron">Гудронаторы</a>
+</li>
+<li>
+<a href="catalog/pricepremont-pnevmonabryzgom">Пневмонабрызг</a>
+</li>
+<li>
+<a href="catalog/kotelbitum">Заливщик швов</a>
+</li>
+<li>
+<a href="catalog/recicler">Рециклеры асфальта</a>
+</li>
+<li>
+<a href="catalog/pricepremont">Машины ямочного ремонта асфальта</a>
+</li>
+<li>
+<a href="catalog/ifrakrasnye">Инфракрасные нагреватели асфальта</a>
+</li>
+<li>
+<a href="catalog/peredvizhnyie-laboratorii">Передвижные лаборатории</a>
+</li>
+<li>
+<a href="catalog/ustanovki">Битумно-эмульсионные установки</a>
+</li>
+<li>
+<a href="catalog/ustanovki-pbv">Установка ПБВ</a>
+</li>
+<li class="last">
+<a href="catalog/plavbitum">Установки плавления битума</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3">
+<div class="footer-menu">
+<div class="title"><!--noindex-->Коммунальная техника<!--/noindex--></div>
+<ul class="footer_l"><li class="first"><a href="catalog/navesnoe-oborudovanie-dlya-kdm">Навесное оборудование для КДМ</a></li><li><a href="catalog/polivomoechnoe-oborudovanie">Поливомоечное оборудование</a></li><li><a href="catalog/vakuumnyie-podmetalno-uborochnyie-mashinyi">Вакуумные подметально-уборочные машины</a></li><li><a href="catalog/navesnoe-oborudovanie-traktor-mtz">Навесное оборудование на трактор МТЗ</a></li><li><a href="catalog/peskorazbrasyivateli-priczepnyie">Пескоразбрасыватели прицепные</a></li><li><a href="catalog/vakuumnyie-mashinyi">Вакуумные машины</a></li><li><a href="catalog/benzovozyi-toplivozapravshhiki">Бензовозы - топливозаправщики</a></li><li><a href="catalog/ilososnyie-mashinyi">Илососные машины</a></li><li><a href="catalog/ifrakrasnye-krovly">Инфракрасные нагреватели кровли</a></li><li><a href="catalog/avtonomny">Шнекороторные снегоочистители</a></li><li><a href="catalog/sol-rastvor">Установки приготовления солевого раствора</a></li><li><a href="catalog/kosilki">Косилки на трактор МТЗ</a></li><li><a href="catalog/kombinirovannyie-dorozhnyie-mashinyi">Комбинированные дорожные машины</a></li><li class="last"><a href="catalog/peskorazbrasyivatel">Пескоразбрасывающее оборудование</a></li></ul>
+</div>
+</div>          
+<div class="col-sm-4 col-lg-3">
+<div class="footer-contacts">
+<div class="title">Контакты</div>
+<div itemscope="" itemtype="http://schema.org/Organization">
+<meta itemprop="url" content="https://ремонтям.рф/">
+<meta itemprop="name" content="РЕМОНТЯМ">
+<div itemscope="" itemprop="address" itemtype="http://schema.org/PostalAddress">
+<meta itemprop="postalCode" content="198332">
+<meta itemprop="addressLocality" content="Санкт-Петербург">
+<meta itemprop="streetAddress" content="проспект Кузнецова дом 11 кор.2">
+</div>
+<meta itemprop="telephone" content="8 800 100 41 69">
+</div>
+<div class="tel dflex jcsb aic">
+<span>Санкт-Петербург: </span>
+<span class="stel"><a href="tel:+78126484190">+7 (812) 648-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Москва:</span>
+<span class="stel"><a href="tel:+74951884190">+7 (495) 188-41-90</a></span>
+</div>
+<div class="tel dflex jcsb aic">
+<span>Отдел продаж:</span>
+<span class="stel"><a href="tel:+79112052741">+7 (911) 205-27-41</a></span>
+</div>
+<div class=" social-links ">
+<a href="https://www.youtube.com/@user-rr6su3fk9g " rel="nofollow noopener" target="blank" class="yutb_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+<a href="https://vk.com/" rel="nofollow noopener" class="vk_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+<a href="https://t.me/+79112052741" rel="nofollow noopener" class="tg_link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+</div>
+<style>
+    <div class="social-links">a{ color:#fff;border-color:#fff;}</div></style>
+<p>&nbsp;</p>
+<p>E-mail: <a href="mailto:info@remontiam.ru">info@remontiam.ru</a></p>
+<p>Офис: г. Санкт-Петербург, проспект Кузнецова дом 11 кор.2</p>
+<p>Завод: г. Санкт-Петербург, Гатчина, ул.Жемчужина 2</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

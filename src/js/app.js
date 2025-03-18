@@ -367,3 +367,25 @@ if(document.querySelector('.js-more-articles-slider')) {
     }
   });
 }
+
+
+if(document.querySelector('.js-leasing-gallery-slider')) {
+  const moreArticlesSlider = new Swiper('.js-leasing-gallery-slider', {
+    modules: [Pagination],
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      560: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 14,
+      }
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    }
+  });
+}
