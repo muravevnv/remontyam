@@ -19,10 +19,10 @@
           img(src="./img/leasing/hero.webp", alt="")
     .leasing-content
       nav.leasing-nav 
-        a(href="#").leasing-nav__link._is-active Спецтехника в лизинг
-        a(href="#").leasing-nav__link Спецтехника в кредит
+        a(href="#leasing").leasing-nav__link Спецтехника в лизинг
+        a(href="#credit").leasing-nav__link Спецтехника в кредит
       .leasing-main 
-        .leasing-info 
+        .leasing-info(id="leasing")
           h2.leasing-info__title Спецтехника в лизинг
           .leasing-info__desc 
             p Лизинг — это форма финансовых отношений, в рамках которых лизингодатель 
@@ -119,7 +119,7 @@
               input.consultation-order__form-input(type="text" placeholder="Имя") 
               input.consultation-order__form-input(type="text" placeholder="Телефон") 
               button(type="submit").consultation-order__form-submit.btn.btn--xl Отправить
-        .leasing-info 
+        .leasing-info(id="credit")
           .leasing-info__title Спецтехника в кредит
           .leasing-info__desc 
             p Кредит — это классическая форма финансирования, при которой покупатель берет 

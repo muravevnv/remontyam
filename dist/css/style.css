@@ -8593,6 +8593,8 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .leasing-nav {
+  position: sticky;
+  top: 20px;
   max-width: 300px;
   width: 100%;
   flex-shrink: 0;
@@ -10465,6 +10467,7 @@ input[type=range]::-webkit-slider-thumb {
   }
 
   .leasing-nav {
+    position: static;
     max-width: 100%;
     flex-direction: row;
     align-items: center;
@@ -11483,6 +11486,12 @@ input[type=range]::-webkit-slider-thumb {
   }
 
   .counter-control:hover {
+    background-color: var(--color-accent);
+    color: var(--color-whte);
+  }
+
+  .leasing-nav__link {
+    border-color: var(--color-accent);
     background-color: var(--color-accent);
     color: var(--color-whte);
   }

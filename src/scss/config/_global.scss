@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 *::before,
@@ -35,7 +36,6 @@ body {
   color: var(--color-blck);
   text-rendering: optimizespeed;
   position: relative;
-
 
   &.no-scroll {
     height: 100vh;
